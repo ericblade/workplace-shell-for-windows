@@ -1,0 +1,874 @@
+'*************************************************************************
+'* MSSetup for Workplace Shell for Windows Install - Version 2.0
+'**************************************************************************
+
+'$INCLUDE 'setupapi.inc'
+'$INCLUDE 'msdetect.inc'
+
+''Dialog ID's
+CONST WELCOME         = 100
+CONST ASKQUITDLG      = 200
+CONST DESTPATH        = 300
+CONST EXITFAILURE     = 400
+CONST EXITQUIT        = 600
+CONST EXITSUCCESS     = 700
+CONST OPTIONS         = 800
+CONST APPHELP         = 900  ''WELCOME  Help
+CONST APPHELP1        = 903  ''DESTPATH  Help
+CONST APPHELP2        = 925  ''CUSTOM  Help
+CONST APPHELP3        = 908  ''RADIO  Help
+CONST CHECK           = 2500
+CONST BADPATH         = 6400
+CONST MAINDLG         = 6600
+CONST LANGDLG         = 6500
+CONST SYSDESTPATH     = 6700
+
+CONST MB_YESNO        = 4
+CONST MB_ICONQUESTION = 32
+CONST IDYES           = 6
+
+''Bitmap ID
+CONST LOGO = 1
+
+GLOBAL DEST$        ''Default destination directory.
+GLOBAL SystemPath$  ''Default system directory.
+GLOBAL OPTsel$      ''Option selection from option dialog.
+GLOBAL CHECKSTATES$ ''USED WITH custom OPTIONS
+GLOBAL WinDrive$
+GLOBAL CUIDLL$
+GLOBAL iUpgrade%
+GLOBAL szType$
+
+' External function declarations.
+DECLARE FUNCTION WinExec LIB "KERNEL.EXE" (cmd$, show%) as Integer ''USED to kickoff pmtowp
+DECLARE FUNCTION ExitWindowsExec LIB "USER.EXE" (arg1$, arg2$) AS INTEGER
+' DECLARE FUNCTION ExitWindows LIB "USER.EXE" (arg1&, arg2%) AS LONG
+DECLARE FUNCTION LoadLibrary LIB "KERNEL.EXE" (arg1$) AS INTEGER
+DECLARE SUB      FreeLibrary LIB "KERNEL.EXE" (arg1%)
+' CTL3D.DLL functions.
+'DECLARE FUNCTION Ctl3dAutoSubclass LIB "CTL3D.DLL" (arg1%) AS INTEGER
+'DECLARE FUNCTION Ctl3dRegister     LIB "CTL3D.DLL" (arg1%) AS INTEGER
+'DECLARE FUNCTION Ctl3dUnregister   LIB "CTL3D.DLL" (arg1%) AS INTEGER
+
+' Private functions and subroutines declarations.
+DECLARE FUNCTION MakePath (szDir$, szFile$) AS STRING
+DECLARE FUNCTION StrStr(szStr1$,szStr2$) AS INTEGER
+DECLARE SUB      AddPathString(szNewPath$)
+DECLARE SUB      AskQuit
+DECLARE FUNCTION AskTypeOfInstall AS STRING
+DECLARE FUNCTION QueryLanguagesToInstall AS STRING
+DECLARE SUB      CheckForATM
+DECLARE SUB      Install
+DECLARE SUB      RebootSystem
+
+szGetProcessorType$="You need at least an i386 architecture microprocessor to complete setup."
+szDoMsgBox$= "Workplace Shell for Windows Setup"
+INIT:
+    CUIDLL$ = "mscuistf.dll"            ''Custom user interface dll - HAS EXTRA dBOX for A REAL CUSTOM
+    HELPPROC$ = "FHelpDlgProc"          ''Help dialog procedure
+
+' Initialization of 3D controls library.
+'    Result% = Ctl3dRegister(HinstFrame())
+'    Result% = Ctl3dAutoSubclass(HinstFrame())
+
+    SetBitmap CUIDLL$, LOGO
+    SetTitle "Workplace Shell for Windows Setup"
+
+''check what version of windows is installed.and kick out a box if it is 3.0
+    Major% = GetWindowsMajorVersion()
+    Minor% = GetWindowsMinorVersion()
+
+    IF Major% < 3 OR (Major% = 3 AND Minor% < 10) THEN
+        i% = DoMsgBox("Microsoft Windows version 3.1 is required to install this product!",szDoMsgBox$, MB_OK+MB_TASKMODAL+MB_ICONHAND)
+        ' Unregister 3D controls.
+'        Result% = Ctl3dUnregister(HinstFrame())
+        END
+    ENDIF
+'check processor type - less than 386, message box it and abort
+    IF GetProcessorType < 3 THEN
+        i% = DoMsgBox(szGetProcessorType$,szDoMsgBox$, MB_OK+MB_TASKMODAL+MB_ICONHAND)
+        ' Unregister 3D controls.
+'        Result% = Ctl3dUnregister(HinstFrame())
+        END
+    ENDIF
+
+    szInf$ = GetSymbolValue("STF_SRCINFPATH")
+    IF szInf$ = "" THEN
+        szInf$ = GetSymbolValue("STF_CWDDIR") + "WPINST.INF"
+    ENDIF
+    ReadInfFile szInf$
+
+    OldBeepMode% = SetBeepingMode (1)
+    SetCopyGaugePosition -1,75
+
+    WinDrive$ = MID$(GetWindowsDir, 1, 1)
+    DEST$ = WinDrive + ":\WPSHELL"
+    SystemPath$ = GetWindowsSysDir()
+
+    CheckStates$ = "CheckItemsOut"  ''SETUPSTRING FOR CHECK BOX
+
+    ClearCopyList
+
+WELCOME:
+    sz$ = UIStartDlg(CUIDLL$, WELCOME, "FInfoDlgProc", APPHELP, HELPPROC$)
+    IF sz$ = "CONTINUE" THEN
+        UIPop 1
+    ELSE
+        AskQuit
+        GOTO WELCOME
+    ENDIF
+
+   ' Ask user if this is an upgrade or new install...
+   szType$ = AskTypeOfInstall
+
+
+GETPATH:
+        SetSymbolValue "EditTextIn", DEST$
+        SetSymbolValue "EditFocus", "END"
+GETPATHL1:
+        sz$ = UIStartDlg(CUIDLL$, DESTPATH, "FEditDlgProc", APPHELP1, HELPPROC$)
+        DEST$ = GetSymbolValue("EditTextOut")
+
+        IF sz$ = "CONTINUE" THEN
+            IF IsDirWritable(DEST$) = 0 THEN
+               GOSUB BADPATH
+               GOTO GETPATHL1
+            ENDIF
+            UIPop 1
+        ELSEIF sz$ = "REACTIVATE" THEN
+            GOTO GETPATHL1
+        ELSEIF sz$ = "BACK" THEN
+            UIPop 1
+            GOTO WELCOME
+        ELSE
+            AskQuit
+            GOTO GETPATH
+        ENDIF
+
+   ' Check if windows is "shared" (have different \WINDOWS and \SYSTEM paths).
+   NetInstall% = IsWindowsShared()
+   ' If Windows is not "shared" (i.e. is not in a network setup)...
+   IF NetInstall% = 0 THEN
+      ' Windows is not shared, therefore skip checking system path code.
+      GOTO QUERYLANGUAGE
+   ENDIF
+
+GETSYSTEMPATH:
+        SetSymbolValue "EditTextIn", SystemPath$
+        SetSymbolValue "EditFocus", "END"
+GETSYSTEMPATHL1:
+        sz$ = UIStartDlg(CUIDLL$, SYSDESTPATH, "FEditDlgProc", APPHELP1, HELPPROC$)
+        SystemPath$ = GetSymbolValue("EditTextOut")
+
+        IF sz$ = "CONTINUE" THEN
+            IF IsDirWritable(SystemPath$) = 0 THEN
+               GOSUB BADPATH
+               GOTO GETSYSTEMPATHL1
+            ENDIF
+            UIPop 1
+        ELSEIF sz$ = "REACTIVATE" THEN
+            GOTO GETSYSTEMPATHL1
+        ELSEIF sz$ = "BACK" THEN
+            UIPop 1
+            GOTO GETPATH
+        ELSE
+            AskQuit
+            GOTO GETSYSTEMPATH
+        ENDIF
+
+
+QUERYLANGUAGE:
+   szLangResult$ = QueryLanguagesToInstall
+
+   RemoveSymbol("CheckItemsIn")
+   RemoveSymbol("CheckItemsOut")
+
+    FOR i% = 1 TO 4 STEP 1
+        AddListItem "CheckItemsIn", "ON"        ''SETTING ALL CHECK BOXES TO ON
+    NEXT i%
+
+   ' If user only wants to install language resources...
+   IF szType$ = "BTN3" THEN
+      ' Jump to getting the destination path.
+      GOTO INSTALL1
+   ENDIF
+
+   ' If user is upgrading from an older version of WPSFWIN...
+   IF iUpgrade% = IDYES THEN
+      ' Add "Checked" items to list.
+      AddListItem "CheckItemsOut", "OFF"    ' Migrate PROGMAN Desktop is "OFF"
+      AddListItem "CheckItemsOut", "ON"     ' Replace "Task Manager" with "Window List" is "ON"
+      AddListItem "CheckItemsOut", "OFF"    ' Set OS/2 Color Scheme as default color scheme is "OFF"
+      AddListItem "CheckItemsOut", "ON"     ' Make WPSFWIN the default Windows shell is "ON"
+      ' Skip the next two dialogs and ask for install path.
+      GOTO INSTALL1
+   ENDIF
+
+DIAGOPTS:
+    ''default for autoinstall
+    OPTsel$ = "1"
+    SetSymbolValue "RadioDefault", OPTsel$
+OPTL1:
+    sz$ = UIStartDlg(CUIDLL$, OPTIONS, "FRadioDlgProc", APPHELP3, HELPPROC$)
+    OPTsel$ = GetSymbolValue("ButtonChecked")
+
+    IF sz$ = "CONTINUE" THEN
+        UIPop 1
+    ELSEIF sz$ = "REACTIVATE" THEN
+        GOTO OPTL1
+    ELSEIF sz$ = "BACK" THEN
+        UIPop 1
+        GOTO WELCOME
+    ELSE
+        AskQuit
+        GOTO DIAGOPTS
+    ENDIF
+
+IF OPTsel$ = "1" THEN
+    ' If user does express will use default all "ON"
+    RemoveSymbol("CheckItemsOut")
+    FOR i% = 1 TO 4 STEP 1
+        AddListItem "CheckItemsOut", "ON"
+    NEXT i%
+    ' Getpath used twice/written twice when time tighten UP!!!
+    GOTO INSTALL1
+ENDIF
+
+CHECKIT:
+    sz$ = UIStartDlg(CUIDLL$, Check, "FCheckDlgProc", APPHELP2, HELPPROC$)
+
+CHECKT1:
+    IF sz$ = "CONTINUE" THEN
+       UIPop 1
+       GOTO INSTALL1
+    ELSEIF sz$ = "REACTIVATE" THEN
+       GOTO CHECKT1
+    ELSEIF sz$ = "CHK1" THEN
+       GOTO CHECKT1
+    ELSEIF sz$ = "CHK2" THEN
+       GOTO CHECKT1
+    ELSEIF sz$ = "CHK3" THEN
+       GOTO CHECKT1
+    ELSEIF sz$ = "BACK" THEN
+       UIPop 1
+       GOTO DIAGOPTS
+    ELSE
+       AskQuit
+       GOTO CHECKIT
+    ENDIF
+
+
+INSTALL1:
+    ' Check if user has Adobe Type Manager (ATM) drivers installed.
+    CheckForATM
+    ' Install product to destination directory.
+    Install
+
+QUIT:
+    ON ERROR GOTO ERRQUIT
+
+    IF ERR = 0 THEN
+QUITSUC:
+    sz$ = UIStartDlg(CUIDLL$, EXITSUCCESS, "FInfoDlgProc", APPHELP, HELPPROC$)
+        IF sz$ = "CONTINUE" THEN
+
+           'RebootSystem
+           'i% = DoMsgBox("There was an error configuring the system.  You must re-run setup.", "Workplace Shell for Windows Setup", MB_ICONEXCLAMATION+MB_OK+MB_TASKMODAL)
+
+           UIPopAll
+
+           ' If install is run from OS/2 Developer Connection CD...
+           'z% = ExitWindows(0,0)
+
+           ' Unregister 3D controls.
+'           Result% = Ctl3dUnregister(HinstFrame())
+
+           END
+        ELSEIF sz$ = "REACTIVATE" THEN
+           GOTO QUITSUC
+        ELSE
+           AskQuit
+           GOTO  QUITSUC
+        ENDIF
+    ELSEIF ERR = STFQUIT THEN
+        dlg% = EXITQUIT
+    ELSE
+        dlg% = EXITFAILURE
+    ENDIF
+QUITL1:
+    sz$ = UIStartDlg(CUIDLL$, dlg%, "FInfo0DlgProc", 0, "")
+    IF sz$ = "REACTIVATE" THEN
+        GOTO QUITL1
+    ENDIF
+    UIPop 1
+
+    ' Unregister 3D controls.
+'    Result% = Ctl3dUnregister(HinstFrame())
+
+    END
+
+ERRQUIT:
+    i% = DoMsgBox("Setup sources were corrupted, read your Documentation for a number to contact.","Workplace Shell for Windows Installation", MB_OK+MB_TASKMODAL+MB_ICONHAND)
+
+    ' Unregister 3D controls.
+'    Result% = Ctl3dUnregister(HinstFrame())
+
+    END
+
+BADPATH:
+    sz$ = UIStartDlg(CUIDLL$, BADPATH, "FInfo0DlgProc", 0, "")
+    IF sz$ = "REACTIVATE" THEN
+        GOTO BADPATH
+    ENDIF
+    UIPop 1
+    RETURN
+
+
+SUB AskQuit STATIC
+ASKQUIT_LABEL:
+    sz$ = UIStartDlg(CUIDLL$, ASKQUITDLG, "FQuitDlgProc", 0, "")
+    IF sz$ = "EXIT" THEN
+       UIPopAll
+       ERROR STFQUIT
+    ELSEIF sz$ = "REACTIVATE" THEN
+       GOTO ASKQUIT_LABEL
+    ELSE
+       UIPop 1
+    ENDIF
+END SUB
+
+
+'**
+'** AskTypeOfInstall():
+'**
+'*************************************************************************
+FUNCTION AskTypeOfInstall STATIC AS STRING
+INSTALLTYPE:
+   szTemp$ = UIStartDlg(CUIDLL$, MAINDLG, "FCustInstDlgProc", 0, "")
+
+   IF (szTemp$ = "BTN1") OR (szTemp$ = "BTN2") OR (szTemp$ = "BTN3") THEN
+       UIPop 1
+   ELSE
+       AskQuit
+       GOTO INSTALLTYPE
+   ENDIF
+
+   IF szTemp$ = "BTN2" THEN
+      iUpgrade% = IDYES
+   ELSE
+      iUpgrade% = IDNO
+   ENDIF
+
+   AskTypeOfInstall = szTemp$
+
+END FUNCTION
+
+
+'**
+'** QueryLanguagesToInstall():
+'**
+'*************************************************************************
+FUNCTION QueryLanguagesToInstall STATIC AS STRING
+
+   SrcDir$ = GetSymbolValue("STF_SRCDIR")
+   windir$ = GetWindowsDir()
+
+   ' Query current language used in Windows.
+   Language$ = GetIniKeyString(windir$ + "win.ini","Intl","sLanguage")
+
+   RemoveSymbol("CheckItemsIn")
+
+   ' If portuguese...
+   IF (Language$ = "ptg") OR (Language$ = "ptb") THEN
+      ' Set defaults for dialog.
+      AddListItem "CheckItemsIn", "OFF"    ' US English
+      AddListItem "CheckItemsIn", "OFF"    ' Dutch
+      AddListItem "CheckItemsIn", "OFF"    ' Finnish
+      AddListItem "CheckItemsIn", "OFF"    ' French (Canadian)
+      AddListItem "CheckItemsIn", "OFF"    ' German
+      AddListItem "CheckItemsIn", "OFF"    ' Italian
+      AddListItem "CheckItemsIn", "ON"     ' Portuguese
+      AddListItem "CheckItemsIn", "OFF"    ' Spanish
+      AddListItem "CheckItemsIn", "OFF"    ' Swedish
+   ' If dutch...
+   ELSEIF Language$ = "nld" THEN
+      ' Set defaults for dialog.
+      AddListItem "CheckItemsIn", "OFF"    ' US English
+      AddListItem "CheckItemsIn", "ON"     ' Dutch
+      AddListItem "CheckItemsIn", "OFF"    ' Finnish
+      AddListItem "CheckItemsIn", "OFF"    ' French (Canadian)
+      AddListItem "CheckItemsIn", "OFF"    ' German
+      AddListItem "CheckItemsIn", "OFF"    ' Italian
+      AddListItem "CheckItemsIn", "OFF"    ' Portuguese
+      AddListItem "CheckItemsIn", "OFF"    ' Spanish
+      AddListItem "CheckItemsIn", "OFF"    ' Swedish
+   ' If german...
+   ELSEIF Language$ = "deu" THEN
+      ' Set defaults for dialog.
+      AddListItem "CheckItemsIn", "OFF"    ' US English
+      AddListItem "CheckItemsIn", "OFF"    ' Dutch
+      AddListItem "CheckItemsIn", "OFF"    ' Finnish
+      AddListItem "CheckItemsIn", "OFF"    ' French (Canadian)
+      AddListItem "CheckItemsIn", "ON"     ' German
+      AddListItem "CheckItemsIn", "OFF"    ' Italian
+      AddListItem "CheckItemsIn", "OFF"    ' Portuguese
+      AddListItem "CheckItemsIn", "OFF"    ' Spanish
+      AddListItem "CheckItemsIn", "OFF"    ' Swedish
+   ' If swedish...
+   ELSEIF Language$ = "sve" THEN
+      ' Set defaults for dialog.
+      AddListItem "CheckItemsIn", "OFF"    ' US English
+      AddListItem "CheckItemsIn", "OFF"    ' Dutch
+      AddListItem "CheckItemsIn", "OFF"    ' Finnish
+      AddListItem "CheckItemsIn", "OFF"    ' French (Canadian)
+      AddListItem "CheckItemsIn", "OFF"    ' German
+      AddListItem "CheckItemsIn", "OFF"    ' Italian
+      AddListItem "CheckItemsIn", "OFF"    ' Portuguese
+      AddListItem "CheckItemsIn", "OFF"    ' Spanish
+      AddListItem "CheckItemsIn", "ON"     ' Swedish
+   ' If french...
+   ELSEIF (Language$ = "fra") OR (Language$ = "frc")  THEN
+      ' Set defaults for dialog.
+      AddListItem "CheckItemsIn", "OFF"    ' US English
+      AddListItem "CheckItemsIn", "OFF"    ' Dutch
+      AddListItem "CheckItemsIn", "OFF"    ' Finnish
+      AddListItem "CheckItemsIn", "ON"     ' French (Canadian)
+      AddListItem "CheckItemsIn", "OFF"    ' German
+      AddListItem "CheckItemsIn", "OFF"    ' Italian
+      AddListItem "CheckItemsIn", "OFF"    ' Portuguese
+      AddListItem "CheckItemsIn", "OFF"    ' Spanish
+      AddListItem "CheckItemsIn", "OFF"    ' Swedish
+   ' If finnish...
+   ELSEIF Language$ = "fin" THEN
+      ' Set defaults for dialog.
+      AddListItem "CheckItemsIn", "OFF"    ' US English
+      AddListItem "CheckItemsIn", "OFF"    ' Dutch
+      AddListItem "CheckItemsIn", "ON"     ' Finnish
+      AddListItem "CheckItemsIn", "OFF"    ' French (Canadian)
+      AddListItem "CheckItemsIn", "OFF"    ' German
+      AddListItem "CheckItemsIn", "OFF"    ' Italian
+      AddListItem "CheckItemsIn", "OFF"    ' Portuguese
+      AddListItem "CheckItemsIn", "OFF"    ' Spanish
+      AddListItem "CheckItemsIn", "OFF"    ' Swedish
+   ELSEIF (Language$ = "esn") OR (Language$ = "esp")  THEN
+      ' Set defaults for dialog.
+      AddListItem "CheckItemsIn", "OFF"    ' US English
+      AddListItem "CheckItemsIn", "OFF"    ' Dutch
+      AddListItem "CheckItemsIn", "OFF"    ' Finnish
+      AddListItem "CheckItemsIn", "OFF"    ' French (Canadian)
+      AddListItem "CheckItemsIn", "OFF"    ' German
+      AddListItem "CheckItemsIn", "OFF"    ' Italian
+      AddListItem "CheckItemsIn", "OFF"    ' Portuguese
+      AddListItem "CheckItemsIn", "ON"     ' Spanish
+      AddListItem "CheckItemsIn", "OFF"    ' Swedish
+   ELSEIF Language$ = "ita" THEN
+      ' Set defaults for dialog.
+      AddListItem "CheckItemsIn", "OFF"    ' US English
+      AddListItem "CheckItemsIn", "OFF"    ' Dutch
+      AddListItem "CheckItemsIn", "OFF"    ' Finnish
+      AddListItem "CheckItemsIn", "OFF"    ' French (Canadian)
+      AddListItem "CheckItemsIn", "OFF"    ' German
+      AddListItem "CheckItemsIn", "ON"     ' Italian
+      AddListItem "CheckItemsIn", "OFF"    ' Portuguese
+      AddListItem "CheckItemsIn", "OFF"    ' Spanish
+      AddListItem "CheckItemsIn", "OFF"    ' Swedish
+   ' Else US-English....
+   ELSE
+      ' Set defaults for dialog.
+      AddListItem "CheckItemsIn", "ON"     ' US English
+      AddListItem "CheckItemsIn", "OFF"    ' Dutch
+      AddListItem "CheckItemsIn", "OFF"    ' Finnish
+      AddListItem "CheckItemsIn", "OFF"    ' French (Canadian)
+      AddListItem "CheckItemsIn", "OFF"    ' German
+      AddListItem "CheckItemsIn", "OFF"    ' Portuguese
+      AddListItem "CheckItemsIn", "OFF"    ' Spanish
+      AddListItem "CheckItemsIn", "OFF"    ' Swedish
+   ENDIF
+
+LANGTOINSTALL:
+   szTemp$ = UIStartDlg(CUIDLL$, LANGDLG, "FCheckDlgProc", 0, "")
+
+   IF (szTemp$ = "CONTINUE") THEN
+       UIPop 1
+   ELSE
+       AskQuit
+       GOTO LANGTOINSTALL
+   ENDIF
+
+   IF szTemp$ = "CONTINUE" THEN
+      IF GetListItem("CheckItemsOut",1) = "ON" THEN
+         ' US English
+         AddSectionFilesToCopyList "nls_enus", SrcDir$, DEST$
+      ENDIF
+      IF GetListItem("CheckItemsOut",2) = "ON" THEN
+         ' Dutch
+         AddSectionFilesToCopyList "nls_dutc", SrcDir$, DEST$
+      ENDIF
+      IF GetListItem("CheckItemsOut",3) = "ON" THEN
+         ' Finnish
+         AddSectionFilesToCopyList "nls_finn", SrcDir$, DEST$
+      ENDIF
+      IF GetListItem("CheckItemsOut",4) = "ON" THEN
+         ' French (Canadian)
+         AddSectionFilesToCopyList "nls_fren", SrcDir$, DEST$
+      ENDIF
+      IF GetListItem("CheckItemsOut",5) = "ON" THEN
+         ' German
+         AddSectionFilesToCopyList "nls_grmn", SrcDir$, DEST$
+      ENDIF
+      IF GetListItem("CheckItemsOut",6) = "ON" THEN
+         ' Italian
+         AddSectionFilesToCopyList "nls_ital", SrcDir$, DEST$
+      ENDIF
+      IF GetListItem("CheckItemsOut",7) = "ON" THEN
+         ' Portuguese (Brazilian)
+         AddSectionFilesToCopyList "nls_port", SrcDir$, DEST$
+      ENDIF
+      IF GetListItem("CheckItemsOut",8) = "ON" THEN
+         ' Spanish
+         AddSectionFilesToCopyList "nls_span", SrcDir$, DEST$
+      ENDIF
+      IF GetListItem("CheckItemsOut",9) = "ON" THEN
+         ' Swedish
+         AddSectionFilesToCopyList "nls_swed", SrcDir$, DEST$
+      ENDIF
+   ENDIF
+
+   QueryLanguagesToInstall = szTemp$
+
+END FUNCTION
+
+
+'**
+'** CheckForATM():
+'**
+'*************************************************************************
+SUB CheckForATM STATIC
+    Windir$ = GetWindowsDir()
+    SysLoc$ = Windir$ + "SYSTEM.INI"     'location and filename system.ini
+
+    ' Read in "system.drv=" line from SYSTEM.INI file.
+    SysDriver$ = GetIniKeyString(SysLoc$,"boot","system.drv")
+    ATMSysDriver$ = GetIniKeyString(SysLoc$,"boot","atm.system.drv")
+    ' Check if ATM drivers are loaded.
+    IF (SysDriver$ = "atmsys.drv") OR (ATMSysDriver$ = "system.drv") THEN
+       ' Notify and ask user if changes should be made.
+       iResult% = DoMsgBox("You have the Adobe Type Manager (ATM) driver installed."+CHR$(10)+"We need to comment out the driver in order to work correctly."+CHR$(10)+"Do you want this done for you?",szDoMsgBox$,MB_YESNO+MB_TASKMODAL+MB_ICONQUESTION)
+       IF iResult% = IDYES THEN
+          '  Add ';' to comment out both lines.
+          RemoveIniKey  SysLoc$, "boot","system.drv",cmoVital
+          RemoveIniKey  SysLoc$, "boot","atm.system.drv",cmoVital
+          CreateIniKeyValue SysLoc$,"boot",";system.drv",SysDriver$,cmoAppend + cmoVital
+          CreateIniKeyValue SysLoc$,"boot",";atm.system.drv",ATMSysDriver$,cmoAppend + cmoVital
+       ENDIF
+    ENDIF
+END SUB
+
+
+'**
+'** Purpose:
+'**     Builds the copy list and performs all installation operations.
+'** Arguments:
+'**     none.
+'** Returns:
+'**     none.
+'*************************************************************************
+SUB Install STATIC
+   windir$ = GetWindowsDir()
+   SrcDir$ = GetSymbolValue("STF_SRCDIR")
+   sysdir$ = SystemPath$
+   CreateDir DEST$, cmoVITAL
+   SetRestartDir windir$
+   SysLoc$ = windir$ + "system.ini"     'location and filename system.ini
+
+   ' Check if obsolete key exists.
+   KeyExists% = DoesIniKeyExist(SysLoc$,"Workplace_Shell_for_Windows","SYSTEM_ButtonApperance")
+   ' If obsolete key exists, then...
+   IF KeyExists% = 1 THEN
+      ' Get current value ans store it.
+      szButtonAppearance$ = GetIniKeyString(SysLoc$,"Workplace_Shell_for_Windows","SYSTEM_ButtonApperance")
+      ' Remove obsolete key from initialization file.
+      RemoveIniKey SysLoc$,"Workplace_Shell_for_Windows","SYSTEM_ButtonApperance",cmoNone
+   ELSE
+      ' Default to "Hide".
+      szButtonAppearance$ = "Hide"
+   ENDIF
+
+   CopyFile SysLoc$, DEST$ + "\system.bak",cmoVital,0
+
+   ' Query current language used in Windows.
+   Language$ = GetIniKeyString(windir$ + "win.ini","Intl","sLanguage")
+
+   ' By default, assign english title to "System Setup" string.
+   SystemSetup$ = "System Setup"
+
+   ' If portuguese...
+   IF (Language$ = "ptg") OR (Language$ = "ptb") THEN
+      SystemSetup$ = "Configuração do sistema"
+   ' If dutch...
+   ELSEIF Language$ = "nld" THEN
+      SystemSetup$ = "Systeem instellingen"
+   ' If german...
+   ELSEIF Language$ = "deu" THEN
+      SystemSetup$ = "Systemkonfiguration"
+   ' If swedish...
+   ELSEIF Language$ = "sve" THEN
+      SystemSetup$ = "Systemkonfiguration"
+   ' If french...
+   ELSEIF (Language$ = "fra") OR (Language$ = "frc")  THEN
+      SystemSetup$ = "Configuration du système"
+   ' If finnish...
+   ELSEIF Language$ = "fin" THEN
+      SystemSetup$ = "Järjestelmäasetukset"
+   ' If spanish...
+   ELSEIF (Language$ = "esn") OR (Language$ = "esp")  THEN
+      SystemSetup$ = "Configuración del Sistema"
+
+' ******* COMMENTED OUT *******
+'   ' If danish...
+'   ELSEIF Language$ = "dan" THEN
+' ****** COMMENTED OUT *******
+
+   ' Else US-english....
+   ELSE
+      SystemSetup$ = "System Setup"
+   ENDIF
+
+   ' If user only wanted to install the language resources...
+   IF szType$ = "BTN3" THEN
+      ' Create INI key and copy resource libraries.
+      CreateIniKeyValue SysLoc$,"Workplace_Shell_for_Windows","SYSTEM_SystemSetupFolderName",SystemSetup$,cmoVital + cmoOverwrite
+      CopyFilesInCopyList
+      GOTO INSTALL_DONE
+   ENDIF
+
+   ' Add required files to copy list.
+   AddSectionFilesToCopyList "store", SrcDir$, DEST$
+   AddSectionFilesToCopyList "systm", SrcDir$, sysdir$
+   AddSectionFilesToCopyList "windows", SrcDir$, windir$
+
+   ' If user wants us to replace the current Task Manager with Window List...
+   IF GetListItem(CheckStates$, 2) = "ON" THEN
+      ' Set the "taskman=" key value to the "Window List" program ("wndlist.exe").
+      CreateIniKeyValue  SysLoc$, "boot","taskman.exe",DEST$+ "\wndlist.exe",cmoOverwrite + cmoVital
+   ENDIF
+
+   ' If user wants us to setup the OS/2 color scheme as the default color scheme...
+   IF GetListItem(CheckStates$, 3) = "ON" THEN
+        'we would copy bmp to windir, change sys.ini and change color scheme,  else copy to dest$
+        ' color scheme has not been created yet-add later
+        AddSectionFilesToCopyList "bmp", SrcDir$, DEST$
+        ' Backup *.INI files.
+        CopyFile windir$ + "win.ini", DEST$ + "\win.bak",cmoVital,0
+        CopyFile windir$ + "control.ini", DEST$ + "\control.bak",cmoVital,0
+
+        ' Make the OS/2 Warp color scheme the current color scheme.
+        CreateIniKeyValue windir$ + "control.ini","current","color schemes","OS/2 Warp",cmoOverwrite + cmoVital
+
+        ' Add the OS/2 2.x and OS/2 Warp color schemes to color scheme list.
+        CreateIniKeyValue windir$ + "control.ini", "Color Schemes","OS/2 Warp","808000,E8FFFF,FFFFFF,0,C0C0C0,0,800040,C0C0C0,FFFFFF,C0C0C0,C0C0C0,0,C0C0C0,C0C0C0,808080,0,808080,808080,FFFFFF,808080,FFFFFF",cmoAppend + cmoVital
+        CreateIniKeyValue windir$ + "control.ini", "Color Schemes","OS/2","C0C0C0,E8FFFF,FFFFFF,0,C0C0C0,0,808040,C0C0C0,FFFFFF,80FFFF,C0C0C0,0,C0C0C0,C0C0C0,808080,0,808080,808080,FFFFFF,808080,FFFFFF",cmoAppend + cmoVital
+
+        ' Make the OS/2 Warp colors the default color.
+        CreateIniKeyValue windir$ + "win.ini","Colors","Background","0 128 128",cmoOverwrite + cmoVital
+        CreateIniKeyValue windir$ + "win.ini","Colors","AppWorkspace", "255 255 232",cmoOverwrite + cmoVital
+        CreateIniKeyValue windir$ + "win.ini","Colors", "Window","255 255 255",cmoOverwrite + cmoVital
+        CreateIniKeyValue windir$ + "win.ini","Colors","WindowText","0 0 0",cmoOverwrite + cmoVital
+        CreateIniKeyValue windir$ + "win.ini","Colors","Menu","192 192 192",cmoOverwrite + cmoVital
+        CreateIniKeyValue windir$ + "win.ini","Colors","MenuText","0 0 0",cmoOverwrite + cmoVital
+        CreateIniKeyValue windir$ + "win.ini","Colors","ActiveTitle","64 0 128",cmoOverwrite + cmoVital
+        CreateIniKeyValue windir$ + "win.ini","Colors","InactiveTitle","192 192 192",cmoOverwrite + cmoVital
+        CreateIniKeyValue windir$ + "win.ini","Colors","TitleText","255 255 255",cmoOverwrite + cmoVital
+        CreateIniKeyValue windir$ + "win.ini","Colors","ActiveBorder","192 192 192",cmoOverwrite + cmoVital
+        CreateIniKeyValue windir$ + "win.ini","Colors","InactiveBorder","192 192 192",cmoOverwrite + cmoVital
+        CreateIniKeyValue windir$ + "win.ini","Colors","WindowFrame","0 0 0",cmoOverwrite + cmoVital
+        CreateIniKeyValue windir$ + "win.ini","Colors","ScrollBar","192 192 192",cmoOverwrite + cmoVital
+        CreateIniKeyValue windir$ + "win.ini","Colors","ButtonFace","192 192 192",cmoOverwrite + cmoVital
+        CreateIniKeyValue windir$ + "win.ini","Colors","ButtonShadow","128 128 128",cmoOverwrite + cmoVital
+        CreateIniKeyValue windir$ + "win.ini","Colors","ButtonText","0 0 0",cmoOverwrite + cmoVital
+        CreateIniKeyValue windir$ + "win.ini","Colors","GrayText","128 128 128",cmoOverwrite + cmoVital
+        CreateIniKeyValue windir$ + "win.ini","Colors","Hilight","128 128 128",cmoOverwrite + cmoVital
+        CreateIniKeyValue windir$ + "win.ini","Colors","HilightText","255 255 255",cmoOverwrite + cmoVital
+        CreateIniKeyValue windir$ + "win.ini","Colors","InactiveTitleText","128 128 128",cmoOverwrite + cmoVital
+        CreateIniKeyValue windir$ + "win.ini","Colors","ButtonHilight","255 255 255",cmoOverwrite + cmoVital
+   ELSE
+        ' Backup *.INI files.
+        CopyFile windir$ + "win.ini", DEST$ + "\win.bak",cmoVital,0
+        CopyFile windir$ + "control.ini", DEST$ + "\control.bak",cmoVital,0
+        ' Add the OS/2 2.x and OS/2 Warp color schemes to color scheme list.
+        CreateIniKeyValue windir$ + "control.ini", "Color Schemes","OS/2 Warp","808000,E8FFFF,FFFFFF,0,C0C0C0,0,800040,C0C0C0,FFFFFF,C0C0C0,C0C0C0,0,C0C0C0,C0C0C0,808080,0,808080,808080,FFFFFF,808080,FFFFFF",cmoAppend + cmoVital
+        CreateIniKeyValue windir$ + "control.ini", "Color Schemes","OS/2","C0C0C0,E8FFFF,FFFFFF,0,C0C0C0,0,808040,C0C0C0,FFFFFF,80FFFF,C0C0C0,0,C0C0C0,C0C0C0,808080,0,808080,808080,FFFFFF,808080,FFFFFF",cmoAppend + cmoVital
+
+        AddSectionFilesToCopyList "bmp", SrcDir$, DEST$
+   ENDIF
+
+   CopyFilesInCopyList
+
+   ' If user wants us to make WPSFWIN the current default Windows shell...
+   IF GetListItem(CheckStates$, 4) = "ON" THEN
+        'change sys.ini to reflect current changes
+        ' String$=GetIniKeyString(szFile$,szSect$,szKey$)  -gotta put a ; infront of current shell= ??, this is a start
+        OldShell$=GetIniKeyString(SysLoc$,"boot","shell")
+        CreateIniKeyValue  SysLoc$, "boot","shell",DEST$+ "\wpshell.exe",cmoOverwrite + cmoVital
+        CreateIniKeyValue SysLoc$,"boot",";shell",OldShell$,cmoAppend + cmoVital
+   ENDIF
+
+   ' If user wants us to automatically migrate their PROGMAN desktop...
+   IF GetListItem(CheckStates$, 1) = "ON" THEN
+        ' Setup call to conversion utility and parameters...
+        IF GetListItem(CheckStates$, 3) = "ON" THEN
+           ' OS/2 Warp colors are being installed as default.
+           Exe1$ = dest$ + "\PMTOWP.EXE /s /w"
+        ELSE
+           ' No OS/2 color schemes are being installed as default.
+           Exe1$ = dest$ + "\PMTOWP.EXE /s"
+        ENDIF
+        ' Run PMTOWP.EXE (Program Manager to Workplace Shell) conversion utility.
+        i%= WinExec(EXE1$, SW_SHOW)
+   ENDIF
+
+   ' Create WPSFWIN system entries in SYSTEM.INI.
+   CreateIniKeyValue SysLoc$,"Workplace_Shell_for_Windows","DESKTOP_HorzIconIndent","23",cmoVital
+   CreateIniKeyValue SysLoc$,"Workplace_Shell_for_Windows","DESKTOP_VertIconIndent","5",cmoVital
+   CreateIniKeyValue SysLoc$,"Workplace_Shell_for_Windows","SYSTEM_ConfirmOnFolderDelete","Yes",cmoVital
+   CreateIniKeyValue SysLoc$,"Workplace_Shell_for_Windows","SYSTEM_ConfirmOnDelete","Yes",cmoVital
+   CreateIniKeyValue SysLoc$,"Workplace_Shell_for_Windows","SYSTEM_ConfirmOnFileSystemDelete","Yes",cmoVital
+   CreateIniKeyValue SysLoc$,"Workplace_Shell_for_Windows","SYSTEM_Animation","Enabled",cmoVital
+   CreateIniKeyValue SysLoc$,"Workplace_Shell_for_Windows","SYSTEM_ButtonAppearance",szButtonAppearance$,cmoVital
+   CreateIniKeyValue SysLoc$,"Workplace_Shell_for_Windows","SYSTEM_MinBehavior","Hide",cmoVital
+   CreateIniKeyValue SysLoc$,"Workplace_Shell_for_Windows","SYSTEM_OpenBehavior","CreateNew",cmoVital
+   CreateIniKeyValue SysLoc$,"Workplace_Shell_for_Windows","SYSTEM_SystemSetupFolderName",SystemSetup$,cmoVital + cmoOverwrite
+   CreateIniKeyValue SysLoc$,"Workplace_Shell_for_Windows","SYSTEM_NoSave","Disabled",cmoVital
+   CreateIniKeyValue SysLoc$,"Workplace_Shell_for_Windows","COLOR_ShadowText","FF0000",cmoVital
+
+   ' WIN.INI System Events Sounds entries.
+   CreateIniKeyValue windir$ + "win.ini", "sounds","WPFolderClose",",Workplace Shell Close Folder",cmoVital
+   CreateIniKeyValue windir$ + "win.ini", "sounds","WPFolderOpen",",Workplace Shell Open Folder",cmoVital
+   CreateIniKeyValue windir$ + "win.ini", "sounds","WPBeginDrag",",Workplace Shell Begin Drag",cmoVital
+   CreateIniKeyValue windir$ + "win.ini", "sounds","WPEndDrag",",Workplace Shell End Drag",cmoVital
+   CreateIniKeyValue windir$ + "win.ini", "sounds","WPShred",",Workplace Shell Shred",cmoVital
+
+   ' Convert WPSHELL.INI file to new format if upgrading.
+   IF iUpgrade% = IDYES THEN
+      ' Convert older WPSHELL.INI profile into newer format.
+      'i% = WinExec(dest$+"\CONVINI.EXE /s", SW_SHOW)
+   ENDIF
+
+INSTALL_DONE:
+
+END SUB
+
+
+'**********************************************************************************************************************************************
+SUB RebootSystem STATIC
+
+'   Check if any files were locked during install.  If the RestartList
+'   is not empty, ExitExecRestart() will restart Windows, cleanup setup
+'   files, and copy over locked files before Windows restarts.
+    i% = RestartListEmpty()
+    IF i% = 0 THEN
+'      ExitExecRestart() only returns if applications refuse to be shutdown.
+'      Win32s is installed but will not operate until Windows is restarted
+'      and the Win32s VxD is loaded.
+         z% = ExitExecRestart()
+        WHILE z% = 0
+QUITSUC1:
+           sz$ = UIStartDlg(CUIDLL$, EXITSUCCESS, "FInfoDlgProc", APPHELP, HELPPROC$)
+           IF sz$ = "CONTINUE" THEN
+               z% = ExitExecRestart()
+               UIPop 1
+           ELSEIF sz$ = "REACTIVATE" THEN
+               GOTO QUITSUC1
+           ELSEIF sz$ = "CANCEL" THEN
+               GOTO QUITSUC1
+           ENDIF
+        WEND
+    ELSE
+'      If the RestartList list is empty, it is necessary to restart windows
+'      directly.  The MSSETUP program creates _MSRSTRT.EXE and _MSSETUP.BAT
+'      in the restart directory.  This program should be exec'd to handle
+'      proper MSSETUP cleanup (temp files) and restart Windows.
+          z% =ExitWindowsExec( GetWindowsDir() + "_MSRSTRT.EXE", "_MSSETUP.BAT" )
+          WHILE z% = 0
+QUITSUC2:
+             sz$ = UIStartDlg(CUIDLL$, EXITSUCCESS, "FInfoDlgProc", APPHELP, HELPPROC$)
+             IF sz$ = "CONTINUE" THEN
+                 z% = ExitWindowsExec( GetWindowsDir() + "_MSRSTRT.EXE", "_MSSETUP.BAT" )
+                 UIPop 1
+             ELSEIF sz$ = "REACTIVATE" THEN
+                 GOTO QUITSUC2
+           ELSEIF sz$ = "CANCEL" THEN
+               GOTO QUITSUC2
+             ENDIF
+          WEND
+    ENDIF
+
+END SUB
+
+'*************************************************************************
+
+
+
+'**
+'** Purpose:
+'**     Appends a file name to the end of a directory path,
+'**     inserting a backslash character as needed.
+'** Arguments:
+'**     szDir$  - full directory path (with optional ending "\")
+'**     szFile$ - filename to append to directory
+'** Returns:
+'**     Resulting fully qualified path name.
+'*************************************************************************
+FUNCTION MakePath (szDir$, szFile$) STATIC AS STRING
+    IF szDir$ = "" THEN
+        MakePath = szFile$
+    ELSEIF szFile$ = "" THEN
+        MakePath = szDir$
+    ELSEIF MID$(szDir$, LEN(szDir$), 1) = "\" THEN
+        MakePath = szDir$ + szFile$
+    ELSE
+        MakePath = szDir$ + "\" + szFile$
+    ENDIF
+END FUNCTION
+
+
+'**
+'** Purpose:
+'** Arguments:
+'** Returns:
+'*************************************************************************
+FUNCTION StrStr(szStr1$,szStr2$) STATIC AS INTEGER
+   ' If either string is empty, exit immediatedly.
+   IF (szStr1$ <> "") AND (szStr2$ <> "") THEN
+      FOR i% = 1 TO LEN(szStr1$) STEP 1
+            IF MID$(szStr1$,i%,LEN(szStr2$)) = szStr2$ THEN
+               StrStr = 1
+               GOTO STRSTR_END
+            ENDIF
+      NEXT i%
+   ENDIF
+
+   StrStr = 0
+
+STRSTR_END:
+
+END FUNCTION
+
+
+'**
+'** Purpose:
+'** Arguments:
+'** Returns:
+'*************************************************************************
+SUB AddPathString(szNewPath$) STATIC
+
+   szCurrentPath$ = GetEnvVariableValue("PATH")
+
+   IF StrStr(szCurrentPath$,szNewPath$) = 0 THEN
+      'PrependToPath "AUTOEXEC.BAT","AUTOEXEC.BAT",szNewPath$,cmoVital + cmoOverwrite
+   ENDIF
+
+END SUB
+
+
+

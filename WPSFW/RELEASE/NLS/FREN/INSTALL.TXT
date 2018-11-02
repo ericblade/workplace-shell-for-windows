@@ -1,0 +1,106 @@
+========================================================================
+=                                                                      =
+=              B U R E A U    P O U R    W I N D O W S                 =
+=                                                                      =
+=                        Release 1.4                                   =
+=                                                                      =
+=  Date: 03/28/95                                                      =
+========================================================================
+
+Table des matiäres:
+--------
+
+A) MISE ∑ JOUR D'UNE VERSION PRêCEDENTE.
+B) NOUVELLE INSTALLATION.
+C) APR‘S L'INSTALLATION...
+
+
+
+---------------------------------------------------------------------
+A)         MISE ∑ JOUR D'UNE VERSION PRêCEDENTE
+---------------------------------------------------------------------
+
+1. DÇcompressez le fichier WPSHELL sur une disquette de 720K or 1.44MB
+   (Il vous faudre la version 2.04e or plus rÇcente pour dÇcompresser
+    ce fichier.)
+   Si vous installez Ö partir d'un disque dur, crÇez un rÇpertoire et copiez-y
+   tous les fichiers.
+
+2. RÇtablissez le Shell original de Windows en rajoutant la ligne
+   suivante au fichier SYSTEM.INI:
+
+   shell=progman.exe
+
+   Mettez l'autre ligne "shell=" en commentaire en ajoutant un
+   ';' (point-virgule) au dÇbut de la ligne
+
+3. Sauvegardez votre fichier WPSHELL.INI dans le rÇpertoire \WINDOWS.
+   Il s'agit d'une prÇcaution de faáon Ö pouvoir toujours rebatir votre
+   bureau original si vous ratez une Çtape.  Donnez un nom de votre choix
+   au nouveau fichier (par exemple WPSHELL.BAK ou WPSBAK.INI).
+
+4. Lancez Windows 3.1x, and exÇcutez "A:\SETUP.EXE" Ö partir de la disquette
+   (ou du disque dur).
+
+5. Pressez le bouton "Upgrade" dans le menu principal.
+
+6. Si nÇcessaire, inscrivez le rÇpertoire cible oó se trouve la version
+   actuelle.
+
+7. SÇlectez la langue que vous voulez installer sur votre systäme.
+   Appuyez sur ENTER pour accepter la valeur par dÇfaut.  (Afin de pouvoir
+   utilisez les diffÇrentes langues, il faut que la langue ait dÇjÖ ÇtÇ
+   installÇe ou que vous modifiez le SYSTEM .INI afin d'y ajouter la
+   variable "sLanguage" dans la section "Intl".  Voyez le fichier LISEZ.MOI
+   pour plus d'informations).
+
+8. Une fois l'installation complÇtÇe avec succäs, relancez
+   Windows afin de charger le nouveau Shell.
+
+
+
+---------------------------------------------------------------------
+B)                  NOUVELLE INSTALLATION
+---------------------------------------------------------------------
+
+1. DÇcompressez le fichier WPSHELL sur une disquette de 720K or 1.44MB
+   (Il vous faudre la version 2.04e or plus rÇcente pour dÇcompresser
+    ce fichier.)
+   Si vous installez Ö partir d'un disque dur, crÇez un rÇpertoire et copiez-y
+   tous les fichiers.
+
+2. Lancez Windows 3.1x, and exÇcutez "A:\SETUP.EXE" Ö partir de la disquette
+   (ou du disque dur).
+
+3. Pressez le bouton "New" dans le menu principal.
+
+4. Choisissez "Express install" ou "Custom install" et un rÇpertoire
+   cible.  Le programme d'installation sauvegarde tout changement
+   aux fichiers de Windows et ne modifie pas les fichiers courants
+   *.GRP de PROGMAN.
+
+5. SÇlectez la langue que vous voulez installer sur votre systäme.
+   Appuyez sur ENTER pour accepter la valeur par dÇfaut.  (Afin de pouvoir
+   utilisez les diffÇrentes langues, il faut que la langue ait dÇjÖ ÇtÇ
+   installÇe ou que vous modifiez le SYSTEM .INI afin d'y ajouter la
+   variable "sLanguage" dans la section "Intl".  Voyez le fichier LISEZ.MOI
+   pour plus d'informations).
+
+6. Une fois l'installation complÇtÇe avec succäs, relancez
+   Windows afin de charger le nouveau Shell.
+
+
+--------------------------------------------------------------------
+C)            APR‘S L'INSTALLATION...
+--------------------------------------------------------------------
+
+   Consultez le fichier LISEZ.MOI qui a ÇtÇ copiÇ dans le rÇpertoire cible.
+Vous pouvez effacer le fichier WPSHELL.ZIP puisqu'il n'est plus nÇcessaire.
+
+   Aussi, lisez le fichier LICENSE.TXT pour les dÇtails de la license
+pour les programmes "EWS".
+
+   Pour les questions, rapports de problämes, ou commentaires, consultez le
+fichier LISEZ.MOI.
+
+

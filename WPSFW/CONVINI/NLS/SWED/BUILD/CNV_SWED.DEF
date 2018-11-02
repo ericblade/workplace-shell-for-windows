@@ -1,0 +1,26 @@
+;=====================================================================
+; CNV_ENUS.DEF
+;
+; Date Created :  12/22/94
+; Last Update  :  03/07/95
+; Written By   :  Mario E. De Armas
+; Compiler Used:  MS Visual C++ 1.5
+;
+; Copyright IBM Corporation, 1994. All rights reserved.
+;
+;
+; FILE LOG:
+; DATE        | ACTION/CHANGE                           | PROGRAMMER
+; 12/22/94    | Creation.                               | MDA
+;=====================================================================
+
+LIBRARY        CNV_SWED
+DESCRIPTION    "Convert Initialization File NLS-Resources Library - Copyright (c) IBM Corp. 1994-1995"
+EXETYPE        WINDOWS
+STUB           'WINSTUB.EXE'
+CODE           PRELOAD MOVEABLE DISCARDABLE
+DATA           PRELOAD MOVEABLE SINGLE
+
+; EOF CNV_SWED.DEF
+
+

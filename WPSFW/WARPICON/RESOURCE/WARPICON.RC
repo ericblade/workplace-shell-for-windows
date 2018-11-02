@@ -1,0 +1,178 @@
+//---------------------------------------------------------------------
+// WARPICON.RC
+//    OS/2 Warp's Icon Library for Windows 3.1 resource file.
+//
+// Date Created :  10/14/94
+// Last Update  :  09/13/95
+// Written By   :  Mario E. De Armas
+// Compiler Used:  MS Visual C++ 1.52
+//
+// Copyright IBM Corporation, 1994-1995. All rights reserved.
+//
+//
+// FILE LOG:
+// DATE        | ACTION/CHANGE                           | PROGRAMMER
+// 10/14/94    | Creation.                               | MDA
+//=====================================================================
+
+
+//---------------------------------------------------------------------
+// HEADER FILES
+//---------------------------------------------------------------------
+// Windows library header files.
+#include <windows.h>
+#include <ver.h>
+
+//-----------------------------------------------------------------------------
+// PRODUCT VERSION CONSTANTS
+//-----------------------------------------------------------------------------
+#define VER_MAJOR                2                 // Integer representing major version number.
+#define VER_MINOR                0                 // Integer representing minor version number.
+#define VER_STR_PRODUCTVERSION   "Release v2.0\0"  // String representing current version.
+#define VER_STR_PRODUCTCOPYRIGHT "Copyright © IBM Corporation 1994-1996\0"
+
+
+//-----------------------------------------------------------------------------
+// VERSION INFORMATION
+//-----------------------------------------------------------------------------
+VS_VERSION_INFO VERSIONINFO
+   FILEVERSION     1,0,0,0
+   PRODUCTVERSION  VER_MAJOR,VER_MINOR,0,0
+   FILEFLAGSMASK   0
+   FILEFLAGS       0
+   FILEOS          VOS_DOS_WINDOWS16
+
+   FILETYPE        VFT_DLL
+   FILESUBTYPE     VFT_DLL
+
+   BEGIN
+      BLOCK "StringFileInfo"
+      BEGIN
+         BLOCK "040904E4"
+         BEGIN
+            VALUE "CompanyName"        , "IBM Corporation\0"
+            VALUE "FileDescription"    , "OS/2 Warp 3.0 Icon Library\0"
+            VALUE "FileVersion"        , "1.0.0\0"
+            VALUE "InternalName"       , "OS/2 Warp 3.0 Icon Library\0"
+            VALUE "LegalCopyright"     , VER_STR_PRODUCTCOPYRIGHT
+            VALUE "ProductName"        , "Workplace Shell for Windows 3.1\0"
+            VALUE "OriginalFileName"   , "WARPICON.DLL\0"
+            VALUE "ProductVersion"     , VER_STR_PRODUCTVERSION
+         END
+      END
+
+      BLOCK "VarFileInfo"
+      BEGIN
+         VALUE "Translation", 0x0409, 1252
+      END
+   END
+
+
+//-----------------------------------------------------------------------------
+// ICONS
+//-----------------------------------------------------------------------------
+// Warp Folder Icons.
+100     ICON    DISCARDABLE     ICONS\FOLDERS\DIRECTRY.ICO
+101     ICON    DISCARDABLE     ICONS\FOLDERS\WPFOLD2.ICO
+102     ICON    DISCARDABLE     ICONS\FOLDERS\OS2WP.ICO
+103     ICON    DISCARDABLE     ICONS\FOLDERS\OS2WP2.ICO
+104     ICON    DISCARDABLE     ICONS\FOLDERS\SEARCHR.ICO
+105     ICON    DISCARDABLE     ICONS\FOLDERS\WPFNDFD2.ICO
+106     ICON    DISCARDABLE     ICONS\FOLDERS\STARTUP.ICO
+107     ICON    DISCARDABLE     ICONS\FOLDERS\STARTUP2.ICO
+108     ICON    DISCARDABLE     ICONS\FOLDERS\NEWTHING.ICO
+109     ICON    DISCARDABLE     ICONS\FOLDERS\TEMPS2.ICO
+110     ICON    DISCARDABLE     ICONS\FOLDERS\WPCMD2.ICO
+111     ICON    DISCARDABLE     ICONS\FOLDERS\WPCMD.ICO
+112     ICON    DISCARDABLE     ICONS\FOLDERS\NETGRP.ICO
+113     ICON    DISCARDABLE     ICONS\FOLDERS\NETGRP2.ICO
+114     ICON    DISCARDABLE     ICONS\FOLDERS\NETWORK.ICO
+115     ICON    DISCARDABLE     ICONS\FOLDERS\WPNET2.ICO
+116     ICON    DISCARDABLE     ICONS\FOLDERS\MMPMFLDR.ICO
+117     ICON    DISCARDABLE     ICONS\FOLDERS\MMPMFLD2.ICO
+118     ICON    DISCARDABLE     ICONS\FOLDERS\MOVIE.ICO
+119     ICON    DISCARDABLE     ICONS\FOLDERS\SOUNDS.ICO
+
+// Storage & Output Devices Icons.
+120     ICON    DISCARDABLE     ICONS\DEVICES\35.ICO
+121     ICON    DISCARDABLE     ICONS\DEVICES\ALTMEDIA.ICO
+122     ICON    DISCARDABLE     ICONS\DEVICES\CDROM.ICO
+123     ICON    DISCARDABLE     ICONS\DEVICES\DOT80.ICO
+124     ICON    DISCARDABLE     ICONS\DEVICES\DRIVES.ICO
+125     ICON    DISCARDABLE     ICONS\DEVICES\HARDISK.ICO
+126     ICON    DISCARDABLE     ICONS\DEVICES\LASER.ICO
+127     ICON    DISCARDABLE     ICONS\DEVICES\SPOOLER.ICO
+128     ICON    DISCARDABLE     ICONS\DEVICES\NETDSK.ICO
+129     ICON    DISCARDABLE     ICONS\DEVICES\REMOTE.ICO
+130     ICON    DISCARDABLE     ICONS\DEVICES\SCSI2.ICO
+131     ICON    DISCARDABLE     ICONS\DEVICES\SERIAL.ICO
+
+// System Objects Icons.
+132     ICON    DISCARDABLE     ICONS\OBJECTS\DIRECTRY.ICO
+133     ICON    DISCARDABLE     ICONS\OBJECTS\PROGRAM.ICO
+134     ICON    DISCARDABLE     ICONS\OBJECTS\DATAF.ICO
+135     ICON    DISCARDABLE     ICONS\OBJECTS\SHREDDER.ICO
+136     ICON    DISCARDABLE     ICONS\OBJECTS\AUDFILE.ICO
+137     ICON    DISCARDABLE     ICONS\OBJECTS\AVSFILM.ICO
+138     ICON    DISCARDABLE     ICONS\OBJECTS\DATAMIDI.ICO
+139     ICON    DISCARDABLE     ICONS\OBJECTS\MMPMDATA.ICO
+
+// System Setup Folder Icons.
+140     ICON    DISCARDABLE     ICONS\SETUP\CPL.ICO
+141     ICON    DISCARDABLE     ICONS\SETUP\DISPLAY.ICO
+142     ICON    DISCARDABLE     ICONS\SETUP\SOUND.ICO
+143     ICON    DISCARDABLE     ICONS\SETUP\COUNTRY.ICO
+144     ICON    DISCARDABLE     ICONS\SETUP\MOUSE.ICO
+145     ICON    DISCARDABLE     ICONS\SETUP\KEYB.ICO
+146     ICON    DISCARDABLE     ICONS\SETUP\MMSETUP.ICO
+147     ICON    DISCARDABLE     ICONS\SETUP\MMSOUND.ICO
+148     ICON    DISCARDABLE     ICONS\SETUP\COLOR.ICO
+149     ICON    DISCARDABLE     ICONS\SETUP\FONT.ICO
+150     ICON    DISCARDABLE     ICONS\SETUP\INSTALL.ICO
+151     ICON    DISCARDABLE     ICONS\SETUP\UNINSTAL.ICO
+152     ICON    DISCARDABLE     ICONS\SETUP\WPPOWER.ICO
+
+// System Icons.
+153     ICON    DISCARDABLE     ICONS\SYSTEM\DESKTOP.ICO
+154     ICON    DISCARDABLE     ICONS\SYSTEM\STATEVW.ICO
+155     ICON    DISCARDABLE     ICONS\SYSTEM\MINDEX.ICO
+156     ICON    DISCARDABLE     ICONS\SYSTEM\ICONINFO.ICO
+157     ICON    DISCARDABLE     ICONS\SYSTEM\START.ICO
+158     ICON    DISCARDABLE     ICONS\SYSTEM\OSBOOK.ICO
+158     ICON    DISCARDABLE     ICONS\SYSTEM\DARKBOOK.ICO
+159     ICON    DISCARDABLE     ICONS\SYSTEM\OS2TUTOR.ICO
+160     ICON    DISCARDABLE     ICONS\SYSTEM\LPWLIST.ICO
+161     ICON    DISCARDABLE     ICONS\SYSTEM\MDOS.ICO
+162     ICON    DISCARDABLE     ICONS\SYSTEM\LOCKUP.ICO
+163     ICON    DISCARDABLE     ICONS\SYSTEM\LPSHUTDN.ICO
+
+// Command Prompt Icons.
+164     ICON    DISCARDABLE     ICONS\PROMPTS\DOS.ICO
+165     ICON    DISCARDABLE     ICONS\PROMPTS\DOSW.ICO
+166     ICON    DISCARDABLE     ICONS\PROMPTS\VIO.ICO
+167     ICON    DISCARDABLE     ICONS\PROMPTS\WINOS2.ICO
+
+// Application Icons.
+168     ICON    DISCARDABLE     ICONS\MISC\CLIPBRD.ICO
+169     ICON    DISCARDABLE     ICONS\MISC\CLOCK.ICO
+170     ICON    DISCARDABLE     ICONS\MISC\EPM.ICO
+171     ICON    DISCARDABLE     ICONS\MISC\FNTPNL.ICO
+172     ICON    DISCARDABLE     ICONS\MISC\GROUP.ICO
+173     ICON    DISCARDABLE     ICONS\MISC\INSTALLB.ICO
+174     ICON    DISCARDABLE     ICONS\MISC\LPFIND.ICO
+175     ICON    DISCARDABLE     ICONS\MISC\METER.ICO
+176     ICON    DISCARDABLE     ICONS\MISC\OS2EDIT.ICO
+177     ICON    DISCARDABLE     ICONS\MISC\NOTEBK1.ICO
+178     ICON    DISCARDABLE     ICONS\MISC\CHESS.ICO
+179     ICON    DISCARDABLE     ICONS\MISC\KLONDIKE.ICO
+
+// Miscellaneous Icons.
+180     ICON    DISCARDABLE     ICONS\MISC\PICSHOW.ICO
+181     ICON    DISCARDABLE     ICONS\MISC\POSTIT.ICO
+182     ICON    DISCARDABLE     ICONS\MISC\SEARCH.ICO
+183     ICON    DISCARDABLE     ICONS\MISC\SWAP.ICO
+184     ICON    DISCARDABLE     ICONS\MISC\WINDRESS.ICO
+
+// EOF WARPICON.RC
+
+

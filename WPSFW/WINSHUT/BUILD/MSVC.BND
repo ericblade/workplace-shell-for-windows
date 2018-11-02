@@ -1,0 +1,7 @@
+WINSHUT.OBJ +
+
+WINSHUT.EXE
+nul
+c:\msvc\lib\+
+oldnames libw llibcew
+WINSHUT.DEF;

@@ -1,0 +1,52 @@
+//-------------------------------------------------------------------------
+// STRING TABLES
+//-------------------------------------------------------------------------
+
+//-------------------------------------------------------------------------
+// PORT (Brazilian-Portuguese)
+//-------------------------------------------------------------------------
+STRINGTABLE LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+   IDSTR_PMTOWP_CAPTION,   "ProgMan --> Workplace"
+   IDSTR_PMTOWP_SUCCESS,   "Grupo(s) migrado(s) com sucesso."
+   IDSTR_PMTOWP_FAILURE,   "Falha na migração de grupo(s)."
+   IDSTR_ERROR_CAPTION,    "Erro na migração de PM para WP"
+   IDSTR_ERR_01,           "ERRO 01: Não pude inicializar DDEML."
+   IDSTR_ERR_02,           "ERRO 02: Não pude me conectar ao 'PROGMAN' DDE server."
+   IDSTR_ERR_03,           "ERRO 03: Não pude ler informações de grupo do servidor DDE."
+
+   IDSTR_PM_FOLDER,        "Pasta do Gerenciador de Programas"
+   IDSTR_FILE_EXISTS_QUERY,"WPSHELL.INI já existe.\nDeseja atualizar o arquivo atual?\n\n   YES\t - Atualiza o arquivo atual\n   NO\t - Adiciona ao arquivo atual\n   CANCEL  - Cancelar a operação"
+   IDSTR_NO_SELECTION,     "Nenhum grupo selecionado para migração."
+
+   IDSTR_OBJTITLE_COMMANDPROMPTS,   "Linhas de comando"
+   IDSTR_OBJTITLE_DOSPROMPT,        "Comandos do DOS"
+   IDSTR_OBJTITLE_TEMPLATES,        "Gabaritos"
+   IDSTR_OBJTITLE_DATAFILE,         "Arquivo de dados"
+   IDSTR_OBJTITLE_FOLDER,           "Pasta"
+   IDSTR_OBJTITLE_PROGRAM,          "Programa"
+   IDSTR_OBJTITLE_SHREDDER,         "Picotador"
+   IDSTR_OBJTITLE_SYSTEMSETUP,      "Configuração do sistema"
+   IDSTR_OBJTITLE_SYSTEM,           "Sistema"
+   IDSTR_OBJTITLE_SCHEMEPALETTE,    "Paleta de esquemas"
+   IDSTR_OBJTITLE_FONTPALETTE,      "Paleta de fontes"
+   IDSTR_OBJTITLE_SOUND,            "Som"
+   IDSTR_OBJTITLE_COUNTRY,          "País"
+   IDSTR_OBJTITLE_DDINSTALL,        "Instalação de controladores"
+   IDSTR_OBJTITLE_MOUSE,            "Mouse"
+   IDSTR_OBJTITLE_KEYBOARD,         "Teclado"
+   IDSTR_OBJTITLE_WINDOWSSYSTEM,    "Sistema Windows"
+   IDSTR_OBJTITLE_DRIVES,           "Drives" 
+   IDSTR_OBJTITLE_DRIVE,            "Drive"
+   IDSTR_OBJTITLE_STARTUP,          "Iniciar"
+   IDSTR_OBJTITLE_MINVIEWER,        "Janelas Minimizadas"
+   
+   IDSTR_CONTROLPANEL_COLORS        "CORES"
+   IDSTR_CONTROLPANEL_FONTS         "FONTES"
+   IDSTR_CONTROLPANEL_INTERNATIONAL "INTERNACIONAL"
+   IDSTR_CONTROLPANEL_MOUSE         "MOUSE"
+   IDSTR_CONTROLPANEL_KEYBOARD      "TECLADO"
+END
+
+// EOF STRTABLE.RC
+

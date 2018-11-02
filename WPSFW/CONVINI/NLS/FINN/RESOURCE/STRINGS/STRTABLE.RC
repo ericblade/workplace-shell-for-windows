@@ -1,0 +1,26 @@
+//-------------------------------------------------------------------------
+// STRING TABLES
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+// ENUS (US-English)
+//-------------------------------------------------------------------------
+STRINGTABLE LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+   IDSTR_CONVERT_CAPTION,  "Muunna"
+   IDSTR_CONVERT_SUCCESS,  "Profiili muunnettu virheettä."
+   IDSTR_CONVERT_FAILURE,  "Virhe muunnettaessa profiilia."
+   IDSTR_ERROR_CAPTION,    "Muunnosohjelma"
+   IDSTR_ERR_10,           "ERROR 10: Profiilia ei löytynyt Windows kirjastosta."
+   IDSTR_ERR_11,           "ERROR 11: Nykyinen profiili on liian pieni."
+   IDSTR_ERR_12,           "ERROR 12: Epäkelpo Workplace Shell profiili."
+   IDSTR_ERR_13,           "ERROR 13: Profiili on jo tasolla 1.0 tai suurempi"
+   IDSTR_ERR_20,           "ERROR 20: Tiedostoa WPSHELL.INI ei voitu muuttaa WPSHELL.V5X:si"
+   IDSTR_ERR_21,           "ERROR 21: WPSHELL.INI tiedostoa ei voitu luoda."
+   IDSTR_ERR_22,           "ERROR 22: WPSHELL.V5X tiedostoa ei voitu avata."
+   IDSTR_ERR_23,           "ERROR 23: WPSHELL.V5X profiilia ei voitu lukea."
+   IDSTR_ERR_40,           "ERROR 40: Väärä objektityyppi profiilissa."
+END
+
+// EOF STRTABLE.RC
+
+

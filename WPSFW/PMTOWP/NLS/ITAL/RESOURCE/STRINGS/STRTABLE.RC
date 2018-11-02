@@ -1,0 +1,52 @@
+//-------------------------------------------------------------------------
+// STRING TABLES
+//-------------------------------------------------------------------------
+
+//-------------------------------------------------------------------------
+// ENUS (US-English)
+//-------------------------------------------------------------------------
+STRINGTABLE LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+   IDSTR_PMTOWP_CAPTION,    "Da Progman a Workplace"
+   IDSTR_PMTOWP_SUCCESS,    "Gruppo(i) migrato(i) con successo."
+   IDSTR_PMTOWP_FAILURE,    "Errore migrando gruppo(i)."
+   IDSTR_ERROR_CAPTION,     "Errore da PM a WP"
+   IDSTR_ERR_01,            "ERRORE 01: Non e' possibile inizializzare DDEML."
+   IDSTR_ERR_02,            "ERRORE 02: Non e' possibile connettersi a 'PROGMAN' DDE server."
+   IDSTR_ERR_03,            "ERRORE 03: Non e' possibile leggere l'informazione del gruppo dal DDE server."
+
+   IDSTR_PM_FOLDER,         "Cartella Program Manager"
+   IDSTR_FILE_EXISTS_QUERY, "WPSHELL.INI esiste già.\nVuoi SOVRASCRIVERE il file corrente?\n\n   SI\t - Sovrascrivi il file corrente\n   NO\t - Aggiungi il file corrente\n   CANCELLA  - Termina operazione"
+   IDSTR_NO_SELECTION,      "Nessun gruppo selezionato per la migrazione."
+
+   IDSTR_OBJTITLE_COMMANDPROMPTS,   "Richieste Comandi"
+   IDSTR_OBJTITLE_DOSPROMPT,        "Finestra DOS"
+   IDSTR_OBJTITLE_TEMPLATES,        "Oggetti predefiniti"
+   IDSTR_OBJTITLE_DATAFILE,         "File di Dati"
+   IDSTR_OBJTITLE_FOLDER,           "Cartella"
+   IDSTR_OBJTITLE_PROGRAM,          "Programma"
+   IDSTR_OBJTITLE_SHREDDER,         "Trinciatrice"
+   IDSTR_OBJTITLE_SYSTEMSETUP,      "Inizializzazione sistema"
+   IDSTR_OBJTITLE_SYSTEM,           "Sistema"
+   IDSTR_OBJTITLE_SCHEMEPALETTE,    "Tavola schema"
+   IDSTR_OBJTITLE_FONTPALETTE,      "Tavola caratteri"
+   IDSTR_OBJTITLE_SOUND,            "Suono"
+   IDSTR_OBJTITLE_COUNTRY,          "Nazione"
+   IDSTR_OBJTITLE_DDINSTALL,        "Installazione Programmi Controllo"
+   IDSTR_OBJTITLE_MOUSE,            "Mouse"
+   IDSTR_OBJTITLE_KEYBOARD,         "Tastiera"
+   IDSTR_OBJTITLE_WINDOWSSYSTEM,    "Sistema Windows"
+   IDSTR_OBJTITLE_DRIVES,           "Unità"
+   IDSTR_OBJTITLE_DRIVE,            "Unità singola"
+   IDSTR_OBJTITLE_STARTUP,          "Inizio"
+   IDSTR_OBJTITLE_MINVIEWER,        "Minimizza Visualizzatore Finestre"
+   
+   IDSTR_CONTROLPANEL_COLORS        "COLORI"
+   IDSTR_CONTROLPANEL_FONTS         "CARATTERI"
+   IDSTR_CONTROLPANEL_INTERNATIONAL "INTERNAZIONALE"
+   IDSTR_CONTROLPANEL_MOUSE         "MOUSE"
+   IDSTR_CONTROLPANEL_KEYBOARD      "TASTIERA"
+END
+
+// EOF STRTABLE.RC
+

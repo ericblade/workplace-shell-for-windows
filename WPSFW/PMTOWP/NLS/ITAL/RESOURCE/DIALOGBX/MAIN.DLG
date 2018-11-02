@@ -1,0 +1,26 @@
+//-----------------------------------------------------------------------------
+// DIALOG BOX TEMPLATES
+//-----------------------------------------------------------------------------
+IDD_MAIN DIALOG DISCARDABLE  0, 0, 241, 210
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "Dal Program Manager Alla Workplace Shell"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "&Tutti i Gruppi ",IDC_ALL_GROUPS,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,12,26,60,10
+    CONTROL         "&Gruppi Selezionati",IDC_SELECTED_GROUP,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,12,62,68,10
+    EDITTEXT        IDC_FOLDER_NAME,87,38,140,12,ES_AUTOHSCROLL | WS_GROUP
+    LISTBOX         IDC_GROUP_LIST,87,62,141,46,LBS_SORT |LBS_NOINTEGRALHEIGHT | LBS_DISABLENOSCROLL | WS_VSCROLL |WS_GROUP | WS_TABSTOP
+    CONTROL         "&Cartella di Sistema ",IDC_SYSTEM_FOLDER,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,25,140,110,10
+    CONTROL         "&Minimizza Visualizzatore Finestre",IDC_MINVIEWER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,25,158,110,10
+    CONTROL         "&Cartelle assunte",IDC_TEMPLATES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,142,140,110,10
+    DEFPUSHBUTTON   "&Migrare",IDOK,57,184,55,20,WS_GROUP
+    PUSHBUTTON      "&Eseguito",IDCANCEL,128,184,55,20
+    LTEXT           "Scrivere il nome di cartella da creare:",IDC_TEXT,87,26,106,10
+    GROUPBOX        "Cartelle e Oggetti Addizionali",IDC_STATIC,6,125,230,51
+    GROUPBOX        "Selezionare quale(i) gruppo(i) vuoi migrare",
+                    IDC_STATIC,6,9,230,108
+END
+
+// EOF MAIN.DLG
+
+

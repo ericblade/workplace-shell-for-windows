@@ -1,0 +1,26 @@
+//-------------------------------------------------------------------------
+// STRING TABLES
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+// ENUS (US-English)
+//-------------------------------------------------------------------------
+STRINGTABLE LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+   IDSTR_CONVERT_CAPTION,  "Convert"
+   IDSTR_CONVERT_SUCCESS,  "Successfully converted profile."
+   IDSTR_CONVERT_FAILURE,  "Failure converting profile."
+   IDSTR_ERROR_CAPTION,    "Convert Utility"
+   IDSTR_ERR_10,           "ERROR 10: No profile found in Windows directory."
+   IDSTR_ERR_11,           "ERROR 11: Current profile is too small."
+   IDSTR_ERR_12,           "ERROR 12: File is not a valid Workplace Shell profile."
+   IDSTR_ERR_13,           "ERROR 13: Profile is already version 1.0 or above"
+   IDSTR_ERR_20,           "ERROR 20: Could not rename WPSHELL.INI to WPSHELL.V5X."
+   IDSTR_ERR_21,           "ERROR 21: Could not create new WPSHELL.INI file."
+   IDSTR_ERR_22,           "ERROR 22: Could not open WPSHELL.V5X file."
+   IDSTR_ERR_23,           "ERROR 23: Could not read from WPSHELL.V5X profile."
+   IDSTR_ERR_40,           "ERROR 40: Invalid object type in profile."
+END
+
+// EOF STRTABLE.RC
+
+

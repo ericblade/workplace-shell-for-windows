@@ -1,0 +1,27 @@
+;=====================================================================
+; WPS_ENUS.DEF
+;    Workplace Shell for Windows "English-United States" NLS-resources
+; library main source file.
+;
+; Date Created :  12/09/94
+; Last Update  :  04/11/95
+; Written By   :  Mario E. De Armas
+; Compiler Used:  MS Visual C++ 1.5
+;
+; Copyright IBM Corporation, 1994. All rights reserved.
+;
+;
+; FILE LOG:
+; DATE        | ACTION/CHANGE                           | PROGRAMMER
+; 12/09/94    | Creation.                               | MDA
+;=====================================================================
+
+LIBRARY        WPS_ENUS
+DESCRIPTION    "Workplace Shell NLS Resources Library"
+EXETYPE        WINDOWS
+STUB           'WINSTUB.EXE'
+CODE           PRELOAD MOVEABLE DISCARDABLE
+DATA           PRELOAD MOVEABLE SINGLE
+
+; EOF WPS_ENUS.DEF
+

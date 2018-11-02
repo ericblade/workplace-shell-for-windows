@@ -1,0 +1,26 @@
+//-------------------------------------------------------------------------
+// STRING TABLES
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+// SPAN (Spanish)
+//-------------------------------------------------------------------------
+STRINGTABLE LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+   IDSTR_CONVERT_CAPTION,  "Convertir"
+   IDSTR_CONVERT_SUCCESS,  "Archivo convertido exitosamente."
+   IDSTR_CONVERT_FAILURE,  "Error al convertir el archivo."
+   IDSTR_ERROR_CAPTION,    "Utilería de conversión"
+   IDSTR_ERR_10,           "ERROR 10: Archivo no encontrado en el directorio de Windows."
+   IDSTR_ERR_11,           "ERROR 11: El archivo de perfil actual es demasiado pequeño."
+   IDSTR_ERR_12,           "ERROR 12: Archivo de perfil de Workplace Shell inválido."
+   IDSTR_ERR_13,           "ERROR 13: El archivo ya es versión 1.0 o superior."
+   IDSTR_ERR_20,           "ERROR 20: No se logró renombrar WPSHELL.INI a WPSHELL.V5X."
+   IDSTR_ERR_21,           "ERROR 21: No se logró crear un nuevo archivo WPSHELL.INI."
+   IDSTR_ERR_22,           "ERROR 22: No se logró abrir el archivo WPSHELL.V5X."
+   IDSTR_ERR_23,           "ERROR 23: No se logró leer el archivo WPSHELL.V5X."
+   IDSTR_ERR_40,           "ERROR 40: Tipo de objeto inválido en archivo de perfil."
+END
+
+// EOF STRTABLE.RC
+
+

@@ -1,0 +1,53 @@
+//-------------------------------------------------------------------------
+// STRING TABLES
+//-------------------------------------------------------------------------
+
+//-------------------------------------------------------------------------
+// FREN (Canadian-French)
+//-------------------------------------------------------------------------
+STRINGTABLE LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+   IDSTR_PMTOWP_CAPTION,    "Migration du gestionnaire de programmes au Shell du bureau électronique"
+   IDSTR_PMTOWP_SUCCESS,    "Groupe(s) migrés avec succès."
+   IDSTR_PMTOWP_FAILURE,    "La migration d'un ou plusieurs groupes a échoué"
+   IDSTR_ERROR_CAPTION,     "Erreur PM to WP"
+   IDSTR_ERR_01,            "ERREUR 01: DDEML n'a pu être initialisé."
+   IDSTR_ERR_02,            "ERREUR 02: La connection au serveur 'PROGMAN' DDE n'a pu se faire."
+   IDSTR_ERR_03,            "ERREUR 03: L'information du groupe n'a pu être obtenue du serveur DDE."
+
+   IDSTR_PM_FOLDER,         "Dossier du gestionnaire de programmes"
+   IDSTR_FILE_EXISTS_QUERY, "WPSHELL.INI existe déjà.\nVoulez vous ÉCRASER le fichier existant?\n\n   OUI\t - Écrasement du fichier\n   NON\t - Ajout au fichier existant\n   ANNULATION  - Met fin à l'operation"
+   IDSTR_NO_SELECTION,      "Aucun groupe n'est présentement sélecté pour la migration."
+
+   IDSTR_OBJTITLE_COMMANDPROMPTS,   "Invites"
+   IDSTR_OBJTITLE_DOSPROMPT,        "Invite DOS"
+   IDSTR_OBJTITLE_TEMPLATES,        "Modèles"
+   IDSTR_OBJTITLE_DATAFILE,         "Fichier de données"
+   IDSTR_OBJTITLE_FOLDER,           "Dossier"
+   IDSTR_OBJTITLE_PROGRAM,          "Programme"
+   IDSTR_OBJTITLE_SHREDDER,         "Broyeur"
+   IDSTR_OBJTITLE_SYSTEMSETUP,      "Configuration du système"
+   IDSTR_OBJTITLE_SYSTEM,           "Système"
+   IDSTR_OBJTITLE_SCHEMEPALETTE,    "Variations"
+   IDSTR_OBJTITLE_FONTPALETTE,      "Palette des polices"
+   IDSTR_OBJTITLE_SOUND,            "Son"
+   IDSTR_OBJTITLE_COUNTRY,          "Pays"
+   IDSTR_OBJTITLE_DDINSTALL,        "Installation de pilotes de périphériquesl"
+   IDSTR_OBJTITLE_MOUSE,            "Souris"
+   IDSTR_OBJTITLE_KEYBOARD,         "Clavier"
+   IDSTR_OBJTITLE_WINDOWSSYSTEM,    "Système Windows"
+   IDSTR_OBJTITLE_DRIVES,           "Unités"
+   IDSTR_OBJTITLE_DRIVE,            "Unité"
+   IDSTR_OBJTITLE_STARTUP,          "Lancement"
+   IDSTR_OBJTITLE_MINVIEWER,        "Fenêtres réduites"
+
+   IDSTR_CONTROLPANEL_COLORS        "COULEURS"
+   IDSTR_CONTROLPANEL_FONTS         "POLICES"
+   IDSTR_CONTROLPANEL_INTERNATIONAL "INTERNATIONAL"
+   IDSTR_CONTROLPANEL_MOUSE         "SOURIS"
+   IDSTR_CONTROLPANEL_KEYBOARD      "CLAVIER"
+END
+
+// EOF STRTABLE.RC
+
+

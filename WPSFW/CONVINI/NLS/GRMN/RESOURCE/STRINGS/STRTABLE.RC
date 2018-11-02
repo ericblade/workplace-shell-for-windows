@@ -1,0 +1,27 @@
+//-------------------------------------------------------------------------
+// STRING TABLES
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+// GRMN (German)
+//-------------------------------------------------------------------------
+STRINGTABLE LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+   IDSTR_CONVERT_CAPTION,  "Umwandeln"
+   IDSTR_CONVERT_SUCCESS,  "Erfolgreich umgewandelte Initialisierungsdatei."
+   IDSTR_CONVERT_FAILURE,  "Fehler beim Umwandeln der Initialisierungsdatei."
+   IDSTR_ERROR_CAPTION,    "Umwandlungsprogramm"
+   IDSTR_ERR_10,           "FEHLER 10: Keine Initialisierungsdatei im Windows Verzeichnis gefunden."
+   IDSTR_ERR_11,           "FEHLER 11: Aktuelle initialisierungsdatei ist zu klein."
+   IDSTR_ERR_12,           "FEHLER 12: Datei ist keine gültige Workplace Shell Initialisierungsdatei."
+   IDSTR_ERR_13,           "FEHLER 13: Die Initialisierungsdatei ist bereits auf dem Stand der Version 1.0 oder später"
+   IDSTR_ERR_20,           "FEHLER 20: WPSHELL.INI konnte nicht zu WPSHELL.V5X umbenannt werden."
+   IDSTR_ERR_21,           "FEHLER 21: Es konnte keine neue WPSHELL.INI Datei angelegt werden."
+   IDSTR_ERR_22,           "FEHLER 22: Die Datei WPSHELL.V5X konnte nicht geöffnet werden."
+   IDSTR_ERR_23,           "FEHLER 23: Es konnte nicht von der WPSHELL.V5X Initialisierungsdatei gelesen werden."
+   IDSTR_ERR_40,           "FEHLER 40: Ungültiger Objekttyp in der Initialisierungsdatei."
+END
+
+// EOF STRTABLE.RC
+
+
+

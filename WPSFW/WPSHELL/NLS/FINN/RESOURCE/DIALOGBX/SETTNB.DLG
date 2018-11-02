@@ -1,0 +1,328 @@
+//---------------------------------------------------------------------
+// SETTNB.DLG
+//    WPSHELL's Settings Notebook Pages Dialog Templates.
+//
+// Date Created :  05/08/94
+// Last Update  :  10/10/95
+// Written By   :  Mario E. De Armas
+// Compiler Used:  MS Visual C++ 1.52
+//
+// Copyright IBM Corporation, 1994-1995. All rights reserved.
+//
+//
+// FILE LOG:
+// DATE        | ACTION/CHANGE                           | PROGRAMMER
+// 05/08/94    | Creation.                               | MDA
+//=====================================================================
+
+
+//---------------------------------------------------------------------
+// HEADER FILES
+//---------------------------------------------------------------------
+// IBM CUA controls library header files.
+#include "fclspbw.h"    // Spin Button control styles.
+
+
+//---------------------------------------------------------------------
+// WPOBJECT's "General" page.
+//---------------------------------------------------------------------
+IDD_GENERAL_PAGE DIALOG DISCARDABLE  0, 0, 150, 165
+STYLE WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDE_TITLE,33,10,103,36,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | WS_GROUP | 0x1000
+    PUSHBUTTON      "&Luo toinen...",IDB_CREATEANOTHER,72,55,65,16, WS_DISABLED | WS_GROUP
+    PUSHBUTTON      "&Muokkaa...",IDB_EDIT,73,76,65,16,WS_DISABLED
+    DEFPUSHBUTTON   "&Etsi...",IDB_FIND,73,97,65,16
+    PUSHBUTTON      "&Palauta",IDB_UNDO,7,141,40,18,WS_GROUP
+    PUSHBUTTON      "&Oletus",IDB_DEFAULT,54,141,40,18
+    PUSHBUTTON      "O&hje",IDB_HELP,101,141,40,18
+    RTEXT           "Nimi:",IDC_STATIC,6,10,21,7
+    GROUPBOX        "Nykyinen Kuvake",IDC_STATIC,5,55,60,52
+    CONTROL         "",IDS_ICON,"Static",SS_BLACKFRAME,25,74,20,20
+END
+
+
+//---------------------------------------------------------------------
+// WPFOLDER's "View" page.
+//---------------------------------------------------------------------
+IDD_VIEW_PAGE DIALOG DISCARDABLE  0, 0, 150, 165
+STYLE WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+    CONTROL         "Vaakasuora",IDB_FLOWED,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,14,29,51,10
+    CONTROL         "Pystysuora",IDB_NONFLOWED,"Button",BS_AUTORADIOBUTTON,14,43,51,10
+    CONTROL         "Ei järjestystä",IDB_NONGRID,"Button",BS_AUTORADIOBUTTON,14,57, 51,10
+    CONTROL         "Aloitus",IDB_STARTUP,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,92,64,45,10
+    EDITTEXT        IDE_FONT,12,93,52,28,ES_AUTOHSCROLL | ES_READONLY | WS_GROUP
+    DEFPUSHBUTTON   "&Muuta fonttia...",IDB_CHANGEFONT,70,89,65,17, WS_GROUP
+    CONTROL         "&Ilman taustaa",IDB_TRANSPARENTBKGND, "Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,67, 112,72,10
+    PUSHBUTTON      "&Palauta",IDB_UNDO,7,141,40,18,WS_GROUP
+    PUSHBUTTON      "&Oletus",IDB_DEFAULT,54,141,40,18
+    PUSHBUTTON      "O&hje",IDB_HELP,101,141,40,18
+    GROUPBOX        "Kuvakkeen teksti",IDC_STATIC,7,79,135,49
+    GROUPBOX        "Kuvake-esitys",IDC_STATIC,2,3,145,132
+    GROUPBOX        "Muoto",IDC_STATIC,7,17,72,57
+END
+
+//---------------------------------------------------------------------
+// WPFOLDER's "Background" page.
+//---------------------------------------------------------------------
+IDD_BACKGROUND_PAGE DIALOG DISCARDABLE  0, 0, 150, 165
+STYLE WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+    CONTROL         "&Ainoastaan väri",IDB_COLORONLY,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,9,19,57,10
+    DEFPUSHBUTTON   "&Muuta väriä...",IDB_CHANGECOLOR,8,35,57,16
+    COMBOBOX        IDCB_BITMAPLIST,51,77,90,60,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    CONTROL         "&Normaali kuva",IDB_NORMALIMAGE,"Button", BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,8,95,131,10
+    CONTROL         "&Täytä kuvilla",IDB_TILEDIMAGE,"Button", BS_AUTORADIOBUTTON,8,108,131,10
+    CONTROL         "&Skaalattu kuva",IDB_SCALEDIMAGE,"Button", BS_AUTORADIOBUTTON,8,121,131,10
+    PUSHBUTTON      "&Palauta",IDB_UNDO,7,141,40,18,WS_GROUP
+    PUSHBUTTON      "&Oletus",IDB_DEFAULT,54,141,40,18
+    PUSHBUTTON      "O&hje",IDB_HELP,101,141,40,18
+    GROUPBOX        "Väri",IDC_STATIC,1,5,71,55
+    GROUPBOX        "Malli:",IDC_STATIC,75,5,71,55
+    CONTROL         "",IDS_PREVIEWAREA,"Static",SS_BLACKFRAME,79,18,62,36
+    GROUPBOX        "Kuva",IDB_IMAGEGROUP,1,65,145,71
+    LTEXT           "Tiedosto:",IDS_FILETEXT,8,79,40,8
+END
+
+
+//---------------------------------------------------------------------
+// WPPROGRAM's "Program" page.
+//---------------------------------------------------------------------
+IDD_PROGRAM_PAGE DIALOG DISCARDABLE  0, 0, 150, 165
+STYLE WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDE_PATHFILE,10,36,140,13,ES_AUTOHSCROLL | WS_GROUP
+    DEFPUSHBUTTON   "Etsi...",IDB_FIND,102,54,45,18,WS_GROUP
+    EDITTEXT        IDE_PARAMETERS,10,84,140,13,ES_AUTOHSCROLL | WS_GROUP
+    EDITTEXT        IDE_WORKDIR,10,113,140,13,ES_AUTOHSCROLL | WS_GROUP
+    PUSHBUTTON      "&Palauta",IDB_UNDO,7,141,40,18,WS_GROUP
+    PUSHBUTTON      "O&hje",IDB_HELP,54,141,40,18
+    LTEXT           "Pakolliset tiedot",IDC_STATIC,5,8,52,8
+    LTEXT           "Saantipolku ja tiedosto:",IDC_STATIC,10,22,90,8
+    LTEXT           "Valinnaiset tiedot",IDC_STATIC,5,60,60,8
+    LTEXT           "Parametrit:",IDC_STATIC,10,72,80,8
+    LTEXT           "Työhakemisto:",IDC_STATIC,10,101,80,8
+END
+
+
+//---------------------------------------------------------------------
+// WPPROGRAM's "Association" page.
+//---------------------------------------------------------------------
+IDD_ASSOCIATION_PAGE DIALOG DISCARDABLE  0, 0, 150, 165
+STYLE WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDL_AVAILTYPES,7,24,136,50,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | WS_GROUP | WS_TABSTOP
+    CONTROL         "&Normal",IDB_STARTNORMAL,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,15,92,75,10
+    CONTROL         "&Minimized",IDB_STARTMINIMIZED,"Button",BS_AUTORADIOBUTTON,15,107,75,10
+    CONTROL         "Ma&ximized",IDB_STARTMAXIMIZED,"Button",BS_AUTORADIOBUTTON,15,122,75,9
+    PUSHBUTTON      "&Palauta",IDB_UNDO,7,141,40,18,WS_GROUP
+    PUSHBUTTON      "O&hje",IDB_HELP,54,141,40,18
+    LTEXT           "Ohjelmatyyppi:",IDC_STATIC,7,12,136,8,NOT WS_GROUP
+    GROUPBOX        "Start program",IDC_STATIC,7,79,136,57
+END
+
+
+//---------------------------------------------------------------------
+// WPFOLDER's "Window" page.
+//---------------------------------------------------------------------
+IDD_WINDOW_PAGE DIALOG DISCARDABLE  0, 0, 150, 165
+STYLE WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+    CONTROL         "Piilota painike",IDB_HIDEBUTTON,"Button", BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,5,17,70,10
+    CONTROL         "Pienennetty painike",IDB_MINIMIZEBUTTON,"Button", BS_AUTORADIOBUTTON | WS_TABSTOP,75,17,70,10
+    CONTROL         "Piilossa",IDB_MINHIDE,"Button", BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,5,50,130,10
+    CONTROL         "Pienennettyjen ikkunoiden näytössä",IDB_MINTOVIEWER,"Button", BS_AUTORADIOBUTTON | WS_TABSTOP,5,63,130,10
+    CONTROL         "Työpöydässä",IDB_MINTODESKTOP, "Button",BS_AUTORADIOBUTTON | WS_TABSTOP,5,76,130,10
+    CONTROL         "Avatun istunnon näyttö",IDB_DISPLAY,"Button", BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,5,107,130,10
+    CONTROL         "Uuden istunnon aloitus",IDB_CREATE,"Button", BS_AUTORADIOBUTTON | WS_TABSTOP,5,120,130,10
+    PUSHBUTTON      "&Palauta",IDB_UNDO,7,141,40,18,WS_GROUP
+    PUSHBUTTON      "&Oletus",IDB_DEFAULT,54,141,40,18
+    PUSHBUTTON      "O&hje",IDB_HELP,101,141,40,18
+    GROUPBOX        "Ikkunan otsikkorivin painike",IDS_BUTTON_APPEARANCE_GRPBX,2,3,145,29
+    GROUPBOX        "Kuvakkeen näyttö",IDC_STATIC,2,37,145,53
+    GROUPBOX        "Objektin avauskäytäntö",IDC_STATIC,3,95,145,40
+END
+
+
+//---------------------------------------------------------------------
+// WPDATAFILE's "Type" page.
+//---------------------------------------------------------------------
+IDD_TYPE_PAGE DIALOG DISCARDABLE  0, 0, 150, 165
+STYLE WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDE_TYPE,5,32,140,13,ES_AUTOHSCROLL | ES_READONLY | WS_GROUP
+    PUSHBUTTON      "&Palauta",IDB_UNDO,7,141,40,18,WS_DISABLED | WS_GROUP
+    PUSHBUTTON      "O&hje",IDB_HELP,54,141,40,18
+    LTEXT           "Tiedostotyyppi:",IDC_STATIC,5,20,75,8
+END
+
+//---------------------------------------------------------------------
+// WPDATAFILE's "File" page.
+//---------------------------------------------------------------------
+IDD_FILE_PAGE DIALOG DISCARDABLE  0, 0, 150, 165
+STYLE WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDE_SUBJECT,6,26,140,13,ES_AUTOHSCROLL | WS_GROUP
+    EDITTEXT        IDE_PATH,6,69,140,13,ES_AUTOHSCROLL
+    EDITTEXT        IDE_NAME,6,102,140,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Palauta",IDB_UNDO,7,141,40,18,WS_GROUP
+    PUSHBUTTON      "O&hje",IDB_HELP,54,141,40,18
+    DEFPUSHBUTTON   "&Etsi...",IDB_FIND,100,46,45,18,WS_GROUP
+    LTEXT           "Aihe:",IDC_STATIC,6,16,140,8,NOT WS_GROUP
+    LTEXT           "Saantipolku:",IDC_STATIC,6,59,70,8,NOT WS_GROUP
+    LTEXT           "Nimi:",IDC_STATIC,6,92,70,8,NOT WS_GROUP
+END
+
+
+//---------------------------------------------------------------------
+// WPSYSSETUP's "Window" page.
+//---------------------------------------------------------------------
+IDD_SYSSETUP_WINDOW_PAGE DIALOG DISCARDABLE  0, 0, 155, 165
+STYLE WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+    CONTROL         "Piilota painike",IDB_HIDEBUTTON,"Button", BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,5,17,70,10
+    CONTROL         "Pienennetty painike",IDB_MINIMIZEBUTTON,"Button", BS_AUTORADIOBUTTON | WS_TABSTOP,77,17,70,10
+    CONTROL         "Sallittu",IDB_ENABLED,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,5,51,39,10
+    CONTROL         "Estetty",IDB_DISABLED,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,5,68,39,10
+    CONTROL         "Piilossa",IDB_MINHIDE,"Button", BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,55,50,94,10
+    CONTROL         "Pienennettyjen ikkunoiden näytössä",IDB_MINTOVIEWER,"Button", BS_AUTORADIOBUTTON | WS_TABSTOP,55,63,94,10
+    CONTROL         "Työpöydässä",IDB_MINTODESKTOP, "Button",BS_AUTORADIOBUTTON | WS_TABSTOP,55,76,94,10
+    CONTROL         "Avatun istunnon näyttö",IDB_DISPLAY,"Button", BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,5,107,135,10
+    CONTROL         "Uuden istunnon aloitus",IDB_CREATE,"Button", BS_AUTORADIOBUTTON | WS_TABSTOP,5,120,135,10
+    PUSHBUTTON      "&Palauta",IDB_UNDO,7,141,40,18,WS_GROUP
+    PUSHBUTTON      "&Oletus",IDB_DEFAULT,54,141,40,18
+    PUSHBUTTON      "O&hje",IDB_HELP,101,141,40,18
+    GROUPBOX        "Ikkunan otsikkorivin painike",IDC_STATIC,2,3,150,29
+    GROUPBOX        "kuvakkeen näyttö",IDC_STATIC,52,37,100,53
+    GROUPBOX        "Objektin avauskäytäntö",IDC_STATIC,2,95,150,40
+    GROUPBOX        "Animaatio",IDC_STATIC,2,37,45,53
+END
+
+
+//---------------------------------------------------------------------
+// WPSYSSETUP's "Windows" page 2.
+//---------------------------------------------------------------------
+IDD_SYSSETUP_WINDOW2_PAGE DIALOG DISCARDABLE  0, 0, 150, 165
+STYLE WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+    CONTROL         "Propagate changes to all program objects",IDB_PROPAGATECHANGES,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,5,5,145,10
+    CONTROL         "&Never",IDB_NEVER,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,12,80,125,10
+    CONTROL         "&Subfolders only",IDB_SUBFOLDERS_ONLY,"Button",BS_AUTORADIOBUTTON,12,96,125,10
+    CONTROL         "&All Objects",IDB_ALLOBJECTS,"Button",BS_AUTORADIOBUTTON,12,112,125,10
+    PUSHBUTTON      "&Undo",IDB_UNDO,7,141,40,18,WS_GROUP
+    PUSHBUTTON      "&Default",IDB_DEFAULT,54,141,40,18
+    PUSHBUTTON      "Help",IDB_HELP,101,141,40,18
+    GROUPBOX        "Folder Automatic Close",IDC_STATIC,5,35,140,95
+    LTEXT           "Automatically close folder view when  opening objects contained within: ",IDC_STATIC,9,50,131,24
+END
+
+
+//---------------------------------------------------------------------
+// WPSYSSETUP's "Confirmations" page.
+//---------------------------------------------------------------------
+IDD_SYSSETUP_CONFIRMATION_PAGE DIALOG DISCARDABLE  0, 0, 150, 165
+STYLE WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+    CONTROL         "Kansion poiston vahvistus",IDB_FOLDER_DELETE, "Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,5,34,135,10
+    CONTROL         "Poiston vahvistus",IDB_DELETE,"Button", BS_AUTOCHECKBOX | WS_TABSTOP,5,52,135,10
+    CONTROL         "Vahvista tiedostojen poisto",IDB_FILE_SYSTEM_DELETE,"Button", BS_AUTOCHECKBOX | WS_TABSTOP,5,70,135,10
+    PUSHBUTTON      "&Palauta",IDB_UNDO,7,141,40,18,WS_GROUP
+    PUSHBUTTON      "&Oletus",IDB_DEFAULT,54,141,40,18
+    PUSHBUTTON      "O&hje",IDB_HELP,101,141,40,18
+END
+
+
+//---------------------------------------------------------------------
+// WPDESKTOP's "Lockup" page.
+//---------------------------------------------------------------------
+IDD_LOCKUP_PAGE DIALOG DISCARDABLE  0, 0, 150, 165
+STYLE WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+    CONTROL         "&Ei automaattista lukitusta",IDB_NO_AUTOMATIC, "Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,12,27,120,10
+    CONTROL         "&Automaattinen lukitus",IDB_AUTOMATIC,"Button", BS_AUTORADIOBUTTON | WS_TABSTOP,12,44,120,10
+    CONTROL         "",IDSB_TIMEOUT,CCL_SPINBTN,WS_GROUP | WS_TABSTOP |
+                    SPBS_NUMERICONLY | SPBS_READONLY | SPBS_MASTER | SPBS_JUSTRIGHT | SPBS_FASTSPIN,52,62,30,12
+    PUSHBUTTON      "&Palauta",IDB_UNDO,7,141,40,18,WS_GROUP
+    PUSHBUTTON      "&Oletus",IDB_DEFAULT,54,141,40,18
+    PUSHBUTTON      "O&hje",IDB_HELP,101,141,40,18
+    GROUPBOX        "Aikakatkaisu",IDC_STATIC,6,11,132,118,NOT WS_GROUP
+    RTEXT           "Aika:",IDC_STATIC,12,64,35,8,NOT WS_GROUP
+    LTEXT           "minuuttia",IDC_STATIC,87,64,35,8,NOT WS_GROUP
+END
+
+
+//---------------------------------------------------------------------
+// WPDESKTOP's "Desktop" page.
+//---------------------------------------------------------------------
+IDD_DESKTOP_PAGE DIALOG DISCARDABLE  0, 0, 150, 165
+STYLE WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+    CONTROL         "&Työpöydän tallennus lopetuksen yhteydessä",IDB_SAVEDESKTOPSETTINGS,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,5,24,145,10
+    PUSHBUTTON      "&Palauta",IDB_UNDO,7,141,40,18,WS_GROUP
+    PUSHBUTTON      "&Oletus",IDB_DEFAULT,54,141,40,18
+    PUSHBUTTON      "O&hje",IDB_HELP,101,141,40,18
+END
+
+    
+//---------------------------------------------------------------------
+// WPDESKTOP's "Credits" page.
+//---------------------------------------------------------------------
+IDD_CREDITS_PAGE DIALOG DISCARDABLE  0, 0, 150, 165
+STYLE WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Suunnittelu ja ohjelmointi",IDC_STATIC,10,5,130,35
+    CTEXT           "Mario E. De Armas",IDC_STATIC,18,21,114,8
+    GROUPBOX        "Ohje-tiedoston toteutus",IDC_STATIC,10,50,130,25
+    CTEXT           "Alex Gutkin",IDC_STATIC,18,62,114,8
+END
+
+
+//---------------------------------------------------------------------
+// WPDESKTOP's "Credits" page 2.
+//---------------------------------------------------------------------
+IDD_CREDITS2_PAGE DIALOG DISCARDABLE  0, 0, 150, 165
+STYLE WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Kielituki",IDC_STATIC,10,5,130,110
+    CTEXT           "Ingo Adlung - German",IDC_STATIC,18,20,114,8
+    CTEXT           "Marcos Dias Alves - Portuguese",IDC_STATIC,18,33,114,8
+    CTEXT           "Jean-Claude Désinor - French",IDC_STATIC,18,46,114,8
+    CTEXT           "Esko Koho - Finnish",IDC_STATIC,18,59,114,8
+    CTEXT           "Daniel Lundh - Swedish",IDC_STATIC,18,72,114,8
+    CTEXT           "Luis Lupián - Spanish",IDC_STATIC,18,85,114,8
+    CTEXT           "Nico Out - Dutch",IDC_STATIC,18,98,114,8
+END
+    
+
+//---------------------------------------------------------------------
+// WPDRIVE's "Drive" page.
+//---------------------------------------------------------------------
+IDD_DRIVE_PAGE DIALOG DISCARDABLE  0, 0, 150, 165
+STYLE WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDL_DRIVES,30,33,90,77,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    PUSHBUTTON      "&Palauta",IDB_UNDO,7,141,40,18,WS_GROUP
+    PUSHBUTTON      "&Oletus",IDB_DEFAULT,54,141,40,18
+    PUSHBUTTON      "O&hje",IDB_HELP,101,141,40,18
+    CTEXT           "Valitse asema seuraavista:",IDC_STATIC,10,18,130,8
+END
+
+// EOF SETTNB.DLG
+

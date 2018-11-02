@@ -1,0 +1,7 @@
+WPS_MAIN.OBJ +
+
+WPS_ENUS.DLL
+nul
+c:\msvc\lib\+
+oldnames libw ldllcew
+WPS_ENUS.DEF;

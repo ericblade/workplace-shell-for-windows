@@ -1,0 +1,7 @@
+WNDLIST.OBJ +
+
+WNDLIST.EXE
+nul
+c:\msvc\lib\+
+oldnames libw slibcew
+WNDLIST.DEF;

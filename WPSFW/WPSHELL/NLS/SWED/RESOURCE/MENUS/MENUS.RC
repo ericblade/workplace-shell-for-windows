@@ -1,0 +1,291 @@
+//=====================================================================
+// MENUS.RC
+//    WPSHELL's Windows 3.1 system popup menus resource script file.
+//
+// Date Created :  01/26/94
+// Last Update  :  03/07/95
+// Written By   :  Mario E. De Armas
+// Compiler Used:  MS Visual C++ 1.5
+//
+// Copyright IBM Corporation, 1994-1995. All rights reserved.
+//
+//
+// FILE LOG:
+// DATE        | ACTION/CHANGE                           | PROGRAMMER
+// 01/26/94    | Creation.                               | MDA
+//=====================================================================
+
+//-----------------------------------------------------------------------------
+// POP-UP MENUS
+//-----------------------------------------------------------------------------
+
+// WORKPLACE SHELL DESKTOP SYSTEM MENU
+DesktopPopUpMenu MENU
+{
+   POPUP ""
+   {
+      POPUP "&Öppna"
+      {
+         MENUITEM "In&ställningar"          , IDM_OPENSETTINGS
+         MENUITEM "&Ikoner"                 , IDM_OPENICON
+         MENUITEM "&Detaljer"               , IDM_OPENDETAILS
+      }
+      MENUITEM "Inställningar"              , IDM_OPENSETTINGS
+      MENUITEM "&Förnya nu"                 , IDM_REFRESHNOW
+      POPUP "&Hjälp"
+      {
+         MENUITEM "&Hjälpindex"            , IDM_HELPINDEX
+         MENUITEM "&Allmän hjälp"          , IDM_HELPGENERAL   , CHECKED
+         MENUITEM "&Om hjälpfunktionen"    , IDM_HELPUSING
+         MENUITEM "&Tangentfunktioner"     , IDM_HELPKEYS
+         MENUITEM SEPARATOR
+         MENUITEM "&Produktinformation"    , IDM_HELPPRODINFO
+      }
+      MENUITEM SEPARATOR
+      MENUITEM "&Lås nu"                    , IDM_LOCKUPNOW
+      MENUITEM "A&vsluta alla sessioner..." , IDM_SHUTDOWN
+      MENUITEM "System&konfiguration"       , IDM_SYSTEMSETUP
+
+      MENUITEM SEPARATOR
+      MENUITEM "&Sök..."                   , IDM_FIND
+
+      POPUP "&Markera"
+      {
+         MENUITEM "Markera &alla\tCtrl+S"     , IDM_SELECTALL
+         MENUITEM "A&vmarkera alla\tCtrl+D"   , IDM_DESELECTALL
+      }
+
+      POPUP "&Sortera"
+
+      {
+         MENUITEM "&Namn"                   , IDM_SORTBYNAME
+         MENUITEM "&Typ"                    , IDM_SORTBYTYPE
+         MENUITEM "Fysiskt namn"            , IDM_SORTBYREALNAME
+         MENUITEM "Storlek"                 , IDM_SORTBYSIZE
+         MENUITEM "Senaste ändringsdatum"   , IDM_SORTBYLASTACCESSDATE
+         MENUITEM "Senaste access, datum"   , IDM_SORTBYLASTACCESSTIME
+      }
+
+      MENUITEM "&Ordna"                   , IDM_ARRANGE
+      MENUITEM SEPARATOR
+      MENUITEM "Sp&ara skrivbord"         , IDM_SAVEDESKTOP
+      MENUITEM SEPARATOR
+      MENUITEM "K&ör..."                  , IDM_RUN
+   }
+}
+
+
+// WORKPLACE SHELL FOLDER SYSTEM MENU
+FolderPopUpMenu MENU
+{
+   POPUP ""
+   {
+      POPUP "&Öppna"
+      {
+         MENUITEM "In&ställningar"          , IDM_OPENSETTINGS
+         MENUITEM "&Ikoner"                 , IDM_OPENICON
+         MENUITEM "&Detaljer"               , IDM_OPENDETAILS
+      }
+      MENUITEM "Inställningar"              , IDM_OPENSETTINGS
+      MENUITEM "Öppna Överordnad"           , IDM_OPENPARENT
+      MENUITEM "&Förnya nu"                 , IDM_REFRESHNOW
+      POPUP "&Hjälp"
+      {
+         MENUITEM "&Hjälpindex"             , IDM_HELPINDEX
+         MENUITEM "&Allmän hjälp"           , IDM_HELPGENERAL     , CHECKED
+         MENUITEM "&Om hjälpfunktionen"     , IDM_HELPUSING
+         MENUITEM "&Tangentfunktioner"      , IDM_HELPKEYS
+      }
+      MENUITEM SEPARATOR
+      MENUITEM "Skapa &ny"                  , IDM_CREATEANOTHER
+      MENUITEM "&Kopiera..."                , IDM_COPY
+      MENUITEM "&Flytta..."                 , IDM_MOVE
+      MENUITEM "Sk&apa skugga..."           , IDM_CREATESHADOW
+      MENUITEM "&Ta bort..."                , IDM_DELETE
+      MENUITEM SEPARATOR
+      POPUP "&Fönster"
+      {
+         MENUITEM "&Återställ"             , IDM_WINDOWRESTORE
+         MENUITEM "&Flytta"                , IDM_WINDOWMOVE
+         MENUITEM "&Dimensionera"          , IDM_WINDOWSIZE
+         MENUITEM "Mi&nimera"              , IDM_WINDOWMINIMIZE
+         MENUITEM "Ma&ximera"              , IDM_WINDOWMAXIMIZE
+         MENUITEM "&Göm"                   , IDM_WINDOWHIDE
+      }
+      MENUITEM "&Sök..."                   , IDM_FIND
+      POPUP "&Markera"
+      {
+         MENUITEM "Markera &alla\tCtrl+S"     , IDM_SELECTALL
+         MENUITEM "A&vmarkera alla\tCtrl+D"   , IDM_DESELECTALL
+      }
+      POPUP "S&ortera"
+      {
+         MENUITEM "&Namn"                      , IDM_SORTBYNAME
+         MENUITEM "&Typ"                       , IDM_SORTBYTYPE
+         MENUITEM "Fysiskt namn"               , IDM_SORTBYREALNAME
+         MENUITEM "Storlek"                    , IDM_SORTBYSIZE
+         MENUITEM "Senaste ändringsdatum"      , IDM_SORTBYLASTACCESSDATE
+         MENUITEM "Senaste access, datum"      , IDM_SORTBYLASTACCESSTIME
+      }
+      MENUITEM "&Ordna"                     , IDM_ARRANGE
+      MENUITEM SEPARATOR
+      MENUITEM "Stäng"                      , IDM_CLOSE
+   }
+}
+
+// WORKPLACE SHELL OBJECT SYSTEM MENU
+ObjectPopUpMenu MENU
+{
+   POPUP ""
+   {
+      POPUP "&Öppna"
+      {
+         MENUITEM "In&ställningar"          , IDM_OPENSETTINGS  , CHECKED
+      }
+      MENUITEM "Inställningar"              , IDM_OPENSETTINGS
+      MENUITEM "Öppna överordnad"           , IDM_OPENPARENT
+      POPUP "&Hjälp"
+      {
+         MENUITEM "&Hjälpindex"             , IDM_HELPINDEX
+         MENUITEM "&Allmän hjälp"           , IDM_HELPGENERAL   , CHECKED
+         MENUITEM "&Om hjälp"               , IDM_HELPUSING
+         MENUITEM "&Tangentfunktioner"      , IDM_HELPKEYS
+      }
+      MENUITEM SEPARATOR
+      MENUITEM "Skapa &ny"                  , IDM_CREATEANOTHER
+      MENUITEM "&Kopiera..."                , IDM_COPY
+      MENUITEM "&Flytta..."                 , IDM_MOVE
+      MENUITEM "Sk&apa skugga..."           , IDM_CREATESHADOW
+      MENUITEM "&Ta bort..."                , IDM_DELETE
+   }
+}
+
+
+// WORKPLACE SHELL PROGRAM SYSTEM MENU
+ProgramPopUpMenu MENU
+{
+   POPUP ""
+   {
+      POPUP "&Öppna"
+      {
+         MENUITEM "In&ställningar"          , IDM_OPENSETTINGS
+         MENUITEM "&Program"                , IDM_OPENPROGRAM     , CHECKED
+      }
+      MENUITEM "Inställningar"              , IDM_OPENSETTINGS
+      MENUITEM "Öppna överordnad"           , IDM_OPENPARENT
+      POPUP "&Hjälp"
+      {
+         MENUITEM "&Hjälpindex"             , IDM_HELPINDEX
+         MENUITEM "&Allmän hjälp"           , IDM_HELPGENERAL     , CHECKED
+         MENUITEM "&Om hjälp"               , IDM_HELPUSING
+         MENUITEM "&Tangentfunktioner"      , IDM_HELPKEYS
+      }
+      MENUITEM SEPARATOR
+      MENUITEM "Skapa &ny"                  , IDM_CREATEANOTHER
+      MENUITEM "&Kopiera..."                , IDM_COPY
+      MENUITEM "&Flytta..."                 , IDM_MOVE
+      MENUITEM "Sk&apa skugga..."           , IDM_CREATESHADOW
+      MENUITEM "&Ta bort..."                , IDM_DELETE
+   }
+}
+
+
+// WORKPLACE SHELL DATA FILE SYSTEM MENU
+DataFilePopUpMenu MENU
+{
+   POPUP ""
+   {
+      POPUP "&Öppna"
+      {
+         MENUITEM "In&ställningar"          , IDM_OPENSETTINGS
+         MENUITEM "&Datafil"                , IDM_OPENDATAFILE    , CHECKED
+      }
+      MENUITEM "Inställningar"              , IDM_OPENSETTINGS
+      MENUITEM "Öppna överordnad"           , IDM_OPENPARENT
+      POPUP "&Hjälp"
+      {
+         MENUITEM "&Hjälpindex"             , IDM_HELPINDEX
+         MENUITEM "&Allmän hjälp"           , IDM_HELPGENERAL     , CHECKED
+         MENUITEM "&Om hjälp"               , IDM_HELPUSING
+         MENUITEM "&Tangentfunktioner"      , IDM_HELPKEYS
+      }
+      MENUITEM SEPARATOR
+      MENUITEM "Skapa &ny"                  , IDM_CREATEANOTHER
+      MENUITEM "&Kopiera..."                , IDM_COPY
+      MENUITEM "&Flytta..."                 , IDM_MOVE
+      MENUITEM "Sk&apa skugga..."           , IDM_CREATESHADOW
+      MENUITEM "&Ta bort..."                , IDM_DELETE
+      MENUITEM SEPARATOR
+      MENUITEM "Sk&riv ut"                  , IDM_PRINT
+   }
+}
+
+
+// WORKPLACE SHELL TEMPLATE SYSTEM MENU
+MinimizedWindowViewerPopUpMenu MENU
+{
+   POPUP ""
+   {
+      POPUP "&Öppna"
+      {
+         MENUITEM "In&ställningar"          , IDM_OPENSETTINGS
+         MENUITEM "&Ikoner"                 , IDM_OPENICON        , CHECKED
+      }
+      MENUITEM "Inställningar"              , IDM_OPENSETTINGS
+      MENUITEM "Öppna överordnad"           , IDM_OPENPARENT
+      MENUITEM "&Förnya nu"                 , IDM_REFRESHNOW
+      POPUP "&Hjälp"
+      {
+         MENUITEM "&Hjälpindex"             , IDM_HELPINDEX
+         MENUITEM "&Allmän hjälp"           , IDM_HELPGENERAL     , CHECKED
+         MENUITEM "&Om hjälp"               , IDM_HELPUSING
+         MENUITEM "&Tangentfunktioner"      , IDM_HELPKEYS
+      }
+      MENUITEM SEPARATOR
+      MENUITEM "&Flytta..."                 , IDM_MOVE
+      MENUITEM "Sk&apa skugga..."           , IDM_CREATESHADOW
+      MENUITEM SEPARATOR
+      POPUP "&Fönster"
+      {
+         MENUITEM "&Återställ"              , IDM_WINDOWRESTORE
+         MENUITEM "&Flytta"                 , IDM_WINDOWMOVE
+         MENUITEM "&Dimensionera"           , IDM_WINDOWSIZE
+         MENUITEM "Mi&nimera"               , IDM_WINDOWMINIMIZE
+         MENUITEM "Ma&ximera"               , IDM_WINDOWMAXIMIZE
+         MENUITEM "&Göm"                    , IDM_WINDOWHIDE
+      }
+      POPUP "&Markera"
+      {
+         MENUITEM "Markera &allt\tCtrl+S"     , IDM_SELECTALL
+         MENUITEM "A&vmarkera allt\tCtrl+D"   , IDM_DESELECTALL
+      }
+      MENUITEM "&Ordna"                     , IDM_ARRANGE
+      MENUITEM SEPARATOR
+      MENUITEM "Stäng"                      , IDM_CLOSE
+   }
+}
+
+
+// WORKPLACE SHELL MINIMIZED WINDOW OBJECT SYSTEM MENU
+MinimizedWindowObjectPopUpMenu MENU
+{
+   POPUP ""
+   {
+      POPUP "&Hjälp"
+      {
+         MENUITEM "&Hjälpindex"             , IDM_HELPINDEX
+         MENUITEM "&Allmän hjälp"           , IDM_HELPGENERAL     , CHECKED
+         MENUITEM "&Om hjälp"               , IDM_HELPUSING
+         MENUITEM "&Tangentfunktioner"      , IDM_HELPKEYS
+      }
+      MENUITEM "In&ställningar"             , IDM_OPENSETTINGS
+      MENUITEM SEPARATOR
+      MENUITEM "&Återställ"                 , IDM_WINDOWRESTORE
+      MENUITEM "Ma&ximera"                  , IDM_WINDOWMAXIMIZE
+      MENUITEM "&Stäng"                     , IDM_CLOSE
+      MENUITEM "&Aktiva Sessioner"          , IDM_WINDOWLIST
+   }
+}
+
+// EOF MENUS.RC
+

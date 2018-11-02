@@ -1,0 +1,26 @@
+//-------------------------------------------------------------------------
+// STRING TABLES
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+// PORT (Brazilian-Portuguese)
+//-------------------------------------------------------------------------
+STRINGTABLE LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+   IDSTR_CONVERT_CAPTION,  "Converter"
+   IDSTR_CONVERT_SUCCESS,  "Configuração convertida com sucesso."
+   IDSTR_CONVERT_FAILURE,  "Falha na conversão da configuração."
+   IDSTR_ERROR_CAPTION,    "Utilitário de conversão"
+   IDSTR_ERR_10,           "ERROR 10: Arquivo de configuração na encontrado no dir. \Windows."
+   IDSTR_ERR_11,           "ERROR 11: Configuração atual muito pequena."
+   IDSTR_ERR_12,           "ERROR 12: Arquivo não é uma configuração válido do Workplace Shell."
+   IDSTR_ERR_13,           "ERROR 13: Configuração já está na versão 1.0 ou acima"
+   IDSTR_ERR_20,           "ERROR 20: Não pude renomear WPSHELL.INI para WPSHELL.V5X."
+   IDSTR_ERR_21,           "ERROR 21: Não pude criar novo arquivo WPSHELL.INI."
+   IDSTR_ERR_22,           "ERROR 22: Não pude abrir o arquivo WPSHELL.V5X."
+   IDSTR_ERR_23,           "ERROR 23: Não pude ler a configuração do WPSHELL.V5X."
+   IDSTR_ERR_40,           "ERROR 40: Objeto inválido no arquivo de configuração."
+END
+
+// EOF STRTABLE.RC
+
+

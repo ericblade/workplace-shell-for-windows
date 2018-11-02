@@ -1,0 +1,8 @@
+WPS_MAIN.OBJ +
+
+WPS_ITAL.DLL
+nul
+c:\msvc\lib\+
+c:\ddk\lib\+
+oldnames libw ldllcew
+WPS_ITAL.DEF;

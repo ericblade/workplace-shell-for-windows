@@ -1,0 +1,427 @@
+DISCLAIMER:
+
+   THIS IS EMPLOYEE WRITTEN SOFTWARE (ESW) AND AS SUCH IS NOT AN OFFICIAL
+
+   IBM PRODUCT.
+
+   THEREFORE NO TECHNICAL SUPPORT IS GIVEN TO THIS SOFTWARE BY IBM.
+
+   THIS PROGRAM IS DISTRIBUTED "AS IS" WITH NO FORMAL SUPPORT WHATSOEVER.
+
+   WHILE IT IS USEABLE, ITS SOLE PURPOSE IS TO DEMONSTRATE SOME OF THE
+
+   FEATURES AVAILABLE IN THE OS/2 WARP WORKPLACE SHELL.
+
+   PLEASE READ LICENSE.TXT FILE FOR SOFTWARE LICENSE DETAILS.
+
+
+========================================================================
+==                                                                    ==
+==   W O R K P L A C E   S H E L L   F O R   W I N D O W S   3 . 1    ==
+==                                                                    ==
+==                    V e r s i o n   1 . 51                          ==
+==                                                                    ==
+==                                                                    ==
+== Release Date  : 10/05/95                                           ==
+==                                                                    ==
+==                                                                    ==
+==    Copyright IBM Corporation, 1994-1995.  All rights reserved.     ==
+==                                                                    ==
+========================================================================
+
+
+TABLE OF CONTENTS (in order of appearance):
+===========================================
+
+    1) Minimum Program Requirements
+    2) Release File List
+    3) Installation (and Uninstallation) Instructions.
+    4) Editing Your SYSTEM.INI File
+    5) Editing Your WIN.INI File
+    6) Known Problems
+
+
+------------------------------------------------------------------------
+1)     M I N I M U M   P R O G R A M   R E Q U I R E M E N T S
+------------------------------------------------------------------------
+
+   Hardware:
+      Processor : Intel 80386SX (or compatible).
+      Memory    : About 350K (when loaded and running).
+      Disk      : Maximum of 750K after installation with all support files.
+                  Minimium of 1MB free in boot drive for installation files.
+      Video     : Minimum of VGA (640x480 16 color) resolution.
+
+   Software:
+      DOS 5.x with Windows 3.1 or Windows for Workgroups 3.1 or higher.
+      -or-
+      OS/2 2.1x or higher (WPSFWIN is installed on Win-OS/2 full-screen session).
+
+
+------------------------------------------------------------------------
+2)            R E L E A S E   F I L E   L I S T
+------------------------------------------------------------------------
+
+Files that make up this release of Workplace Shell for Windows are:
+
+Run-time:
+    WPSHELL.EXE     : Workplace Shell for Windows executable.
+    WNDLIST.EXE     : Workplace Shell for Windows task manager replacement.
+    FCLNBW.DLL      : IBM CUA Notebook control library.
+    FCLSPBW.DLL     : IBM CUA Spin Button control library.
+    CTL3D.DLL       : Microsoft 3-D controls library.
+    WARPICON.DLL    : OS/2 WARP 3.0 icon library supplement.
+    OS21ICON.DLL    : OS/2 2.1 icon library (old WPSHELL.EXE icon set).
+
+Language-dependent:
+    WPS_XXXX.DLL    : WPSHELL.EXE NLS resource library.
+    LNP_XXXX.DLL    : LAUNCHPD.EXE NLS resource library.
+    PTW_XXXX.DLL    : PMTOWP.EXE NLS resource library.
+    CNV_XXXX.DLL    : CONVINI.EXE NLS resource library.
+
+    Where "XXXX" is one of the following languages:
+       DUTC : Dutch.
+       ENUS : English (US).
+       FINN : Finnish.
+       FREN : French (Canadian).
+       GRMN : German.
+       PORT : Portuguese (Brazilian).
+       SPAN : Spanish.
+       SWED : Swedish.
+
+Documentation:
+    INSTALL.TXT     : Intallation instructions for package.
+    README.1ST      : (This file) "Read Me First" file containing basic
+                      directions on what to do with this program.
+    LICENSE.TXT     : License Agreement details.
+    WPSHELL.HLP     : Workplace Shell for Windows help file.
+
+Support Utilities:
+    CONVINI.EXE     : Conversion utility for WPSHELL.INI files 0.5.x -> 1.0.
+    LAUNCHPD.EXE    : Workplace Shell for Windows launchpad executable.
+    PMTOWP.EXE      : Program Manager to Workplace Shell desktop migration
+                      utility (always run from PROGMAN).
+    WINSHUT.EXE     : Windows shutdown utility program.
+
+Optional:
+    IBMWALL.BMP     : "IBM" Wallpaper for Windows (copy to \WINDOWS directory).
+
+
+
+------------------------------------------------------------------------
+3)        I N S T A L L A T I O N   I N S T R U C T I O N S
+------------------------------------------------------------------------
+
+
+(A) Automatic:
+-------------
+
+   Read text file INSTALL.TXT for complete installation instructions.
+
+
+(B) Manual:
+----------
+
+   1) Uncompress files listed in the "Release File List" above by using
+      EXPAND.EXE (in \DOS directory) and copy expanded files into a
+      destination directory (i.e. C:\WPSHELL).
+
+      Copy the following files in your \WINDOWS\SYSTEM directory:
+
+         FCLNBW.DLL      : IBM CUA Notebook control library.
+         FCLSPBW.DLL     : IBM CUA Spin Button control library.
+         CTL3D.DLL       : Microsoft 3-D controls library.
+
+      Copy file WPSHELL.HLP into the \WINDOWS directory.
+
+      Copy NLS resource libraries that match the language you have installed
+      in Windows.  Look in WIN.INI file "[Intl]" section, "sLanguage" key
+      and find out which language it is. Following are some of the language
+      codes used by Windows:
+
+      "sLanguage"   Name                          Resource Library
+
+         dan        Danish                        DANI
+         deu        German                        GRMN
+         eng        International English         ENUS
+         enu        U.S. English                  ENUS
+         esn        Modern Spanish                SPAN
+         esp        Castilian Spanish             SPAN
+         fin        Finnish                       FINN
+         fra        French                        FREN
+         frc        French Canadian               FREN
+         isl        Icelandic
+         ita        Italian
+         nld        Dutch                         DUTC
+         nor        Norwegian
+         ptb        Brazilian Portuguese          PORT
+         ptg        Portuguese                    PORT
+         sve        Swedish                       SWED
+
+
+   2) Run PMTOWP.EXE from Program Manager's "File" -> "Run..." menu.
+
+   3) Manually change the following SYSTEM.INI entries in the [boot] section:
+
+        taskman.exe=taskman.exe    (if any, most will not have this line)
+        shell=progman.exe
+
+           to
+
+        taskman.exe=<path>\wndlist.exe     (add if it does not exists)
+        shell=<path>\wpshell.exe
+
+        (where <path> is the directory where WPSHELL.EXE is stored).
+
+   4) Exit Windows and restart so that the new shell will take effect.
+      If you experience any problems at this point, please refer to the
+      "When You Encounter A Problem" section above.
+
+   Optional Step In Manual Installation:
+   ------------------------------------
+
+   5) Copy IBMWALL.BMP to the \WINDOWS directory and using the
+      the "Background" page in the Desktop's settings notebook or
+      "Control Panel" -> "Desktop" application change the background bitmap
+      to IBMWALL.BMP and select the "Tile" attribute.
+
+
+
+(C) Uninstall Instructions:
+--------------------------
+
+   1) If in Windows, exit Windows.
+
+   2) Edit SYSTEM.INI file in \WINDOWS directory and replace the following
+      lines:
+
+      taskman.exe=<path>\wndlist.exe
+      shell=<path>\wpshell.exe
+
+      with
+
+      taskman.exe=taskman.exe
+      shell=progman.exe
+
+   3) Restart Windows 3.1.
+
+   4) Remove the following files from your \WINDOWS\SYSTEM directory:
+
+          FCLNBW.DLL      : IBM CUA Notebook control library.
+          FCLSPBW.DLL     : IBM CUA Spin Button control library.
+
+   5) Delete all contents of the Workplace Shell for Windows destination
+      diretory.
+
+
+------------------------------------------------------------------------
+4)     E D I T I N G   Y O U R   S Y S T E M . I N I   F I L E
+------------------------------------------------------------------------
+
+   A "Workplace_Shell_for_Windows" section is created (and maintained)
+automatically by WPSFWIN in your SYSTEM.INI file in the \WINDOWS directory.
+
+   The SYSTEM.INI file is where Windows 3.1 and other system-related
+applications and drivers keep vital information that reflects or changes
+the behavior of the system.  This is a pure text file (ASCII-file) that
+can be edited by any of your favorite ASCII editors (i.e. e, epm, edit).
+
+   WPSFWIN will create (if you edit the "System" settings notebook) a
+Workplace Shell for Windows section in this file when you change any of
+the "System" default settings.  This section will look something like this
+(and it will probably be at the end of the SYSTEM.INI file):
+
+[Workplace_Shell_for_Windows]
+DESKTOP_HorzIconIndent=23               (other values:0-32,000)
+DESKTOP_VertIconIndent=5                (other values:0-32,000)
+SYSTEM_ConfirmOnFolderDelete=Yes        (other values: No)
+SYSTEM_ConfirmOnDelete=Yes              (other values: No)
+SYSTEM_ConfirmOnFileSystemDelete=Yes    (other values: No)
+SYSTEM_ButtonAppearance=Minimize        (other values: Hide)
+SYSTEM_Animation=Enabled                (other values: Disabled)
+SYSTEM_MinBehavior=MinToViewer          (other values: Hide and MinToDesktop)
+SYSTEM_OpenBehavior=CreateNew           (other values: DisplayExisting)
+SYSTEM_SystemSetupFolderName=System Setup (depends on the language installed)
+SYSTEM_NoSave=Disabled                  (other values: Enabled)
+COLOR_ShadowText=00FF00                 (other values: <Blue><Green><Red>)
+
+   As you can see must of the entries in the section are self-explanatory.
+The "ConfirmOnDelete" entry lets WPSFWIN know that you want to confirm
+all delete operations done in the shell.  "ConfirmOnFolderDelete" is
+a sub-classed "ConfirmOnDelete", this means that if "ConfirmOnDelete" is
+"No", the "ConfirmOnFolderDelete" will take precedence for delete operations
+done on folder objects (recommened default settings is "Yes").
+
+   Also, The whole "Window" page in the "System" settings notebook is
+listed. You can edit these entries manually if you want, but they won't
+take effect until you restart Windows or open the "System" settings
+notebook again and press "Default" on the "Windows" page.
+
+   Notice the "other values" possible in each entry in the WPSFWIN section.
+These values can be case-insensitive.
+
+   The "COLOR_ShadowText" is a BGR triplet mapped to 2-digit hexadecimal
+values.  Each primary color can be a hexadecimal value from 00 to FF.
+Therefore, if you want bright cyan, for example, you would want the Blue and
+Green primary colors full brightness (hex. FF).  So, the final SYSTEM.INI
+entry for COLOR_ShadowText would be FFFF00.
+
+   If you are not familiar with the meaning of these values, refer to any
+OS/2 2.x user's manual.
+
+    Also, I would like to explain the other entries made and used by WPSFWIN
+in SYSTEM.INI:
+
+   [boot]
+   taskman.exe=<path>\wndlist.exe
+   shell=<path>\wpshell.exe
+
+   These two entries are the core of how WPSFWIN is able to substitute
+PROGMAN "seamlessly".  Windows 3.1 uses these two key entries to figure
+out who will be handling the task management for the user, and who will
+become the default Windows GUI shell to the user.
+
+   The entry "taskman.exe=<path>\wndlist.exe" makes the WPSFWIN "Window
+List" the default task manager.  If you ever want to switch to the
+original "Task Manager" that comes with Windows 3.1, just manually edit
+this line and make it: "taskman.exe=taskman.exe". Just that simple!
+
+   The entry "wpshell.exe=<path>\wpshell.exe" makes WPSHELL.EXE become
+the default GUI for Windows 3.1.  If you ever decide that WPSFWIN is not
+the "cola" for you... just edit that statement to "shell=progman.exe".
+Easy huh!?, and you don't even need a bottle opener!!
+
+
+
+------------------------------------------------------------------------
+5)      E D I T I N G   Y O U R   W I N . I N I   F I L E
+------------------------------------------------------------------------
+
+   The "WPSFWIN System Event Sounds", just like its OS/2 counterpart
+(but to a lesser degree), registers 5 system events when installed.
+These event registrations are just 5 more lines in your WIN.INI file.
+Just look for the "[sounds]" section of the file, and you'll find many
+system events and the sounds (WAV files) associated with them listed.
+At the bottom of the list, there should be 5 entries of this form
+(if no associations have been done):
+
+WPBeginDrag=,Workplace Shell Begin Drag
+WPEndDrag=,Workplace Shell End Drag
+WPFolderClose=,Workplace Shell Folder Close
+WPFolderOpen=,Workplace Shell Folder Open
+WPShred=,Workplace Shell Shred
+
+   Notice that there are no *.WAV files associated with them.  The
+easiest way to do it is by selecting the "Control Panel"'s "Sounds" program.
+It will read the events for you and let you associate sounds to them.
+
+   If you ever want to edit the name of the events, edit the text at the
+END of the line.  For example if I wanted to change the description of
+the "Workplace Shell Folder Close" event to "Close'em up!", here is what
+you'll need to edit:
+
+<from>:
+WPFolderClose=,Workplace Shell Folder Close
+
+<to>:
+WPFolderClose=,Close'em up!
+
+   If you ever want to delete all events from you Windows 3.1 system,
+delete all 5 lines and voila! They're gone.
+
+
+------------------------------------------------------------------------
+6)                  K N O W N   P R O B L E M S
+------------------------------------------------------------------------
+
+   8.1) The "Disappearing-Desktop" problem (or ATM-bug) is caused by
+        the automatic loading of the Adobe Type Manager (ATM) drivers
+        in SYSTEM.INI.  We have been able to isolate the problem to the
+        loading of the drivers while WPSFWIN is the default Windows shell.
+
+        For ATM 2.0 or 2.5 drivers installed:
+
+        To quickly fix this problem, manually edit your SYSTEM.INI file
+        and comment out the following lines by placing a ';' (semi-colon)
+        at the beginning of the line:
+
+        system.drv=atmsys.drv
+        atm.system.drv=system.drv
+
+        <to>
+
+        ;system.drv=atmsys.drv
+        ;atm.system.drv=system.drv
+
+        Contact Adobe Systems to get the latest ATM drivers (version 3.01).
+
+        If you have ATM 3.0 drivers or higher, just add the following line
+        to the "Settings" section of ATM.INI file:
+
+        ATMIcon=Off
+
+        With this change the ATM drivers can be loaded but no "ATM" icon will
+        be displayed on the bottom-left corner of the screen at startup time.
+
+
+   8.2) When running Program Manager AND Workplace Shell together, Program
+        Manager will respond to any "PROGMAN" and "SHELL" DDE services.
+        The "PROGMAN" DDE service is used by installation programs to create
+        and query program groups and items.
+        The "SHELL" DDE service is used in Windows by DOS applications and
+        DOS "boxes" to associate title text and icons to them.
+        Therefore, if installing a new software application, be aware that
+        you must run Workplace Shell alone for it to communicate correctly
+        with the installing application.
+
+
+   8.3) OS/2 Full-Pack Warp users installing under Win-OS/2 sessions will
+        not be able to terminate (or shutdown) their Windows session
+        correctly.  This is a problem that only happens in the Full-Pack
+        version of OS/2 Warp.  The shutdown function works with no problems
+        under native Windows 3.1x and OS/2 Warp (for Windows).
+
+
+   8.4) Applications which have been documented not to install properly
+        under WPSHELL.EXE:
+           * Quicken 4.0
+           * Arts & Letters
+
+
+   8.5) If you have any problems using DOS applications (or DOS windows)
+        while running WPSFWIN, you can disable the DOS DDE "SHELL" service
+        in WPSFWIN by adding the following key value to SYSTEM.INI in the
+        "Workplace_Shell_for_Windows" section:
+        DEBUG_DOSDDEFlags=0x0001
+
+
+   8.6) If you encounter a problem with repainting the Windows desktop,
+        add the following key value to the SYSTEM.INI in the
+        "Workplace_Shell_for_Windows" section:
+        COMPATIBLE_Flags=0x0001
+        The following applications have been found to cause this problem:
+        * PC-Xware for Windows v2.0
+
+
+   8.7) Because settings notebooks contain multiple dialogs and each dialog
+        owns many controls, it is recommended you do not open more than
+        5 settings notebooks at any one time.  There is a maximum of about
+        10 settings notebooks open before the Windows system runs out of
+        "USER" resources.  Of course, this might vary depending on which
+        object's settings notebooks you open; template and shredder objects
+        use less memory than folder and program objects.
+
+        But, as a general rule, try to keep the number of settings notebooks
+        open at any one time to a minimum.
+
+
+   8.8) If you have any problems using the utility program WINSHUT.EXE,
+        try adding the following command line switch ot it: -skipwps
+        This will skip some special processing that WINSHUT.EXE does for
+        WPSFWIN and call ExitWindows() directly.  Therefore, the message box
+        confirming shutdown won't appear and Windows will shutdown
+        immediatedly.
+
+------------------------------------------------------------------------
+END OF 'README.1ST' FILE
+

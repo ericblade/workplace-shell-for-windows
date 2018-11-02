@@ -1,0 +1,26 @@
+//-----------------------------------------------------------------------------
+// DIALOG BOX TEMPLATES
+//-----------------------------------------------------------------------------
+IDD_MAIN DIALOG DISCARDABLE  0, 0, 241, 210
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "Program Hanterare Till Skrivbord"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "&Alla Grupper ",IDC_ALL_GROUPS,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,12,26,60,10
+    CONTROL         "&Vald Grupp",IDC_SELECTED_GROUP,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,12,62,68,10
+    EDITTEXT        IDC_FOLDER_NAME,87,38,140,12,ES_AUTOHSCROLL | WS_GROUP
+    LISTBOX         IDC_GROUP_LIST,87,62,141,46,LBS_SORT |LBS_NOINTEGRALHEIGHT | LBS_DISABLENOSCROLL | WS_VSCROLL |WS_GROUP | WS_TABSTOP
+    CONTROL         "S&ystem Mapp",IDC_SYSTEM_FOLDER,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,25,140,120,10
+    CONTROL         "&Minimerade Objekt",IDC_MINVIEWER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,25,158,120,10
+    CONTROL         "Ma&llar",IDC_TEMPLATES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,142,140,120,10
+    DEFPUSHBUTTON   "&Migrera",IDOK,57,184,55,20,WS_GROUP
+    PUSHBUTTON      "&Avsluta",IDCANCEL,128,184,55,20
+    LTEXT           "Ange namnet på mappen du vill skapa:",IDC_TEXT,87,26,106,10
+    GROUPBOX        "Tilläggs Mappar och Objekt",IDC_STATIC,6,125,230,51
+    GROUPBOX        "Ange vilken(vilka) grupp(er) du vill migrera",
+                    IDC_STATIC,6,9,230,108
+END
+
+// EOF MAIN.DLG
+
+

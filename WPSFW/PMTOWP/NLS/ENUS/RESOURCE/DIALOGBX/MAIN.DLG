@@ -1,0 +1,26 @@
+//-----------------------------------------------------------------------------
+// DIALOG BOX TEMPLATES
+//-----------------------------------------------------------------------------
+IDD_MAIN DIALOG DISCARDABLE  0, 0, 241, 210
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "Program Manager To Workplace Shell"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "&All Groups ",IDC_ALL_GROUPS,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,12,26,60,10
+    CONTROL         "&Selected Group",IDC_SELECTED_GROUP,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,12,62,68,10
+    EDITTEXT        IDC_FOLDER_NAME,87,38,140,12,ES_AUTOHSCROLL | WS_GROUP
+    LISTBOX         IDC_GROUP_LIST,87,62,141,46,LBS_SORT |LBS_NOINTEGRALHEIGHT | LBS_DISABLENOSCROLL | WS_VSCROLL |WS_GROUP | WS_TABSTOP
+    CONTROL         "S&ystem Folder",IDC_SYSTEM_FOLDER,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,25,140,110,10
+    CONTROL         "&Minimized Window Viewer",IDC_MINVIEWER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,25,158,110,10
+    CONTROL         "&Templates Folder",IDC_TEMPLATES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,142,140,110,10
+    DEFPUSHBUTTON   "&Migrate",IDOK,57,184,55,20,WS_GROUP
+    PUSHBUTTON      "&Done",IDCANCEL,128,184,55,20
+    LTEXT           "Enter folder name to create:",IDC_TEXT,87,26,106,10
+    GROUPBOX        "Additional Folders and Objects",IDC_STATIC,6,125,230,51
+    GROUPBOX        "Select which group(s) you would like to migrate",
+                    IDC_STATIC,6,9,230,108
+END
+
+// EOF MAIN.DLG
+
+

@@ -1,0 +1,26 @@
+//-------------------------------------------------------------------------
+// STRING TABLES
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+// ENUS (US-English)
+//-------------------------------------------------------------------------
+STRINGTABLE LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+   IDSTR_CONVERT_CAPTION,  "Conversione"
+   IDSTR_CONVERT_SUCCESS,  "Profilo convertito con successo."
+   IDSTR_CONVERT_FAILURE,  "Errore nella conversione del profilo."
+   IDSTR_ERROR_CAPTION,    "Programma di conversione"
+   IDSTR_ERR_10,           "ERRORE 10: Nessun profilo trovato nella directory di Windows."
+   IDSTR_ERR_11,           "ERRORE 11: Il profilo corrente e' troppo piccolo."
+   IDSTR_ERR_12,           "ERRORE 12: File non e' un valido profilo Workplace Shell."
+   IDSTR_ERR_13,           "ERRORE 13: Il profile è già una versione 1.0 o più"
+   IDSTR_ERR_20,           "ERRORE 20: Non e' possibile rinominare WPSHELL.INI in WPSHELL.V5X."
+   IDSTR_ERR_21,           "ERRORE 21: Non e' possibile creare un nuovo file WPSHELL.INI."
+   IDSTR_ERR_22,           "ERRORE 22: Non e' possibile aprire il file WPSHELL.V5X."
+   IDSTR_ERR_23,           "ERRORE 23: Non e' possibile leggere dal profilo WPSHELL.V5X."
+   IDSTR_ERR_40,           "ERRORE 40: Tipo oggetto invalido nel profilo."
+END
+
+// EOF STRTABLE.RC
+
+

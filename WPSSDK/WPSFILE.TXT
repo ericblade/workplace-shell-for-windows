@@ -1,0 +1,172 @@
+//=====================================================================
+// Workplace Shell for Windows Initialization File Format (v.1.5)
+//    This file contains textual information about how to read and
+// parse the WPSHELL.INI file.
+//
+// Revision Date: 8/24/95
+// Copyright IBM Corporation, 1994-1995. All rights reserved.
+//=====================================================================
+
+Table Of Contents
+-----------------
+(1) Overview
+(2) Reading objects correctly
+(3) Example
+(4) List of persistent object types
+
+
+//---------------------------------------------------------------------
+// (1) Overview:
+//---------------------------------------------------------------------
+
+The overall file structure of WPSHELL.INI is as follows:
+
+|--------------------------------------------|
+|  WPSHELL_PROFILE_HEADER                    |
+|--------------------------------------------|
+|                                            |
+|  FILE_WPS_FOLDER_STRUCT (DESKTOP)          |
+|                                            |
+|--------------------------------------------|
+|  (Top-level object #1)                     |
+|--------------------------------------------|
+|  (Top-level object #2)                     |
+|--------------------------------------------|
+|  ..........................                |
+|  ..........................                |
+|--------------------------------------------|
+|  (Top-level object #n-1)                   |
+|--------------------------------------------|
+|  (Top-level object #n)                     |
+|--------------------------------------------|
+
+
+//---------------------------------------------------------------------
+// (2) Reading objects correctly:
+//---------------------------------------------------------------------
+
+   Whenever you are ready to read an object, first read the object type
+value (DWORD = 4 bytes) to figure out what kind of an object it is,
+then (since the file pointer moved 4 bytes ahead) back up 4 bytes
+using the "lseek(...,-sizeof(DWORD))" function call.
+
+   Finally, read the correct FILE_WPS_*_STRUCT data structure which
+the object type that it represents (see WPS_SDK.H data structures).
+
+   Follow this procedure for all objects in the file.  Whenever you find
+an object of OBJTYPE_CONTAINER sub-type (i.e. Desktop, Folders, and Drives
+Objects), you must loop for the necessary number of times to read
+all the children objects from that container.  For example, if you just
+read a folder object which has in its ".m_con.m_nObjects" field equal to 3,
+then you must execute a "for-loop" to read (probably recursively) 3 child
+objects belonging to this container.
+
+   Below is an example of reading a folder, where ^ denotes the file pointer
+position:
+
+(2.1) File pointer is pointing to the beginning of an object data block.
+
+<-4 bytes-><-2 bytes-><-MAX_TITLE_NAME bytes-><-etc...-> FILE_OBJECT_STRUCT
+|------------------------------------------------------|
+|   Type      UniqueID      Title text         etc...  |
+|::::::::::::::::::::::::::::::::::::::::::::::::::::::|
+^
+File pointer
+
+
+(2.2) Read 4 bytes (DWORD) to figure out the object type (file pointer moves).
+
+<-4 bytes-><-2 bytes-><-MAX_TITLE_NAME bytes-><-etc...-> FILE_OBJECT_STRUCT
+|------------------------------------------------------|
+|   Type      UniqueID      Title text         etc...  |
+|::::::::::::::::::::::::::::::::::::::::::::::::::::::|
+           ^
+           File pointer
+
+
+(2.3) We figure out that the object type is "OBJTYPE_FOLDER".  We now need
+      to read a FILE_WPS_FOLDER_STRUCT block of data.  Therefore, we must
+      position the file pointer back to the beginning of the object data block.
+      Execute a file pointer move to negative 4 bytes from current position.
+
+<-4 bytes-><-2 bytes-><-MAX_TITLE_NAME bytes-><-etc...-> FILE_OBJECT_STRUCT
+|------------------------------------------------------|
+|   Type      UniqueID      Title text         etc...  |
+|::::::::::::::::::::::::::::::::::::::::::::::::::::::|
+^
+File pointer
+
+
+(2.4) Now, execute a read operation for the whole FILE_WPS_FOLDER_STRUCT data
+      block.  When done, check the ".m_con.m_nObjects" field for any further
+      children to read recursively from this point.  Repeat from step 2.1.
+
+
+//---------------------------------------------------------------------
+// (3) Example:
+//---------------------------------------------------------------------
+
+   So, a desktop which looks like this:
+
+                         Desktop
+                            |
+         ----------------------------------------
+         |                  |                   |
+      Folder 1           Folder 2           Folder 3
+         |                                      |
+   -----------------                      -------------
+   |       |       |                      |           |
+ App A  Folder 4  App B                 App E      Folder 5
+           |                                          |
+        --------                                    App F
+        |      |
+      App C  App D
+
+
+   Would look something like this in the WPSHELL.INI file:
+
+   Profile header structure (WPSHELL_PROFILE_HEADER).
+   Desktop data structure (FILE_WPS_FOLDER_STRUCT) - 3 objects
+      Folder 1 data structure (FILE_WPS_FOLDER_STRUCT) - 3 objects
+         App A data structure (FILE_WPS_PROGRAM_STRUCT)
+         Folder 4 data structure (FILE_WPS_FOLDER_STRUCT) - 2 objects
+            App C data structure (FILE_WPS_PROGRAM_STRUCT)
+            App D data structure (FILE_WPS_PROGRAM_STRUCT)
+         App B data structure (FILE_WPS_PROGRAM_STRUCT)
+      Folder 2 data structure (FILE_WPS_FOLDER_STRUCT) - 0 objects
+      Folder 3 data structure (FILE_WPS_FOLDER_STRUCT) - 2 objects
+         App E data structure (FILE_WPS_PROGRAM_STRUCT)
+         Folder 5 data structure (FILE_WPS_FOLDER_STRUCT) - 1 object
+            App F data structure (FILE_WPS_PROGRAM_STRUCT)
+   End of file (EOF).
+
+
+
+//---------------------------------------------------------------------
+// (4) List of persistent object types
+//---------------------------------------------------------------------
+
+   Following is the list of possible objects that can be stored in the
+profile WPSHELL.INI.  Since some of the object types are abstract and
+therefore cannot be instantiated by themselves, only a limited number
+of objects from the OBJTYPE_* list can be actually instantiated and
+stored.  Here is the list of all possible objects that can appear in
+the WPSHELL.INI file:
+
+          Name                        Type               Data Structure
+                                                        (from WPS_SDK.H)
+--------------------------   ---------------------  -------------------------
+ Desktop                       OBJTYPE_DESKTOP       FILE_WPS_FOLDER_STRUCT
+ Folder                        OBJTYPE_FOLDER        FILE_WPS_FOLDER_STRUCT
+ Program                       OBJTYPE_PROGRAM       FILE_WPS_PROGRAM_STRUCT
+ Data File                     OBJTYPE_DATAFILE      FILE_WPS_DATAFILE_STRUCT
+ Shredder                      OBJTYPE_SHREDDER      FILE_WPS_OBJECT_STRUCT
+ Template                      OBJTYPE_TEMPLATE      FILE_WPS_TEMPLATE_STRUCT
+ Minimized Window Viewer       OBJTYPE_MINVIEWER     FILE_WPS_FOLDER_STRUCT
+ Shadow                        OBJTYPE_SHADOW        FILE_WPS_SHADOW_STRUCT
+ System                        OBJTYPE_SYSTEMSETUP   FILE_WPS_OBJECT_STRUCT
+ Directory                     OBJTYPE_DIRECTORY     FILE_WPS_DIRECTORY_STRUCT
+ Drive                         OBJTYPE_DRIVE         FILE_WPS_DRIVE_STRUCT
+
+// EOF WPSFILE.TXT
+

@@ -1,0 +1,7 @@
+WARPICON.OBJ +
+
+WARPICON.DLL
+nul
+c:\msvc\lib\+
+oldnames libw ldllcew
+WARPICON.DEF;

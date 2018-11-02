@@ -1,0 +1,23 @@
+[Params]
+    WndTitle   = Workplace Shell for Windows Setup
+    WndMess    = Initializing Setup Program, Please Wait...
+    TmpDirSize = 600
+    TmpDirName = ~wpgo.t
+    CmdLine    = _mstest wpsinst.mst /C "/S %s %s"
+    DrvModName = DSHELL
+
+[Files]
+    wpsinst.ms_  = wpsinst.mst
+    wpinst.in_  = wpinst.inf
+    setupapi.in_ = setupapi.inc
+    msdetect.in_ = msdetect.inc
+    mscomstf.dl_ = mscomstf.dll
+    msinsstf.dl_ = msinsstf.dll
+    msuilstf.dl_ = msuilstf.dll
+    msshlstf.dl_ = msshlstf.dll
+    mscuistf.dl_ = mscuistf.dll
+    msdetstf.dl_ = msdetstf.dll
+    _mstest.ex_  = _mstest.exe
+    _mssetup.ex_ = _mssetup.exe
+
+

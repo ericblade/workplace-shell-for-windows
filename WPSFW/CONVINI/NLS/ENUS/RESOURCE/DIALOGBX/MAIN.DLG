@@ -1,0 +1,27 @@
+//-----------------------------------------------------------------------------
+// DIALOG BOX TEMPLATES
+//-----------------------------------------------------------------------------
+
+//-------------------------------------------------------------------------
+// ENUS
+//-------------------------------------------------------------------------
+// US-English main dialog:
+IDD_MAIN DIALOG DISCARDABLE  0, 0, 250, 175
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "Convert Workplace Shell Profile"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "&Convert",IDOK,62,149,55,20,WS_GROUP
+    PUSHBUTTON      "&Done",IDCANCEL,133,149,55,20
+    EDITTEXT        IDE_SOURCEPROFILE,12,112,226,13,ES_UPPERCASE | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "CONVINI Program - Workplace Shell for Windows\nCopyright (C) IBM Corporation, 1994-1995.", IDC_STATIC,5,8,190,25
+    ICON            "IDI_CONVERT",IDC_STATIC,212,8,18,20
+    GROUPBOX        "Information",IDC_STATIC,5,42,240,43
+    LTEXT           "Convert a WPSHELL.INI 0.5.x profile to 1.x profile.", IDC_STATIC,11,56,228,8
+    LTEXT           "The original WPSHELL.INI file will be backed up as WPSHELL.V5X. ", IDC_STATIC,11,69,228,8
+    GROUPBOX        "Source Profile",IDC_STATIC,5,95,240,40
+END
+
+// EOF MAIN.DLG
+
+

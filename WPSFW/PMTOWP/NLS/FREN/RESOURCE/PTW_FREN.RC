@@ -1,0 +1,78 @@
+//=====================================================================
+// PTW_FREN.RC
+//    Program Manager To Workplace Conversion Program NLS Resource File.
+//
+// Date Created :  01/26/94
+// Last Update  :  03/20/95
+// Written By   :  Mario E. De Armas
+// Compiler Used:  MS Visual C++ 1.5
+//
+// Copyright IBM Corporation, 1994-1995. All rights reserved.
+//
+//
+// FILE LOG:
+// DATE        | ACTION/CHANGE                           | PROGRAMMER
+// 01/26/94    | Creation.                               | MDA
+//=====================================================================
+
+
+//---------------------------------------------------------------------
+// HEADER FILES
+//---------------------------------------------------------------------
+// Windows library header files.
+#include <windows.h>
+#include <ver.h>
+// PMTOWP resource IDs header file.
+#include "resource.h"
+
+
+//-----------------------------------------------------------------------------
+// VERSION INFORMATION
+//-----------------------------------------------------------------------------
+VS_VERSION_INFO VERSIONINFO
+   FILEVERSION     1,0,0,0
+   PRODUCTVERSION  VER_MAJOR,VER_MINOR,0,0
+   FILEFLAGSMASK   0
+   FILEFLAGS       0
+   FILEOS          VOS_DOS_WINDOWS16
+
+   FILETYPE        VFT_DLL
+   FILESUBTYPE     VFT_DLL
+
+   BEGIN
+      BLOCK "StringFileInfo"
+      BEGIN
+         BLOCK "040904E4"
+         BEGIN
+            VALUE "CompanyName"        , "IBM Corporation\0"
+            VALUE "FileDescription"    , "Program Manager To Workplace Shell Program NLS Resource Library\0"
+            VALUE "FileVersion"        , "1.0.0\0"
+            VALUE "InternalName"       , "PROGMAN To WPSHELL\0"
+            VALUE "LegalCopyright"     , VER_STR_PRODUCTCOPYRIGHT
+            VALUE "ProductName"        , "Workplace Shell for Windows\0"
+            VALUE "OriginalFileName"   , "PTW_FREN.DLL\0"
+            VALUE "ProductVersion"     , VER_STR_PRODUCTVERSION
+         END
+      END
+
+      BLOCK "VarFileInfo"
+      BEGIN
+         VALUE "Translation", 0x0409, 1252
+      END
+   END
+
+//-----------------------------------------------------------------------------
+// STRING TABLES
+//-----------------------------------------------------------------------------
+#include "STRINGS\\STRTABLE.RC"
+
+
+//-----------------------------------------------------------------------------
+// DIALOG BOXES
+//-----------------------------------------------------------------------------
+#include "DIALOGBX\\MAIN.DLG"
+
+
+// EOF PTW_FREN.RC
+
+

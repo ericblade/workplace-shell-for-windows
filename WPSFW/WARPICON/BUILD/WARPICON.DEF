@@ -1,0 +1,25 @@
+;=====================================================================
+; WARPICON.DEF
+;    OS/2 Warp's Icon Library for Windows 3.1 definition file.
+;
+; Date Created :  10/14/94
+; Last Update  :  10/14/94
+; Written By   :  Mario E. De Armas
+; Compiler Used:  MS Visual C++ 1.5
+;
+; Copyright IBM Corporation, 1994. All rights reserved.
+;
+;
+; FILE LOG:
+; DATE        | ACTION/CHANGE                           | PROGRAMMER
+; 10/14/94    | Creation.                               | MDA
+;=====================================================================
+
+LIBRARY        WARPICON
+DESCRIPTION    "OS/2 Warp Icon Library for Windows - Copyright (c) IBM Corp. 1994"
+EXETYPE        WINDOWS
+STUB           'WINSTUB.EXE'
+CODE           PRELOAD MOVEABLE DISCARDABLE
+DATA           PRELOAD MOVEABLE SINGLE
+
+; EOF WARPICON.DEF

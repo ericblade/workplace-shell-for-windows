@@ -1,0 +1,292 @@
+//=====================================================================
+// MENUS.RC
+//    WPSHELL's Windows 3.1 system popup menus resource script file.
+//
+// Date Created :  01/26/94
+// Last Update  :  03/07/95
+// Written By   :  Mario E. De Armas
+// Compiler Used:  MS Visual C++ 1.5
+//
+// Copyright IBM Corporation, 1994-1995. All rights reserved.
+//
+//
+// FILE LOG:
+// DATE        | ACTION/CHANGE                           | PROGRAMMER
+// 01/26/94    | Creation.                               | MDA
+//=====================================================================
+
+//-----------------------------------------------------------------------------
+// POP-UP MENUS
+//-----------------------------------------------------------------------------
+
+// WORKPLACE SHELL DESKTOP SYSTEM MENU
+DesktopPopUpMenu MENU
+{
+   POPUP ""
+   {
+      POPUP "&Open"
+      {
+         MENUITEM "&Settings"               , IDM_OPENSETTINGS
+         MENUITEM "&Icon view"              , IDM_OPENICON
+         MENUITEM "&Details view"           , IDM_OPENDETAILS
+      }
+      MENUITEM "Settings"                   , IDM_OPENSETTINGS
+      MENUITEM "&Refresh now"               , IDM_REFRESHNOW
+      POPUP "&Help"
+      {
+         MENUITEM "&Contents"               , IDM_HELPINDEX
+         MENUITEM "&General help"           , IDM_HELPGENERAL   , CHECKED
+         MENUITEM "&Using help"             , IDM_HELPUSING
+         MENUITEM "&Keys help"              , IDM_HELPKEYS
+         MENUITEM SEPARATOR
+         MENUITEM "&Product Information"    , IDM_HELPPRODINFO
+      }
+      MENUITEM SEPARATOR
+      MENUITEM "&Lockup now"                , IDM_LOCKUPNOW
+      MENUITEM "Shut &down..."              , IDM_SHUTDOWN
+      MENUITEM "S&ystem setup"              , IDM_SYSTEMSETUP
+
+      MENUITEM SEPARATOR
+      MENUITEM "&Find..."                   , IDM_FIND
+
+      POPUP "&Select"
+      {
+         MENUITEM "Select &all\tCtrl+S"     , IDM_SELECTALL
+         MENUITEM "Dese&lect all\tCtrl+D"   , IDM_DESELECTALL
+      }
+
+      POPUP "Sor&t"
+
+      {
+         MENUITEM "&Name"                   , IDM_SORTBYNAME
+         MENUITEM "&Type"                   , IDM_SORTBYTYPE
+         MENUITEM "Real name"               , IDM_SORTBYREALNAME
+         MENUITEM "Size"                    , IDM_SORTBYSIZE
+         MENUITEM "Last access date"        , IDM_SORTBYLASTACCESSDATE
+         MENUITEM "Last access time"        , IDM_SORTBYLASTACCESSTIME
+      }
+
+      MENUITEM "&Arrange"                   , IDM_ARRANGE
+      MENUITEM SEPARATOR
+      MENUITEM "Sa&ve desktop"              , IDM_SAVEDESKTOP
+      MENUITEM SEPARATOR
+      MENUITEM "R&un..."                    , IDM_RUN
+   }
+}
+
+
+// WORKPLACE SHELL FOLDER SYSTEM MENU
+FolderPopUpMenu MENU
+{
+   POPUP ""
+   {
+      POPUP "&Open"
+      {
+         MENUITEM "&Settings"               , IDM_OPENSETTINGS
+         MENUITEM "&Icon view"              , IDM_OPENICON
+         MENUITEM "&Details view"           , IDM_OPENDETAILS
+      }
+      MENUITEM "Settings"                   , IDM_OPENSETTINGS
+      MENUITEM "Open parent"                , IDM_OPENPARENT
+      MENUITEM "&Refresh now"               , IDM_REFRESHNOW
+      POPUP "&Help"
+      {
+         MENUITEM "&Contents"               , IDM_HELPINDEX
+         MENUITEM "&General help"           , IDM_HELPGENERAL     , CHECKED
+         MENUITEM "&Using help"             , IDM_HELPUSING
+         MENUITEM "&Keys help"              , IDM_HELPKEYS
+      }
+      MENUITEM SEPARATOR
+      MENUITEM "Create a&nother..."         , IDM_CREATEANOTHER
+      MENUITEM "&Copy..."                   , IDM_COPY
+      MENUITEM "&Move..."                   , IDM_MOVE
+      MENUITEM "Create &shadow..."          , IDM_CREATESHADOW
+      MENUITEM "&Delete..."                 , IDM_DELETE
+      MENUITEM SEPARATOR
+      POPUP "&Window"
+      {
+         MENUITEM "&Restore"                , IDM_WINDOWRESTORE
+         MENUITEM "&Move"                   , IDM_WINDOWMOVE
+         MENUITEM "&Size"                   , IDM_WINDOWSIZE
+         MENUITEM "Mi&nimize"               , IDM_WINDOWMINIMIZE
+         MENUITEM "Ma&ximize"               , IDM_WINDOWMAXIMIZE
+         MENUITEM "&Hide"                   , IDM_WINDOWHIDE
+      }
+      MENUITEM "&Find..."                   , IDM_FIND
+      POPUP "&Select"
+      {
+         MENUITEM "Select &all\tCtrl+S"     , IDM_SELECTALL
+         MENUITEM "Dese&lect all\tCtrl+D"   , IDM_DESELECTALL
+      }
+      POPUP "Sor&t"
+      {
+         MENUITEM "&Name"                   , IDM_SORTBYNAME
+         MENUITEM "&Type"                   , IDM_SORTBYTYPE
+         MENUITEM "Real name"               , IDM_SORTBYREALNAME
+         MENUITEM "Size"                    , IDM_SORTBYSIZE
+         MENUITEM "Last access date"        , IDM_SORTBYLASTACCESSDATE
+         MENUITEM "Last access time"        , IDM_SORTBYLASTACCESSTIME
+      }
+      MENUITEM "&Arrange"                   , IDM_ARRANGE
+      MENUITEM SEPARATOR
+      MENUITEM "Close"                      , IDM_CLOSE
+   }
+}
+
+// WORKPLACE SHELL OBJECT SYSTEM MENU
+ObjectPopUpMenu MENU
+{
+   POPUP ""
+   {
+      POPUP "&Open"
+      {
+         MENUITEM "&Settings"               , IDM_OPENSETTINGS  , CHECKED
+      }
+      MENUITEM "Settings"                   , IDM_OPENSETTINGS
+      MENUITEM "Open parent"                , IDM_OPENPARENT
+      POPUP "&Help"
+      {
+         MENUITEM "&Contents"               , IDM_HELPINDEX
+         MENUITEM "&General help"           , IDM_HELPGENERAL   , CHECKED
+         MENUITEM "&Using help"             , IDM_HELPUSING
+         MENUITEM "&Keys help"              , IDM_HELPKEYS
+      }
+      MENUITEM SEPARATOR
+      MENUITEM "Create a&nother..."         , IDM_CREATEANOTHER
+      MENUITEM "&Copy..."                   , IDM_COPY
+      MENUITEM "&Move..."                   , IDM_MOVE
+      MENUITEM "Create &shadow..."          , IDM_CREATESHADOW
+      MENUITEM "&Delete..."                 , IDM_DELETE
+   }
+}
+
+
+// WORKPLACE SHELL PROGRAM SYSTEM MENU
+ProgramPopUpMenu MENU
+{
+   POPUP ""
+   {
+      POPUP "&Open"
+      {
+         MENUITEM "&Settings"               , IDM_OPENSETTINGS
+         MENUITEM "&Program"                , IDM_OPENPROGRAM     , CHECKED
+      }
+      MENUITEM "Settings"                   , IDM_OPENSETTINGS
+      MENUITEM "Open parent"                , IDM_OPENPARENT
+      POPUP "&Help"
+      {
+         MENUITEM "&Contents"               , IDM_HELPINDEX
+         MENUITEM "&General help"           , IDM_HELPGENERAL     , CHECKED
+         MENUITEM "&Using help"             , IDM_HELPUSING
+         MENUITEM "&Keys help"              , IDM_HELPKEYS
+      }
+      MENUITEM SEPARATOR
+      MENUITEM "Create a&nother..."         , IDM_CREATEANOTHER
+      MENUITEM "&Copy..."                   , IDM_COPY
+      MENUITEM "&Move..."                   , IDM_MOVE
+      MENUITEM "Create &shadow..."          , IDM_CREATESHADOW
+      MENUITEM "&Delete..."                 , IDM_DELETE
+   }
+}
+
+
+// WORKPLACE SHELL DATA FILE SYSTEM MENU
+DataFilePopUpMenu MENU
+{
+   POPUP ""
+   {
+      POPUP "&Open"
+      {
+         MENUITEM "&Settings"               , IDM_OPENSETTINGS
+         MENUITEM "&Data File"              , IDM_OPENDATAFILE    , CHECKED
+      }
+      MENUITEM "Settings"                   , IDM_OPENSETTINGS
+      MENUITEM "Open parent"                , IDM_OPENPARENT
+      POPUP "&Help"
+      {
+         MENUITEM "&Contents"               , IDM_HELPINDEX
+         MENUITEM "&General help"           , IDM_HELPGENERAL     , CHECKED
+         MENUITEM "&Using help"             , IDM_HELPUSING
+         MENUITEM "&Keys help"              , IDM_HELPKEYS
+      }
+      MENUITEM SEPARATOR
+      MENUITEM "Create a&nother..."         , IDM_CREATEANOTHER
+      MENUITEM "&Copy..."                   , IDM_COPY
+      MENUITEM "&Move..."                   , IDM_MOVE
+      MENUITEM "Create &shadow..."          , IDM_CREATESHADOW
+      MENUITEM "&Delete..."                 , IDM_DELETE
+      MENUITEM SEPARATOR
+      MENUITEM "&Print"                     , IDM_PRINT
+   }
+}
+
+
+// WORKPLACE SHELL TEMPLATE SYSTEM MENU
+MinimizedWindowViewerPopUpMenu MENU
+{
+   POPUP ""
+   {
+      POPUP "&Open"
+      {
+         MENUITEM "&Settings"               , IDM_OPENSETTINGS
+         MENUITEM "&Icon view"              , IDM_OPENICON        , CHECKED
+      }
+      MENUITEM "Settings"                   , IDM_OPENSETTINGS
+      MENUITEM "Open parent"                , IDM_OPENPARENT
+      MENUITEM "&Refresh now"               , IDM_REFRESHNOW
+      POPUP "&Help"
+      {
+         MENUITEM "&Contents"               , IDM_HELPINDEX
+         MENUITEM "&General help"           , IDM_HELPGENERAL     , CHECKED
+         MENUITEM "&Using help"             , IDM_HELPUSING
+         MENUITEM "&Keys help"              , IDM_HELPKEYS
+      }
+      MENUITEM SEPARATOR
+      MENUITEM "&Move..."                   , IDM_MOVE
+      MENUITEM "Create &shadow..."          , IDM_CREATESHADOW
+      MENUITEM SEPARATOR
+      POPUP "&Window"
+      {
+         MENUITEM "&Restore"                , IDM_WINDOWRESTORE
+         MENUITEM "&Move"                   , IDM_WINDOWMOVE
+         MENUITEM "&Size"                   , IDM_WINDOWSIZE
+         MENUITEM "Mi&nimize"               , IDM_WINDOWMINIMIZE
+         MENUITEM "Ma&ximize"               , IDM_WINDOWMAXIMIZE
+         MENUITEM "&Hide"                   , IDM_WINDOWHIDE
+      }
+      POPUP "&Select"
+      {
+         MENUITEM "Select &all\tCtrl+S"     , IDM_SELECTALL
+         MENUITEM "Dese&lect all\tCtrl+D"   , IDM_DESELECTALL
+      }
+      MENUITEM "&Arrange"                   , IDM_ARRANGE
+      MENUITEM SEPARATOR
+      MENUITEM "Close"                      , IDM_CLOSE
+   }
+}
+
+
+// WORKPLACE SHELL MINIMIZED WINDOW OBJECT SYSTEM MENU
+MinimizedWindowObjectPopUpMenu MENU
+{
+   POPUP ""
+   {
+      POPUP "&Help"
+      {
+         MENUITEM "&Contents"               , IDM_HELPINDEX
+         MENUITEM "&General help"           , IDM_HELPGENERAL     , CHECKED
+         MENUITEM "&Using help"             , IDM_HELPUSING
+         MENUITEM "&Keys help"              , IDM_HELPKEYS
+      }
+      MENUITEM "&Settings"                  , IDM_OPENSETTINGS
+      MENUITEM SEPARATOR
+      MENUITEM "&Restore"                   , IDM_WINDOWRESTORE
+      MENUITEM "Ma&ximize"                  , IDM_WINDOWMAXIMIZE
+      MENUITEM "&Close"                     , IDM_CLOSE
+      MENUITEM "Window lis&t"               , IDM_WINDOWLIST
+   }
+}
+
+// EOF MENUS.RC
+
+

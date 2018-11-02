@@ -1,0 +1,329 @@
+//---------------------------------------------------------------------
+// SETTNB.DLG
+//    WPSHELL's Settings Notebook Pages Dialog Templates, Spanish.
+//
+// Date Created :  05/08/94
+// Last Update  :  10/10/95
+// Written By   :  Mario E. De Armas
+// Compiler Used:  MS Visual C++ 1.52
+//
+// Copyright IBM Corporation, 1994-1995. All rights reserved.
+//
+//
+// FILE LOG:
+// DATE        | ACTION/CHANGE                           | PROGRAMMER
+// 05/08/94    | Creation.                               | MDA
+// 09/16/95    | Translation.                            | LLS
+//=====================================================================
+
+
+//---------------------------------------------------------------------
+// HEADER FILES
+//---------------------------------------------------------------------
+// IBM CUA controls library header files.
+#include "fclspbw.h"    // Spin Button control styles.
+
+
+//---------------------------------------------------------------------
+// WPOBJECT's "General" page.
+//---------------------------------------------------------------------
+IDD_GENERAL_PAGE DIALOG DISCARDABLE  0, 0, 150, 165
+STYLE WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDE_TITLE,33,10,103,36,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | WS_GROUP | 0x1000
+    PUSHBUTTON      "C&rear otro...",IDB_CREATEANOTHER,72,55,65,16, WS_DISABLED | WS_GROUP
+    PUSHBUTTON      "&Editar...",IDB_EDIT,73,76,65,16,WS_DISABLED
+    DEFPUSHBUTTON   "&Buscar...",IDB_FIND,73,97,65,16
+    PUSHBUTTON      "&Deshacer",IDB_UNDO,7,141,40,18,WS_GROUP
+    PUSHBUTTON      "Por &omisión",IDB_DEFAULT,54,141,40,18
+    PUSHBUTTON      "Ayuda",IDB_HELP,101,141,40,18
+    RTEXT           "Título:",IDC_STATIC,6,10,21,7
+    GROUPBOX        "Icono actual",IDC_STATIC,5,55,60,52
+    CONTROL         "",IDS_ICON,"Static",SS_BLACKFRAME,25,74,20,20
+END
+
+
+//---------------------------------------------------------------------
+// WPFOLDER's "View" page.
+//---------------------------------------------------------------------
+IDD_VIEW_PAGE DIALOG DISCARDABLE  0, 0, 150, 165
+STYLE WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+    CONTROL         "Varias columnas",IDB_FLOWED,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,14,29,60,10
+    CONTROL         "Una columna",IDB_NONFLOWED,"Button",BS_AUTORADIOBUTTON,14,43,60,10
+    CONTROL         "Sin orden",IDB_NONGRID,"Button",BS_AUTORADIOBUTTON,14,57,60,10
+    CONTROL         "Inicio",IDB_STARTUP,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,92,64,45,10
+    EDITTEXT        IDE_FONT,12,93,52,28,ES_AUTOHSCROLL | ES_READONLY | WS_GROUP
+    DEFPUSHBUTTON   "&Cambiar font...",IDB_CHANGEFONT,70,89,65,17, WS_GROUP
+    CONTROL         "Fondo &transparente",IDB_TRANSPARENTBKGND,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,67, 112,72,10
+    PUSHBUTTON      "&Deshacer",IDB_UNDO,7,141,40,18,WS_GROUP
+    PUSHBUTTON      "Por &omisión",IDB_DEFAULT,54,141,40,18
+    PUSHBUTTON      "Ayuda",IDB_HELP,101,141,40,18
+    GROUPBOX        "Texto del icono",IDC_STATIC,7,79,135,49
+    GROUPBOX        "Vista del icono",IDC_STATIC,2,3,145,132
+    GROUPBOX        "Formato",IDC_STATIC,7,17,72,57
+END
+
+//---------------------------------------------------------------------
+// WPFOLDER's "Background" page.
+//---------------------------------------------------------------------
+IDD_BACKGROUND_PAGE DIALOG DISCARDABLE  0, 0, 150, 165
+STYLE WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+    CONTROL         "&Solo color",IDB_COLORONLY,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,9,19,57,10
+    DEFPUSHBUTTON   "C&ambiar color...",IDB_CHANGECOLOR,8,35,57,16
+    COMBOBOX        IDCB_BITMAPLIST,51,77,90,60,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    CONTROL         "Imagen &normal",IDB_NORMALIMAGE,"Button", BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,8,95,131,10
+    CONTROL         "Imagen en &mosaico",IDB_TILEDIMAGE,"Button", BS_AUTORADIOBUTTON,8,108,131,10
+    CONTROL         "Imagen a es&cala",IDB_SCALEDIMAGE,"Button", BS_AUTORADIOBUTTON,8,121,131,10
+    PUSHBUTTON      "&Deshacer",IDB_UNDO,7,141,40,18,WS_GROUP
+    PUSHBUTTON      "Por &omisión",IDB_DEFAULT,54,141,40,18
+    PUSHBUTTON      "Ayuda",IDB_HELP,101,141,40,18
+    GROUPBOX        "Color",IDC_STATIC,1,5,71,55
+    GROUPBOX        "Vista previa",IDC_STATIC,75,5,71,55
+    CONTROL         "",IDS_PREVIEWAREA,"Static",SS_BLACKFRAME,79,18,62,36
+    GROUPBOX        "Imagen",IDB_IMAGEGROUP,1,65,145,71
+    LTEXT           "Archivo:",IDS_FILETEXT,8,79,40,8
+END
+
+
+//---------------------------------------------------------------------
+// WPPROGRAM's "Program" page.
+//---------------------------------------------------------------------
+IDD_PROGRAM_PAGE DIALOG DISCARDABLE  0, 0, 150, 165
+STYLE WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDE_PATHFILE,10,36,140,13,ES_AUTOHSCROLL | WS_GROUP
+    DEFPUSHBUTTON   "&Buscar...",IDB_FIND,102,54,45,18,WS_GROUP
+    EDITTEXT        IDE_PARAMETERS,10,84,140,13,ES_AUTOHSCROLL | WS_GROUP
+    EDITTEXT        IDE_WORKDIR,10,113,140,13,ES_AUTOHSCROLL | WS_GROUP
+    PUSHBUTTON      "&Deshacer",IDB_UNDO,7,141,40,18,WS_GROUP
+    PUSHBUTTON      "Ayuda",IDB_HELP,54,141,40,18
+    LTEXT           "Necesarios",IDC_STATIC,5,8,52,8
+    LTEXT           "Vía de acceso y nombre de archivo:",IDC_STATIC,10,22,114,8
+    LTEXT           "Opcionales",IDC_STATIC,5,60,60,8
+    LTEXT           "Parámetros:",IDC_STATIC,10,72,80,8
+    LTEXT           "Directorio de trabajo:",IDC_STATIC,10,101,80,8
+END
+
+
+//---------------------------------------------------------------------
+// WPPROGRAM's "Association" page.
+//---------------------------------------------------------------------
+IDD_ASSOCIATION_PAGE DIALOG DISCARDABLE  0, 0, 150, 165
+STYLE WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN                                             
+    LISTBOX         IDL_AVAILTYPES,7,24,136,50,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | WS_GROUP | WS_TABSTOP
+    CONTROL         "&Normal",IDB_STARTNORMAL,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,15,92,75,10
+    CONTROL         "Minimi&zado",IDB_STARTMINIMIZED,"Button",BS_AUTORADIOBUTTON,15,107,75,10
+    CONTROL         "Ma&ximized",IDB_STARTMAXIMIZED,"Button",BS_AUTORADIOBUTTON,15,122,75,9
+    PUSHBUTTON      "&Deshacer",IDB_UNDO,7,141,40,18,WS_GROUP
+    PUSHBUTTON      "&Ayuda",IDB_HELP,54,141,40,18
+    LTEXT           "Tipo de programa actual:",IDC_STATIC,7,12,136,8,NOT WS_GROUP
+    GROUPBOX        "Start program",IDC_STATIC,7,79,136,57
+END
+
+
+//---------------------------------------------------------------------
+// WPFOLDER's "Window" page.
+//---------------------------------------------------------------------
+IDD_WINDOW_PAGE DIALOG DISCARDABLE  0, 0, 150, 165
+STYLE WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+    CONTROL         "Botón &ocultar",IDB_HIDEBUTTON,"Button", BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,5,17,70,10
+    CONTROL         "Botón &minimizar",IDB_MINIMIZEBUTTON,"Button", BS_AUTORADIOBUTTON | WS_TABSTOP,75,17,70,10
+    CONTROL         "O&cultar ventana",IDB_MINHIDE,"Button", BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,5,50,130,10
+    CONTROL         "Minimizar ventana en el &Visor",IDB_MINTOVIEWER,"Button", BS_AUTORADIOBUTTON | WS_TABSTOP,5,63,130,10
+    CONTROL         "Minimizar ventana en el &Escritorio",IDB_MINTODESKTOP, "Button",BS_AUTORADIOBUTTON | WS_TABSTOP,5,76,130,10
+    CONTROL         "Visualizar ventana e&xistente",IDB_DISPLAY,"Button", BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,5,107,130,10
+    CONTROL         "Crear ventana &nueva",IDB_CREATE,"Button", BS_AUTORADIOBUTTON | WS_TABSTOP,5,120,130,10
+    PUSHBUTTON      "&Deshacer",IDB_UNDO,7,141,40,18,WS_GROUP
+    PUSHBUTTON      "Por &omisión",IDB_DEFAULT,54,141,40,18
+    PUSHBUTTON      "Ayuda",IDB_HELP,101,141,40,18
+    GROUPBOX        "Aspecto de los botones de las ventanas",IDS_BUTTON_APPEARANCE_GRPBX,2,3,145,29
+    GROUPBOX        "Comportamiento del botón minimizar",IDC_STATIC,2,37,145,53
+    GROUPBOX        "Comportamiento del objeto al abrirlo",IDC_STATIC,3,95,145,40
+END
+
+
+//---------------------------------------------------------------------
+// WPDATAFILE's "Type" page.
+//---------------------------------------------------------------------
+IDD_TYPE_PAGE DIALOG DISCARDABLE  0, 0, 150, 165
+STYLE WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDE_TYPE,5,32,140,13,ES_AUTOHSCROLL | ES_READONLY | WS_GROUP
+    PUSHBUTTON      "&Deshacer",IDB_UNDO,7,141,40,18,WS_DISABLED | WS_GROUP
+    PUSHBUTTON      "Ayuda",IDB_HELP,54,141,40,18
+    LTEXT           "Tipo de archivo:",IDC_STATIC,5,20,75,8
+END
+
+//---------------------------------------------------------------------
+// WPDATAFILE's "File" page.
+//---------------------------------------------------------------------
+IDD_FILE_PAGE DIALOG DISCARDABLE  0, 0, 150, 165
+STYLE WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDE_SUBJECT,6,26,140,13,ES_AUTOHSCROLL | WS_GROUP
+    EDITTEXT        IDE_PATH,6,69,140,13,ES_AUTOHSCROLL
+    EDITTEXT        IDE_NAME,6,102,140,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Deshacer",IDB_UNDO,7,141,40,18,WS_GROUP
+    PUSHBUTTON      "Ayuda",IDB_HELP,54,141,40,18
+    DEFPUSHBUTTON   "&Buscar...",IDB_FIND,100,46,45,18,WS_GROUP
+    LTEXT           "Tema:",IDC_STATIC,6,16,140,8,NOT WS_GROUP
+    LTEXT           "Vía de acceso:",IDC_STATIC,6,59,70,8,NOT WS_GROUP
+    LTEXT           "Nombre:",IDC_STATIC,6,92,70,8,NOT WS_GROUP
+END
+
+
+//---------------------------------------------------------------------
+// WPSYSSETUP's "Window" page.
+//---------------------------------------------------------------------
+IDD_SYSSETUP_WINDOW_PAGE DIALOG DISCARDABLE  0, 0, 155, 165
+STYLE WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+    CONTROL         "Botón &ocultar",IDB_HIDEBUTTON,"Button", BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,5,17,70,10
+    CONTROL         "Botón &minimizar",IDB_MINIMIZEBUTTON,"Button", BS_AUTORADIOBUTTON | WS_TABSTOP,77,17,70,10
+    CONTROL         "&Habilitado",IDB_ENABLED,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,5,51,39,10
+    CONTROL         "D&eshabilitado",IDB_DISABLED,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,5,68,39,10
+    CONTROL         "O&cultar ventana",IDB_MINHIDE,"Button", BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,55,50,94,10
+    CONTROL         "Minimizar vent. en el &Visor",IDB_MINTOVIEWER,"Button", BS_AUTORADIOBUTTON | WS_TABSTOP,55,63,94,10
+    CONTROL         "Minimizar vent. en el &Escritorio",IDB_MINTODESKTOP, "Button",BS_AUTORADIOBUTTON | WS_TABSTOP,55,76,94,10
+    CONTROL         "Visualizar ventana e&xistente",IDB_DISPLAY,"Button", BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,5,107,135,10
+    CONTROL         "Crear ventana &nueva",IDB_CREATE,"Button", BS_AUTORADIOBUTTON | WS_TABSTOP,5,120,135,10
+    PUSHBUTTON      "&Deshacer",IDB_UNDO,7,141,40,18,WS_GROUP
+    PUSHBUTTON      "Por &omisión",IDB_DEFAULT,54,141,40,18
+    PUSHBUTTON      "Ayuda",IDB_HELP,101,141,40,18
+    GROUPBOX        "Aspecto de los botones de las ventanas",IDC_STATIC,2,3,150,29
+    GROUPBOX        "Comportamiento del botón minimizar",IDC_STATIC,52,37,100,53
+    GROUPBOX        "Comportamiento del objeto al abrirlo",IDC_STATIC,2,95,150,40
+    GROUPBOX        "Animación",IDC_STATIC,2,37,45,53
+END
+
+
+//---------------------------------------------------------------------
+// WPSYSSETUP's "Windows" page 2.
+//---------------------------------------------------------------------
+IDD_SYSSETUP_WINDOW2_PAGE DIALOG DISCARDABLE  0, 0, 150, 165
+STYLE WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN                        
+    CONTROL         "Propagar los cambios a todos los objetos",IDB_PROPAGATECHANGES,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,5,5,145,10
+    CONTROL         "&Never",IDB_NEVER,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,12,80,125,10
+    CONTROL         "&Subfolders only",IDB_SUBFOLDERS_ONLY,"Button",BS_AUTORADIOBUTTON,12,96,125,10
+    CONTROL         "&All Objects",IDB_ALLOBJECTS,"Button",BS_AUTORADIOBUTTON,12,112,125,10
+    PUSHBUTTON      "&Deshacer",IDB_UNDO,7,141,40,18,WS_GROUP
+    PUSHBUTTON      "Por &omisión",IDB_DEFAULT,54,141,40,18
+    PUSHBUTTON      "Ayuda",IDB_HELP,101,141,40,18
+    GROUPBOX        "Folder Automatic Close",IDC_STATIC,5,35,140,95
+    LTEXT           "Automatically close folder view when  opening objects contained within: ",IDC_STATIC,9,50,131,24
+END
+
+
+//---------------------------------------------------------------------
+// WPSYSSETUP's "Confirmations" page.
+//---------------------------------------------------------------------
+IDD_SYSSETUP_CONFIRMATION_PAGE DIALOG DISCARDABLE  0, 0, 150, 165
+STYLE WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+    CONTROL         "Co&nfirmar para suprimir carpeta",IDB_FOLDER_DELETE, "Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,5,34,135,10
+    CONTROL         "&Confirmar para suprimir",IDB_DELETE,"Button", BS_AUTOCHECKBOX | WS_TABSTOP,5,52,135,10
+    CONTROL         "Confirmar para suprimir &archivo",IDB_FILE_SYSTEM_DELETE,"Button", BS_AUTOCHECKBOX | WS_TABSTOP,5,70,135,10
+    PUSHBUTTON      "&Deshacer",IDB_UNDO,7,141,40,18,WS_GROUP
+    PUSHBUTTON      "Por &omisión",IDB_DEFAULT,54,141,40,18
+    PUSHBUTTON      "Ayuda",IDB_HELP,101,141,40,18
+END
+
+
+//---------------------------------------------------------------------
+// WPDESKTOP's "Lockup" page.
+//---------------------------------------------------------------------
+IDD_LOCKUP_PAGE DIALOG DISCARDABLE  0, 0, 150, 165
+STYLE WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+    CONTROL         "&Sin bloqueo automático",IDB_NO_AUTOMATIC, "Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,12,27,120,10
+    CONTROL         "&Bloqueo automático",IDB_AUTOMATIC,"Button", BS_AUTORADIOBUTTON | WS_TABSTOP,12,44,120,10
+    CONTROL         "",IDSB_TIMEOUT,CCL_SPINBTN,WS_GROUP | WS_TABSTOP |
+                    SPBS_NUMERICONLY | SPBS_READONLY | SPBS_MASTER | SPBS_JUSTRIGHT | SPBS_FASTSPIN,52,62,30,12
+    PUSHBUTTON      "&Deshacer",IDB_UNDO,7,141,40,18,WS_GROUP
+    PUSHBUTTON      "Por &omisión",IDB_DEFAULT,54,141,40,18
+    PUSHBUTTON      "Ayuda",IDB_HELP,101,141,40,18
+    GROUPBOX        "Tiempo de espera",IDC_STATIC,6,11,132,118,NOT WS_GROUP
+    RTEXT           "Esperar:",IDC_STATIC,12,64,35,8,NOT WS_GROUP
+    LTEXT           "minutos",IDC_STATIC,87,64,35,8,NOT WS_GROUP
+END
+
+
+//---------------------------------------------------------------------
+// WPDESKTOP's "Desktop" page.
+//---------------------------------------------------------------------
+IDD_DESKTOP_PAGE DIALOG DISCARDABLE  0, 0, 150, 165
+STYLE WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+    CONTROL         "Guardar los valores del escritorio",IDB_SAVEDESKTOPSETTINGS,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,5,24,145,10
+    PUSHBUTTON      "&Deshacer",IDB_UNDO,7,141,40,18,WS_GROUP
+    PUSHBUTTON      "Por &omisión",IDB_DEFAULT,54,141,40,18
+    PUSHBUTTON      "Ayuda",IDB_HELP,101,141,40,18
+END
+
+
+//---------------------------------------------------------------------
+// WPDESKTOP's "Credits" page.
+//---------------------------------------------------------------------
+IDD_CREDITS_PAGE DIALOG DISCARDABLE  0, 0, 150, 165
+STYLE WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Programador y diseñador principal",IDC_STATIC,10,5,130,35
+    CTEXT           "Mario E. De Armas",IDC_STATIC,18,21,114,8
+    GROUPBOX        "Autor del archivo de ayuda",IDC_STATIC,10,50,130,25
+    CTEXT           "Alex Gutkin",IDC_STATIC,18,62,114,8
+END
+
+
+//---------------------------------------------------------------------
+// WPDESKTOP's "Credits" page 2.
+//---------------------------------------------------------------------
+IDD_CREDITS2_PAGE DIALOG DISCARDABLE  0, 0, 150, 165
+STYLE WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Equipo de traducción",IDC_STATIC,10,5,130,110
+    CTEXT           "Ingo Adlung - Alemán",IDC_STATIC,18,20,114,8
+    CTEXT           "Marcos Dias Alves - Portugués",IDC_STATIC,18,33,114,8
+    CTEXT           "Jean-Claude Désinor - Francés",IDC_STATIC,18,46,114,8
+    CTEXT           "Esko Koho - Finlandés",IDC_STATIC,18,59,114,8
+    CTEXT           "Daniel Lundh - Sueco",IDC_STATIC,18,72,114,8
+    CTEXT           "Luis Lupián - Español",IDC_STATIC,18,85,114,8
+    CTEXT           "Nico Out - Holandés",IDC_STATIC,18,98,114,8
+END
+
+
+//---------------------------------------------------------------------
+// WPDRIVE's "Drive" page.
+//---------------------------------------------------------------------
+IDD_DRIVE_PAGE DIALOG DISCARDABLE  0, 0, 150, 165
+STYLE WS_CHILD
+FONT 10, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDL_DRIVES,30,33,90,77,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    PUSHBUTTON      "&Deshacer",IDB_UNDO,7,141,40,18,WS_GROUP
+    PUSHBUTTON      "Por &omisión",IDB_DEFAULT,54,141,40,18
+    PUSHBUTTON      "Ayuda",IDB_HELP,101,141,40,18
+    CTEXT           "Seleccione una unidad:",IDC_STATIC,10,18,130,8
+END
+
+// EOF SETTNB.DLG
+

@@ -1,0 +1,180 @@
+========================================================================
+=                                                                      =
+=       W O R K P L A C E   S H E L L   F O R   W I N D O W S          =
+=                                                                      =
+=                           Release 2.0                                =
+=                                                                      =
+=  Date: 12/21/95                                                      =
+========================================================================
+
+Contents:
+--------
+
+A) HOW TO UPGRADE FROM A PREVIOUS VERSION.
+B) HOW TO DO A NEW INSTALL.
+C) "WPSHELL.INI MISSING OR CORRUPTED" MESSAGE AFTER INSTALLATION.
+D) NO DRIVES OBJECTS AND TEMPLATES IN MY DESKTOP.
+E) AFTER INSTALLATION HAS COMPLETED...
+
+
+
+---------------------------------------------------------------------
+A)         HOW TO UPGRADE FROM A PREVIOUS VERSION
+---------------------------------------------------------------------
+
+1. Uncompress the WPSFWxxx.ZIP file to a 720K or 1.44MB diskette
+   (You'll need PKUNZIP version 2.04e or later to uncompress this
+    file.  You may obtain the latest PKUNZIP version from the
+    PCTOOLS disk).
+   If installing from hard disk, create a directory and copy
+   all the files to it.
+
+2. Restore the original Windows shell, PROGMAN.EXE by placing the
+   following line in the SYSTEM.INI file:
+
+   shell=progman.exe
+
+   Comment out any other "shell=" lines by placing a ';' (semi-colon)
+   in front of the line.
+
+3. Backup your original WPSHELL.INI file in the \WINDOWS directory.
+   This is done just as a precaution so that you can always restore
+   your original desktop if you miss a step.  You can name the backup
+   file anything you want (i.e. WPSHELL.BAK or WPSBAK.INI).
+
+4. Boot Windows 3.1x, and run "A:\SETUP.EXE" from the diskette (or hard
+   drive).
+
+5. Press the "Upgrade" pushbutton in the main setup dialog.
+
+6. Enter destination directory where current release is stored.
+
+7. Select which language resources you want to install in your system.
+   Press ENTER if you just want the default.  (Remeber that for you
+   to use the different language resources, you need to change the
+   "sLanguage" key in the "Intl" section of the WIN.INI file.  Read
+   the README.1ST file for more information).
+
+8. After the installation has successfully finished, restart
+   Windows so that the new shell will take effect.
+
+
+
+---------------------------------------------------------------------
+B)                  HOW TO DO A NEW INSTALL
+---------------------------------------------------------------------
+
+1. Uncompress the WPSFWxxx.ZIP file to a 720K or 1.44MB diskette
+   (You'll need PKUNZIP version 2.04e or later to uncompress this
+    file.  You may obtain the latest PKUNZIP version from the
+    PCTOOLS disk).
+   If installing from hard disk, create a directory and copy
+   all the files to it.
+
+2. While in Windows 3.1x, run "A:\SETUP.EXE" from the diskette (or
+   hard drive).
+
+3. Press the "New" pushbutton in the main setup dialog.
+
+4. Choose Express install or Custom install and a destination
+   directory.  The installation program backs up any changes
+   to Windows *.INI files and does not modify your current
+   PROGMAN desktop *.GRP files.
+
+5. Select which language resources you want to install in your system.
+   Press ENTER if you just want the default.  (Remeber that for you
+   to use the different language resources, you need to change the
+   "sLanguage" key in the "Intl" section of the WIN.INI file.  Read
+   the README.1ST file for more information).
+
+6. Restart Windows 3.1x so that the new shell will take effect.
+
+
+
+--------------------------------------------------------------------
+C)  "WPSHELL.INI MISSING OR CORRUPTED" MESSAGE AFTER INSTALLATION
+--------------------------------------------------------------------
+
+   If you get the error message "WPSHELL.INI missing or corrupted"
+when re-starting Windows after the WPSFWIN installation has completed,
+then do the following:
+
+1. Edit the SYSTEM.INI file in your Windows directory and restore
+   "shell=progman.exe" line by removing the ";" (semi-colon) at the
+   beginning of the line.  Place a ";" (semi-colon) at the beginning
+   of the "shell=<path>\wpshell.exe" line.
+
+2. Start Windows and run CONVINI.EXE from the "File"->"Run" menu item
+   in Program Manager.  CONVINI.EXE is stored in your WPSFWIN destination
+   directory (by default C:\WPSHELL).
+
+3. Press the "Migrate" pushbutton.
+
+4. After CONVINI.EXE has completed successfully, exit program, and
+   exit Windows.
+
+5. Undo the changes made in step (1), and restart Windows again.  This
+   time WPSFWIN should come up successfully and with no error messages.
+
+   If you still get the error message, or CONVINI.EXE did not complete
+successfully, then you might have to re-install WPSFWIN as a "New"
+install to create a new desktop file (and loose all current changes).
+
+
+
+--------------------------------------------------------------------
+D)        NO DRIVES OBJECTS AND TEMPLATES IN MY DESKTOP
+--------------------------------------------------------------------
+
+   If you are upgrading from any version below 1.3, then you might
+need to run PMTOWP.EXE manually after the installation has completed
+in order to get the "Drives" objects and templates.
+
+   If when you restart Windows w/WPSFWIN you do not see a "Drives"
+folder inside the "Windows System" folder, then you need to follow
+these steps (unless you do not want the drives objects):
+
+1. Either from Program Manager or WPSFWIN, run PMTOWP.EXE (stored
+   in the WPSFWIN destination directory).
+
+2. Select the "Selected Group" radio button.  Select any group folder
+   you want (it does not really matter which).
+   Check on the "System Folder" and "Templates Folder" checkboxes.
+
+3. Press the "Migrate" pushbutton.  IMPORTANT: Answer "No" when asked
+   if want to overwrite current WPSHELL.INI file.  Then, press the "Done"
+   pushbutton when the migration has complted.
+
+4. Exit Windows (without saving the desktop! very important!!), then
+   restart Windows again.
+
+5. Now, PMTOWP has create a duplicate "Program Manager Folder", "Windows
+   System" folder, and "Templates" folder.  If you did not move these
+   folders from their original positions, PMTOWP will place them exactly
+   right on top of each other.  Therefore, to remove the unwanted
+   folders, drag & drop the above mentioned folders from their current
+   locations and you'll see another folder underneath them.
+   For the "Program Manager Folder", delete the new one.  For the
+   "Windows System" folder, delete the old one.  For the "Templates"
+   folder, delete the old one.
+
+6. Now you can re-arrange the folders to your content and save the
+   desktop by selecting right mouse button on the desktop and clicking
+   on "Save desktop".  You are now done.
+
+
+
+--------------------------------------------------------------------
+E)            AFTER INSTALLATION HAS COMPLETED...
+--------------------------------------------------------------------
+
+   Read the README.1ST file copied into the destination directory.
+You can also erase the WPSFWxxx.ZIP file since it is no longer needed.
+
+   Also, read LICENSE.TXT file for details on IBM EWS license
+agreement.
+
+   To ask questions, report problems, or send comments read the
+README.1ST file.
+
+

@@ -1,0 +1,27 @@
+//-----------------------------------------------------------------------------
+// DIALOG BOX TEMPLATES
+//-----------------------------------------------------------------------------
+
+//-------------------------------------------------------------------------
+// DUTC
+//-------------------------------------------------------------------------
+// Dutch main dialog:
+IDD_MAIN DIALOG DISCARDABLE  0, 0, 250, 175
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "Konverteer Workplace Shell Profiel"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "&Konverteer",IDOK,62,149,55,20,WS_GROUP
+    PUSHBUTTON      "Klaa&r",IDCANCEL,133,149,55,20
+    EDITTEXT        IDE_SOURCEPROFILE,12,112,226,13,ES_UPPERCASE | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "CONVINI Programma - Workplace Shell voor Windows\nCopyright (C) IBM Corporation, 1994-1995.",IDC_STATIC,5,8,190,25
+    ICON            "IDI_CONVERT",IDC_STATIC,212,8,18,20
+    GROUPBOX        "Informatie",IDC_STATIC,5,42,240,43
+    LTEXT           "Konverteer een WPSHELL.INI 0.5.x profiel naar een 1.x profiel.",IDC_STATIC,11,56,228,8
+    LTEXT           "Het originele WPSHELL.INI bestand vordt gekopieerd naar WPSHELL.V5X.",IDC_STATIC,11,69,228,8
+    GROUPBOX        "Bron Profiel",IDC_STATIC,5,95,240,40
+END
+
+// EOF MAIN.DLG
+
+

@@ -1,0 +1,3026 @@
+Stack Allocation = 20480 bytes
+
+ WPSHELL
+
+ Start     Length     Name                   Class
+ 0001:0000 00000H     DDEPRGMN_TEXT          CODE
+ 0001:0000 00000H     DDESERVR_TEXT          CODE
+ 0001:0000 00000H     DDESHELL_TEXT          CODE
+ 0001:0000 00000H     DESKTOP_TEXT           CODE
+ 0001:0000 00000H     FLDRCOPY_TEXT          CODE
+ 0001:0000 00000H     FLDRFIND_TEXT          CODE
+ 0001:0000 00000H     FOLDER_TEXT            CODE
+ 0001:0000 00000H     LIST_TEXT              CODE
+ 0001:0000 00000H     MAIN_TEXT              CODE
+ 0001:0000 00000H     MISCFUNC_TEXT          CODE
+ 0001:0000 00000H     NOTEBOOK_TEXT          CODE
+ 0001:0000 00000H     WPCONTNR_TEXT          CODE
+ 0001:0000 00000H     WPDATAFL_TEXT          CODE
+ 0001:0000 00000H     WPDESKTP_TEXT          CODE
+ 0001:0000 00000H     WPMINWIN_TEXT          CODE
+ 0001:0000 00000H     WPNOTEBK_TEXT          CODE
+ 0001:0000 00000H     WPOBJECT_TEXT          CODE
+ 0001:0000 00000H     WPPROG_TEXT            CODE
+ 0001:0000 00000H     WPSETNB_TEXT           CODE
+ 0001:0000 00000H     WPSETUP_TEXT           CODE
+ 0001:0000 00000H     WPSHADOW_TEXT          CODE
+ 0001:0000 00000H     WPSHREDR_TEXT          CODE
+ 0001:0000 00000H     WPSYSSET_TEXT          CODE
+ 0001:0000 00000H     WPTEMPLT_TEXT          CODE
+ 0001:0000 00000H     WPWINDOW_TEXT          CODE
+ 0001:0000 00000H     IMAGELIB_TEXT          CODE
+ 0001:0000 00000H     WPDRIVE_TEXT           CODE
+ 0001:0000 00000H     WPFLDR_1_TEXT          CODE
+ 0001:0000 00000H     WPFLDR_2_TEXT          CODE
+ 0001:0000 00000H     WPS_API_TEXT           CODE
+ 0001:0000 05A94H     _TEXT                  CODE
+ 0002:0000 0EFE2H     COMDAT_SEG1            CODE
+ 0003:0000 0E011H     COMDAT_SEG2            CODE
+ 0004:0000 00072H     MAIN5_DATA             FAR_DATA
+ 0005:0000 00014H     WPS_API13_DATA         FAR_DATA
+ 0006:0000 00010H     NULL                   BEGDATA
+ 0006:0010 00408H     _DATA                  DATA
+ 0006:0418 00000H     XIFCB                  DATA
+ 0006:0418 00004H     XIFU                   DATA
+ 0006:041C 00000H     XIFL                   DATA
+ 0006:041C 00000H     XIFM                   DATA
+ 0006:041C 00000H     XIFCE                  DATA
+ 0006:041C 0000EH     CDATA                  DATA
+ 0006:042A 00000H     XIFB                   DATA
+ 0006:042A 00000H     XIF                    DATA
+ 0006:042A 00000H     XIFE                   DATA
+ 0006:042A 00000H     XIB                    DATA
+ 0006:042A 00008H     XI                     DATA
+ 0006:0432 00000H     XIE                    DATA
+ 0006:0432 00000H     XPB                    DATA
+ 0006:0432 00004H     XP                     DATA
+ 0006:0436 00000H     XPE                    DATA
+ 0006:0436 00000H     XCB                    DATA
+ 0006:0436 00000H     XC                     DATA
+ 0006:0436 00000H     XCE                    DATA
+ 0006:0436 00000H     XCFB                   DATA
+ 0006:0436 00000H     XCFCRT                 DATA
+ 0006:0436 00000H     XCF                    DATA
+ 0006:0436 00000H     XCFE                   DATA
+ 0006:0436 00000H     DBDATA                 DATA
+ 0006:0436 000E4H     IOB                    DATA
+ 0006:051A 00000H     IOBX                   DATA
+ 0006:051A 0000CH     IOBE                   DATA
+ 0006:0526 000E4H     IOB2                   DATA
+ 0006:060A 00000H     IOB2X                  DATA
+ 0006:060A 0000CH     IOB2E                  DATA
+ 0006:0616 0003EH     CONST                  CONST
+ 0006:0654 00008H     HDR                    MSG
+ 0006:065C 003EEH     MSG                    MSG
+ 0006:0A4A 00002H     PAD                    MSG
+ 0006:0A4C 00001H     EPAD                   MSG
+ 0006:0A4E 0078AH     _BSS                   BSS
+ 0006:11D8 00000H     XOB                    BSS
+ 0006:11D8 00084H     XO                     BSS
+ 0006:125C 00000H     XOE                    BSS
+ 0006:125C 00000H     XOFB                   BSS
+ 0006:125C 00000H     XOF                    BSS
+ 0006:125C 00000H     XOFE                   BSS
+ 0006:1260 00008H     c_common               BSS
+
+ Origin   Group
+ 0006:0   DGROUP
+
+ Address   Export                  Alias
+
+ 0003:DE36 WPSCOMMAND              WPSCOMMAND
+ 0003:DDDE WPSREGISTERWINDOW       WPSREGISTERWINDOW
+ 0003:DF9E WPSUNREGISTERWINDOW     WPSUNREGISTERWINDOW
+ 0001:0706 ___ExportedStub         ___ExportedStub
+
+  Address         Publics by Name
+
+ 0001:46C8       $i8_output
+ 0001:4989       $i8_tpwr10
+ 0002:111E       ??0DDESERVER@@REC@XZ
+ 0002:31A8       ??0LIST@@REC@XZ
+ 0002:5022       ??0WPCONTAINER@@REC@PEV0@@Z
+ 0002:4FCC       ??0WPCONTAINER@@REC@XZ
+ 0002:5BA2       ??0WPDATAFILE@@REC@PEV0@@Z
+ 0002:5B1A       ??0WPDATAFILE@@REC@XZ
+ 0002:6FE8       ??0WPDESKTOP@@REC@XZ
+ 0003:55BC       ??0WPDIRECTORY@@REC@PEV0@@Z
+ 0003:5554       ??0WPDIRECTORY@@REC@XZ
+ 0003:5B52       ??0WPDRIVE@@REC@PEV0@@Z
+ 0003:5AB8       ??0WPDRIVE@@REC@XZ
+ 0003:9C6A       ??0WPFOLDER@@REC@PEV0@@Z
+ 0003:9B6E       ??0WPFOLDER@@REC@XZ
+ 0002:8EA4       ??0WPMINVIEWER@@REC@PEV0@@Z
+ 0002:8E52       ??0WPMINVIEWER@@REC@XZ
+ 0000:0000  Unr  ??0WPMINWNDOBJ@@REC@XZ
+ 0002:9874       ??0WPNOTEBOOK@@REC@PEVWPOBJECT@@@Z
+ 0002:AFDC       ??0WPOBJECT@@REC@PEV0@@Z
+ 0002:AF7E       ??0WPOBJECT@@REC@XZ
+ 0002:D16C       ??0WPPROGRAM@@REC@PEV0@@Z
+ 0002:D0B4       ??0WPPROGRAM@@REC@XZ
+ 0002:E578       ??0WPSETTINGSNB@@REC@PEVWPOBJECT@@@Z
+ 0002:EB66       ??0WPSETUP@@REC@PEV0@@Z
+ 0002:EB2E       ??0WPSETUP@@REC@XZ
+ 0002:ECF0       ??0WPSHADOW@@REC@PEV0@@Z
+ 0002:ECA6       ??0WPSHADOW@@REC@XZ
+ 0003:06E8       ??0WPSHREDDER@@REC@PEV0@@Z
+ 0003:06B0       ??0WPSHREDDER@@REC@XZ
+ 0003:099E       ??0WPSYSSETUP@@REC@PEV0@@Z
+ 0003:0954       ??0WPSYSSETUP@@REC@XZ
+ 0003:1856       ??0WPTEMPLATE@@REC@PEV0@@Z
+ 0003:17D6       ??0WPTEMPLATE@@REC@XZ
+ 0003:39CC       ??0WPWINDOW@@REC@PEV0@@Z
+ 0003:3950       ??0WPWINDOW@@REC@XZ
+ 0002:31CC       ??1LIST@@REC@XZ
+ 0002:507C       ??1WPCONTAINER@@REC@XZ
+ 0002:4B70       ??1WPFOLDER@@REC@XZ
+ 0002:992E       ??1WPNOTEBOOK@@REC@XZ
+ 0002:B0A2       ??1WPOBJECT@@REC@XZ
+ 0003:3A7E       ??1WPWINDOW@@REC@XZ
+ 0001:253C       ??2@ZAPEXI@Z
+ 0001:252A       ??3@ZAXPEX@Z
+ 0002:8C4C       ??_7DDEPROGMAN@@6F@
+ 0002:1674       ??_7DDESERVER@@6F@
+ 0002:8A50       ??_7DDESHELL@@6F@
+ 0002:5744       ??_7WPCONTAINER@@6F@
+ 0002:6A60       ??_7WPDATAFILE@@6F@
+ 0002:8A6C       ??_7WPDESKTOP@@6FWPCONTAINER@@@
+ 0002:8C34       ??_7WPDESKTOP@@6FWPWINDOW@@@
+ 0003:6268       ??_7WPDIRECTORY@@6FWPCONTAINER@@@
+ 0003:6430       ??_7WPDIRECTORY@@6FWPWINDOW@@@
+ 0003:6448       ??_7WPDRIVE@@6FWPCONTAINER@@@
+ 0003:6610       ??_7WPDRIVE@@6FWPWINDOW@@@
+ 0003:A228       ??_7WPFOLDER@@6FWPCONTAINER@@@
+ 0003:A3F0       ??_7WPFOLDER@@6FWPWINDOW@@@
+ 0002:943C       ??_7WPMINVIEWER@@6FWPCONTAINER@@@
+ 0002:9604       ??_7WPMINVIEWER@@6FWPWINDOW@@@
+ 0002:961C       ??_7WPMINWNDOBJ@@6F@
+ 0002:A78A       ??_7WPNOTEBOOK@@6F@
+ 0002:CD02       ??_7WPOBJECT@@6F@
+ 0002:E412       ??_7WPPROGRAM@@6F@
+ 0002:EB0A       ??_7WPSETTINGSNB@@6F@
+ 0002:EBC6       ??_7WPSETUP@@6F@
+ 0003:05D0       ??_7WPSHADOW@@6F@
+ 0003:0874       ??_7WPSHREDDER@@6F@
+ 0003:16F6       ??_7WPSYSSETUP@@6F@
+ 0003:1CC4       ??_7WPTEMPLATE@@6F@
+ 0003:4B9C       ??_7WPWINDOW@@6F@
+ 0002:CCE0       ??_9@$BMI@H
+ 0002:10BE       ??_C@_00A@?$AA@
+ 0002:89BA       ??_C@_01FBAH@1?$AA@
+ 0002:1096       ??_C@_01KMAE@?0?$AA@
+ 0002:89BC       ??_C@_01PCFE@?2?$AA@
+ 0002:4BAE       ??_C@_01PJCK@?4?$AA@
+ 0002:89B8       ??_C@_01PLJA@0?$AA@
+ 0002:8972       ??_C@_02CLHN@?5?7?$AA@
+ 0002:694E       ??_C@_02DBLP@PM?$AA@
+ 0002:6962       ??_C@_02DILL@?$CFs?$AA@
+ 0002:694A       ??_C@_02ENLM@AM?$AA@
+ 0003:6230       ??_C@_02GLFM@C?3?$AA@
+ 0003:4F76       ??_C@_02HGED@BM?$AA@
+ 0003:6234       ??_C@_02IPFO@X?3?$AA@
+ 0002:4BB0       ??_C@_02OOND@?4?4?$AA@
+ 0002:108C       ??_C@_02PIMC@?$AN?6?$AA@
+ 0002:3ED0       ??_C@_03BLJK@frc?$AA@
+ 0002:278C       ??_C@_03DMDD@?5?9?5?$AA@
+ 0002:3E86       ??_C@_03DOPE@enu?$AA@
+ 0002:8A38       ??_C@_03EBME@tty?$AA@
+ 0002:8976       ??_C@_03EHIM@run?$AA@
+ 0002:3ECC       ??_C@_03EOLE@fra?$AA@
+ 0002:3EA0       ??_C@_03HGMI@nld?$AA@
+ 0002:3EC2       ??_C@_03IFGE@sve?$AA@
+ 0002:693C       ??_C@_03JGAL@?$CFlu?$AA@
+ 0002:10AA       ??_C@_03KCIB@?0?$CFs?$AA@
+ 0002:3EDA       ??_C@_03KLOL@fin?$AA@
+ 0002:3EE8       ??_C@_03KNMC@esp?$AA@
+ 0002:3EE4       ??_C@_03KPHI@esn?$AA@
+ 0002:3EAA       ??_C@_03LCE@ptg?$AA@
+ 0002:3EAE       ??_C@_03LOP@ptb?$AA@
+ 0002:3EB8       ??_C@_03OCEJ@deu?$AA@
+ 0003:6218       ??_C@_04BAIL@?4EXE?$AA@
+ 0002:89DA       ??_C@_04CDC@boot?$AA@
+ 0002:6966       ??_C@_04CNPA@?4ICO?$AA@
+ 0002:6A5A       ??_C@_04DCMN@?$CFs?$CFs?$AA@
+ 0002:CCFC       ??_C@_04EFNI@Name?$AA@
+ 0002:6972       ??_C@_04FGKK@?4MID?$AA@
+ 0002:3E9A       ??_C@_04GCPC@ENUS?$AA@
+ 0002:3ED4       ??_C@_04GDCL@FREN?$AA@
+ 0003:6224       ??_C@_04GEFK@?4BAT?$AA@
+ 0002:3EEC       ??_C@_04HIJH@SPAN?$AA@
+ 0002:1090       ??_C@_04JBBA@?$CC?$CFs?$CC?$AA@
+ 0002:8964       ??_C@_04JMJF@load?$AA@
+ 0002:3EC6       ??_C@_04JNMK@SWED?$AA@
+ 0003:621E       ??_C@_04KDLI@?4COM?$AA@
+ 0002:696C       ??_C@_04KFC@?4WAV?$AA@
+ 0002:3E94       ??_C@_04KGMK@Intl?$AA@
+ 0002:2194       ??_C@_04KHOB@open?$AA@
+ 0003:622A       ??_C@_04KIBH@?4PIF?$AA@
+ 0002:8A44       ??_C@_04KIKH@none?$AA@
+ 0002:3EDE       ??_C@_04KKGE@FINN?$AA@
+ 0002:3EA4       ??_C@_04LPJO@DUTC?$AA@
+ 0002:3EB2       ??_C@_04OBGP@PORT?$AA@
+ 0002:3EBC       ??_C@_04PDCN@GRMN?$AA@
+ 0002:1AC0       ??_C@_05BEOC@SHELL?$AA@
+ 0002:6936       ??_C@_05DFHM@?$CFs?$CF?9s?$AA@
+ 0003:DDB8       ??_C@_05EJDJ@?$CFd?4?$CFs?$AA@
+ 0002:8A4A       ??_C@_05HPGN@shell?$AA@
+ 0002:6978       ??_C@_05KCGF@print?$AA@
+ 0002:4BA8       ??_C@_05KEJO@?$CFs?2?$CFs?$AA@
+ 0002:3F5C       ??_C@_05OAHC@?$CF08lX?$AA@
+ 0002:CCF6       ??_C@_05PPGN@WPS?$CFu?$AA@
+ 0002:4BA0       ??_C@_06BEFO@?$CFs?2?$CK?4?$CK?$AA@
+ 0002:1098       ??_C@_06DCON@?0?$CFd?01?6?$AA@
+ 0002:8990       ??_C@_06DPJF@colors?$AA@
+ 0002:89F8       ??_C@_06EJNG@?$CD32769?$AA@
+ 0002:3F54       ??_C@_06EPF@FF0000?$AA@
+ 0002:8A3C       ??_C@_06ILJB@Colors?$AA@
+ 0002:1100       ??_C@_06KIJA@Reload?$AA@
+ 0003:DDA8       ??_C@_06KNLI@?2?$CK?4BMP?$AA@
+ 0002:1084       ??_C@_06MCAA@GROUPS?$AA@
+ 0003:6242       ??_C@_06NEDF@?$CFs?5?$CFc?3?$AA@
+ 0003:DDB0       ??_C@_06OHDL@?2?$CK?4DIB?$AA@
+ 0002:10C0       ??_C@_07BBM@Program?$AA@
+ 0002:1AFC       ??_C@_07BEEF@GETICON?$AA@
+ 0002:2784       ??_C@_07CABH@?$CFs?5?$CI?$CFs?$CJ?$AA@
+ 0002:896A       ??_C@_07CIAP@windows?$AA@
+ 0002:1070       ??_C@_07COJA@PROGMAN?$AA@
+ 0002:8A00       ??_C@_07JNHF@WPS?$CF04d?$AA@
+ 0002:CCEE       ??_C@_07JOJC@WPS?$CF04u?$AA@
+ 0003:086C       ??_C@_07KEFL@WPShred?$AA@
+ 0002:E40A       ??_C@_07MGOL@?$CFs?2?$CFs?$CFs?$AA@
+ 0002:2156       ??_C@_07OAPD@Sfaxmng?$AA@
+ 0002:10C8       ??_C@_07OJLH@AddItem?$AA@
+ 0002:89A2       ??_C@_07PJP@Desktop?$AA@
+ 0002:8A1A       ??_C@_07PKLL@Windows?$AA@
+ 0002:573A       ??_C@_08FDCK@ABCDEFGH?$AA@
+ 0003:6238       ??_C@_08FPOM@?$CFc?3?5?$CI?$CFs?$CJ?$AA@
+ 0002:A772       ??_C@_08GHHB@Notebook?$AA@
+ 0002:897A       ??_C@_08GJPN@?$CFu?5?$CFu?5?$CFu?$AA@
+ 0002:6940       ??_C@_08INCF@?$CFu?9?$CFu?9?$CFu?$AA@
+ 0002:10A0       ??_C@_08KINH@?0?$CC?$CFs?5?$CFs?$CC?$AA@
+ 0002:8998       ??_C@_09CLCB@Wallpaper?$AA@
+ 0002:1AC6       ??_C@_09CMDJ@WPS_SHELL?$AA@
+ 0002:1114       ??_C@_09HNON@ShowGroup?$AA@
+ 0003:DD90       ??_C@_09IIFM@WPEndDrag?$AA@
+ 0002:3E8A       ??_C@_09IMGC@sLanguage?$AA@
+ 0002:8A22       ??_C@_09OLKC@Task?5List?$AA@
+ 0002:E170       ??_C@_0BA@HAJK@File?5not?5found?4?$AA@
+ 0002:10AE       ??_C@_0BA@HJCD@?0?$CFd?0?$CFd?0?$CFu?00?0?$CFu?6?$AA@
+ 0002:2D6A       ??_C@_0BA@JOMK@Workplace?5Shell?$AA@
+ 0002:6952       ??_C@_0BA@NMNE@?$CFu?3?$CF02u?3?$CF02u?5?$CFs?$AA@
+ 0002:E180       ??_C@_0BA@PPHA@Path?5not?5found?4?$AA@
+ 0002:8A08       ??_C@_0BB@KMNA@ScreenSaveActive?$AA@
+ 0002:3F62       ??_C@_0BB@LHEH@COMPATIBLE_Flags?$AA@
+ 0002:E3CC       ??_C@_0BC@IJLI@Cannot?5print?5file?$AA@
+ 0002:1AAE       ??_C@_0BC@NBME@DEBUG_DOSDDEFlags?$AA@
+ 0002:3F3E       ??_C@_0BG@LDLP@Workplace?5Shell?5Error?$AA@
+ 0002:9424       ??_C@_0BI@DLNP@Minimized?5Window?5Viewer?$AA@
+ 0002:E236       ??_C@_0BM@OAHO@Executable?5file?5is?5invalid?4?$AA@
+ 0002:E218       ??_C@_0BO@BGKC@Windows?5version?5is?5incorrect?4?$AA@
+ 0002:2D4C       ??_C@_0BO@BLFI@The?5object?5?8?$CFs?8?5was?5not?5found?$AA@
+ 0002:E2AE       ??_C@_0CE@GLKD@Type?5of?5executable?5file?5is?5unkno@
+ 0002:E190       ??_C@_0CF@COND@Sharing?5or?5network?9protection?5er@
+ 0002:E286       ??_C@_0CH@CBME@Application?5is?5defined?5for?5MS?9DO@
+ 0002:E1EE       ??_C@_0CK@CCF@Insufficient?5memory?5to?5start?5app@
+ 0002:E36C       ??_C@_0CM@CPAG@Dynamic?9link?5library?5?$CIDLL?$CJ?5file?5@
+ 0002:E3DE       ??_C@_0CM@FODK@No?5Application?5is?5associated?5wit@
+ 0002:E2D2       ??_C@_0CO@FIDG@Attempt?5made?5to?5load?5a?5real?9mode@
+ 0002:EADC       ??_C@_0CO@OAAP@Icons?5?$HM?$CK?4ico?$DL?$CK?4dll?$DL?$CK?4exe?$HMAll?5Fil@
+ 0002:E398       ??_C@_0DD@MABL@Application?5requires?5MS?9Windows?5@
+ 0002:E338       ??_C@_0DD@OALN@Attempt?5made?5to?5load?5a?5compresse@
+ 0002:E252       ??_C@_0DE@KDMK@Application?5defined?5for?5differen@
+ 0002:E12A       ??_C@_0DF@NJD@Out?5of?5memory?0?5file?5corrupt?0?5or?5@
+ 0002:215E       ??_C@_0DG@LEHM@Programs?$HM?$CK?4exe?$DL?$CK?4pif?$DL?$CK?4com?$DL?$CK?4bat@
+ 0002:E300       ??_C@_0DH@BEFN@Attempt?5made?5to?5load?5second?5inst@
+ 0002:E1B6       ??_C@_0DH@FHEA@Library?5requires?5separate?5data?5s@
+ 0002:3EFE       ??_C@_0DP@MOEC@Error?5?91?3?5Could?5not?5locate?5and?5l@
+ 0002:8984       ??_C@_0L@BJIH@Background?$AA@
+ 0002:89E0       ??_C@_0L@EBHK@system?4drv?$AA@
+ 0002:A766       ??_C@_0L@HPDO@WPNOTEBOOK?$AA@
+ 0002:3EF2       ??_C@_0L@KBGJ@WPS_?$CFs?4DLL?$AA@
+ 0002:89EC       ??_C@_0L@KDEC@atmsys?4drv?$AA@
+ 0002:10E8       ??_C@_0L@MLDG@DeleteItem?$AA@
+ 0002:89BE       ??_C@_0L@PFBK@SYSTEM?4INI?$AA@
+ 0002:3E6E       ??_C@_0L@PMBM@FCLNBW?4DLL?$AA@
+ 0003:A20E       ??_C@_0M@DMJD@WPBeginDrag?$AA@
+ 0002:10F4       ??_C@_0M@DPJF@ExitProgman?$AA@
+ 0002:10DC       ??_C@_0M@EKOH@DeleteGroup?$AA@
+ 0002:1078       ??_C@_0M@HMCF@WPS_PROGMAN?$AA@
+ 0002:10D0       ??_C@_0M@HMJA@CreateGroup?$AA@
+ 0002:1108       ??_C@_0M@IFHA@ReplaceItem?$AA@
+ 0002:3E7A       ??_C@_0M@IMGA@FCLSPBW?4DLL?$AA@
+ 0002:8A2C       ??_C@_0M@JJOK@Window?5List?$AA@
+ 0003:624A       ??_C@_0N@CLNH@?$CFs?2setup?4exe?$AA@
+ 0003:DD9A       ??_C@_0N@HGG@WPFolderOpen?$AA@
+ 0002:A77C       ??_C@_0N@MPAB@CCL?5Notebook?$AA@
+ 0002:697E       ??_C@_0NM@MKK@All?5Files?5?$CI?$CK?4?$CK?$CJ?$HM?$CK?4?$CK?$HMData?5Files?$HM?$CK@
+ 0002:1AD0       ??_C@_0O@EDLO@APPPROPERTIES?$AA@
+ 0002:89AA       ??_C@_0O@FGIN@TileWallPaper?$AA@
+ 0003:A21A       ??_C@_0O@GCMP@WPFolderClose?$AA@
+ 0002:1AEE       ??_C@_0O@JAIN@GETWORKINGDIR?$AA@
+ 0002:E160       ??_C@_0P@HKEP@Internal?5error?$AA@
+ 0002:1ADE       ??_C@_0P@KKAG@GETDESCRIPTION?$AA@
+ 0002:89CA       ??_C@_0P@NCLD@atm?4system?4drv?$AA@
+ 0003:6258       ??_C@_0P@OMMG@?$CFs?2install?4exe?$AA@
+ 0000:0000  Unr  ?AddHead@LIST@@RECHK@Z
+ 0002:08B0       ?AddItem@DDEPROGMAN@@BECXPEPEDH@Z
+ 0002:514A       ?AddObject@WPCONTAINER@@VECHPEVWPOBJECT@@H@Z
+ 0002:52E8       ?AddSelectedObject@WPCONTAINER@@RECHPEVWPOBJECT@@@Z
+ 0002:BA14       ?AddShadow@WPOBJECT@@RECHPEVWPSHADOW@@@Z
+ 0002:31EA       ?AddTail@LIST@@RECHK@Z
+ 0002:1234       ?AddTopic@DDESERVER@@JECHPED@Z
+ 0002:6B40       ?AddTopLevelWindow@WPDESKTOP@@BECHPBUHWND__@@@Z
+ 0003:3E8C       ?AdjustScrollbars@WPWINDOW@@RECXUtagRECT@@0@Z
+ 0003:317E       ?AnimateWindowFrame@WPWINDOW@@JECXPEUtagRECT@@0HH@Z
+ 0006:0022       ?apszWinExecErrorString@@3QEPEDE
+ 0003:8656       ?ArrangeIcons@WPFOLDER@@JECXK@Z
+ 0003:831C       ?ArrangeIconsInFlowedFormat@WPFOLDER@@JECXXZ
+ 0003:849C       ?ArrangeIconsInNonFlowedFormat@WPFOLDER@@JECXXZ
+ 0003:3D44       ?ArrangeScrollbars@WPWINDOW@@RECXXZ
+ 0002:DBC8       ?AssociationPageProc@WPPROGRAM@@RECXHPBUHWND__@@GK@Z
+ 0003:D358       ?BackgroundPageProc@WPFOLDER@@RECXHPBUHWND__@@GK@Z
+ 0003:4718       ?BeginPaint@WPWINDOW@@RECPBUHDC__@@XZ
+ 0002:6E78       ?BindShadowObjectsToOriginalObjects@WPDESKTOP@@BECHXZ
+ 0000:0000  Unr  ?BringObjectToTop@@ZAXPEVWPOBJECT@@@Z
+ 0002:ADFE       ?CalcTextRect@WPOBJECT@@RECXXZ
+ 0003:69AE       ?CalculateLogicalDomainRect@WPFOLDER@@BECXPEUtagRECT@@@Z
+ 0002:97D6       ?CallPageProc@WPNOTEBOOK@@RECXPBUHWND__@@GK@Z
+ 0003:CD46       ?ChangeColor@WPFOLDER@@RECHPBUHWND__@@@Z
+ 0003:D77C       ?ChangeFont@WPFOLDER@@RECHPBUHWND__@@@Z
+ 0002:8810       ?CheckDesktopSizeChange@WPDESKTOP@@RECHXZ
+ 0002:3746       ?CheckWindowsVersion@@ZAHXZ
+ 0003:A906       ?ChildHitTest@WPFOLDER@@VECPEVWPOBJECT@@UtagPOINT@@@Z
+ 0003:66B0       ?CleanUpDC@WPFOLDER@@BECXPBUHDC__@@PBUHFONT__@@HH@Z
+ 0002:5262       ?ClearSelectedObjects@WPCONTAINER@@RECXH@Z
+ 0002:1BC2       ?ClientWindowProc@WPDESKTOP@@VECJPBUHWND__@@IIJ@Z
+ 0002:2D7A       ?ClientWindowProc@WPFOLDER@@VECJPBUHWND__@@IIJ@Z
+ 0002:4C22       ?ClientWindowProc@WPNOTEBOOK@@RECJPBUHWND__@@IIJ@Z
+ 0002:613C       ?Close@WPDATAFILE@@VECHXZ
+ 0003:566A       ?Close@WPDIRECTORY@@VECHXZ
+ 0003:9F3A       ?Close@WPFOLDER@@VECHXZ
+ 0002:8F12       ?Close@WPMINVIEWER@@VECHXZ
+ 0002:9D96       ?Close@WPNOTEBOOK@@VECHXZ
+ 0002:BB12       ?Close@WPOBJECT@@VECHXZ
+ 0002:D724       ?Close@WPPROGRAM@@VECHXZ
+ 0003:00DA       ?Close@WPSHADOW@@VECHXZ
+ 0002:CAFC       ?CloseSettingsNotebook@WPOBJECT@@VECHXZ
+ 0003:050A       ?CloseSettingsNotebook@WPSHADOW@@VECHXZ
+ 0002:44F2       ?CommonFileDialogBox@@ZAHPBUHWND__@@KPED111@Z
+ 0002:11FA       ?CompareHszToStr@DDESERVER@@JECHPFUHSZ__@@PED@Z
+ 0003:15EE       ?ConfirmationsPageProc@WPSYSSETUP@@RECXHPBUHWND__@@GK@Z
+ 0003:AC5A       ?ConfirmOnDelete@WPFOLDER@@VECHXZ
+ 0002:BB42       ?ConfirmOnDelete@WPOBJECT@@VECHXZ
+ 0002:C490       ?ContainedInRect@WPOBJECT@@VECHPEUtagRECT@@@Z
+ 0003:4E76       ?ConvertDIBToDDB@@ZAPBUHBITMAP__@@PIEPBUHPALETTE__@@@Z
+ 0002:493E       ?CopyDirectory@@ZAHPED0@Z
+ 0002:4890       ?CopyFile@@ZAHPED0@Z
+ 0003:8E38       ?CopyFunc@WPFOLDER@@JECXXZ
+ 0002:23A8       ?CopyMoveAndCreateDlgProc@@ZCHPBUHWND__@@IIJ@Z
+ 0002:55D2       ?CopyObjectToFileSystem@WPCONTAINER@@VECHPED@Z
+ 0002:67B6       ?CopyObjectToFileSystem@WPDATAFILE@@VECHPED@Z
+ 0003:5818       ?CopyObjectToFileSystem@WPDIRECTORY@@VECHPED@Z
+ 0002:CB74       ?CopyObjectToFileSystem@WPOBJECT@@VECHPED@Z
+ 0002:DF7E       ?CopyObjectToFileSystem@WPPROGRAM@@VECHPED@Z
+ 0002:9ADC       ?Create@WPNOTEBOOK@@VECHHHHH@Z
+ 0002:E5A8       ?Create@WPSETTINGSNB@@VECHHHHH@Z
+ 0003:87DC       ?CreateAnotherFunc@WPFOLDER@@JECXXZ
+ 0003:7F5E       ?CreateCopyCursors@WPFOLDER@@NECXPEPBUHICON__@@0@Z
+ 0003:7B90       ?CreateCursorBitmap@WPFOLDER@@JECPBUHBITMAP__@@XZ
+ 0002:486E       ?CreateDirectory@@ZAHPED@Z
+ 0003:AB3A       ?CreateDragCursors@WPFOLDER@@VECXGPEPBUHICON__@@0@Z
+ 0002:0BF4       ?CreateGroup@DDEPROGMAN@@BECXPEPEDH@Z
+ 0003:7EB8       ?CreateMoveCursors@WPFOLDER@@NECXPEPBUHICON__@@0@Z
+ 0003:1930       ?CreateNewInstance@WPTEMPLATE@@RECPEVWPOBJECT@@XZ
+ 0003:4F7A       ?CreateObjectFromFileStructure@WPDIRECTORY@@BECPEVWPOBJECT@@PEU_find_t@@@Z
+ 0003:4D2E       ?CreatePaletteFromDIB@@ZAPBUHPALETTE__@@PIE@Z
+ 0003:806C       ?CreateShadowCursors@WPFOLDER@@NECXPEPBUHICON__@@0@Z
+ 0003:8ABA       ?CreateShadowFunc@WPFOLDER@@JECXXZ
+ 0002:432C       ?CreateTreeDuplicate@@ZAPEVWPOBJECT@@PEVWPCONTAINER@@PEV1@@Z
+ 0002:ACAA       ?CreateUniqueClassName@WPOBJECT@@JECPFDXZ
+ 0002:9A0C       ?CreateWindow@WPNOTEBOOK@@JECHPEDPEV1@@Z
+ 0003:4634       ?CreateWindow@WPWINDOW@@VECHPEDPEVWPOBJECT@@@Z
+ 0003:79AC       ?CursorFromBitmap@WPFOLDER@@JECPBUHICON__@@PBUHBITMAP__@@@Z
+ 0002:1402       ?DdeCallback@DDESERVER@@VECPFUHDDEDATA__@@IIPFUHCONV__@@PFUHSZ__@@1PFU2@KK@Z
+ 0002:1732       ?DdeCallback@DDESHELL@@VECPFUHDDEDATA__@@IIPFUHCONV__@@PFUHSZ__@@1PFU2@KK@Z
+ 0002:4A7C       ?DeleteDirectory@@ZAHPED@Z
+ 0002:4A50       ?DeleteFile@@ZAHPED@Z
+ 0002:51D0       ?DeleteObject@WPCONTAINER@@VECHH@Z
+ 0002:5190       ?DeleteObject@WPCONTAINER@@VECHPEVWPOBJECT@@@Z
+ 0002:6806       ?DeleteObjectFromFileSystem@WPDATAFILE@@VECHXZ
+ 0003:5870       ?DeleteObjectFromFileSystem@WPDIRECTORY@@VECHXZ
+ 0002:CB7A       ?DeleteObjectFromFileSystem@WPOBJECT@@VECHXZ
+ 0002:DFEA       ?DeleteObjectFromFileSystem@WPPROGRAM@@VECHXZ
+ 0003:940C       ?DeleteSelectedObjects@WPFOLDER@@JECXXZ
+ 0002:BA2E       ?DeleteShadow@WPOBJECT@@RECHPEVWPSHADOW@@@Z
+ 0002:6BBC       ?DeleteTopLevelWindow@WPDESKTOP@@BECHPBUHWND__@@@Z
+ 0002:4174       ?delete_object@@ZAXPEVWPOBJECT@@@Z
+ 0002:8672       ?DesktopPageProc@WPDESKTOP@@RECXHPBUHWND__@@GK@Z
+ 0002:BE52       ?Destroy@WPOBJECT@@VECHXZ
+ 0003:010E       ?Destroy@WPSHADOW@@VECHXZ
+ 0002:B672       ?DestroyIcon@WPOBJECT@@RECHXZ
+ 0003:A8B8       ?DestroyIcons@WPFOLDER@@VECHXZ
+ 0003:4F4A       ?DestroyImage@@ZAXPIE@Z
+ 0002:4288       ?DestroyRecursively@@ZAXPEVWPOBJECT@@@Z
+ 0002:AD2C       ?DestroyUniqueClassName@WPOBJECT@@JECHPFD@Z
+ 0003:46CE       ?DestroyWindow@WPWINDOW@@VECHXZ
+ 0003:6B36       ?DetailsViewFindObject@WPFOLDER@@BECPEVWPOBJECT@@GPEV2@@Z
+ 0000:0000  Unr  ?dprintf@@ZAXPEDZZ
+ 0003:495C       ?DPtoLP@WPWINDOW@@RECXPEUtagPOINT@@H@Z
+ 0000:0000  Unr  ?DPtoWP@WPWINDOW@@RECXPEUtagPOINT@@H@Z
+ 0002:BF24       ?Draw@WPOBJECT@@VECXPBUHDC__@@@Z
+ 0003:2C64       ?DrawBitmap@WPWINDOW@@BECXPBUHBITMAP__@@PBUHDC__@@HH@Z
+ 0003:2FA2       ?DrawCaptionBarText@WPWINDOW@@BECXPBUHDC__@@HHH@Z
+ 0003:AD22       ?DrawChildren@WPFOLDER@@VECXPBUHDC__@@@Z
+ 0002:AA48       ?DrawDetailsIconResource@WPOBJECT@@JECXPBUHDC__@@@Z
+ 0002:5848       ?DrawDetailsIconText@WPDATAFILE@@NECXPBUHDC__@@@Z
+ 0002:ABAE       ?DrawDetailsIconText@WPOBJECT@@NECXPBUHDC__@@@Z
+ 0002:CDE2       ?DrawDetailsIconText@WPPROGRAM@@NECXPBUHDC__@@@Z
+ 0003:AD9C       ?DrawDetailsViewTable@WPFOLDER@@RECXPBUHDC__@@@Z
+ 0000:0000  Unr  ?DrawIconOnBitmap@WPFOLDER@@JECXPBUHBITMAP__@@PBUHICON__@@@Z
+ 0003:3068       ?DrawIconOnSystemMenu@WPWINDOW@@BECXPBUHDC__@@PBUHICON__@@@Z
+ 0002:E784       ?DrawIconPreviewListboxItem@@ZAXPEUtagDRAWITEMSTRUCT@@@Z
+ 0002:A82E       ?DrawIconResource@WPOBJECT@@JECXPBUHDC__@@@Z
+ 0002:A996       ?DrawIconText@WPOBJECT@@JECXPBUHDC__@@@Z
+ 0003:8792       ?DrawMinMaxButtons@WPFOLDER@@NECXPBUHDC__@@HHH@Z
+ 0003:35D6       ?DrawMinMaxButtons@WPWINDOW@@NECXPBUHDC__@@HHH@Z
+ 0003:3346       ?DrawMinMaxButtonsHideStyle@WPWINDOW@@JECXPBUHDC__@@HHH@Z
+ 0003:348E       ?DrawMinMaxButtonsMinStyle@WPWINDOW@@JECXPBUHDC__@@HHH@Z
+ 0003:6F7C       ?DrawRubberBandRect@WPFOLDER@@NECXUtagPOINT@@H@Z
+ 0003:3708       ?DrawScroll3DOutline@WPWINDOW@@JECXPBUHDC__@@G@Z
+ 0000:0000  Unr  ?DrawScrollArea@WPWINDOW@@JECXPBUHDC__@@G@Z
+ 0003:3658       ?DrawScrollArrows@WPWINDOW@@JECXPBUHDC__@@G@Z
+ 0003:38A0       ?DrawScrollbar@WPWINDOW@@JECXPBUHDC__@@G@Z
+ 0003:35EE       ?DrawScrollComponent@WPWINDOW@@JECXPBUHDC__@@GGG@Z
+ 0003:37DC       ?DrawScrollIntersectionRect@WPWINDOW@@JECXPBUHDC__@@@Z
+ 0003:36E2       ?DrawScrollThumb@WPWINDOW@@JECXPBUHDC__@@G@Z
+ 0003:6EB4       ?DrawShadowDragLine@WPFOLDER@@NECXUtagPOINT@@H@Z
+ 0003:5E26       ?DrivePageProc@WPDRIVE@@RECXHPBUHWND__@@GK@Z
+ 0003:AA20       ?DropDPtoLP@WPFOLDER@@VECXPEUtagPOINT@@@Z
+ 0002:C530       ?DropDPtoLP@WPOBJECT@@VECXPEUtagPOINT@@@Z
+ 0003:0350       ?DropDPtoLP@WPSHADOW@@VECXPEUtagPOINT@@@Z
+ 0002:621A       ?DropSource@WPDATAFILE@@VECHPEVWPOBJECT@@HUtagPOINT@@@Z
+ 0002:C570       ?DropSource@WPOBJECT@@VECHPEV1@HUtagPOINT@@@Z
+ 0003:0434       ?DropSource@WPSHADOW@@VECHPEVWPOBJECT@@HUtagPOINT@@@Z
+ 0003:1ABA       ?DropSource@WPTEMPLATE@@VECHPEVWPOBJECT@@HUtagPOINT@@@Z
+ 0002:556C       ?DropTarget@WPCONTAINER@@VECHPEVWPOBJECT@@H@Z
+ 0002:629A       ?DropTarget@WPDATAFILE@@VECHPEVWPOBJECT@@H@Z
+ 0003:5776       ?DropTarget@WPDIRECTORY@@VECHPEVWPOBJECT@@H@Z
+ 0002:C7E4       ?DropTarget@WPOBJECT@@VECHPEV1@H@Z
+ 0002:D872       ?DropTarget@WPPROGRAM@@VECHPEVWPOBJECT@@H@Z
+ 0003:0476       ?DropTarget@WPSHADOW@@VECHPEVWPOBJECT@@H@Z
+ 0003:07DA       ?DropTarget@WPSHREDDER@@VECHPEVWPOBJECT@@H@Z
+ 0003:1B80       ?DropTarget@WPTEMPLATE@@VECHPEVWPOBJECT@@H@Z
+ 0003:4764       ?EndPaint@WPWINDOW@@RECXXZ
+ 0002:6D44       ?EnumerateWPSObjects@WPDESKTOP@@BECXPEVWPFOLDER@@PEG@Z
+ 0002:4456       ?ExecuteApplication@@ZAIPFDI@Z
+ 0002:449C       ?ExecuteApplication@@ZAPBUHINSTANCE__@@PBUHWND__@@PFD111H@Z
+ 0002:0EB0       ?ExecuteCommand@DDEPROGMAN@@NECHPED0@Z
+ 0002:1A44       ?ExecuteCommand@DDESHELL@@NECHPED0@Z
+ 0002:369C       ?ExecuteCommandLine@@ZAXPED@Z
+ 0002:B38E       ?ExtractIcon@WPOBJECT@@RECPBUHICON__@@XZ
+ 0002:656C       ?FilePageProc@WPDATAFILE@@RECXHPBUHWND__@@GK@Z
+ 0003:2D90       ?FillCaptionBar@WPWINDOW@@BECXPBUHDC__@@HHH@Z
+ 0003:2CBE       ?FillFrame@WPWINDOW@@BECXPBUHDC__@@HHH@Z
+ 0002:343A       ?Find@LIST@@RECHK@Z
+ 0002:5428       ?Find@WPCONTAINER@@VECPEVWPOBJECT@@KPFDHHPEPEU_MATCH_RECORD@@@Z
+ 0002:BC00       ?Find@WPOBJECT@@VECPEV1@KPFDHHPEPEU_MATCH_RECORD@@@Z
+ 0002:3170       ?FindByPosition@LIST@@JECPEU_LIST_NODE@@H@Z
+ 0000:0000  Unr  ?FindByValue@LIST@@JECPEU_LIST_NODE@@K@Z
+ 0002:644A       ?FindDataFile@WPDATAFILE@@RECHPBUHWND__@@@Z
+ 0002:2988       ?FindDlgOnCommandOK@@ZAXPBUHWND__@@IJ@Z
+ 0002:2C28       ?FindDlgProc@@ZCHPBUHWND__@@IIJ@Z
+ 0003:6C46       ?FindFunction@WPFOLDER@@BECHXZ
+ 0002:E816       ?FindIconDlgProc@@ZCHPBUHWND__@@IIJ@Z
+ 0000:0000  Unr  ?FindIndex@LIST@@RECKH@Z
+ 0003:B5CA       ?FindObjectAtRelativePosition@WPFOLDER@@RECPEVWPOBJECT@@GPEV2@@Z
+ 0000:0000  Unr  ?FindProgram@WPPROGRAM@@RECHPBUHWND__@@@Z
+ 0002:2790       ?FindResultsMarkSelectedObjects@@ZAXPBUHWND__@@G@Z
+ 0002:6DEE       ?FindUniqueID@WPDESKTOP@@BECPEVWPOBJECT@@PEV2@G@Z
+ 0003:8764       ?FormatIconView@WPFOLDER@@JECXXZ
+ 0003:B222       ?Frame@WPFOLDER@@VECXH@Z
+ 0002:C10E       ?Frame@WPOBJECT@@VECXH@Z
+ 0003:5448       ?FreeDirectoryFiles@WPDIRECTORY@@JECXXZ
+ 0000:0000  Unr  ?FreeNode@LIST@@JECXPEU_LIST_NODE@@@Z
+ 0002:482A       ?FreeStringTable@@ZAXH@Z
+ 0003:CA32       ?GeneralPageProc@WPFOLDER@@VECXHPBUHWND__@@GK@Z
+ 0002:C942       ?GeneralPageProc@WPOBJECT@@VECXHPBUHWND__@@GK@Z
+ 0002:3384       ?GetAt@LIST@@RECKH@Z
+ 0002:719C       ?GetBackgroundColor@WPDESKTOP@@VECKXZ
+ 0003:A460       ?GetBackgroundColor@WPFOLDER@@VECKXZ
+ 0000:0000  Unr  ?GetCaptionFillColor@WPWINDOW@@BECKH@Z
+ 0000:0000  Unr  ?GetCaptionTextColor@WPWINDOW@@BECKH@Z
+ 0002:72FE       ?GetCaptionTitle@WPDESKTOP@@VECPFDXZ
+ 0003:9D86       ?GetCaptionTitle@WPFOLDER@@VECPFDXZ
+ 0002:99D4       ?GetCaptionTitle@WPNOTEBOOK@@NECPFDXZ
+ 0002:B27A       ?GetCaptionTitle@WPOBJECT@@VECPFDXZ
+ 0002:E4F2       ?GetCaptionTitle@WPSETTINGSNB@@NECPFDXZ
+ 0002:EEA6       ?GetCaptionTitle@WPSHADOW@@VECPFDXZ
+ 0003:A9AC       ?GetChildrenContainedInRect@WPFOLDER@@VECHUtagRECT@@PEVLIST@@@Z
+ 0002:1344       ?GetCommandNameAndParameters@DDESERVER@@NECHPEDPEPED1@Z
+ 0003:1466       ?GetConfirmationsPageSYSTEMProfile@WPSYSSETUP@@RECXXZ
+ 0002:31DC       ?GetCount@LIST@@RECHXZ
+ 0000:0000  Unr  ?GetDataName@WPDATAFILE@@RECPFDXZ
+ 0000:0000  Unr  ?GetDataPath@WPDATAFILE@@RECPFDXZ
+ 0000:0000  Unr  ?GetDataSubject@WPDATAFILE@@RECPFDXZ
+ 0003:4792       ?GetDC@WPWINDOW@@RECPBUHDC__@@XZ
+ 0002:5D96       ?GetDefaultIcon@WPDATAFILE@@VECXPEDPEG@Z
+ 0002:7304       ?GetDefaultIcon@WPDESKTOP@@VECXPEDPEG@Z
+ 0003:5C0E       ?GetDefaultIcon@WPDRIVE@@VECXPEDPEG@Z
+ 0003:9DE0       ?GetDefaultIcon@WPFOLDER@@VECXPEDPEG@Z
+ 0002:8EEE       ?GetDefaultIcon@WPMINVIEWER@@VECXPEDPEG@Z
+ 0002:8CD4       ?GetDefaultIcon@WPMINWNDOBJ@@VECXPEDPEG@Z
+ 0002:B36A       ?GetDefaultIcon@WPOBJECT@@VECXPEDPEG@Z
+ 0002:D3E4       ?GetDefaultIcon@WPPROGRAM@@VECXPEDPEG@Z
+ 0002:EBA2       ?GetDefaultIcon@WPSETUP@@VECXPEDPEG@Z
+ 0002:EEDE       ?GetDefaultIcon@WPSHADOW@@VECXPEDPEG@Z
+ 0003:0724       ?GetDefaultIcon@WPSHREDDER@@VECXPEDPEG@Z
+ 0003:09DA       ?GetDefaultIcon@WPSYSSETUP@@VECXPEDPEG@Z
+ 0003:190C       ?GetDefaultIcon@WPTEMPLATE@@VECXPEDPEG@Z
+ 0000:0000  Unr  ?GetDIBBitsAddr@@ZAPIEPIE@Z
+ 0000:0000  Unr  ?GetDIBHeight@@ZAGPIE@Z
+ 0000:0000  Unr  ?GetDIBInfoHeaderSize@@ZAKPIE@Z
+ 0003:4BB4       ?GetDIBNumberColors@@ZAKPIE@Z
+ 0000:0000  Unr  ?GetDIBWidth@@ZAGPIE@Z
+ 0000:0000  Unr  ?GetDriveCount@WPDRIVE@@BECHXZ
+ 0000:0000  Unr  ?GetDriveIndex@WPDRIVE@@RECIXZ
+ 0000:0000  Unr  ?GetDriveType@WPDRIVE@@REC?EW4DRIVE_TYPE@@XZ
+ 0003:6DA6       ?GetDropTarget@WPFOLDER@@NECPEVWPOBJECT@@UtagPOINT@@PEH@Z
+ 0003:A644       ?GetFirstAvailableIconPos@WPFOLDER@@REC?EUtagPOINT@@PEU2@@Z
+ 0002:5324       ?GetFirstSelectedObject@WPCONTAINER@@RECPEVWPOBJECT@@XZ
+ 0002:B950       ?GetFlags@WPOBJECT@@VECKXZ
+ 0003:0026       ?GetFlags@WPSHADOW@@VECKXZ
+ 0000:0000  Unr  ?GetFrameFillColor@WPWINDOW@@BECKH@Z
+ 0002:B794       ?GetFrameRect@WPOBJECT@@RECXPEUtagRECT@@@Z
+ 0002:5D08       ?GetFullDataPath@WPDATAFILE@@RECPFDXZ
+ 0003:3A94       ?GetHandle@WPWINDOW@@RECPBUHWND__@@XZ
+ 0000:0000  Unr  ?GetHead@LIST@@RECPEU_LIST_NODE@@XZ
+ 0002:B326       ?GetIcon@WPOBJECT@@VECXPEDPEG@Z
+ 0002:EF4C       ?GetIcon@WPSHADOW@@VECXPEDPEG@Z
+ 0002:9710       ?GetIconHandle@WPNOTEBOOK@@RECPBUHICON__@@XZ
+ 0002:B35C       ?GetIconHandle@WPOBJECT@@RECPBUHICON__@@XZ
+ 0002:B2D4       ?GetIconPos@WPOBJECT@@REC?EUtagPOINT@@XZ
+ 0003:A496       ?GetIconTextColor@WPFOLDER@@RECKXZ
+ 0003:A474       ?GetIconTextLogFont@WPFOLDER@@RECXPEUtagLOGFONT@@@Z
+ 0002:71B0       ?GetImageAttribute@WPDESKTOP@@VECHK@Z
+ 0003:A4AA       ?GetImageAttribute@WPFOLDER@@VECHK@Z
+ 0003:A546       ?GetImageBitmapHandle@WPFOLDER@@RECPBUHBITMAP__@@XZ
+ 0003:A524       ?GetImagePalette@WPFOLDER@@RECPBUHPALETTE__@@XZ
+ 0002:72BE       ?GetImagePath@WPDESKTOP@@VECPEDXZ
+ 0003:A4FA       ?GetImagePath@WPFOLDER@@VECPEDXZ
+ 0000:0000  Unr  ?GetIndexFromPageID@WPNOTEBOOK@@JECHG@Z
+ 0000:0000  Unr  ?GetInstanceIcon@WPTEMPLATE@@JECXPEDPEG@Z
+ 0000:0000  Unr  ?GetInstanceTitle@WPTEMPLATE@@JECPEDXZ
+ 0000:0000  Unr  ?GetLogicalDomain@WPWINDOW@@REC?EUtagRECT@@XZ
+ 0002:614C       ?GetMenuName@WPDATAFILE@@VECPFDXZ
+ 0002:7B3A       ?GetMenuName@WPDESKTOP@@VECPFDXZ
+ 0003:B798       ?GetMenuName@WPFOLDER@@VECPFDXZ
+ 0002:8F5C       ?GetMenuName@WPMINVIEWER@@VECPFDXZ
+ 0002:8D8C       ?GetMenuName@WPMINWNDOBJ@@VECPFDXZ
+ 0002:C2A8       ?GetMenuName@WPOBJECT@@VECPFDXZ
+ 0002:D782       ?GetMenuName@WPPROGRAM@@VECPFDXZ
+ 0003:0206       ?GetMenuName@WPSHADOW@@VECPFDXZ
+ 0000:0000  Unr  ?GetMinWindowObjectInViewer@WPMINVIEWER@@RECPEVWPMINWNDOBJ@@PBUHWND__@@@Z
+ 0000:0000  Unr  ?GetMinWndHandle@WPMINWNDOBJ@@RECPBUHWND__@@XZ
+ 0002:12A6       ?GetNextCommand@DDESERVER@@NECHPED0PEH@Z
+ 0002:535E       ?GetNextSelectedObject@WPCONTAINER@@RECPEVWPOBJECT@@XZ
+ 0002:5230       ?GetObject@WPCONTAINER@@VECPEVWPOBJECT@@H@Z
+ 0002:521A       ?GetObjectCount@WPCONTAINER@@VECHXZ
+ 0000:0000  Unr  ?GetObjectFromInstanceHandle@WPDESKTOP@@RECPEVWPOBJECT@@PBUHINSTANCE__@@@Z
+ 0002:5248       ?GetObjectIndex@WPCONTAINER@@VECHPEVWPOBJECT@@@Z
+ 0003:A0A2       ?GetObjectPopup@WPFOLDER@@RECPEVWPOBJECT@@XZ
+ 0002:B888       ?GetObjectRect@WPOBJECT@@RECXPEUtagRECT@@@Z
+ 0000:0000  Unr  ?GetObjectRectDP@WPOBJECT@@RECXPBUHDC__@@PEUtagRECT@@@Z
+ 0003:A0E6       ?GetOpenView@WPFOLDER@@VECGXZ
+ 0000:0000  Unr  ?GetOriginalObject@WPSHADOW@@RECPEVWPOBJECT@@XZ
+ 0002:EDD4       ?GetOriginalUniqueID@WPSHADOW@@RECGXZ
+ 0002:96FC       ?GetOwner@WPNOTEBOOK@@RECPEVWPOBJECT@@XZ
+ 0000:0000  Unr  ?GetPageIDFromWindow@WPNOTEBOOK@@JECGPBUHWND__@@@Z
+ 0002:9720       ?GetPageOnTop@WPNOTEBOOK@@JECPBUHWND__@@XZ
+ 0002:9762       ?GetPageProc@WPNOTEBOOK@@JECP9WPOBJECT@@CXHPBUHWND__@@GK@Z0@Z
+ 0002:D320       ?GetParameters@WPPROGRAM@@RECPFDXZ
+ 0002:BAA4       ?GetParent@WPOBJECT@@RECPEVWPCONTAINER@@XZ
+ 0000:0000  Unr  ?GetPath@WPDIRECTORY@@RECPEDXZ
+ 0002:B6A6       ?GetPopupFrameRect@WPOBJECT@@RECXPEUtagRECT@@@Z
+ 0003:DB58       ?GetProfileInfo@WPFOLDER@@RECXPEUFILE_FOLDER_STRUCT@@@Z
+ 0002:D2DC       ?GetProgramPath@WPPROGRAM@@RECPFDXZ
+ 0003:21FA       ?GetScrollbarFrameRect@WPWINDOW@@BEC?EUtagRECT@@G@Z
+ 0003:23DA       ?GetScrollComponentRect@WPWINDOW@@BEC?EUtagRECT@@GG@Z
+ 0000:0000  Unr  ?GetScrollComponentSize@WPWINDOW@@BEC?EUtagSIZE@@G@Z
+ 0000:0000  Unr  ?GetScrollComponentState@WPWINDOW@@BECGG@Z
+ 0002:52D0       ?GetSelectedObject@WPCONTAINER@@RECPEVWPOBJECT@@H@Z
+ 0002:52BA       ?GetSelectedObjectCount@WPCONTAINER@@RECHXZ
+ 0002:C90E       ?GetSettingsNotebook@WPOBJECT@@RECPEVWPSETTINGSNB@@XZ
+ 0000:0000  Unr  ?GetShadowCount@WPOBJECT@@RECHXZ
+ 0000:0000  Unr  ?GetShadowLink@WPOBJECT@@RECPEVWPSHADOW@@H@Z
+ 0002:5ED2       ?GetSortValue@WPDATAFILE@@VECXGPETSORT_VALUE_STRUCT@@@Z
+ 0002:B98C       ?GetSortValue@WPOBJECT@@VECXGPETSORT_VALUE_STRUCT@@@Z
+ 0002:D456       ?GetSortValue@WPPROGRAM@@VECXGPETSORT_VALUE_STRUCT@@@Z
+ 0002:B90C       ?GetState@WPOBJECT@@VECGXZ
+ 0002:EFA0       ?GetState@WPSHADOW@@VECGXZ
+ 0002:480A       ?GetString@@ZAPEDI@Z
+ 0000:0000  Unr  ?GetTail@LIST@@RECPEU_LIST_NODE@@XZ
+ 0000:0000  Unr  ?GetTemplateType@WPTEMPLATE@@JECKXZ
+ 0002:B1E4       ?GetTitle@WPOBJECT@@VECPFDXZ
+ 0002:EE36       ?GetTitle@WPSHADOW@@VECPFDXZ
+ 0002:B1F4       ?GetTitleNoCRLF@WPOBJECT@@VECPFDXZ
+ 0002:EE6E       ?GetTitleNoCRLF@WPSHADOW@@VECPFDXZ
+ 0000:0000  Unr  ?GetTopicCount@DDESERVER@@JECHXZ
+ 0002:7DC8       ?GetTopLevelWindowMinimizeBehavior@WPDESKTOP@@RECGPBUHWND__@@@Z
+ 0002:B13E       ?GetType@WPOBJECT@@VECKXZ
+ 0000:0000  Unr  ?GetUndocProc@@ZAP7CXXZPED0H@Z
+ 0002:B164       ?GetUniqueID@WPOBJECT@@RECGXZ
+ 0003:3B84       ?GetVisibleArea@WPWINDOW@@REC?EUtagRECT@@XZ
+ 0003:1110       ?GetWindow2PageSYSTEMProfile@WPSYSSETUP@@RECXXZ
+ 0002:7328       ?GetWindowExStyles@WPDESKTOP@@VECKXZ
+ 0003:46D4       ?GetWindowExStyles@WPWINDOW@@VECKXZ
+ 0000:0000  Unr  ?GetWindowFromPageID@WPNOTEBOOK@@JECPBUHWND__@@G@Z
+ 0002:99A6       ?GetWindowFromPageIndex@WPNOTEBOOK@@RECPBUHWND__@@H@Z
+ 0003:CA90       ?GetWindowPageFlags@WPFOLDER@@RECKPBUHWND__@@@Z
+ 0002:DCDA       ?GetWindowPageFlags@WPPROGRAM@@RECKPBUHWND__@@@Z
+ 0003:0C5C       ?GetWindowPageSYSTEMProfile@WPSYSSETUP@@RECXXZ
+ 0002:7A28       ?GetWindows31DesktopProc@WPDESKTOP@@RECP7CJPBUHWND__@@IIJ@ZXZ
+ 0002:7330       ?GetWindowStyles@WPDESKTOP@@VECKXZ
+ 0002:99CC       ?GetWindowStyles@WPNOTEBOOK@@NECKXZ
+ 0003:46DC       ?GetWindowStyles@WPWINDOW@@VECKXZ
+ 0003:3AD0       ?GetWndPos@WPWINDOW@@REC?EUtagPOINT@@XZ
+ 0003:3B20       ?GetWndSize@WPWINDOW@@REC?EUtagSIZE@@XZ
+ 0002:D3D4       ?GetWorkingDir@WPPROGRAM@@RECPFDXZ
+ 0004:0000       ?g_wpEnvironment@@3UWPENVIRONMENT@@E
+ 0003:706C       ?HandleDragModeInit@WPFOLDER@@JECHGUtagPOINT@@@Z
+ 0000:0000  Unr  ?HandleFocusState@@ZAXPEUtagDRAWITEMSTRUCT@@@Z
+ 0003:749A       ?HandleMoveCopyOrShadowOperation@WPFOLDER@@JECXUtagPOINT@@@Z
+ 0003:7272       ?HandleRubberBandSelection@WPFOLDER@@JECXUtagPOINT@@@Z
+ 0000:0000  Unr  ?HandleSelectionState@@ZAXPEUtagDRAWITEMSTRUCT@@@Z
+ 0000:0000  Unr  ?HandleSelectOperation@WPFOLDER@@JECXUtagPOINT@@@Z
+ 0002:C3E6       ?HitTest@WPOBJECT@@VECHUtagPOINT@@@Z
+ 0003:6A14       ?IconViewFindObject@WPFOLDER@@BECPEVWPOBJECT@@GPEV2@@Z
+ 0002:846C       ?ImageControls@WPDESKTOP@@VECXPBUHWND__@@H@Z
+ 0003:CDEA       ?ImageControls@WPFOLDER@@VECXPBUHWND__@@H@Z
+ 0002:0000       ?Initialize@DDEPROGMAN@@RECHPEVWPDESKTOP@@@Z
+ 0002:114E       ?Initialize@DDESERVER@@VECHPEDP7CXXZ@Z
+ 0002:1690       ?Initialize@DDESHELL@@RECHPEVWPDESKTOP@@@Z
+ 0002:50C0       ?Initialize@WPCONTAINER@@VECXH@Z
+ 0002:B0F2       ?Initialize@WPOBJECT@@VECXH@Z
+ 0002:D218       ?Initialize@WPPROGRAM@@VECXH@Z
+ 0002:ED4E       ?Initialize@WPSHADOW@@VECXH@Z
+ 0002:7464       ?InitializeDesktop@WPDESKTOP@@RECHXZ
+ 0003:5D60       ?InitializeDrivesList@WPDRIVE@@RECXPBUHWND__@@@Z
+ 0002:396A       ?InitializeEnvironmentStructure@@ZAXPBUHINSTANCE__@@@Z
+ 0002:E676       ?InitializeIconPreviewListbox@@ZAHPBUHWND__@@PED@Z
+ 0002:7B04       ?InitializePopup@WPDESKTOP@@VECXPBUHMENU__@@@Z
+ 0003:56A0       ?InitializePopup@WPDIRECTORY@@VECXPBUHMENU__@@@Z
+ 0003:5F64       ?InitializePopup@WPDRIVE@@VECXPBUHMENU__@@@Z
+ 0003:B752       ?InitializePopup@WPFOLDER@@VECXPBUHMENU__@@@Z
+ 0002:8D62       ?InitializePopup@WPMINWNDOBJ@@VECXPBUHMENU__@@@Z
+ 0002:C2A4       ?InitializePopup@WPOBJECT@@VECXPBUHMENU__@@@Z
+ 0003:014E       ?InitializePopup@WPSHADOW@@VECXPBUHMENU__@@@Z
+ 0002:219A       ?InitializeTargetFolderListbox@@ZAXPBUHWND__@@PEUCOPYMOVECREATE_STRUCT@@@Z
+ 0002:E64C       ?InsertGeneralPage@WPSETTINGSNB@@RECXP9WPOBJECT@@CXHPBUHWND__@@GK@ZPFD@Z
+ 0002:9C18       ?InsertPage@WPNOTEBOOK@@RECHPEDGP9WPOBJECT@@CXHPBUHWND__@@GK@Z0PFD@Z
+ 0002:62BA       ?InsertSettingsNotebookPages@WPDATAFILE@@VECXXZ
+ 0002:8376       ?InsertSettingsNotebookPages@WPDESKTOP@@VECXXZ
+ 0003:5D1A       ?InsertSettingsNotebookPages@WPDRIVE@@VECXXZ
+ 0003:C996       ?InsertSettingsNotebookPages@WPFOLDER@@VECXXZ
+ 0002:C922       ?InsertSettingsNotebookPages@WPOBJECT@@VECXXZ
+ 0002:D8D4       ?InsertSettingsNotebookPages@WPPROGRAM@@VECXXZ
+ 0003:09FE       ?InsertSettingsNotebookPages@WPSYSSETUP@@VECXXZ
+ 0002:7ACC       ?Invalidate@WPDESKTOP@@VECXHH@Z
+ 0003:B39C       ?Invalidate@WPFOLDER@@VECXHH@Z
+ 0002:C28C       ?Invalidate@WPOBJECT@@VECXHH@Z
+ 0002:C202       ?InvalidateIcon@WPOBJECT@@VECXHH@Z
+ 0002:7A8C       ?InvalidateRect@WPDESKTOP@@VECXPEUtagRECT@@HH@Z
+ 0003:B330       ?InvalidateRect@WPFOLDER@@VECXPEUtagRECT@@HH@Z
+ 0002:C288       ?InvalidateRect@WPOBJECT@@VECXPEUtagRECT@@HH@Z
+ 0002:BA4A       ?InvalidateShadows@WPOBJECT@@RECXH@Z
+ 0002:53C4       ?isAnyChildOpen@WPCONTAINER@@VECHXZ
+ 0002:BADC       ?isAnyChildOpen@WPOBJECT@@VECHXZ
+ 0000:0000  Unr  ?IsATMDriverLoaded@WPDESKTOP@@BECHXZ
+ 0002:126A       ?IsBlank@DDESERVER@@JECHPED@Z
+ 0002:54CA       ?isContainer@WPCONTAINER@@VECHXZ
+ 0002:C534       ?isContainer@WPOBJECT@@VECHXZ
+ 0003:0382       ?isContainer@WPSHADOW@@VECHXZ
+ 0003:572A       ?isDirectoryContainer@WPDIRECTORY@@VECHXZ
+ 0002:C53A       ?isDirectoryContainer@WPOBJECT@@VECHXZ
+ 0000:0000  Unr  ?IsEmpty@LIST@@RECHXZ
+ 0000:0000  Unr  ?isFileInDirectory@WPDIRECTORY@@JECHPED@Z
+ 0000:0000  Unr  ?isFileInFolder@WPDIRECTORY@@JECHPED@Z
+ 0000:0000  Unr  ?IsObjectValid@WPMINVIEWER@@RECHPEVWPMINWNDOBJ@@PEPEV2@H@Z
+ 0002:53A0       ?isObjSelected@WPCONTAINER@@RECHPEVWPOBJECT@@@Z
+ 0002:BAB8       ?isOpen@WPOBJECT@@VECHXZ
+ 0003:0072       ?isOpen@WPSHADOW@@VECHXZ
+ 0002:9974       ?IsPageWindow@WPNOTEBOOK@@RECHPBUHWND__@@@Z
+ 0003:3BAA       ?isPointVisible@WPWINDOW@@RECHUtagPOINT@@@Z
+ 0000:0000  Unr  ?IsRegisteredSourceWindow@@ZAHPBUHWND__@@@Z
+ 0003:DDBE       ?IsRegisteredTargetWindow@@ZAHPBUHWND__@@@Z
+ 0000:0000  Unr  ?isRGBNormal@WPFOLDER@@JECHK@Z
+ 0000:0000  Unr  ?isRGBWhite@WPFOLDER@@JECHK@Z
+ 0003:43CC       ?isScrollable@WPWINDOW@@RECHXZ
+ 0003:3BDA       ?isScrollbarCapturingInput@WPWINDOW@@RECHXZ
+ 0000:0000  Unr  ?isScrollbarEnabled@WPWINDOW@@RECHG@Z
+ 0002:BB18       ?isSelected@WPOBJECT@@RECHXZ
+ 0002:C7EA       ?isSettingsNotebookOpen@WPOBJECT@@VECHXZ
+ 0003:04A2       ?isSettingsNotebookOpen@WPSHADOW@@VECHXZ
+ 0002:8768       ?IsShell@WPDESKTOP@@RECHH@Z
+ 0002:2314       ?IsTargetFolderValid@@ZAHPEVWPFOLDER@@PEUCOPYMOVECREATE_STRUCT@@@Z
+ 0003:6E2A       ?isTargetValid@WPFOLDER@@NECHPEVWPOBJECT@@@Z
+ 0000:0000  Unr  ?isTopic@DDESERVER@@JECHPED@Z
+ 0000:0000  Unr  ?IsWindowMinimizedToViewer@WPMINVIEWER@@RECHPBUHWND__@@@Z
+ 0000:0000  Unr  ?isWorkplaceShellClassName@WPOBJECT@@JECHPED@Z
+ 0002:AD9E       ?isWorkplaceShellWindow@WPOBJECT@@JECHPBUHWND__@@@Z
+ 0002:7DAC       ?KeyboardEvent@WPDESKTOP@@VECXG@Z
+ 0003:BA64       ?KeyboardEvent@WPFOLDER@@VECXG@Z
+ 0003:5240       ?LoadDirectoryFiles@WPDIRECTORY@@JECXXZ
+ 0000:0000  Unr  ?LoadFileInfo@WPDATAFILE@@RECXXZ
+ 0000:0000  Unr  ?LoadFileInfo@WPPROGRAM@@RECXXZ
+ 0002:5E80       ?LoadIcon@WPDATAFILE@@VECHXZ
+ 0002:8CF8       ?LoadIcon@WPMINWNDOBJ@@VECHXZ
+ 0002:B4A0       ?LoadIcon@WPOBJECT@@VECHXZ
+ 0002:D408       ?LoadIcon@WPPROGRAM@@VECHXZ
+ 0003:A828       ?LoadIcons@WPFOLDER@@VECHXZ
+ 0003:4C0A       ?LoadImage@@ZAPIEPED@Z
+ 0002:37AE       ?LoadNLSResourceLibrary@@ZAHXZ
+ 0000:0000  Unr  ?LoadOwnerIcon@WPNOTEBOOK@@JECHXZ
+ 0003:2108       ?LoadScrollComponentBitmap@WPWINDOW@@BECPBUHBITMAP__@@GG@Z
+ 0002:475A       ?LoadStringTable@@ZAHPBUHINSTANCE__@@H@Z
+ 0002:84D8       ?LockupPageProc@WPDESKTOP@@RECXHPBUHWND__@@GK@Z
+ 0003:491C       ?LPtoDP@WPWINDOW@@RECXPEUtagPOINT@@H@Z
+ 0003:4804       ?LPtoWP@WPWINDOW@@RECXPEUtagPOINT@@H@Z
+ 0002:4F24       ?MakeFATName@WPCONTAINER@@JECPEDPED@Z
+ 0002:6154       ?MenuSelection@WPDATAFILE@@VECXG@Z
+ 0002:7B42       ?MenuSelection@WPDESKTOP@@VECXG@Z
+ 0003:56D4       ?MenuSelection@WPDIRECTORY@@VECXG@Z
+ 0003:5FD4       ?MenuSelection@WPDRIVE@@VECXG@Z
+ 0003:B7A0       ?MenuSelection@WPFOLDER@@VECXG@Z
+ 0002:8F64       ?MenuSelection@WPMINVIEWER@@VECXG@Z
+ 0002:8D94       ?MenuSelection@WPMINWNDOBJ@@VECXG@Z
+ 0002:C2B0       ?MenuSelection@WPOBJECT@@VECXG@Z
+ 0002:D78A       ?MenuSelection@WPPROGRAM@@VECXG@Z
+ 0003:023C       ?MenuSelection@WPSHADOW@@VECXG@Z
+ 0003:90A6       ?MoveFunc@WPFOLDER@@JECXXZ
+ 0003:499C       ?NCPaint@WPWINDOW@@RECXHPBUHICON__@@@Z
+ 0000:0000  Unr  ?NewNode@LIST@@JECPEU_LIST_NODE@@K@Z
+ 0002:3F74       ?new_object@@ZAPEVWPOBJECT@@PEV1@@Z
+ 0002:A0F8       ?OnActivate@WPNOTEBOOK@@RECXH@Z
+ 0002:7EE6       ?OnAssociateObject@WPDESKTOP@@RECXPBUHINSTANCE__@@PEVWPOBJECT@@@Z
+ 0002:7FC4       ?OnAssociateObject@WPDESKTOP@@RECXPBUHWND__@@PEVWPOBJECT@@@Z
+ 0003:C942       ?OnClose@WPFOLDER@@VECXXZ
+ 0002:A748       ?OnClose@WPNOTEBOOK@@RECXXZ
+ 0000:0000  Unr  ?OnClose@WPSETTINGSNB@@RECXXZ
+ 0003:C116       ?OnCommand@WPFOLDER@@VECXG@Z
+ 0002:A26A       ?OnCommand@WPNOTEBOOK@@RECXPBUHWND__@@G@Z
+ 0002:81CA       ?OnCreate@WPDESKTOP@@VECXXZ
+ 0003:BBC8       ?OnCreate@WPFOLDER@@VECXXZ
+ 0002:9E68       ?OnCreate@WPNOTEBOOK@@RECXXZ
+ 0002:812A       ?OnDeleteObject@WPDESKTOP@@RECXPEVWPOBJECT@@@Z
+ 0002:824C       ?OnDestroy@WPDESKTOP@@RECXXZ
+ 0003:B3D4       ?OnDrop@WPFOLDER@@VECXUtagPOINT@@@Z
+ 0002:834E       ?OnEraseBackground@WPDESKTOP@@VECJPBUHDC__@@@Z
+ 0003:C844       ?OnEraseBackground@WPFOLDER@@VECJPBUHDC__@@@Z
+ 0002:A420       ?OnEraseBackground@WPNOTEBOOK@@RECXPBUHDC__@@@Z
+ 0002:7EB2       ?OnFindInstanceHandle@WPDESKTOP@@RECHPBUHINSTANCE__@@@Z
+ 0002:8056       ?OnGetWindowFromObject@WPDESKTOP@@RECPBUHWND__@@PEVWPOBJECT@@@Z
+ 0003:A20A       ?OnInitializeFolder@WPFOLDER@@VECXXZ
+ 0002:9296       ?OnInitializeFolder@WPMINVIEWER@@VECXXZ
+ 0003:75EC       ?OnLeftMouseButton@WPFOLDER@@NECXIGUtagPOINT@@@Z
+ 0002:6FA6       ?OnLeftMouseButtonDblClk@WPDESKTOP@@NECXUtagPOINT@@@Z
+ 0003:7926       ?OnLeftMouseButtonDblClk@WPFOLDER@@NECXUtagPOINT@@@Z
+ 0003:ABBC       ?OnMouseMessage@WPFOLDER@@VECXIGUtagPOINT@@@Z
+ 0003:7854       ?OnMouseMove@WPFOLDER@@NECXGUtagPOINT@@@Z
+ 0002:A714       ?OnMouseMove@WPNOTEBOOK@@RECXXZ
+ 0003:BEB8       ?OnMove@WPFOLDER@@VECXUtagPOINT@@@Z
+ 0002:A154       ?OnMove@WPNOTEBOOK@@RECXUtagPOINT@@@Z
+ 0003:C438       ?OnNCActivate@WPFOLDER@@VECXH@Z
+ 0002:A4E8       ?OnNCActivate@WPNOTEBOOK@@RECXH@Z
+ 0003:C59E       ?OnNCLButton@WPFOLDER@@VECXIGUtagPOINT@@@Z
+ 0002:A5FE       ?OnNCLButton@WPNOTEBOOK@@RECXIGUtagPOINT@@@Z
+ 0003:C482       ?OnNCMouseMove@WPFOLDER@@VECXGUtagPOINT@@@Z
+ 0002:A518       ?OnNCMouseMove@WPNOTEBOOK@@RECXGUtagPOINT@@@Z
+ 0002:8372       ?OnNCPaint@WPDESKTOP@@VECXXZ
+ 0003:C3CA       ?OnNCPaint@WPFOLDER@@VECXXZ
+ 0002:A46C       ?OnNCPaint@WPNOTEBOOK@@RECXXZ
+ 0002:80E2       ?OnNotifyObjectDestroyed@WPDESKTOP@@RECXPEVWPOBJECT@@@Z
+ 0003:C8E8       ?OnPaint@WPFOLDER@@VECXXZ
+ 0003:C764       ?OnPaletteMessage@WPFOLDER@@VECJIPBUHWND__@@@Z
+ 0003:C252       ?OnPopupMenu@WPFOLDER@@VECXUtagPOINT@@@Z
+ 0002:A40E       ?OnQueryDragIcon@WPNOTEBOOK@@RECJXZ
+ 0003:5520       ?OnRightMouseButton@WPDIRECTORY@@NECXIGUtagPOINT@@@Z
+ 0003:772C       ?OnRightMouseButton@WPFOLDER@@NECXIGUtagPOINT@@@Z
+ 0003:43EC       ?OnScrollbarMessage@WPWINDOW@@RECXIGHPBUHWND__@@@Z
+ 0003:BF08       ?OnSize@WPFOLDER@@VECXGHH@Z
+ 0002:A19A       ?OnSize@WPNOTEBOOK@@RECXGHH@Z
+ 0003:BFE8       ?OnSysCommand@WPFOLDER@@VECXGJ@Z
+ 0002:A36E       ?OnSysCommand@WPNOTEBOOK@@RECXGJ@Z
+ 0003:BFE4       ?OnTimer@WPFOLDER@@VECXG@Z
+ 0002:92E2       ?OnTimer@WPMINVIEWER@@VECXG@Z
+ 0002:7E08       ?OnTopLevelWindowCreated@WPDESKTOP@@RECXPBUHWND__@@@Z
+ 0002:7E9E       ?OnTopLevelWindowDestroyed@WPDESKTOP@@RECXPBUHWND__@@@Z
+ 0002:809A       ?OnUpdateObjectMinPlacement@WPDESKTOP@@RECXPBUHINSTANCE__@@@Z
+ 0003:C6E6       ?OnWin31DragAndDropMsg@WPFOLDER@@VECJIIJ@Z
+ 0002:8314       ?OnWinINIChange@WPDESKTOP@@RECXPFD@Z
+ 0002:5FD0       ?Open@WPDATAFILE@@VECHXZ
+ 0002:7338       ?Open@WPDESKTOP@@VECHXZ
+ 0003:5636       ?Open@WPDIRECTORY@@VECHXZ
+ 0003:9E04       ?Open@WPFOLDER@@VECHXZ
+ 0002:8C68       ?Open@WPMINWNDOBJ@@RECHH@Z
+ 0002:8CC2       ?Open@WPMINWNDOBJ@@VECHXZ
+ 0002:BAF6       ?Open@WPOBJECT@@VECHXZ
+ 0002:D59A       ?Open@WPPROGRAM@@RECHPED@Z
+ 0002:D57E       ?Open@WPPROGRAM@@VECHXZ
+ 0003:00A6       ?Open@WPSHADOW@@VECHXZ
+ 0002:C804       ?OpenSettingsNotebook@WPOBJECT@@VECHXZ
+ 0003:04D6       ?OpenSettingsNotebook@WPSHADOW@@VECHXZ
+ 0003:2E3C       ?Outline3DFrame@WPWINDOW@@BECXPBUHDC__@@HH@Z
+ 0003:66DE       ?PaintFolderImage@WPFOLDER@@BECXPBUHDC__@@@Z
+ 0002:07CA       ?ParseCommandParametersIntoList@DDEPROGMAN@@BECXPEDPEPEDPEH@Z
+ 0002:45C4       ?PlaySystemEventSound@@ZAXPFD@Z
+ 0003:B090       ?PopupFrame@WPFOLDER@@VECXXZ
+ 0002:BFD6       ?PopupFrame@WPOBJECT@@VECXXZ
+ 0003:B212       ?PopupUnFrame@WPFOLDER@@VECXXZ
+ 0002:C0E2       ?PopupUnFrame@WPOBJECT@@VECXXZ
+ 0002:6084       ?Print@WPDATAFILE@@RECHXZ
+ 0002:20EA       ?ProductInfoDlgProc@@ZCHPBUHWND__@@IIJ@Z
+ 0002:102C       ?PROGMANServiceCallback@@ZCPFUHDDEDATA__@@IIPFUHCONV__@@PFUHSZ__@@1PFU1@KK@Z
+ 0002:D970       ?ProgramPageProc@WPPROGRAM@@RECXHPBUHWND__@@GK@Z
+ 0002:01A0       ?QueryAllGroupNames@DDEPROGMAN@@BECXPEPFUHDDEDATA__@@@Z
+ 0002:8FA2       ?QueryCurrentMinWindows@WPMINVIEWER@@RECHPEPBUHWND__@@@Z
+ 0002:0266       ?QueryDetailedGroupInfo@DDEPROGMAN@@BECHPFUHSZ__@@PEPFUHDDEDATA__@@@Z
+ 0003:5A1C       ?QueryDriveType@WPDRIVE@@BEC?EW4DRIVE_TYPE@@I@Z
+ 0000:0000  Unr  ?QueryDriveTypeString@WPDRIVE@@BECPEDI@Z
+ 0002:87D4       ?QueryQuit@WPDESKTOP@@RECHXZ
+ 0002:7758       ?ReadDesktop@WPDESKTOP@@RECHXZ
+ 0002:566E       ?ReadObjectProfile@WPCONTAINER@@VECHHPEV1@@Z
+ 0002:681E       ?ReadObjectProfile@WPDATAFILE@@VECHHPEVWPCONTAINER@@@Z
+ 0002:88A2       ?ReadObjectProfile@WPDESKTOP@@VECHHPEVWPCONTAINER@@@Z
+ 0003:5886       ?ReadObjectProfile@WPDIRECTORY@@VECHHPEVWPCONTAINER@@@Z
+ 0003:60C4       ?ReadObjectProfile@WPDRIVE@@VECHHPEVWPCONTAINER@@@Z
+ 0003:DC2A       ?ReadObjectProfile@WPFOLDER@@VECHHPEVWPCONTAINER@@@Z
+ 0002:CB80       ?ReadObjectProfile@WPOBJECT@@VECHHPEVWPCONTAINER@@@Z
+ 0002:E000       ?ReadObjectProfile@WPPROGRAM@@VECHHPEVWPCONTAINER@@@Z
+ 0003:053E       ?ReadObjectProfile@WPSHADOW@@VECHHPEVWPCONTAINER@@@Z
+ 0003:1BA0       ?ReadObjectProfile@WPTEMPLATE@@VECHHPEVWPCONTAINER@@@Z
+ 0003:4AB0       ?ReadObjectProfile@WPWINDOW@@RECHHPEVWPCONTAINER@@@Z
+ 0002:757C       ?ReadWPObject@@ZAHHPEVWPCONTAINER@@@Z
+ 0002:0072       ?RecursivelyQueryGroupNames@DDEPROGMAN@@BECXPEVWPFOLDER@@PEPFUHDDEDATA__@@PEK@Z
+ 0003:6CB2       ?RegisterFolderClass@WPFOLDER@@NECPEDP7CJPBUHWND__@@IIJ@Z@Z
+ 0000:0000  Unr  ?RegisterShellHook@WPDESKTOP@@BECXXZ
+ 0003:47DA       ?ReleaseDC@WPWINDOW@@RECXXZ
+ 0003:68CC       ?ReloadFolderImage@WPFOLDER@@BECXXZ
+ 0003:CF7E       ?ReloadPreviewAreaImage@WPFOLDER@@RECHPEPBUHBITMAP__@@PEPBUHPALETTE__@@H@Z
+ 0002:327E       ?Remove@LIST@@RECXK@Z
+ 0002:32D4       ?RemoveAll@LIST@@RECXXZ
+ 0002:33FC       ?RemoveAt@LIST@@RECXH@Z
+ 0000:0000  Unr  ?RemoveHead@LIST@@RECPEU_LIST_NODE@@XZ
+ 0002:46CC       ?RemoveLeadingSpacesFromString@@ZAXPED@Z
+ 0002:30CA       ?RemoveNode@LIST@@JECXPEU_LIST_NODE@@@Z
+ 0000:0000  Unr  ?RemoveTail@@ZAPEU_LIST_NODE@@XZ
+ 0002:4662       ?RemoveTrailingSpacesFromString@@ZAXPED@Z
+ 0002:0CEE       ?ReplaceItem@DDEPROGMAN@@BECXPEPEDH@Z
+ 0002:281C       ?ResultsDlgProc@@ZCHPBUHWND__@@IIJ@Z
+ 0002:1EFE       ?RunDlgProc@@ZCHPBUHWND__@@IIJ@Z
+ 0000:0000  Unr  ?RunProgram@WPDESKTOP@@RECXXZ
+ 0002:782C       ?SaveDesktop@WPDESKTOP@@RECHXZ
+ 0003:1DA4       ?ScrollbarHitTest@WPWINDOW@@BECGGUtagPOINT@@PEH@Z
+ 0003:3F32       ?ScrollbarWindowProc@WPWINDOW@@RECJIIJ@Z
+ 0003:2B6C       ?ScrollWindowHoriz@WPWINDOW@@BECXH@Z
+ 0003:2A80       ?ScrollWindowVert@WPWINDOW@@BECXH@Z
+ 0002:06F0       ?ServiceRequest@DDEPROGMAN@@NECPFUHDDEDATA__@@PFUHSZ__@@0@Z
+ 0002:1790       ?ServiceRequest@DDESHELL@@NECPFUHDDEDATA__@@PFUHSZ__@@0@Z
+ 0002:33B2       ?SetAt@LIST@@RECXHK@Z
+ 0002:7132       ?SetBackgroundColor@WPDESKTOP@@VECXK@Z
+ 0003:A408       ?SetBackgroundColor@WPFOLDER@@VECXK@Z
+ 0002:7A3C       ?SetClassBackgroundBrush@WPDESKTOP@@VECXPEPBUHBRUSH__@@@Z
+ 0003:6C96       ?SetClassBackgroundBrush@WPFOLDER@@NECXPEPBUHBRUSH__@@@Z
+ 0002:5CD4       ?SetDataName@WPDATAFILE@@RECXPFD@Z
+ 0002:5C40       ?SetDataPath@WPDATAFILE@@RECXPFD@Z
+ 0000:0000  Unr  ?SetDataSubject@WPDATAFILE@@RECXPFD@Z
+ 0003:A568       ?SetDefaultColors@WPFOLDER@@VECXPBUHDC__@@PEVWPOBJECT@@@Z
+ 0003:5C72       ?SetDriveIndex@WPDRIVE@@RECXI@Z
+ 0000:0000  Unr  ?SetDriveType@WPDRIVE@@RECXW4DRIVE_TYPE@@@Z
+ 0002:B93C       ?SetFlags@WPOBJECT@@VECXK@Z
+ 0003:0000       ?SetFlags@WPSHADOW@@VECXK@Z
+ 0002:B964       ?SetFlagsOR@WPOBJECT@@VECXKK@Z
+ 0003:0048       ?SetFlagsOR@WPSHADOW@@VECXKK@Z
+ 0003:A610       ?SetFrameColors@WPFOLDER@@VECXPBUHDC__@@PEVWPOBJECT@@@Z
+ 0003:3AA2       ?SetHandle@WPWINDOW@@RECXPBUHWND__@@@Z
+ 0002:B2F4       ?SetIcon@WPOBJECT@@VECXPEDG@Z
+ 0002:EF1C       ?SetIcon@WPSHADOW@@VECXPEDG@Z
+ 0002:ADEC       ?SetIconHandle@WPOBJECT@@JECXPBUHICON__@@@Z
+ 0002:B2B4       ?SetIconPos@WPOBJECT@@RECXHH@Z
+ 0002:B294       ?SetIconPos@WPOBJECT@@RECXUtagPOINT@@@Z
+ 0000:0000  Unr  ?SetIconTextColor@WPFOLDER@@RECXK@Z
+ 0000:0000  Unr  ?SetIconTextLogFont@WPFOLDER@@RECXPEUtagLOGFONT@@@Z
+ 0002:7242       ?SetImageAttribute@WPDESKTOP@@VECXK@Z
+ 0003:A4D8       ?SetImageAttribute@WPFOLDER@@VECXK@Z
+ 0003:A556       ?SetImageBitmapHandle@WPFOLDER@@RECXPBUHBITMAP__@@@Z
+ 0003:A534       ?SetImagePalette@WPFOLDER@@RECXPBUHPALETTE__@@@Z
+ 0002:72E8       ?SetImagePath@WPDESKTOP@@VECXPED@Z
+ 0003:A50A       ?SetImagePath@WPFOLDER@@VECXPED@Z
+ 0000:0000  Unr  ?SetInstanceIcon@WPTEMPLATE@@JECXPEDG@Z
+ 0000:0000  Unr  ?SetInstanceTitle@WPTEMPLATE@@JECXPED@Z
+ 0003:3B40       ?SetLogicalDomain@WPWINDOW@@RECXPEUtagRECT@@@Z
+ 0000:0000  Unr  ?SetMinWndHandle@WPMINWNDOBJ@@RECXPBUHWND__@@@Z
+ 0002:4FB0       ?SetObject@WPCONTAINER@@JECXPEVWPOBJECT@@H@Z
+ 0003:A0D2       ?SetObjectPopup@WPFOLDER@@RECXPEVWPOBJECT@@@Z
+ 0003:A0F6       ?SetOpenView@WPFOLDER@@RECXG@Z
+ 0002:EDE4       ?SetOriginalObject@WPSHADOW@@RECXPEVWPOBJECT@@@Z
+ 0000:0000  Unr  ?SetOriginalUniqueID@WPSHADOW@@RECXG@Z
+ 0002:D2EC       ?SetParameters@WPPROGRAM@@RECXPFD@Z
+ 0002:BA90       ?SetParent@WPOBJECT@@RECXPEVWPCONTAINER@@@Z
+ 0000:0000  Unr  ?SetPath@WPDIRECTORY@@RECXPED@Z
+ 0003:DBC0       ?SetProfileInfo@WPFOLDER@@RECXPEUFILE_FOLDER_STRUCT@@@Z
+ 0002:1714       ?SetProgramInstanceAndObject@DDESHELL@@RECXPBUHINSTANCE__@@PEVWPPROGRAM@@@Z
+ 0002:D2A8       ?SetProgramPath@WPPROGRAM@@RECXPFD@Z
+ 0002:AF52       ?SetRectCXCY@WPOBJECT@@RECXPEUtagRECT@@HHHH@Z
+ 0003:3BF4       ?SetScrollbarInputCaptureFlag@WPWINDOW@@RECXH@Z
+ 0003:2364       ?SetScrollComponentState@WPWINDOW@@BECGGG@Z
+ 0000:0000  Unr  ?SetScrollPos@WPWINDOW@@RECHPBUHWND__@@HHH@Z
+ 0003:43DA       ?SetScrollProperty@WPWINDOW@@RECXH@Z
+ 0000:0000  Unr  ?SetSettingsNotebook@WPOBJECT@@RECXPEVWPSETTINGSNB@@@Z
+ 0002:B8FA       ?SetState@WPOBJECT@@VECXG@Z
+ 0002:EF7C       ?SetState@WPSHADOW@@VECXG@Z
+ 0002:B91C       ?SetStateOR@WPOBJECT@@VECXGG@Z
+ 0002:EFC2       ?SetStateOR@WPSHADOW@@VECXGG@Z
+ 0000:0000  Unr  ?SetTemplateType@WPTEMPLATE@@JECXK@Z
+ 0002:B184       ?SetTitle@WPOBJECT@@VECXPFD@Z
+ 0002:EDF8       ?SetTitle@WPSHADOW@@VECXPFD@Z
+ 0002:B150       ?SetType@WPOBJECT@@VECXK@Z
+ 0002:B172       ?SetUniqueID@WPOBJECT@@RECXG@Z
+ 0003:6628       ?SetUpDC@WPFOLDER@@BECXPBUHDC__@@PEPBUHFONT__@@PEH2@Z
+ 0003:3B62       ?SetVisibleArea@WPWINDOW@@RECXPEUtagRECT@@@Z
+ 0003:3AB4       ?SetWndPos@WPWINDOW@@RECXHH@Z
+ 0000:0000  Unr  ?SetWndPos@WPWINDOW@@RECXUtagPOINT@@@Z
+ 0003:3B04       ?SetWndSize@WPWINDOW@@RECXHH@Z
+ 0003:3AF0       ?SetWndSize@WPWINDOW@@RECXUtagSIZE@@@Z
+ 0002:D330       ?SetWorkingDir@WPPROGRAM@@RECXPFD@Z
+ 0006:0CE0       ?sg_hbrGray@@3PBUHBRUSH__@@B
+ 0002:43DC       ?ShellHookProc@@ZCJHIJ@Z
+ 0002:6C5C       ?ShellLoadAndRun@WPDESKTOP@@BECXXZ
+ 0002:1A6A       ?SHELLServiceCallback@@ZCPFUHDDEDATA__@@IIPFUHCONV__@@PFUHSZ__@@1PFU1@KK@Z
+ 0002:0E16       ?ShowGroup@DDEPROGMAN@@BECXPEPEDH@Z
+ 0002:9D52       ?ShowNotebook@WPNOTEBOOK@@RECXXZ
+ 0003:3C06       ?ShowScrollbar@WPWINDOW@@RECXGH@Z
+ 0003:817A       ?SortCompareObjects@WPFOLDER@@JECHGPEVWPOBJECT@@0@Z
+ 0003:821E       ?SortIcons@WPFOLDER@@JECXG@Z
+ 0002:A7AE       ?stristr@WPOBJECT@@JECPEDPFD0@Z
+ 0002:54D0       ?TestDropSource@WPCONTAINER@@VECHPEVWPOBJECT@@H@Z
+ 0002:61BC       ?TestDropSource@WPDATAFILE@@VECHPEVWPOBJECT@@H@Z
+ 0002:8E1A       ?TestDropSource@WPMINWNDOBJ@@VECHPEVWPOBJECT@@H@Z
+ 0002:C540       ?TestDropSource@WPOBJECT@@VECHPEV1@H@Z
+ 0002:D7E2       ?TestDropSource@WPPROGRAM@@VECHPEVWPOBJECT@@H@Z
+ 0003:03B8       ?TestDropSource@WPSHADOW@@VECHPEVWPOBJECT@@H@Z
+ 0003:0748       ?TestDropSource@WPSHREDDER@@VECHPEVWPOBJECT@@H@Z
+ 0003:1A70       ?TestDropSource@WPTEMPLATE@@VECHPEVWPOBJECT@@H@Z
+ 0002:5514       ?TestDropTarget@WPCONTAINER@@VECHPEVWPOBJECT@@H@Z
+ 0002:6200       ?TestDropTarget@WPDATAFILE@@VECHPEVWPOBJECT@@H@Z
+ 0003:5730       ?TestDropTarget@WPDIRECTORY@@VECHPEVWPOBJECT@@H@Z
+ 0002:933E       ?TestDropTarget@WPMINVIEWER@@VECHPEVWPOBJECT@@H@Z
+ 0002:8E4C       ?TestDropTarget@WPMINWNDOBJ@@VECHPEVWPOBJECT@@H@Z
+ 0002:C558       ?TestDropTarget@WPOBJECT@@VECHPEV1@H@Z
+ 0002:D82C       ?TestDropTarget@WPPROGRAM@@VECHPEVWPOBJECT@@H@Z
+ 0003:0408       ?TestDropTarget@WPSHADOW@@VECHPEVWPOBJECT@@H@Z
+ 0003:0792       ?TestDropTarget@WPSHREDDER@@VECHPEVWPOBJECT@@H@Z
+ 0003:1AB4       ?TestDropTarget@WPTEMPLATE@@VECHPEVWPOBJECT@@H@Z
+ 0002:632A       ?TypePageProc@WPDATAFILE@@RECXHPBUHWND__@@GK@Z
+ 0003:B31C       ?UnFrame@WPFOLDER@@VECXH@Z
+ 0002:C1CA       ?UnFrame@WPOBJECT@@VECXH@Z
+ 0002:100C       ?Uninitialize@DDEPROGMAN@@VECHXZ
+ 0002:1618       ?Uninitialize@DDESERVER@@VECHXZ
+ 0002:1A4A       ?Uninitialize@DDESHELL@@VECHXZ
+ 0002:7A4C       ?UnregisterClassName@WPDESKTOP@@RECXG@Z
+ 0000:0000  Unr  ?UnregisterClassName@WPDESKTOP@@RECXPED@Z
+ 0003:6D52       ?UnregisterFolderClass@WPFOLDER@@VECXXZ
+ 0000:0000  Unr  ?UnregisterShellHook@WPDESKTOP@@BECXXZ
+ 0003:CE56       ?UpdateBackgroundPageImageSettings@WPFOLDER@@RECXPBUHWND__@@G@Z
+ 0003:1588       ?UpdateConfirmationsPageControls@WPSYSSETUP@@RECXPBUHWND__@@@Z
+ 0003:135A       ?UpdateConfirmationsPageSYSTEMProfile@WPSYSSETUP@@RECXPBUHWND__@@@Z
+ 0003:A7C2       ?UpdateIcon@WPFOLDER@@VECXPEDG@Z
+ 0002:B4C4       ?UpdateIcon@WPOBJECT@@VECXPEDG@Z
+ 0002:6F3E       ?UpdateMinPlacement@WPDESKTOP@@JECXPBUHWND__@@G@Z
+ 0002:9010       ?UpdateMinViewerContents@WPMINVIEWER@@RECXHPEPBUHWND__@@@Z
+ 0002:E5C0       ?UpdateNotebookIconResource@WPSETTINGSNB@@RECXXZ
+ 0003:D03A       ?UpdatePreviewArea@WPFOLDER@@RECXPBUHDC__@@PBUHWND__@@@Z
+ 0000:0000  Unr  ?UpdateWindow2PageControls@WPSYSSETUP@@RECXPBUHWND__@@@Z
+ 0003:1086       ?UpdateWindow2PageSYSTEMProfile@WPSYSSETUP@@RECXPBUHWND__@@@Z
+ 0002:7AE8       ?UpdateWindow@WPDESKTOP@@VECXXZ
+ 0003:B3B8       ?UpdateWindow@WPFOLDER@@VECXXZ
+ 0003:CB24       ?UpdateWindowPageControls@WPFOLDER@@RECXPBUHWND__@@K@Z
+ 0002:DD6E       ?UpdateWindowPageControls@WPPROGRAM@@RECXPBUHWND__@@K@Z
+ 0003:0E18       ?UpdateWindowPageControls@WPSYSSETUP@@RECXPBUHWND__@@@Z
+ 0003:0ACE       ?UpdateWindowPageSYSTEMProfile@WPSYSSETUP@@RECXPBUHWND__@@@Z
+ 0003:46E4       ?UpdateWindowPos@WPWINDOW@@VECXXZ
+ 0003:D8CE       ?ViewPageProc@WPFOLDER@@RECXHPBUHWND__@@GK@Z
+ 0000:0000  Unr  ?Wait@WPWINDOW@@BECXH@Z
+ 0003:98D8       ?Win31DDCreateWPSObjectFromFileDropped@WPFOLDER@@JECXGPEDUtagPOINT@@@Z
+ 0003:9726       ?Win31DDDragSelect@WPFOLDER@@JECHHPEUDRAGINFO@@@Z
+ 0003:976C       ?Win31DDDropFiles@WPFOLDER@@JECJPBUHDROP__@@@Z
+ 0003:9618       ?Win31DDQueryDropObject@WPFOLDER@@JECHHPEUDRAGINFO@@@Z
+ 0003:119E       ?Window2PageProc@WPSYSSETUP@@RECXHPBUHWND__@@GK@Z
+ 0003:CC1E       ?WindowPageProc@WPFOLDER@@RECXHPBUHWND__@@GK@Z
+ 0002:DDE0       ?WindowPageProc@WPPROGRAM@@RECXHPBUHWND__@@GK@Z
+ 0003:0F3A       ?WindowPageProc@WPSYSSETUP@@RECXHPBUHWND__@@GK@Z
+ 0002:792E       ?Windows31SubclassDesktop@WPDESKTOP@@BECXXZ
+ 0000:0000  Unr  ?Windows31UnsubclassDesktop@WPDESKTOP@@BECXXZ
+ 0002:45EE       ?WPClientWindowProcWrapper@@ZCJPBUHWND__@@IIJ@Z
+ 0002:1EAC       ?WPDESKTOPEnumWindowsProc@@ZCHPBUHWND__@@J@Z
+ 0002:1B04       ?WPDESKTOPSubClassWindowProc@@ZCJPBUHWND__@@IIJ@Z
+ 0002:4BB4       ?WPNotebookWindowProcWrapper@@ZCJPBUHWND__@@IIJ@Z
+ 0002:4DF4       ?WPPAGEDialogProc@@ZCHPBUHWND__@@IIJ@Z
+ 0003:4878       ?WPtoDP@WPWINDOW@@RECXPEUtagPOINT@@H@Z
+ 0003:48A8       ?WPtoLP@WPWINDOW@@RECXPEUtagPOINT@@H@Z
+ 0002:56B4       ?WriteObjectProfile@WPCONTAINER@@VECHHPEV1@@Z
+ 0002:68AE       ?WriteObjectProfile@WPDATAFILE@@VECHHPEVWPCONTAINER@@@Z
+ 0003:5964       ?WriteObjectProfile@WPDIRECTORY@@VECHHPEVWPCONTAINER@@@Z
+ 0003:6168       ?WriteObjectProfile@WPDRIVE@@VECHHPEVWPCONTAINER@@@Z
+ 0003:DCD8       ?WriteObjectProfile@WPFOLDER@@VECHHPEVWPCONTAINER@@@Z
+ 0002:93A4       ?WriteObjectProfile@WPMINVIEWER@@VECHHPEVWPCONTAINER@@@Z
+ 0002:CC34       ?WriteObjectProfile@WPOBJECT@@VECHHPEVWPCONTAINER@@@Z
+ 0002:E09C       ?WriteObjectProfile@WPPROGRAM@@VECHHPEVWPCONTAINER@@@Z
+ 0003:0584       ?WriteObjectProfile@WPSHADOW@@VECHHPEVWPCONTAINER@@@Z
+ 0003:1C32       ?WriteObjectProfile@WPTEMPLATE@@VECHHPEVWPCONTAINER@@@Z
+ 0003:4B04       ?WriteObjectProfile@WPWINDOW@@RECHHPEVWPCONTAINER@@@Z
+ 0000:0000  Imp  APPENDMENU           (USER.411)
+ 0000:0000  Imp  BEGINPAINT           (USER.39)
+ 0000:0000  Imp  BITBLT               (GDI.34)
+ 0000:0000  Imp  CALLWINDOWPROC       (USER.122)
+ 0000:0000  Imp  CHECKDLGBUTTON       (USER.97)
+ 0000:0000  Imp  CHECKMENUITEM        (USER.154)
+ 0000:0000  Imp  CHECKRADIOBUTTON     (USER.96)
+ 0000:0000  Imp  CHOOSECOLOR          (COMMDLG.5)
+ 0000:0000  Imp  CHOOSEFONT           (COMMDLG.15)
+ 0000:0000  Imp  CLIENTTOSCREEN       (USER.28)
+ 0000:0000  Imp  COPYICON             (USER.368)
+ 0000:0000  Imp  COPYRECT             (USER.74)
+ 0000:0000  Imp  CREATEBITMAP         (GDI.48)
+ 0000:0000  Imp  CREATECOMPATIBLEBITMAP (GDI.51)
+ 0000:0000  Imp  CREATECOMPATIBLEDC   (GDI.52)
+ 0000:0000  Imp  CREATECURSOR         (USER.406)
+ 0000:0000  Imp  CREATEDIALOGPARAM    (USER.241)
+ 0000:0000  Imp  CREATEDIBITMAP       (GDI.442)
+ 0000:0000  Imp  CREATEFONTINDIRECT   (GDI.57)
+ 0000:0000  Imp  CREATEHATCHBRUSH     (GDI.58)
+ 0000:0000  Imp  CREATEPALETTE        (GDI.360)
+ 0000:0000  Imp  CREATEPEN            (GDI.61)
+ 0000:0000  Imp  CREATEPOPUPMENU      (USER.415)
+ 0000:0000  Imp  CREATESOLIDBRUSH     (GDI.66)
+ 0000:0000  Imp  CREATEWINDOW         (USER.41)
+ 0000:0000  Imp  CREATEWINDOWEX       (USER.452)
+ 0000:0000  Imp  CTL3DAUTOSUBCLASS    (CTL3D.16)
+ 0000:0000  Imp  CTL3DREGISTER        (CTL3D.12)
+ 0000:0000  Imp  CTL3DUNREGISTER      (CTL3D.13)
+ 0000:0000  Imp  DDEADDDATA           (DDEML.15)
+ 0000:0000  Imp  DDECREATEDATAHANDLE  (DDEML.14)
+ 0000:0000  Imp  DDECREATESTRINGHANDLE (DDEML.21)
+ 0000:0000  Imp  DDEFREEDATAHANDLE    (DDEML.19)
+ 0000:0000  Imp  DDEFREESTRINGHANDLE  (DDEML.22)
+ 0000:0000  Imp  DDEGETDATA           (DDEML.16)
+ 0000:0000  Imp  DDEINITIALIZE        (DDEML.2)
+ 0000:0000  Imp  DDENAMESERVICE       (DDEML.27)
+ 0000:0000  Imp  DDEQUERYSTRING       (DDEML.23)
+ 0000:0000  Imp  DDEUNINITIALIZE      (DDEML.3)
+ 0000:0000  Imp  DEFWINDOWPROC        (USER.107)
+ 0000:0000  Imp  DELETEDC             (GDI.68)
+ 0000:0000  Imp  DELETEMENU           (USER.413)
+ 0000:0000  Imp  DELETEOBJECT         (GDI.69)
+ 0000:0000  Imp  DESTROYCURSOR        (USER.458)
+ 0000:0000  Imp  DESTROYICON          (USER.457)
+ 0000:0000  Imp  DESTROYMENU          (USER.152)
+ 0000:0000  Imp  DESTROYWINDOW        (USER.53)
+ 0000:0000  Imp  DIALOGBOX            (USER.87)
+ 0000:0000  Imp  DIALOGBOXPARAM       (USER.239)
+ 0000:0000  Imp  DISPATCHMESSAGE      (USER.114)
+ 0000:0000  Imp  DLGDIRLISTCOMBOBOX   (USER.195)
+ 0000:0000  Imp  DLGDIRSELECTCOMBOBOXEX (USER.423)
+ 0000:0000  Imp  DOS3CALL             (KERNEL.102)
+ 0000:0000  Imp  DPTOLP               (GDI.67)
+ 0000:0000  Imp  DRAGFINISH           (SHELL.12)
+ 0000:0000  Imp  DRAGQUERYFILE        (SHELL.11)
+ 0000:0000  Imp  DRAGQUERYPOINT       (SHELL.13)
+ 0000:0000  Imp  DRAWFOCUSRECT        (USER.466)
+ 0000:0000  Imp  DRAWICON             (USER.84)
+ 0000:0000  Imp  DRAWTEXT             (USER.85)
+ 0000:0000  Imp  ENABLEMENUITEM       (USER.155)
+ 0000:0000  Imp  ENABLEWINDOW         (USER.34)
+ 0000:0000  Imp  ENDDIALOG            (USER.88)
+ 0000:0000  Imp  ENDPAINT             (USER.40)
+ 0000:0000  Imp  ENUMWINDOWS          (USER.54)
+ 0000:0000  Imp  EQUALRECT            (USER.244)
+ 0000:0000  Imp  EXITWINDOWS          (USER.7)
+ 0000:0000  Imp  EXTRACTICON          (SHELL.34)
+ 0000:0000  Imp  FATALAPPEXIT         (KERNEL.137)
+ 0000:0000  Imp  FATALEXIT            (KERNEL.1)
+ 0000:FE32  Abs  FIARQQ
+ 0000:0E32  Abs  FICRQQ
+ 0000:5C32  Abs  FIDRQQ
+ 0000:1632  Abs  FIERQQ
+ 0000:0000  Imp  FILLRECT             (USER.81)
+ 0000:0000  Imp  FINDEXECUTABLE       (SHELL.21)
+ 0000:0632  Abs  FISRQQ
+ 0000:A23D  Abs  FIWRQQ
+ 0000:4000  Abs  FJARQQ
+ 0000:C000  Abs  FJCRQQ
+ 0000:8000  Abs  FJSRQQ
+ 0000:0000  Imp  FREELIBRARY          (KERNEL.96)
+ 0000:0000  Imp  FREEPROCINSTANCE     (KERNEL.52)
+ 0000:0000  Imp  GETACTIVEWINDOW      (USER.60)
+ 0000:0000  Imp  GETASYNCKEYSTATE     (USER.249)
+ 0000:0000  Imp  GETBKCOLOR           (GDI.75)
+ 0000:0000  Imp  GETCAPTURE           (USER.236)
+ 0000:0000  Imp  GETCLASSINFO         (USER.404)
+ 0000:0000  Imp  GETCLASSNAME         (USER.58)
+ 0000:0000  Imp  GETCLASSWORD         (USER.129)
+ 0000:0000  Imp  GETCLIENTRECT        (USER.33)
+ 0000:0000  Imp  GETCURRENTTASK       (KERNEL.36)
+ 0000:0000  Imp  GETCURSOR            (USER.247)
+ 0000:0000  Imp  GETCURSORPOS         (USER.17)
+ 0000:0000  Imp  GETDC                (USER.66)
+ 0000:0000  Imp  GETDESKTOPWINDOW     (USER.286)
+ 0000:0000  Imp  GETDLGITEM           (USER.91)
+ 0000:0000  Imp  GETDLGITEMTEXT       (USER.93)
+ 0000:0000  Imp  GETDOSENVIRONMENT    (KERNEL.131)
+ 0000:0000  Imp  GETDRIVETYPE         (KERNEL.136)
+ 0000:0000  Imp  GETKEYSTATE          (USER.106)
+ 0000:0000  Imp  GETLASTACTIVEPOPUP   (USER.287)
+ 0000:0000  Imp  GETMENUITEMCOUNT     (USER.263)
+ 0000:0000  Imp  GETMENUSTATE         (USER.250)
+ 0000:0000  Imp  GETMESSAGE           (USER.108)
+ 0000:0000  Imp  GETMODULEFILENAME    (KERNEL.49)
+ 0000:0000  Imp  GETMODULEHANDLE      (KERNEL.47)
+ 0000:0000  Imp  GETOBJECT            (GDI.82)
+ 0000:0000  Imp  GETOPENFILENAME      (COMMDLG.1)
+ 0000:0000  Imp  GETPIXEL             (GDI.83)
+ 0000:0000  Imp  GETPRIVATEPROFILEINT (KERNEL.127)
+ 0000:0000  Imp  GETPRIVATEPROFILESTRING (KERNEL.128)
+ 0000:0000  Imp  GETPROCADDRESS       (KERNEL.50)
+ 0000:0000  Imp  GETPROFILEINT        (KERNEL.57)
+ 0000:0000  Imp  GETPROFILESTRING     (KERNEL.58)
+ 0000:0000  Imp  GETSCROLLPOS         (USER.63)
+ 0000:0000  Imp  GETSCROLLRANGE       (USER.65)
+ 0000:0000  Imp  GETSTOCKOBJECT       (GDI.87)
+ 0000:0000  Imp  GETSUBMENU           (USER.159)
+ 0000:0000  Imp  GETSYSCOLOR          (USER.180)
+ 0000:0000  Imp  GETSYSTEMMETRICS     (USER.179)
+ 0000:0000  Imp  GETTEXTCOLOR         (GDI.90)
+ 0000:0000  Imp  GETVERSION           (KERNEL.3)
+ 0000:0000  Imp  GETWINDOW            (USER.262)
+ 0000:0000  Imp  GETWINDOWDC          (USER.67)
+ 0000:0000  Imp  GETWINDOWLONG        (USER.135)
+ 0000:0000  Imp  GETWINDOWPLACEMENT   (USER.370)
+ 0000:0000  Imp  GETWINDOWRECT        (USER.32)
+ 0000:0000  Imp  GETWINDOWSDIRECTORY  (KERNEL.134)
+ 0000:0000  Imp  GETWINDOWTEXT        (USER.36)
+ 0000:0000  Imp  GETWINDOWWORD        (USER.133)
+ 0000:0000  Imp  GLOBALALLOC          (KERNEL.15)
+ 0000:0000  Imp  GLOBALFREE           (KERNEL.17)
+ 0000:0000  Imp  GLOBALHANDLE         (KERNEL.21)
+ 0000:0000  Imp  GLOBALLOCK           (KERNEL.18)
+ 0000:0000  Imp  GLOBALREALLOC        (KERNEL.16)
+ 0000:0000  Imp  GLOBALSIZE           (KERNEL.20)
+ 0000:0000  Imp  GLOBALUNLOCK         (KERNEL.19)
+ 0000:0000  Imp  HMEMCPY              (KERNEL.348)
+ 0000:0000  Imp  INFLATERECT          (USER.78)
+ 0000:0000  Imp  INITAPP              (USER.5)
+ 0000:0000  Imp  INITTASK             (KERNEL.91)
+ 0000:0000  Imp  INTERSECTRECT        (USER.79)
+ 0000:0000  Imp  INVALIDATERECT       (USER.125)
+ 0000:0000  Imp  INVERTRECT           (USER.82)
+ 0000:0000  Imp  ISBADREADPTR         (KERNEL.334)
+ 0000:0000  Imp  ISCHARALPHANUMERIC   (USER.434)
+ 0000:0000  Imp  ISDIALOGMESSAGE      (USER.90)
+ 0000:0000  Imp  ISDLGBUTTONCHECKED   (USER.98)
+ 0000:0000  Imp  ISICONIC             (USER.31)
+ 0000:0000  Imp  ISWINDOW             (USER.47)
+ 0000:0000  Imp  ISWINDOWENABLED      (USER.35)
+ 0000:0000  Imp  ISWINDOWVISIBLE      (USER.49)
+ 0000:0000  Imp  ISZOOMED             (USER.272)
+ 0000:0000  Imp  KILLTIMER            (USER.12)
+ 0000:0000  Imp  LOADACCELERATORS     (USER.177)
+ 0000:0000  Imp  LOADBITMAP           (USER.175)
+ 0000:0000  Imp  LOADCURSOR           (USER.173)
+ 0000:0000  Imp  LOADICON             (USER.174)
+ 0000:0000  Imp  LOADLIBRARY          (KERNEL.95)
+ 0000:0000  Imp  LOADMENU             (USER.150)
+ 0000:0000  Imp  LOADSTRING           (USER.176)
+ 0000:0000  Imp  LOCKSEGMENT          (KERNEL.23)
+ 0000:0000  Imp  LPTODP               (GDI.99)
+ 0000:0000  Imp  MAKEPROCINSTANCE     (KERNEL.51)
+ 0000:0000  Imp  MAPWINDOWPOINTS      (USER.258)
+ 0000:0000  Imp  MESSAGEBEEP          (USER.104)
+ 0000:0000  Imp  MESSAGEBOX           (USER.1)
+ 0000:0000  Imp  MOVEWINDOW           (USER.56)
+ 0000:0000  Imp  OFFSETRECT           (USER.77)
+ 0000:0000  Imp  OPENFILE             (KERNEL.74)
+ 0000:0000  Imp  PATBLT               (GDI.29)
+ 0000:0008  Abs  pAtomTable
+ 0000:0006  Abs  pLocalHeap
+ 0000:0000  Imp  POLYLINE             (GDI.37)
+ 0000:0000  Imp  POSTMESSAGE          (USER.110)
+ 0000:0000  Imp  POSTQUITMESSAGE      (USER.6)
+ 0000:000E  Abs  pStackBot
+ 0000:000C  Abs  pStackMin
+ 0000:000A  Abs  pStackTop
+ 0000:0000  Imp  PTINRECT             (USER.76)
+ 0000:0000  Imp  REALIZEPALETTE       (USER.283)
+ 0000:0000  Imp  RECTANGLE            (GDI.27)
+ 0000:0000  Imp  REGISTERCLASS        (USER.57)
+ 0000:0000  Imp  REGQUERYVALUE        (SHELL.6)
+ 0000:0000  Imp  RELEASECAPTURE       (USER.19)
+ 0000:0000  Imp  RELEASEDC            (USER.68)
+ 0000:0000  Imp  ROUNDRECT            (GDI.28)
+ 0006:0004       rsrvptrs
+ 0000:0000  Imp  SCREENTOCLIENT       (USER.29)
+ 0000:0000  Imp  SCROLLWINDOWEX       (USER.319)
+ 0000:0000  Imp  SELECTOBJECT         (GDI.45)
+ 0000:0000  Imp  SELECTPALETTE        (USER.282)
+ 0000:0000  Imp  SENDDLGITEMMESSAGE   (USER.101)
+ 0000:0000  Imp  SENDMESSAGE          (USER.111)
+ 0000:0000  Imp  SETACTIVEWINDOW      (USER.59)
+ 0000:0000  Imp  SETBKCOLOR           (GDI.1)
+ 0000:0000  Imp  SETBKMODE            (GDI.2)
+ 0000:0000  Imp  SETCAPTURE           (USER.18)
+ 0000:0000  Imp  SETCLASSWORD         (USER.130)
+ 0000:0000  Imp  SETCURSOR            (USER.69)
+ 0000:0000  Imp  SETDLGITEMTEXT       (USER.92)
+ 0000:0000  Imp  SETERRORMODE         (KERNEL.107)
+ 0000:0000  Imp  SETFOCUS             (USER.22)
+ 0000:0000  Imp  SETMAPMODE           (GDI.3)
+ 0000:0000  Imp  SETMESSAGEQUEUE      (USER.266)
+ 0000:0000  Imp  SETRECT              (USER.72)
+ 0000:0000  Imp  SETRECTEMPTY         (USER.73)
+ 0000:0000  Imp  SETROP2              (GDI.4)
+ 0000:0000  Imp  SETSCROLLPOS         (USER.62)
+ 0000:0000  Imp  SETSCROLLRANGE       (USER.64)
+ 0000:0000  Imp  SETSTRETCHBLTMODE    (GDI.7)
+ 0000:0000  Imp  SETSYSCOLORS         (USER.181)
+ 0000:0000  Imp  SETTEXTCOLOR         (GDI.9)
+ 0000:0000  Imp  SETTIMER             (USER.10)
+ 0000:0000  Imp  SETWINDOWLONG        (USER.136)
+ 0000:0000  Imp  SETWINDOWORG         (GDI.11)
+ 0000:0000  Imp  SETWINDOWPLACEMENT   (USER.371)
+ 0000:0000  Imp  SETWINDOWPOS         (USER.232)
+ 0000:0000  Imp  SETWINDOWSHOOKEX     (USER.291)
+ 0000:0000  Imp  SETWINDOWTEXT        (USER.37)
+ 0000:0000  Imp  SHELLEXECUTE         (SHELL.20)
+ 0000:0000  Imp  SHOWSCROLLBAR        (USER.267)
+ 0000:0000  Imp  SHOWWINDOW           (USER.42)
+ 0000:0000  Imp  SNDPLAYSOUND         (MMSYSTEM.2)
+ 0000:0000  Imp  STRETCHBLT           (GDI.35)
+ 0000:0000  Imp  SWITCHTOTHISWINDOW   (USER.172)
+ 0000:0000  Imp  SYSTEMPARAMETERSINFO (USER.483)
+ 0000:0000  Imp  TRACKPOPUPMENU       (USER.416)
+ 0000:0000  Imp  TRANSLATEACCELERATOR (USER.178)
+ 0000:0000  Imp  TRANSLATEMESSAGE     (USER.113)
+ 0000:0000  Imp  UNHOOKWINDOWSHOOKEX  (USER.292)
+ 0000:0000  Imp  UNIONRECT            (USER.80)
+ 0000:0000  Imp  UNREGISTERCLASS      (USER.403)
+ 0000:0000  Imp  UPDATEWINDOW         (USER.124)
+ 0000:0000  Imp  WAITEVENT            (KERNEL.30)
+ 0000:0000  Imp  WINDOWFROMPOINT      (USER.30)
+ 0000:0000  Imp  WINEXEC              (KERNEL.166)
+ 0000:0000  Imp  WINHELP              (USER.171)
+ 0002:347E       WINMAIN
+ 0003:DE36       WPSCOMMAND
+ 0003:DDDE       WPSREGISTERWINDOW
+ 0003:DF9E       WPSUNREGISTERWINDOW
+ 0000:0000  Imp  WRITEPRIVATEPROFILESTRING (KERNEL.129)
+ 0000:0000  Imp  WRITEPROFILESTRING   (KERNEL.59)
+ 0006:00B0       _aseghi
+ 0006:00AE       _aseglo
+ 0001:5A62       _atexit
+ 0001:268E       _atof
+ 0001:2686       _atoi
+ 0001:268A       _atol
+ 0001:3274       _clock
+ 0006:0A4E       _edata
+ 0006:1268       _end
+ 0006:00D2       _errno
+ 0001:01E7       _exit
+ 0001:071A       _fclose
+ 0001:0A5A       _fflush
+ 0001:280C       _getenv
+ 0001:2C66       _gmtime
+ 0000:0000  Imp  _LCLOSE              (KERNEL.81)
+ 0001:2E0C       _localtime
+ 0000:0000  Imp  _LOPEN               (KERNEL.85)
+ 0000:0000  Imp  _LREAD               (KERNEL.82)
+ 0000:0000  Imp  _LWRITE              (KERNEL.86)
+ 0001:358A       _memmove
+ 0001:3654       _memset
+ 0001:4204       _remove
+ 0001:2908       _sprintf
+ 0001:2976       _sscanf
+ 0006:00A2       _STKHQQ
+ 0001:254C       _strcat
+ 0001:32DE       _strchr
+ 0001:25DC       _strcmp
+ 0001:25A0       _strcpy
+ 0001:2606       _strlen
+ 0001:264A       _strncmp
+ 0001:2620       _strncpy
+ 0001:3418       _strpbrk
+ 0001:339C       _strrchr
+ 0001:351E       _strstr
+ 0001:3476       _strtok
+ 0001:1A34       _ungetc
+ 0006:0128       __aaltstkovr
+ 0006:00B6       __acfinfo
+ 0000:9876  Abs  __acrtmsg
+ 0000:9876  Abs  __acrtused
+ 0000:D6D6  Abs  __aDBdoswp
+ 0006:0124       __adbgmsg
+ 0000:D6D6  Abs  __aDBused
+ 0001:28A8       __aFahdiff
+ 0001:030C       __aFchkstk
+ 0001:5910       __aFCImax
+ 0001:593A       __aFCImin
+ 0001:4378       __aFFalmul
+ 0001:4378       __aFFaulmul
+ 0001:58D2       __aFftol
+ 0001:439A       __aFldiv
+ 0001:4434       __aFlmul
+ 0001:4466       __aFlrem
+ 0001:4506       __aFlshl
+ 0001:4434       __aFulmul
+ 0000:0000  Imp  __AHINCR             (KERNEL.114)
+ 0000:0000  Imp  __AHSHIFT            (KERNEL.113)
+ 0006:00C4       __aintdiv
+ 0006:01CC       __amblksiz
+ 0001:05B4       __amsg_exit
+ 0001:02EC       __aNchkstk
+ 0006:01EE       __asizeC
+ 0006:01EF       __asizeD
+ 0001:001A       __astart
+ 0001:26EC       __catox
+ 0001:0204       __cexit
+ 0001:5830       __cfltcvt
+ 0006:01CE       __cfltcvt_tab
+ 0006:0148       __cflush
+ 0001:53EC       __cftoe
+ 0001:55B8       __cftof
+ 0001:5750       __cftog
+ 0001:39CC       __chdir
+ 0001:3A5C       __chdrive
+ 0006:0121       __child
+ 0001:030C       __chkstk
+ 0001:0104       __cinit
+ 0001:05AA       __cintDIV
+ 0006:0352       __citime
+ 0001:1AA8       __close
+ 0001:369C       __cltoasub
+ 0006:00AC       __cmdShow
+ 0001:29C6       __commit
+ 0006:00E1       __cpumode
+ 0001:52D8       __cropzeros
+ 0001:0285       __ctermsub
+ 0006:01F0       __ctype
+ 0006:01F0       __ctype_
+ 0001:1E8B       __cXENIXtoDOSmode
+ 0001:36A9       __cxtoa
+ 0001:0215       __c_exit
+ 0006:0340       __daylight
+ 0006:030C       __days
+ 0006:00E2       __doserrno
+ 0001:0698       __dosret0
+ 0001:06B7       __dosretax
+ 0001:06A5       __dosreturn
+ 0001:3176       __dostotime_t
+ 0001:422A       __dos_commit
+ 0001:4260       __dos_findfirst
+ 0001:424E       __dos_findnext
+ 0001:4304       __dos_getdate
+ 0001:433E       __dos_gettime
+ 0001:42DA       __dos_setfileattr
+ 0006:0A4E       __edata
+ 0006:1268       __end
+ 0001:081C       __endstdio
+ 0006:0118       __environ
+ 0001:01F5       __exit
+ 0006:0123       __exitflag
+ 0006:00C8       __fac
+ 0001:5394       __fassign
+ 0001:28C8       __fcloseall
+ 0001:21E2       __ffree
+ 0001:02C2       __FF_MSGBANNER
+ 0006:01BE       __fheap
+ 0001:0832       __filbuf
+ 0001:2A36       __filelength
+ 0001:2487       __findlast
+ 0001:08DC       __flsbuf
+ 0001:5964       __fltin
+ 0001:59C8       __fltout
+ 0000:9876  Abs  __fltused
+ 0001:0AB6       __flush
+ 0001:0B36       __flushall
+ 0001:2203       __fmalloc
+ 0001:45B0       __fmemmove
+ 0001:4568       __fmemset
+ 0006:01B6       __fmode
+ 0001:5262       __forcdecpt
+ 0006:041E       __fpinit
+ 0000:0000  Imp  __fpmath             (WIN87EM.1)
+ 0001:5A1E       __fpsignal
+ 0000:9876  Abs  __fptaskdata
+ 0001:275E       __fptostr
+ 0001:02E6       __fptrap
+ 0001:39B8       __fpurecall
+ 0001:09D6       __freebuf
+ 0001:452C       __fstrcpy
+ 0001:4512       __fstrlen
+ 0001:2B4E       __ftime
+ 0001:58D2       __ftol
+ 0001:3EC0       __fullpath
+ 0001:0A0E       __getbuf
+ 0001:3AA6       __getcwd
+ 0001:3AC4       __getdcwd
+ 0001:06F6       __GetDGROUP
+ 0001:3A32       __getdrive
+ 0001:2390       __growseg
+ 0006:00A6       __hInstance
+ 0006:00A4       __hPrevInstance
+ 0001:2421       __incseg
+ 0001:22AA       __initseg
+ 0001:32C8       __inittime
+ 0001:0BB6       __input
+ 0001:2AD0       __intdosx
+ 0006:0436       __iob
+ 0006:0526       __iob2
+ 0006:01B6       __iomode
+ 0001:30A2       __isindst
+ 0001:2742       __itoa
+ 0006:014A       __lastiob
+ 0001:4D53       __LD12MULT
+ 0001:4C7E       __LD12MULTTENPOWER
+ 0001:22DE       __linkseg
+ 0006:02F2       __lpdays
+ 0006:00A8       __lpszCmdLine
+ 0001:1AE0       __lseek
+ 0006:01B8       __lseekchk
+ 0001:38C2       __makepath
+ 0001:4ED8       __MANTOLD12
+ 0001:06C9       __maperror
+ 0006:1260       __mbac
+ 0001:39BE       __mkdir
+ 0001:066A       __myalloc
+ 0001:24A8       __newseg
+ 0006:00E4       __nfile
+ 0001:05F6       __NMSG_TEXT
+ 0001:062D       __NMSG_WRITE
+ 0001:00D1       __nomain
+ 0001:39B8       __npurecall
+ 0001:5A6A       __onexit
+ 0001:1BCC       __open
+ 0006:00E2       __oserr
+ 0006:00EA       __osfile
+ 0006:00DD       __osmajor
+ 0006:00DC       __osminor
+ 0006:00E0       __osmode
+ 0006:00DC       __osver
+ 0006:00DE       __osversion
+ 0001:153E       __output
+ 0006:011C       __pgmptr
+ 0006:01BA       __pnhFarHeap
+ 0001:535C       __positive
+ 0006:00D8       __psp
+ 0006:00D6       __pspadr
+ 0001:39B8       __purecall
+ 0001:5A5B       __QWINClose
+ 0001:5A5B       __QWINExit
+ 0001:5A5B       __QWINGetBuffSize
+ 0001:5A5B       __QWINGetFocus
+ 0001:5A5B       __QWINGetSize
+ 0001:5A5B       __QWINInit
+ 0001:5A5B       __QWINIsQWINin
+ 0001:5A5B       __QWINMenuClick
+ 0001:5A5B       __QWINOpen
+ 0001:5A5B       __QWINRead
+ 0001:5A5B       __QWINSetAboutString
+ 0001:5A5B       __QWINSetBuffSize
+ 0001:5A5B       __QWINSetFocus
+ 0001:5A5B       __QWINSetSize
+ 0001:5A5B       __QWINTerm
+ 0006:0414       __qwinused
+ 0001:5A5B       __QWINWrite
+ 0001:5A5B       __QWINYield
+ 0001:1E9C       __read
+ 0001:39F2       __rmdir
+ 0001:2314       __searchseg
+ 0001:0346       __setargv
+ 0001:04F0       __setenvp
+ 0006:01EC       __sigintoff
+ 0006:01EA       __sigintseg
+ 0000:0001  Abs  __sizec
+ 0000:0001  Abs  __sized
+ 0001:1BB4       __sopen
+ 0001:3700       __splitpath
+ 0001:21CE       __stackavail
+ 0001:3CD0       __stat
+ 0001:3310       __strcmpi
+ 0001:3356       __strdup
+ 0001:3310       __stricmp
+ 0001:4F92       __STRINGTOD
+ 0001:4FFA       __STRINGTOLD
+ 0001:33D0       __strlwr
+ 0001:33F4       __strupr
+ 0001:00D8       __stubmain
+ 0006:033C       __timezone
+ 0006:034A       __tzname
+ 0001:2F54       __tzset
+ 0006:00D4       __umaskval
+ 0001:4204       __unlink
+ 0001:5A5B       __wabout
+ 0001:5A56       __wcexit
+ 0001:5A56       __wcinit
+ 0001:5A5B       __wclose
+ 0006:00E6       __wfile
+ 0001:0010       __wflags
+ 0001:5A5B       __wgetfocus
+ 0001:5A5B       __wgetscreenbuf
+ 0001:5A5B       __wgetsize
+ 0000:0000  Imp  __WINFLAGS           (KERNEL.178)
+ 0006:00DB       __winmajor
+ 0006:00DA       __winminor
+ 0006:00DA       __winver
+ 0000:0000  Abs  __wiobused
+ 0001:5A5B       __wmenuclick
+ 0006:00E8       __wnfile
+ 0001:5A5B       __wopen
+ 0001:5A5B       __wread
+ 0001:2014       __write
+ 0001:5A5B       __wsetfocus
+ 0001:5A5B       __wsetscreenbuf
+ 0001:5A5B       __wsetsize
+ 0006:00FE       __wsfile
+ 0001:5A5B       __wterm
+ 0001:5A5B       __wwrite
+ 0006:00B4       ___aDBrterr
+ 0006:00B2       ___aDBswpflg
+ 0006:0112       ___argc
+ 0006:0114       ___argv
+ 0001:0706       ___ExportedStub
+ 0001:2F38       ___tzset
+
+  Address         Publics by Value
+
+ 0000:0000  Imp  CHECKMENUITEM        (USER.154)
+ 0000:0000  Imp  OFFSETRECT           (USER.77)
+ 0000:0000  Imp  INVERTRECT           (USER.82)
+ 0000:0000  Imp  DDEFREESTRINGHANDLE  (DDEML.22)
+ 0000:0000  Imp  EXTRACTICON          (SHELL.34)
+ 0000:0000  Imp  ISZOOMED             (USER.272)
+ 0000:0000  Imp  RECTANGLE            (GDI.27)
+ 0000:0000  Unr  ?isScrollbarEnabled@WPWINDOW@@RECHG@Z
+ 0000:0000  Imp  MAPWINDOWPOINTS      (USER.258)
+ 0000:0000  Unr  ?SetIconTextColor@WPFOLDER@@RECXK@Z
+ 0000:0000  Imp  GETCURSORPOS         (USER.17)
+ 0000:0000  Unr  ?SetInstanceTitle@WPTEMPLATE@@JECXPED@Z
+ 0000:0000  Unr  ?GetShadowCount@WPOBJECT@@RECHXZ
+ 0000:0000  Imp  DELETEOBJECT         (GDI.69)
+ 0000:0000  Imp  DDEUNINITIALIZE      (DDEML.3)
+ 0000:0000  Imp  INFLATERECT          (USER.78)
+ 0000:0000  Unr  ?UnregisterShellHook@WPDESKTOP@@BECXXZ
+ 0000:0000  Imp  GETVERSION           (KERNEL.3)
+ 0000:0000  Imp  SETWINDOWORG         (GDI.11)
+ 0000:0000  Imp  LOADBITMAP           (USER.175)
+ 0000:0000  Imp  INITTASK             (KERNEL.91)
+ 0000:0000  Imp  SETCAPTURE           (USER.18)
+ 0000:0000  Imp  DELETEMENU           (USER.413)
+ 0000:0000  Imp  GETCAPTURE           (USER.236)
+ 0000:0000  Imp  GETMENUITEMCOUNT     (USER.263)
+ 0000:0000  Unr  ?FindProgram@WPPROGRAM@@RECHPBUHWND__@@@Z
+ 0000:0000  Unr  ?AddHead@LIST@@RECHK@Z
+ 0000:0000  Unr  ?HandleSelectOperation@WPFOLDER@@JECXUtagPOINT@@@Z
+ 0000:0000  Imp  LPTODP               (GDI.99)
+ 0000:0000  Imp  FINDEXECUTABLE       (SHELL.21)
+ 0000:0000  Imp  RELEASEDC            (USER.68)
+ 0000:0000  Unr  ?GetDIBWidth@@ZAGPIE@Z
+ 0000:0000  Imp  DPTOLP               (GDI.67)
+ 0000:0000  Unr  ?SetDriveType@WPDRIVE@@RECXW4DRIVE_TYPE@@@Z
+ 0000:0000  Imp  GLOBALFREE           (KERNEL.17)
+ 0000:0000  Imp  ISDIALOGMESSAGE      (USER.90)
+ 0000:0000  Unr  ?GetDIBHeight@@ZAGPIE@Z
+ 0000:0000  Unr  ?GetDriveIndex@WPDRIVE@@RECIXZ
+ 0000:0000  Imp  PATBLT               (GDI.29)
+ 0000:0000  Unr  ?LoadOwnerIcon@WPNOTEBOOK@@JECHXZ
+ 0000:0000  Imp  DESTROYMENU          (USER.152)
+ 0000:0000  Imp  SHOWWINDOW           (USER.42)
+ 0000:0000  Imp  UPDATEWINDOW         (USER.124)
+ 0000:0000  Unr  ?FindIndex@LIST@@RECKH@Z
+ 0000:0000  Imp  GETWINDOWTEXT        (USER.36)
+ 0000:0000  Imp  SETWINDOWTEXT        (USER.37)
+ 0000:0000  Unr  ?BringObjectToTop@@ZAXPEVWPOBJECT@@@Z
+ 0000:0000  Imp  LOADSTRING           (USER.176)
+ 0000:0000  Unr  ?Windows31UnsubclassDesktop@WPDESKTOP@@BECXXZ
+ 0000:0000  Imp  SYSTEMPARAMETERSINFO (USER.483)
+ 0000:0000  Imp  SETMESSAGEQUEUE      (USER.266)
+ 0000:0000  Imp  DDENAMESERVICE       (DDEML.27)
+ 0000:0000  Imp  KILLTIMER            (USER.12)
+ 0000:0000  Imp  CLIENTTOSCREEN       (USER.28)
+ 0000:0000  Imp  GLOBALREALLOC        (KERNEL.16)
+ 0000:0000  Imp  DRAGFINISH           (SHELL.12)
+ 0000:0000  Imp  GETSYSCOLOR          (USER.180)
+ 0000:0000  Imp  ENABLEMENUITEM       (USER.155)
+ 0000:0000  Imp  CTL3DAUTOSUBCLASS    (CTL3D.16)
+ 0000:0000  Imp  SETWINDOWLONG        (USER.136)
+ 0000:0000  Imp  GETWINDOWLONG        (USER.135)
+ 0000:0000  Imp  POSTMESSAGE          (USER.110)
+ 0000:0000  Unr  ?IsRegisteredSourceWindow@@ZAHPBUHWND__@@@Z
+ 0000:0000  Imp  GETACTIVEWINDOW      (USER.60)
+ 0000:0000  Imp  GETDESKTOPWINDOW     (USER.286)
+ 0000:0000  Imp  GETLASTACTIVEPOPUP   (USER.287)
+ 0000:0000  Imp  DDEQUERYSTRING       (DDEML.23)
+ 0000:0000  Unr  ?isFileInFolder@WPDIRECTORY@@JECHPED@Z
+ 0000:0000  Imp  FATALEXIT            (KERNEL.1)
+ 0000:0000  Abs  __wiobused
+ 0000:0000  Imp  MESSAGEBOX           (USER.1)
+ 0000:0000  Imp  CREATEDIBITMAP       (GDI.442)
+ 0000:0000  Imp  GETTEXTCOLOR         (GDI.90)
+ 0000:0000  Imp  CREATECOMPATIBLEBITMAP (GDI.51)
+ 0000:0000  Imp  MOVEWINDOW           (USER.56)
+ 0000:0000  Unr  ?GetDataSubject@WPDATAFILE@@RECPFDXZ
+ 0000:0000  Imp  TRANSLATEACCELERATOR (USER.178)
+ 0000:0000  Imp  CREATEWINDOWEX       (USER.452)
+ 0000:0000  Imp  UNIONRECT            (USER.80)
+ 0000:0000  Imp  SCROLLWINDOWEX       (USER.319)
+ 0000:0000  Unr  ?GetDIBInfoHeaderSize@@ZAKPIE@Z
+ 0000:0000  Imp  GLOBALALLOC          (KERNEL.15)
+ 0000:0000  Imp  COPYICON             (USER.368)
+ 0000:0000  Imp  SETRECTEMPTY         (USER.73)
+ 0000:0000  Imp  ENUMWINDOWS          (USER.54)
+ 0000:0000  Imp  CREATEDIALOGPARAM    (USER.241)
+ 0000:0000  Imp  DRAGQUERYFILE        (SHELL.11)
+ 0000:0000  Imp  GETMODULEFILENAME    (KERNEL.49)
+ 0000:0000  Imp  ISWINDOW             (USER.47)
+ 0000:0000  Imp  DEFWINDOWPROC        (USER.107)
+ 0000:0000  Imp  DISPATCHMESSAGE      (USER.114)
+ 0000:0000  Imp  GETSCROLLRANGE       (USER.65)
+ 0000:0000  Imp  SETMAPMODE           (GDI.3)
+ 0000:0000  Imp  SETSCROLLRANGE       (USER.64)
+ 0000:0000  Imp  GETPROFILESTRING     (KERNEL.58)
+ 0000:0000  Imp  OPENFILE             (KERNEL.74)
+ 0000:0000  Imp  WINDOWFROMPOINT      (USER.30)
+ 0000:0000  Unr  ?dprintf@@ZAXPEDZZ
+ 0000:0000  Unr  ?SetIconTextLogFont@WPFOLDER@@RECXPEUtagLOGFONT@@@Z
+ 0000:0000  Imp  SETSCROLLPOS         (USER.62)
+ 0000:0000  Imp  DRAWFOCUSRECT        (USER.466)
+ 0000:0000  Imp  GETMODULEHANDLE      (KERNEL.47)
+ 0000:0000  Imp  DESTROYICON          (USER.457)
+ 0000:0000  Unr  ?GetPath@WPDIRECTORY@@RECPEDXZ
+ 0000:0000  Unr  ?Wait@WPWINDOW@@BECXH@Z
+ 0000:0000  Imp  DOS3CALL             (KERNEL.102)
+ 0000:0000  Imp  DLGDIRSELECTCOMBOBOXEX (USER.423)
+ 0000:0000  Unr  ?FindByValue@LIST@@JECPEU_LIST_NODE@@K@Z
+ 0000:0000  Unr  ?GetWindowFromPageID@WPNOTEBOOK@@JECPBUHWND__@@G@Z
+ 0000:0000  Imp  ISCHARALPHANUMERIC   (USER.434)
+ 0000:0000  Imp  SETSYSCOLORS         (USER.181)
+ 0000:0000  Unr  ?DPtoWP@WPWINDOW@@RECXPEUtagPOINT@@H@Z
+ 0000:0000  Unr  ?GetIndexFromPageID@WPNOTEBOOK@@JECHG@Z
+ 0000:0000  Imp  CALLWINDOWPROC       (USER.122)
+ 0000:0000  Imp  GETCLASSWORD         (USER.129)
+ 0000:0000  Imp  FREEPROCINSTANCE     (KERNEL.52)
+ 0000:0000  Imp  POLYLINE             (GDI.37)
+ 0000:0000  Imp  UNREGISTERCLASS      (USER.403)
+ 0000:0000  Imp  SCREENTOCLIENT       (USER.29)
+ 0000:0000  Unr  ?SetMinWndHandle@WPMINWNDOBJ@@RECXPBUHWND__@@@Z
+ 0000:0000  Imp  DELETEDC             (GDI.68)
+ 0000:0000  Imp  CREATEBITMAP         (GDI.48)
+ 0000:0000  Imp  ISICONIC             (USER.31)
+ 0000:0000  Unr  ?SetTemplateType@WPTEMPLATE@@JECXK@Z
+ 0000:0000  Imp  __AHINCR             (KERNEL.114)
+ 0000:0000  Imp  SETWINDOWPOS         (USER.232)
+ 0000:0000  Unr  ?isWorkplaceShellClassName@WPOBJECT@@JECHPED@Z
+ 0000:0000  Imp  DRAGQUERYPOINT       (SHELL.13)
+ 0000:0000  Unr  ?SetDataSubject@WPDATAFILE@@RECXPFD@Z
+ 0000:0000  Imp  ISBADREADPTR         (KERNEL.334)
+ 0000:0000  Unr  ?GetMinWindowObjectInViewer@WPMINVIEWER@@RECPEVWPMINWNDOBJ@@PBUHWND__@@@Z
+ 0000:0000  Imp  GETSTOCKOBJECT       (GDI.87)
+ 0000:0000  Unr  ?GetCaptionTextColor@WPWINDOW@@BECKH@Z
+ 0000:0000  Imp  GLOBALHANDLE         (KERNEL.21)
+ 0000:0000  Imp  __WINFLAGS           (KERNEL.178)
+ 0000:0000  Imp  BEGINPAINT           (USER.39)
+ 0000:0000  Imp  SETROP2              (GDI.4)
+ 0000:0000  Imp  PTINRECT             (USER.76)
+ 0000:0000  Imp  _LWRITE              (KERNEL.86)
+ 0000:0000  Imp  ISDLGBUTTONCHECKED   (USER.98)
+ 0000:0000  Unr  ?NewNode@LIST@@JECPEU_LIST_NODE@@K@Z
+ 0000:0000  Imp  POSTQUITMESSAGE      (USER.6)
+ 0000:0000  Unr  ?GetFrameFillColor@WPWINDOW@@BECKH@Z
+ 0000:0000  Imp  GETMENUSTATE         (USER.250)
+ 0000:0000  Imp  SNDPLAYSOUND         (MMSYSTEM.2)
+ 0000:0000  Imp  INVALIDATERECT       (USER.125)
+ 0000:0000  Unr  ?GetObjectFromInstanceHandle@WPDESKTOP@@RECPEVWPOBJECT@@PBUHINSTANCE__@@@Z
+ 0000:0000  Imp  WRITEPRIVATEPROFILESTRING (KERNEL.129)
+ 0000:0000  Imp  SETDLGITEMTEXT       (USER.92)
+ 0000:0000  Imp  GETDLGITEMTEXT       (USER.93)
+ 0000:0000  Imp  COPYRECT             (USER.74)
+ 0000:0000  Imp  SENDDLGITEMMESSAGE   (USER.101)
+ 0000:0000  Unr  ?GetMinWndHandle@WPMINWNDOBJ@@RECPBUHWND__@@XZ
+ 0000:0000  Imp  LOCKSEGMENT          (KERNEL.23)
+ 0000:0000  Imp  INITAPP              (USER.5)
+ 0000:0000  Imp  TRANSLATEMESSAGE     (USER.113)
+ 0000:0000  Unr  ?SetPath@WPDIRECTORY@@RECXPED@Z
+ 0000:0000  Imp  CREATECURSOR         (USER.406)
+ 0000:0000  Imp  SETTEXTCOLOR         (GDI.9)
+ 0000:0000  Imp  GETCLIENTRECT        (USER.33)
+ 0000:0000  Unr  ?IsObjectValid@WPMINVIEWER@@RECHPEVWPMINWNDOBJ@@PEPEV2@H@Z
+ 0000:0000  Unr  ?RegisterShellHook@WPDESKTOP@@BECXXZ
+ 0000:0000  Imp  _LCLOSE              (KERNEL.81)
+ 0000:0000  Unr  ?IsWindowMinimizedToViewer@WPMINVIEWER@@RECHPBUHWND__@@@Z
+ 0000:0000  Imp  SETSTRETCHBLTMODE    (GDI.7)
+ 0000:0000  Imp  SETFOCUS             (USER.22)
+ 0000:0000  Imp  REGQUERYVALUE        (SHELL.6)
+ 0000:0000  Imp  SETCURSOR            (USER.69)
+ 0000:0000  Imp  SETBKMODE            (GDI.2)
+ 0000:0000  Imp  DDEADDDATA           (DDEML.15)
+ 0000:0000  Unr  ?RemoveTail@@ZAPEU_LIST_NODE@@XZ
+ 0000:0000  Imp  LOADCURSOR           (USER.173)
+ 0000:0000  Imp  SHELLEXECUTE         (SHELL.20)
+ 0000:0000  Imp  GETSYSTEMMETRICS     (USER.179)
+ 0000:0000  Imp  __fpmath             (WIN87EM.1)
+ 0000:0000  Imp  GETCLASSNAME         (USER.58)
+ 0000:0000  Imp  LOADMENU             (USER.150)
+ 0000:0000  Imp  GETSUBMENU           (USER.159)
+ 0000:0000  Imp  ROUNDRECT            (GDI.28)
+ 0000:0000  Imp  SETTIMER             (USER.10)
+ 0000:0000  Imp  GETOPENFILENAME      (COMMDLG.1)
+ 0000:0000  Unr  ?GetDriveType@WPDRIVE@@REC?EW4DRIVE_TYPE@@XZ
+ 0000:0000  Imp  LOADACCELERATORS     (USER.177)
+ 0000:0000  Unr  ?GetInstanceTitle@WPTEMPLATE@@JECPEDXZ
+ 0000:0000  Unr  ?GetDriveCount@WPDRIVE@@BECHXZ
+ 0000:0000  Imp  CREATEPOPUPMENU      (USER.415)
+ 0000:0000  Unr  ?UpdateWindow2PageControls@WPSYSSETUP@@RECXPBUHWND__@@@Z
+ 0000:0000  Imp  SENDMESSAGE          (USER.111)
+ 0000:0000  Imp  REGISTERCLASS        (USER.57)
+ 0000:0000  Unr  ?SetSettingsNotebook@WPOBJECT@@RECXPEVWPSETTINGSNB@@@Z
+ 0000:0000  Unr  ?GetTemplateType@WPTEMPLATE@@JECKXZ
+ 0000:0000  Imp  SETWINDOWPLACEMENT   (USER.371)
+ 0000:0000  Imp  ISWINDOWENABLED      (USER.35)
+ 0000:0000  Unr  ?LoadFileInfo@WPPROGRAM@@RECXXZ
+ 0000:0000  Imp  _LREAD               (KERNEL.82)
+ 0000:0000  Imp  INTERSECTRECT        (USER.79)
+ 0000:0000  Imp  ENABLEWINDOW         (USER.34)
+ 0000:0000  Imp  _LOPEN               (KERNEL.85)
+ 0000:0000  Unr  ?DrawIconOnBitmap@WPFOLDER@@JECXPBUHBITMAP__@@PBUHICON__@@@Z
+ 0000:0000  Imp  MESSAGEBEEP          (USER.104)
+ 0000:0000  Imp  GETKEYSTATE          (USER.106)
+ 0000:0000  Imp  LOADICON             (USER.174)
+ 0000:0000  Imp  __AHSHIFT            (KERNEL.113)
+ 0000:0000  Imp  GETASYNCKEYSTATE     (USER.249)
+ 0000:0000  Imp  CREATEPEN            (GDI.61)
+ 0000:0000  Unr  ??0WPMINWNDOBJ@@REC@XZ
+ 0000:0000  Imp  DDEGETDATA           (DDEML.16)
+ 0000:0000  Unr  ?isRGBWhite@WPFOLDER@@JECHK@Z
+ 0000:0000  Imp  MAKEPROCINSTANCE     (KERNEL.51)
+ 0000:0000  Unr  ?RemoveHead@LIST@@RECPEU_LIST_NODE@@XZ
+ 0000:0000  Imp  DIALOGBOX            (USER.87)
+ 0000:0000  Imp  CREATESOLIDBRUSH     (GDI.66)
+ 0000:0000  Unr  ?GetDataName@WPDATAFILE@@RECPFDXZ
+ 0000:0000  Imp  WRITEPROFILESTRING   (KERNEL.59)
+ 0000:0000  Imp  GETPROFILEINT        (KERNEL.57)
+ 0000:0000  Imp  DRAWICON             (USER.84)
+ 0000:0000  Imp  DESTROYCURSOR        (USER.458)
+ 0000:0000  Imp  DDEINITIALIZE        (DDEML.2)
+ 0000:0000  Imp  GLOBALSIZE           (KERNEL.20)
+ 0000:0000  Imp  ENDPAINT             (USER.40)
+ 0000:0000  Imp  CREATEPALETTE        (GDI.360)
+ 0000:0000  Imp  ISWINDOWVISIBLE      (USER.49)
+ 0000:0000  Imp  DRAWTEXT             (USER.85)
+ 0000:0000  Imp  CREATEWINDOW         (USER.41)
+ 0000:0000  Unr  ?GetPageIDFromWindow@WPNOTEBOOK@@JECGPBUHWND__@@@Z
+ 0000:0000  Imp  GETDOSENVIRONMENT    (KERNEL.131)
+ 0000:0000  Imp  SETBKCOLOR           (GDI.1)
+ 0000:0000  Imp  SWITCHTOTHISWINDOW   (USER.172)
+ 0000:0000  Imp  CREATEFONTINDIRECT   (GDI.57)
+ 0000:0000  Imp  DESTROYWINDOW        (USER.53)
+ 0000:0000  Unr  ?RunProgram@WPDESKTOP@@RECXXZ
+ 0000:0000  Imp  FILLRECT             (USER.81)
+ 0000:0000  Imp  HMEMCPY              (KERNEL.348)
+ 0000:0000  Unr  ?GetInstanceIcon@WPTEMPLATE@@JECXPEDPEG@Z
+ 0000:0000  Imp  APPENDMENU           (USER.411)
+ 0000:0000  Imp  CTL3DREGISTER        (CTL3D.12)
+ 0000:0000  Unr  ?isRGBNormal@WPFOLDER@@JECHK@Z
+ 0000:0000  Imp  EXITWINDOWS          (USER.7)
+ 0000:0000  Unr  ?LoadFileInfo@WPDATAFILE@@RECXXZ
+ 0000:0000  Imp  GETCURRENTTASK       (KERNEL.36)
+ 0000:0000  Imp  DIALOGBOXPARAM       (USER.239)
+ 0000:0000  Imp  DDECREATESTRINGHANDLE (DDEML.21)
+ 0000:0000  Unr  ?SetScrollPos@WPWINDOW@@RECHPBUHWND__@@HHH@Z
+ 0000:0000  Imp  GETCLASSINFO         (USER.404)
+ 0000:0000  Imp  GETDC                (USER.66)
+ 0000:0000  Imp  GETPROCADDRESS       (KERNEL.50)
+ 0000:0000  Imp  CREATECOMPATIBLEDC   (GDI.52)
+ 0000:0000  Unr  ?SetInstanceIcon@WPTEMPLATE@@JECXPEDG@Z
+ 0000:0000  Imp  WINHELP              (USER.171)
+ 0000:0000  Imp  CHECKDLGBUTTON       (USER.97)
+ 0000:0000  Imp  CREATEHATCHBRUSH     (GDI.58)
+ 0000:0000  Imp  REALIZEPALETTE       (USER.283)
+ 0000:0000  Imp  CHOOSEFONT           (COMMDLG.15)
+ 0000:0000  Unr  ?GetScrollComponentState@WPWINDOW@@BECGG@Z
+ 0000:0000  Imp  RELEASECAPTURE       (USER.19)
+ 0000:0000  Imp  GETWINDOWDC          (USER.67)
+ 0000:0000  Imp  GLOBALUNLOCK         (KERNEL.19)
+ 0000:0000  Unr  ?GetCaptionFillColor@WPWINDOW@@BECKH@Z
+ 0000:0000  Unr  ?DrawScrollArea@WPWINDOW@@JECXPBUHDC__@@G@Z
+ 0000:0000  Imp  GETWINDOW            (USER.262)
+ 0000:0000  Imp  GETWINDOWRECT        (USER.32)
+ 0000:0000  Unr  ?IsATMDriverLoaded@WPDESKTOP@@BECHXZ
+ 0000:0000  Unr  ?FreeNode@LIST@@JECXPEU_LIST_NODE@@@Z
+ 0000:0000  Imp  EQUALRECT            (USER.244)
+ 0000:0000  Imp  GETDLGITEM           (USER.91)
+ 0000:0000  Unr  ?IsEmpty@LIST@@RECHXZ
+ 0000:0000  Unr  ?GetTopicCount@DDESERVER@@JECHXZ
+ 0000:0000  Imp  GETDRIVETYPE         (KERNEL.136)
+ 0000:0000  Imp  DDEFREEDATAHANDLE    (DDEML.19)
+ 0000:0000  Unr  ?GetUndocProc@@ZAP7CXXZPED0H@Z
+ 0000:0000  Imp  CTL3DUNREGISTER      (CTL3D.13)
+ 0000:0000  Imp  GETCURSOR            (USER.247)
+ 0000:0000  Imp  GETOBJECT            (GDI.82)
+ 0000:0000  Unr  ?GetShadowLink@WPOBJECT@@RECPEVWPSHADOW@@H@Z
+ 0000:0000  Imp  CHOOSECOLOR          (COMMDLG.5)
+ 0000:0000  Imp  STRETCHBLT           (GDI.35)
+ 0000:0000  Imp  GLOBALLOCK           (KERNEL.18)
+ 0000:0000  Imp  DDECREATEDATAHANDLE  (DDEML.14)
+ 0000:0000  Imp  GETWINDOWPLACEMENT   (USER.370)
+ 0000:0000  Imp  SELECTPALETTE        (USER.282)
+ 0000:0000  Imp  GETWINDOWSDIRECTORY  (KERNEL.134)
+ 0000:0000  Imp  FATALAPPEXIT         (KERNEL.137)
+ 0000:0000  Imp  GETBKCOLOR           (GDI.75)
+ 0000:0000  Imp  TRACKPOPUPMENU       (USER.416)
+ 0000:0000  Unr  ?GetDataPath@WPDATAFILE@@RECPFDXZ
+ 0000:0000  Imp  SETRECT              (USER.72)
+ 0000:0000  Imp  UNHOOKWINDOWSHOOKEX  (USER.292)
+ 0000:0000  Unr  ?UnregisterClassName@WPDESKTOP@@RECXPED@Z
+ 0000:0000  Imp  DLGDIRLISTCOMBOBOX   (USER.195)
+ 0000:0000  Imp  WAITEVENT            (KERNEL.30)
+ 0000:0000  Unr  ?isFileInDirectory@WPDIRECTORY@@JECHPED@Z
+ 0000:0000  Unr  ?GetScrollComponentSize@WPWINDOW@@BEC?EUtagSIZE@@G@Z
+ 0000:0000  Imp  WINEXEC              (KERNEL.166)
+ 0000:0000  Unr  ?GetDIBBitsAddr@@ZAPIEPIE@Z
+ 0000:0000  Imp  LOADLIBRARY          (KERNEL.95)
+ 0000:0000  Unr  ?HandleSelectionState@@ZAXPEUtagDRAWITEMSTRUCT@@@Z
+ 0000:0000  Imp  GETPRIVATEPROFILESTRING (KERNEL.128)
+ 0000:0000  Imp  SHOWSCROLLBAR        (USER.267)
+ 0000:0000  Imp  SETWINDOWSHOOKEX     (USER.291)
+ 0000:0000  Unr  ?GetLogicalDomain@WPWINDOW@@REC?EUtagRECT@@XZ
+ 0000:0000  Imp  GETSCROLLPOS         (USER.63)
+ 0000:0000  Unr  ?GetTail@LIST@@RECPEU_LIST_NODE@@XZ
+ 0000:0000  Unr  ?HandleFocusState@@ZAXPEUtagDRAWITEMSTRUCT@@@Z
+ 0000:0000  Imp  SETERRORMODE         (KERNEL.107)
+ 0000:0000  Unr  ?GetOriginalObject@WPSHADOW@@RECPEVWPOBJECT@@XZ
+ 0000:0000  Imp  BITBLT               (GDI.34)
+ 0000:0000  Unr  ?SetOriginalUniqueID@WPSHADOW@@RECXG@Z
+ 0000:0000  Imp  GETPRIVATEPROFILEINT (KERNEL.127)
+ 0000:0000  Imp  SELECTOBJECT         (GDI.45)
+ 0000:0000  Imp  GETWINDOWWORD        (USER.133)
+ 0000:0000  Unr  ?GetObjectRectDP@WPOBJECT@@RECXPBUHDC__@@PEUtagRECT@@@Z
+ 0000:0000  Imp  SETCLASSWORD         (USER.130)
+ 0000:0000  Unr  ?SetWndPos@WPWINDOW@@RECXUtagPOINT@@@Z
+ 0000:0000  Imp  SETACTIVEWINDOW      (USER.59)
+ 0000:0000  Imp  GETPIXEL             (GDI.83)
+ 0000:0000  Unr  ?QueryDriveTypeString@WPDRIVE@@BECPEDI@Z
+ 0000:0000  Imp  ENDDIALOG            (USER.88)
+ 0000:0000  Imp  FREELIBRARY          (KERNEL.96)
+ 0000:0000  Imp  CHECKRADIOBUTTON     (USER.96)
+ 0000:0000  Unr  ?GetHead@LIST@@RECPEU_LIST_NODE@@XZ
+ 0000:0000  Unr  ?isTopic@DDESERVER@@JECHPED@Z
+ 0000:0000  Unr  ?OnClose@WPSETTINGSNB@@RECXXZ
+ 0000:0000  Imp  GETMESSAGE           (USER.108)
+ 0000:0001  Abs  __sized
+ 0000:0001  Abs  __sizec
+ 0000:0006  Abs  pLocalHeap
+ 0000:0008  Abs  pAtomTable
+ 0000:000A  Abs  pStackTop
+ 0000:000C  Abs  pStackMin
+ 0000:000E  Abs  pStackBot
+ 0000:0632  Abs  FISRQQ
+ 0000:0E32  Abs  FICRQQ
+ 0000:1632  Abs  FIERQQ
+ 0000:9876  Abs  __acrtused
+ 0000:9876  Abs  __fptaskdata
+ 0000:9876  Abs  __fltused
+ 0000:9876  Abs  __acrtmsg
+ 0000:D6D6  Abs  __aDBused
+ 0000:D6D6  Abs  __aDBdoswp
+ 0001:0010       __wflags
+ 0001:001A       __astart
+ 0001:00D1       __nomain
+ 0001:00D8       __stubmain
+ 0001:0104       __cinit
+ 0001:01E7       _exit
+ 0001:01F5       __exit
+ 0001:0204       __cexit
+ 0001:0215       __c_exit
+ 0001:0285       __ctermsub
+ 0001:02C2       __FF_MSGBANNER
+ 0001:02E6       __fptrap
+ 0001:02EC       __aNchkstk
+ 0001:030C       __aFchkstk
+ 0001:030C       __chkstk
+ 0001:0346       __setargv
+ 0001:04F0       __setenvp
+ 0001:05AA       __cintDIV
+ 0001:05B4       __amsg_exit
+ 0001:05F6       __NMSG_TEXT
+ 0001:062D       __NMSG_WRITE
+ 0001:066A       __myalloc
+ 0001:0698       __dosret0
+ 0001:06A5       __dosreturn
+ 0001:06B7       __dosretax
+ 0001:06C9       __maperror
+ 0001:06F6       __GetDGROUP
+ 0001:0706       ___ExportedStub
+ 0001:071A       _fclose
+ 0001:081C       __endstdio
+ 0001:0832       __filbuf
+ 0001:08DC       __flsbuf
+ 0001:09D6       __freebuf
+ 0001:0A0E       __getbuf
+ 0001:0A5A       _fflush
+ 0001:0AB6       __flush
+ 0001:0B36       __flushall
+ 0001:0BB6       __input
+ 0001:153E       __output
+ 0001:1A34       _ungetc
+ 0001:1AA8       __close
+ 0001:1AE0       __lseek
+ 0001:1BB4       __sopen
+ 0001:1BCC       __open
+ 0001:1E8B       __cXENIXtoDOSmode
+ 0001:1E9C       __read
+ 0001:2014       __write
+ 0001:21CE       __stackavail
+ 0001:21E2       __ffree
+ 0001:2203       __fmalloc
+ 0001:22AA       __initseg
+ 0001:22DE       __linkseg
+ 0001:2314       __searchseg
+ 0001:2390       __growseg
+ 0001:2421       __incseg
+ 0001:2487       __findlast
+ 0001:24A8       __newseg
+ 0001:252A       ??3@ZAXPEX@Z
+ 0001:253C       ??2@ZAPEXI@Z
+ 0001:254C       _strcat
+ 0001:25A0       _strcpy
+ 0001:25DC       _strcmp
+ 0001:2606       _strlen
+ 0001:2620       _strncpy
+ 0001:264A       _strncmp
+ 0001:2686       _atoi
+ 0001:268A       _atol
+ 0001:268E       _atof
+ 0001:26EC       __catox
+ 0001:2742       __itoa
+ 0001:275E       __fptostr
+ 0001:280C       _getenv
+ 0001:28A8       __aFahdiff
+ 0001:28C8       __fcloseall
+ 0001:2908       _sprintf
+ 0001:2976       _sscanf
+ 0001:29C6       __commit
+ 0001:2A36       __filelength
+ 0001:2AD0       __intdosx
+ 0001:2B4E       __ftime
+ 0001:2C66       _gmtime
+ 0001:2E0C       _localtime
+ 0001:2F38       ___tzset
+ 0001:2F54       __tzset
+ 0001:30A2       __isindst
+ 0001:3176       __dostotime_t
+ 0001:3274       _clock
+ 0001:32C8       __inittime
+ 0001:32DE       _strchr
+ 0001:3310       __stricmp
+ 0001:3310       __strcmpi
+ 0001:3356       __strdup
+ 0001:339C       _strrchr
+ 0001:33D0       __strlwr
+ 0001:33F4       __strupr
+ 0001:3418       _strpbrk
+ 0001:3476       _strtok
+ 0001:351E       _strstr
+ 0001:358A       _memmove
+ 0001:3654       _memset
+ 0001:369C       __cltoasub
+ 0001:36A9       __cxtoa
+ 0001:3700       __splitpath
+ 0001:38C2       __makepath
+ 0001:39B8       __fpurecall
+ 0001:39B8       __purecall
+ 0001:39B8       __npurecall
+ 0001:39BE       __mkdir
+ 0001:39CC       __chdir
+ 0001:39F2       __rmdir
+ 0001:3A32       __getdrive
+ 0001:3A5C       __chdrive
+ 0001:3AA6       __getcwd
+ 0001:3AC4       __getdcwd
+ 0001:3CD0       __stat
+ 0001:3EC0       __fullpath
+ 0001:4204       __unlink
+ 0001:4204       _remove
+ 0001:422A       __dos_commit
+ 0001:424E       __dos_findnext
+ 0001:4260       __dos_findfirst
+ 0001:42DA       __dos_setfileattr
+ 0001:4304       __dos_getdate
+ 0001:433E       __dos_gettime
+ 0001:4378       __aFFaulmul
+ 0001:4378       __aFFalmul
+ 0001:439A       __aFldiv
+ 0001:4434       __aFlmul
+ 0001:4434       __aFulmul
+ 0001:4466       __aFlrem
+ 0001:4506       __aFlshl
+ 0001:4512       __fstrlen
+ 0001:452C       __fstrcpy
+ 0001:4568       __fmemset
+ 0001:45B0       __fmemmove
+ 0001:46C8       $i8_output
+ 0001:4989       $i8_tpwr10
+ 0001:4C7E       __LD12MULTTENPOWER
+ 0001:4D53       __LD12MULT
+ 0001:4ED8       __MANTOLD12
+ 0001:4F92       __STRINGTOD
+ 0001:4FFA       __STRINGTOLD
+ 0001:5262       __forcdecpt
+ 0001:52D8       __cropzeros
+ 0001:535C       __positive
+ 0001:5394       __fassign
+ 0001:53EC       __cftoe
+ 0001:55B8       __cftof
+ 0001:5750       __cftog
+ 0001:5830       __cfltcvt
+ 0001:58D2       __aFftol
+ 0001:58D2       __ftol
+ 0001:5910       __aFCImax
+ 0001:593A       __aFCImin
+ 0001:5964       __fltin
+ 0001:59C8       __fltout
+ 0001:5A1E       __fpsignal
+ 0001:5A56       __wcinit
+ 0001:5A56       __wcexit
+ 0001:5A5B       __wsetscreenbuf
+ 0001:5A5B       __QWINSetSize
+ 0001:5A5B       __QWINSetAboutString
+ 0001:5A5B       __wgetfocus
+ 0001:5A5B       __wterm
+ 0001:5A5B       __QWINExit
+ 0001:5A5B       __QWINOpen
+ 0001:5A5B       __QWINSetFocus
+ 0001:5A5B       __QWINGetFocus
+ 0001:5A5B       __QWINInit
+ 0001:5A5B       __QWINTerm
+ 0001:5A5B       __QWINGetSize
+ 0001:5A5B       __wgetscreenbuf
+ 0001:5A5B       __QWINMenuClick
+ 0001:5A5B       __wclose
+ 0001:5A5B       __wsetsize
+ 0001:5A5B       __QWINGetBuffSize
+ 0001:5A5B       __wsetfocus
+ 0001:5A5B       __QWINSetBuffSize
+ 0001:5A5B       __wabout
+ 0001:5A5B       __QWINWrite
+ 0001:5A5B       __wmenuclick
+ 0001:5A5B       __wread
+ 0001:5A5B       __wgetsize
+ 0001:5A5B       __QWINIsQWINin
+ 0001:5A5B       __QWINRead
+ 0001:5A5B       __wwrite
+ 0001:5A5B       __wopen
+ 0001:5A5B       __QWINClose
+ 0001:5A5B       __QWINYield
+ 0001:5A62       _atexit
+ 0001:5A6A       __onexit
+ 0002:0000       ?Initialize@DDEPROGMAN@@RECHPEVWPDESKTOP@@@Z
+ 0002:0072       ?RecursivelyQueryGroupNames@DDEPROGMAN@@BECXPEVWPFOLDER@@PEPFUHDDEDATA__@@PEK@Z
+ 0002:01A0       ?QueryAllGroupNames@DDEPROGMAN@@BECXPEPFUHDDEDATA__@@@Z
+ 0002:0266       ?QueryDetailedGroupInfo@DDEPROGMAN@@BECHPFUHSZ__@@PEPFUHDDEDATA__@@@Z
+ 0002:06F0       ?ServiceRequest@DDEPROGMAN@@NECPFUHDDEDATA__@@PFUHSZ__@@0@Z
+ 0002:07CA       ?ParseCommandParametersIntoList@DDEPROGMAN@@BECXPEDPEPEDPEH@Z
+ 0002:08B0       ?AddItem@DDEPROGMAN@@BECXPEPEDH@Z
+ 0002:0BF4       ?CreateGroup@DDEPROGMAN@@BECXPEPEDH@Z
+ 0002:0CEE       ?ReplaceItem@DDEPROGMAN@@BECXPEPEDH@Z
+ 0002:0E16       ?ShowGroup@DDEPROGMAN@@BECXPEPEDH@Z
+ 0002:0EB0       ?ExecuteCommand@DDEPROGMAN@@NECHPED0@Z
+ 0002:100C       ?Uninitialize@DDEPROGMAN@@VECHXZ
+ 0002:102C       ?PROGMANServiceCallback@@ZCPFUHDDEDATA__@@IIPFUHCONV__@@PFUHSZ__@@1PFU1@KK@Z
+ 0002:1070       ??_C@_07COJA@PROGMAN?$AA@
+ 0002:1078       ??_C@_0M@HMCF@WPS_PROGMAN?$AA@
+ 0002:1084       ??_C@_06MCAA@GROUPS?$AA@
+ 0002:108C       ??_C@_02PIMC@?$AN?6?$AA@
+ 0002:1090       ??_C@_04JBBA@?$CC?$CFs?$CC?$AA@
+ 0002:1096       ??_C@_01KMAE@?0?$AA@
+ 0002:1098       ??_C@_06DCON@?0?$CFd?01?6?$AA@
+ 0002:10A0       ??_C@_08KINH@?0?$CC?$CFs?5?$CFs?$CC?$AA@
+ 0002:10AA       ??_C@_03KCIB@?0?$CFs?$AA@
+ 0002:10AE       ??_C@_0BA@HJCD@?0?$CFd?0?$CFd?0?$CFu?00?0?$CFu?6?$AA@
+ 0002:10BE       ??_C@_00A@?$AA@
+ 0002:10C0       ??_C@_07BBM@Program?$AA@
+ 0002:10C8       ??_C@_07OJLH@AddItem?$AA@
+ 0002:10D0       ??_C@_0M@HMJA@CreateGroup?$AA@
+ 0002:10DC       ??_C@_0M@EKOH@DeleteGroup?$AA@
+ 0002:10E8       ??_C@_0L@MLDG@DeleteItem?$AA@
+ 0002:10F4       ??_C@_0M@DPJF@ExitProgman?$AA@
+ 0002:1100       ??_C@_06KIJA@Reload?$AA@
+ 0002:1108       ??_C@_0M@IFHA@ReplaceItem?$AA@
+ 0002:1114       ??_C@_09HNON@ShowGroup?$AA@
+ 0002:111E       ??0DDESERVER@@REC@XZ
+ 0002:114E       ?Initialize@DDESERVER@@VECHPEDP7CXXZ@Z
+ 0002:11FA       ?CompareHszToStr@DDESERVER@@JECHPFUHSZ__@@PED@Z
+ 0002:1234       ?AddTopic@DDESERVER@@JECHPED@Z
+ 0002:126A       ?IsBlank@DDESERVER@@JECHPED@Z
+ 0002:12A6       ?GetNextCommand@DDESERVER@@NECHPED0PEH@Z
+ 0002:1344       ?GetCommandNameAndParameters@DDESERVER@@NECHPEDPEPED1@Z
+ 0002:1402       ?DdeCallback@DDESERVER@@VECPFUHDDEDATA__@@IIPFUHCONV__@@PFUHSZ__@@1PFU2@KK@Z
+ 0002:1618       ?Uninitialize@DDESERVER@@VECHXZ
+ 0002:1674       ??_7DDESERVER@@6F@
+ 0002:1690       ?Initialize@DDESHELL@@RECHPEVWPDESKTOP@@@Z
+ 0002:1714       ?SetProgramInstanceAndObject@DDESHELL@@RECXPBUHINSTANCE__@@PEVWPPROGRAM@@@Z
+ 0002:1732       ?DdeCallback@DDESHELL@@VECPFUHDDEDATA__@@IIPFUHCONV__@@PFUHSZ__@@1PFU2@KK@Z
+ 0002:1790       ?ServiceRequest@DDESHELL@@NECPFUHDDEDATA__@@PFUHSZ__@@0@Z
+ 0002:1A44       ?ExecuteCommand@DDESHELL@@NECHPED0@Z
+ 0002:1A4A       ?Uninitialize@DDESHELL@@VECHXZ
+ 0002:1A6A       ?SHELLServiceCallback@@ZCPFUHDDEDATA__@@IIPFUHCONV__@@PFUHSZ__@@1PFU1@KK@Z
+ 0002:1AAE       ??_C@_0BC@NBME@DEBUG_DOSDDEFlags?$AA@
+ 0002:1AC0       ??_C@_05BEOC@SHELL?$AA@
+ 0002:1AC6       ??_C@_09CMDJ@WPS_SHELL?$AA@
+ 0002:1AD0       ??_C@_0O@EDLO@APPPROPERTIES?$AA@
+ 0002:1ADE       ??_C@_0P@KKAG@GETDESCRIPTION?$AA@
+ 0002:1AEE       ??_C@_0O@JAIN@GETWORKINGDIR?$AA@
+ 0002:1AFC       ??_C@_07BEEF@GETICON?$AA@
+ 0002:1B04       ?WPDESKTOPSubClassWindowProc@@ZCJPBUHWND__@@IIJ@Z
+ 0002:1BC2       ?ClientWindowProc@WPDESKTOP@@VECJPBUHWND__@@IIJ@Z
+ 0002:1EAC       ?WPDESKTOPEnumWindowsProc@@ZCHPBUHWND__@@J@Z
+ 0002:1EFE       ?RunDlgProc@@ZCHPBUHWND__@@IIJ@Z
+ 0002:20EA       ?ProductInfoDlgProc@@ZCHPBUHWND__@@IIJ@Z
+ 0002:2156       ??_C@_07OAPD@Sfaxmng?$AA@
+ 0002:215E       ??_C@_0DG@LEHM@Programs?$HM?$CK?4exe?$DL?$CK?4pif?$DL?$CK?4com?$DL?$CK?4bat@
+ 0002:2194       ??_C@_04KHOB@open?$AA@
+ 0002:219A       ?InitializeTargetFolderListbox@@ZAXPBUHWND__@@PEUCOPYMOVECREATE_STRUCT@@@Z
+ 0002:2314       ?IsTargetFolderValid@@ZAHPEVWPFOLDER@@PEUCOPYMOVECREATE_STRUCT@@@Z
+ 0002:23A8       ?CopyMoveAndCreateDlgProc@@ZCHPBUHWND__@@IIJ@Z
+ 0002:2784       ??_C@_07CABH@?$CFs?5?$CI?$CFs?$CJ?$AA@
+ 0002:278C       ??_C@_03DMDD@?5?9?5?$AA@
+ 0002:2790       ?FindResultsMarkSelectedObjects@@ZAXPBUHWND__@@G@Z
+ 0002:281C       ?ResultsDlgProc@@ZCHPBUHWND__@@IIJ@Z
+ 0002:2988       ?FindDlgOnCommandOK@@ZAXPBUHWND__@@IJ@Z
+ 0002:2C28       ?FindDlgProc@@ZCHPBUHWND__@@IIJ@Z
+ 0002:2D4C       ??_C@_0BO@BLFI@The?5object?5?8?$CFs?8?5was?5not?5found?$AA@
+ 0002:2D6A       ??_C@_0BA@JOMK@Workplace?5Shell?$AA@
+ 0002:2D7A       ?ClientWindowProc@WPFOLDER@@VECJPBUHWND__@@IIJ@Z
+ 0002:30CA       ?RemoveNode@LIST@@JECXPEU_LIST_NODE@@@Z
+ 0002:3170       ?FindByPosition@LIST@@JECPEU_LIST_NODE@@H@Z
+ 0002:31A8       ??0LIST@@REC@XZ
+ 0002:31CC       ??1LIST@@REC@XZ
+ 0002:31DC       ?GetCount@LIST@@RECHXZ
+ 0002:31EA       ?AddTail@LIST@@RECHK@Z
+ 0002:327E       ?Remove@LIST@@RECXK@Z
+ 0002:32D4       ?RemoveAll@LIST@@RECXXZ
+ 0002:3384       ?GetAt@LIST@@RECKH@Z
+ 0002:33B2       ?SetAt@LIST@@RECXHK@Z
+ 0002:33FC       ?RemoveAt@LIST@@RECXH@Z
+ 0002:343A       ?Find@LIST@@RECHK@Z
+ 0002:347E       WINMAIN
+ 0002:369C       ?ExecuteCommandLine@@ZAXPED@Z
+ 0002:3746       ?CheckWindowsVersion@@ZAHXZ
+ 0002:37AE       ?LoadNLSResourceLibrary@@ZAHXZ
+ 0002:396A       ?InitializeEnvironmentStructure@@ZAXPBUHINSTANCE__@@@Z
+ 0002:3E6E       ??_C@_0L@PMBM@FCLNBW?4DLL?$AA@
+ 0002:3E7A       ??_C@_0M@IMGA@FCLSPBW?4DLL?$AA@
+ 0002:3E86       ??_C@_03DOPE@enu?$AA@
+ 0002:3E8A       ??_C@_09IMGC@sLanguage?$AA@
+ 0002:3E94       ??_C@_04KGMK@Intl?$AA@
+ 0002:3E9A       ??_C@_04GCPC@ENUS?$AA@
+ 0002:3EA0       ??_C@_03HGMI@nld?$AA@
+ 0002:3EA4       ??_C@_04LPJO@DUTC?$AA@
+ 0002:3EAA       ??_C@_03LCE@ptg?$AA@
+ 0002:3EAE       ??_C@_03LOP@ptb?$AA@
+ 0002:3EB2       ??_C@_04OBGP@PORT?$AA@
+ 0002:3EB8       ??_C@_03OCEJ@deu?$AA@
+ 0002:3EBC       ??_C@_04PDCN@GRMN?$AA@
+ 0002:3EC2       ??_C@_03IFGE@sve?$AA@
+ 0002:3EC6       ??_C@_04JNMK@SWED?$AA@
+ 0002:3ECC       ??_C@_03EOLE@fra?$AA@
+ 0002:3ED0       ??_C@_03BLJK@frc?$AA@
+ 0002:3ED4       ??_C@_04GDCL@FREN?$AA@
+ 0002:3EDA       ??_C@_03KLOL@fin?$AA@
+ 0002:3EDE       ??_C@_04KKGE@FINN?$AA@
+ 0002:3EE4       ??_C@_03KPHI@esn?$AA@
+ 0002:3EE8       ??_C@_03KNMC@esp?$AA@
+ 0002:3EEC       ??_C@_04HIJH@SPAN?$AA@
+ 0002:3EF2       ??_C@_0L@KBGJ@WPS_?$CFs?4DLL?$AA@
+ 0002:3EFE       ??_C@_0DP@MOEC@Error?5?91?3?5Could?5not?5locate?5and?5l@
+ 0002:3F3E       ??_C@_0BG@LDLP@Workplace?5Shell?5Error?$AA@
+ 0002:3F54       ??_C@_06EPF@FF0000?$AA@
+ 0002:3F5C       ??_C@_05OAHC@?$CF08lX?$AA@
+ 0002:3F62       ??_C@_0BB@LHEH@COMPATIBLE_Flags?$AA@
+ 0002:3F74       ?new_object@@ZAPEVWPOBJECT@@PEV1@@Z
+ 0002:4174       ?delete_object@@ZAXPEVWPOBJECT@@@Z
+ 0002:4288       ?DestroyRecursively@@ZAXPEVWPOBJECT@@@Z
+ 0002:432C       ?CreateTreeDuplicate@@ZAPEVWPOBJECT@@PEVWPCONTAINER@@PEV1@@Z
+ 0002:43DC       ?ShellHookProc@@ZCJHIJ@Z
+ 0002:4456       ?ExecuteApplication@@ZAIPFDI@Z
+ 0002:449C       ?ExecuteApplication@@ZAPBUHINSTANCE__@@PBUHWND__@@PFD111H@Z
+ 0002:44F2       ?CommonFileDialogBox@@ZAHPBUHWND__@@KPED111@Z
+ 0002:45C4       ?PlaySystemEventSound@@ZAXPFD@Z
+ 0002:45EE       ?WPClientWindowProcWrapper@@ZCJPBUHWND__@@IIJ@Z
+ 0002:4662       ?RemoveTrailingSpacesFromString@@ZAXPED@Z
+ 0002:46CC       ?RemoveLeadingSpacesFromString@@ZAXPED@Z
+ 0002:475A       ?LoadStringTable@@ZAHPBUHINSTANCE__@@H@Z
+ 0002:480A       ?GetString@@ZAPEDI@Z
+ 0002:482A       ?FreeStringTable@@ZAXH@Z
+ 0002:486E       ?CreateDirectory@@ZAHPED@Z
+ 0002:4890       ?CopyFile@@ZAHPED0@Z
+ 0002:493E       ?CopyDirectory@@ZAHPED0@Z
+ 0002:4A50       ?DeleteFile@@ZAHPED@Z
+ 0002:4A7C       ?DeleteDirectory@@ZAHPED@Z
+ 0002:4B70       ??1WPFOLDER@@REC@XZ
+ 0002:4BA0       ??_C@_06BEFO@?$CFs?2?$CK?4?$CK?$AA@
+ 0002:4BA8       ??_C@_05KEJO@?$CFs?2?$CFs?$AA@
+ 0002:4BAE       ??_C@_01PJCK@?4?$AA@
+ 0002:4BB0       ??_C@_02OOND@?4?4?$AA@
+ 0002:4BB4       ?WPNotebookWindowProcWrapper@@ZCJPBUHWND__@@IIJ@Z
+ 0002:4C22       ?ClientWindowProc@WPNOTEBOOK@@RECJPBUHWND__@@IIJ@Z
+ 0002:4DF4       ?WPPAGEDialogProc@@ZCHPBUHWND__@@IIJ@Z
+ 0002:4F24       ?MakeFATName@WPCONTAINER@@JECPEDPED@Z
+ 0002:4FB0       ?SetObject@WPCONTAINER@@JECXPEVWPOBJECT@@H@Z
+ 0002:4FCC       ??0WPCONTAINER@@REC@XZ
+ 0002:5022       ??0WPCONTAINER@@REC@PEV0@@Z
+ 0002:507C       ??1WPCONTAINER@@REC@XZ
+ 0002:50C0       ?Initialize@WPCONTAINER@@VECXH@Z
+ 0002:514A       ?AddObject@WPCONTAINER@@VECHPEVWPOBJECT@@H@Z
+ 0002:5190       ?DeleteObject@WPCONTAINER@@VECHPEVWPOBJECT@@@Z
+ 0002:51D0       ?DeleteObject@WPCONTAINER@@VECHH@Z
+ 0002:521A       ?GetObjectCount@WPCONTAINER@@VECHXZ
+ 0002:5230       ?GetObject@WPCONTAINER@@VECPEVWPOBJECT@@H@Z
+ 0002:5248       ?GetObjectIndex@WPCONTAINER@@VECHPEVWPOBJECT@@@Z
+ 0002:5262       ?ClearSelectedObjects@WPCONTAINER@@RECXH@Z
+ 0002:52BA       ?GetSelectedObjectCount@WPCONTAINER@@RECHXZ
+ 0002:52D0       ?GetSelectedObject@WPCONTAINER@@RECPEVWPOBJECT@@H@Z
+ 0002:52E8       ?AddSelectedObject@WPCONTAINER@@RECHPEVWPOBJECT@@@Z
+ 0002:5324       ?GetFirstSelectedObject@WPCONTAINER@@RECPEVWPOBJECT@@XZ
+ 0002:535E       ?GetNextSelectedObject@WPCONTAINER@@RECPEVWPOBJECT@@XZ
+ 0002:53A0       ?isObjSelected@WPCONTAINER@@RECHPEVWPOBJECT@@@Z
+ 0002:53C4       ?isAnyChildOpen@WPCONTAINER@@VECHXZ
+ 0002:5428       ?Find@WPCONTAINER@@VECPEVWPOBJECT@@KPFDHHPEPEU_MATCH_RECORD@@@Z
+ 0002:54CA       ?isContainer@WPCONTAINER@@VECHXZ
+ 0002:54D0       ?TestDropSource@WPCONTAINER@@VECHPEVWPOBJECT@@H@Z
+ 0002:5514       ?TestDropTarget@WPCONTAINER@@VECHPEVWPOBJECT@@H@Z
+ 0002:556C       ?DropTarget@WPCONTAINER@@VECHPEVWPOBJECT@@H@Z
+ 0002:55D2       ?CopyObjectToFileSystem@WPCONTAINER@@VECHPED@Z
+ 0002:566E       ?ReadObjectProfile@WPCONTAINER@@VECHHPEV1@@Z
+ 0002:56B4       ?WriteObjectProfile@WPCONTAINER@@VECHHPEV1@@Z
+ 0002:573A       ??_C@_08FDCK@ABCDEFGH?$AA@
+ 0002:5744       ??_7WPCONTAINER@@6F@
+ 0002:5848       ?DrawDetailsIconText@WPDATAFILE@@NECXPBUHDC__@@@Z
+ 0002:5B1A       ??0WPDATAFILE@@REC@XZ
+ 0002:5BA2       ??0WPDATAFILE@@REC@PEV0@@Z
+ 0002:5C40       ?SetDataPath@WPDATAFILE@@RECXPFD@Z
+ 0002:5CD4       ?SetDataName@WPDATAFILE@@RECXPFD@Z
+ 0002:5D08       ?GetFullDataPath@WPDATAFILE@@RECPFDXZ
+ 0002:5D96       ?GetDefaultIcon@WPDATAFILE@@VECXPEDPEG@Z
+ 0002:5E80       ?LoadIcon@WPDATAFILE@@VECHXZ
+ 0002:5ED2       ?GetSortValue@WPDATAFILE@@VECXGPETSORT_VALUE_STRUCT@@@Z
+ 0002:5FD0       ?Open@WPDATAFILE@@VECHXZ
+ 0002:6084       ?Print@WPDATAFILE@@RECHXZ
+ 0002:613C       ?Close@WPDATAFILE@@VECHXZ
+ 0002:614C       ?GetMenuName@WPDATAFILE@@VECPFDXZ
+ 0002:6154       ?MenuSelection@WPDATAFILE@@VECXG@Z
+ 0002:61BC       ?TestDropSource@WPDATAFILE@@VECHPEVWPOBJECT@@H@Z
+ 0002:6200       ?TestDropTarget@WPDATAFILE@@VECHPEVWPOBJECT@@H@Z
+ 0002:621A       ?DropSource@WPDATAFILE@@VECHPEVWPOBJECT@@HUtagPOINT@@@Z
+ 0002:629A       ?DropTarget@WPDATAFILE@@VECHPEVWPOBJECT@@H@Z
+ 0002:62BA       ?InsertSettingsNotebookPages@WPDATAFILE@@VECXXZ
+ 0002:632A       ?TypePageProc@WPDATAFILE@@RECXHPBUHWND__@@GK@Z
+ 0002:644A       ?FindDataFile@WPDATAFILE@@RECHPBUHWND__@@@Z
+ 0002:656C       ?FilePageProc@WPDATAFILE@@RECXHPBUHWND__@@GK@Z
+ 0002:67B6       ?CopyObjectToFileSystem@WPDATAFILE@@VECHPED@Z
+ 0002:6806       ?DeleteObjectFromFileSystem@WPDATAFILE@@VECHXZ
+ 0002:681E       ?ReadObjectProfile@WPDATAFILE@@VECHHPEVWPCONTAINER@@@Z
+ 0002:68AE       ?WriteObjectProfile@WPDATAFILE@@VECHHPEVWPCONTAINER@@@Z
+ 0002:6936       ??_C@_05DFHM@?$CFs?$CF?9s?$AA@
+ 0002:693C       ??_C@_03JGAL@?$CFlu?$AA@
+ 0002:6940       ??_C@_08INCF@?$CFu?9?$CFu?9?$CFu?$AA@
+ 0002:694A       ??_C@_02ENLM@AM?$AA@
+ 0002:694E       ??_C@_02DBLP@PM?$AA@
+ 0002:6952       ??_C@_0BA@NMNE@?$CFu?3?$CF02u?3?$CF02u?5?$CFs?$AA@
+ 0002:6962       ??_C@_02DILL@?$CFs?$AA@
+ 0002:6966       ??_C@_04CNPA@?4ICO?$AA@
+ 0002:696C       ??_C@_04KFC@?4WAV?$AA@
+ 0002:6972       ??_C@_04FGKK@?4MID?$AA@
+ 0002:6978       ??_C@_05KCGF@print?$AA@
+ 0002:697E       ??_C@_0NM@MKK@All?5Files?5?$CI?$CK?4?$CK?$CJ?$HM?$CK?4?$CK?$HMData?5Files?$HM?$CK@
+ 0002:6A5A       ??_C@_04DCMN@?$CFs?$CFs?$AA@
+ 0002:6A60       ??_7WPDATAFILE@@6F@
+ 0002:6B40       ?AddTopLevelWindow@WPDESKTOP@@BECHPBUHWND__@@@Z
+ 0002:6BBC       ?DeleteTopLevelWindow@WPDESKTOP@@BECHPBUHWND__@@@Z
+ 0002:6C5C       ?ShellLoadAndRun@WPDESKTOP@@BECXXZ
+ 0002:6D44       ?EnumerateWPSObjects@WPDESKTOP@@BECXPEVWPFOLDER@@PEG@Z
+ 0002:6DEE       ?FindUniqueID@WPDESKTOP@@BECPEVWPOBJECT@@PEV2@G@Z
+ 0002:6E78       ?BindShadowObjectsToOriginalObjects@WPDESKTOP@@BECHXZ
+ 0002:6F3E       ?UpdateMinPlacement@WPDESKTOP@@JECXPBUHWND__@@G@Z
+ 0002:6FA6       ?OnLeftMouseButtonDblClk@WPDESKTOP@@NECXUtagPOINT@@@Z
+ 0002:6FE8       ??0WPDESKTOP@@REC@XZ
+ 0002:7132       ?SetBackgroundColor@WPDESKTOP@@VECXK@Z
+ 0002:719C       ?GetBackgroundColor@WPDESKTOP@@VECKXZ
+ 0002:71B0       ?GetImageAttribute@WPDESKTOP@@VECHK@Z
+ 0002:7242       ?SetImageAttribute@WPDESKTOP@@VECXK@Z
+ 0002:72BE       ?GetImagePath@WPDESKTOP@@VECPEDXZ
+ 0002:72E8       ?SetImagePath@WPDESKTOP@@VECXPED@Z
+ 0002:72FE       ?GetCaptionTitle@WPDESKTOP@@VECPFDXZ
+ 0002:7304       ?GetDefaultIcon@WPDESKTOP@@VECXPEDPEG@Z
+ 0002:7328       ?GetWindowExStyles@WPDESKTOP@@VECKXZ
+ 0002:7330       ?GetWindowStyles@WPDESKTOP@@VECKXZ
+ 0002:7338       ?Open@WPDESKTOP@@VECHXZ
+ 0002:7464       ?InitializeDesktop@WPDESKTOP@@RECHXZ
+ 0002:757C       ?ReadWPObject@@ZAHHPEVWPCONTAINER@@@Z
+ 0002:7758       ?ReadDesktop@WPDESKTOP@@RECHXZ
+ 0002:782C       ?SaveDesktop@WPDESKTOP@@RECHXZ
+ 0002:792E       ?Windows31SubclassDesktop@WPDESKTOP@@BECXXZ
+ 0002:7A28       ?GetWindows31DesktopProc@WPDESKTOP@@RECP7CJPBUHWND__@@IIJ@ZXZ
+ 0002:7A3C       ?SetClassBackgroundBrush@WPDESKTOP@@VECXPEPBUHBRUSH__@@@Z
+ 0002:7A4C       ?UnregisterClassName@WPDESKTOP@@RECXG@Z
+ 0002:7A8C       ?InvalidateRect@WPDESKTOP@@VECXPEUtagRECT@@HH@Z
+ 0002:7ACC       ?Invalidate@WPDESKTOP@@VECXHH@Z
+ 0002:7AE8       ?UpdateWindow@WPDESKTOP@@VECXXZ
+ 0002:7B04       ?InitializePopup@WPDESKTOP@@VECXPBUHMENU__@@@Z
+ 0002:7B3A       ?GetMenuName@WPDESKTOP@@VECPFDXZ
+ 0002:7B42       ?MenuSelection@WPDESKTOP@@VECXG@Z
+ 0002:7DAC       ?KeyboardEvent@WPDESKTOP@@VECXG@Z
+ 0002:7DC8       ?GetTopLevelWindowMinimizeBehavior@WPDESKTOP@@RECGPBUHWND__@@@Z
+ 0002:7E08       ?OnTopLevelWindowCreated@WPDESKTOP@@RECXPBUHWND__@@@Z
+ 0002:7E9E       ?OnTopLevelWindowDestroyed@WPDESKTOP@@RECXPBUHWND__@@@Z
+ 0002:7EB2       ?OnFindInstanceHandle@WPDESKTOP@@RECHPBUHINSTANCE__@@@Z
+ 0002:7EE6       ?OnAssociateObject@WPDESKTOP@@RECXPBUHINSTANCE__@@PEVWPOBJECT@@@Z
+ 0002:7FC4       ?OnAssociateObject@WPDESKTOP@@RECXPBUHWND__@@PEVWPOBJECT@@@Z
+ 0002:8056       ?OnGetWindowFromObject@WPDESKTOP@@RECPBUHWND__@@PEVWPOBJECT@@@Z
+ 0002:809A       ?OnUpdateObjectMinPlacement@WPDESKTOP@@RECXPBUHINSTANCE__@@@Z
+ 0002:80E2       ?OnNotifyObjectDestroyed@WPDESKTOP@@RECXPEVWPOBJECT@@@Z
+ 0002:812A       ?OnDeleteObject@WPDESKTOP@@RECXPEVWPOBJECT@@@Z
+ 0002:81CA       ?OnCreate@WPDESKTOP@@VECXXZ
+ 0002:824C       ?OnDestroy@WPDESKTOP@@RECXXZ
+ 0002:8314       ?OnWinINIChange@WPDESKTOP@@RECXPFD@Z
+ 0002:834E       ?OnEraseBackground@WPDESKTOP@@VECJPBUHDC__@@@Z
+ 0002:8372       ?OnNCPaint@WPDESKTOP@@VECXXZ
+ 0002:8376       ?InsertSettingsNotebookPages@WPDESKTOP@@VECXXZ
+ 0002:846C       ?ImageControls@WPDESKTOP@@VECXPBUHWND__@@H@Z
+ 0002:84D8       ?LockupPageProc@WPDESKTOP@@RECXHPBUHWND__@@GK@Z
+ 0002:8672       ?DesktopPageProc@WPDESKTOP@@RECXHPBUHWND__@@GK@Z
+ 0002:8768       ?IsShell@WPDESKTOP@@RECHH@Z
+ 0002:87D4       ?QueryQuit@WPDESKTOP@@RECHXZ
+ 0002:8810       ?CheckDesktopSizeChange@WPDESKTOP@@RECHXZ
+ 0002:88A2       ?ReadObjectProfile@WPDESKTOP@@VECHHPEVWPCONTAINER@@@Z
+ 0002:8964       ??_C@_04JMJF@load?$AA@
+ 0002:896A       ??_C@_07CIAP@windows?$AA@
+ 0002:8972       ??_C@_02CLHN@?5?7?$AA@
+ 0002:8976       ??_C@_03EHIM@run?$AA@
+ 0002:897A       ??_C@_08GJPN@?$CFu?5?$CFu?5?$CFu?$AA@
+ 0002:8984       ??_C@_0L@BJIH@Background?$AA@
+ 0002:8990       ??_C@_06DPJF@colors?$AA@
+ 0002:8998       ??_C@_09CLCB@Wallpaper?$AA@
+ 0002:89A2       ??_C@_07PJP@Desktop?$AA@
+ 0002:89AA       ??_C@_0O@FGIN@TileWallPaper?$AA@
+ 0002:89B8       ??_C@_01PLJA@0?$AA@
+ 0002:89BA       ??_C@_01FBAH@1?$AA@
+ 0002:89BC       ??_C@_01PCFE@?2?$AA@
+ 0002:89BE       ??_C@_0L@PFBK@SYSTEM?4INI?$AA@
+ 0002:89CA       ??_C@_0P@NCLD@atm?4system?4drv?$AA@
+ 0002:89DA       ??_C@_04CDC@boot?$AA@
+ 0002:89E0       ??_C@_0L@EBHK@system?4drv?$AA@
+ 0002:89EC       ??_C@_0L@KDEC@atmsys?4drv?$AA@
+ 0002:89F8       ??_C@_06EJNG@?$CD32769?$AA@
+ 0002:8A00       ??_C@_07JNHF@WPS?$CF04d?$AA@
+ 0002:8A08       ??_C@_0BB@KMNA@ScreenSaveActive?$AA@
+ 0002:8A1A       ??_C@_07PKLL@Windows?$AA@
+ 0002:8A22       ??_C@_09OLKC@Task?5List?$AA@
+ 0002:8A2C       ??_C@_0M@JJOK@Window?5List?$AA@
+ 0002:8A38       ??_C@_03EBME@tty?$AA@
+ 0002:8A3C       ??_C@_06ILJB@Colors?$AA@
+ 0002:8A44       ??_C@_04KIKH@none?$AA@
+ 0002:8A4A       ??_C@_05HPGN@shell?$AA@
+ 0002:8A50       ??_7DDESHELL@@6F@
+ 0002:8A6C       ??_7WPDESKTOP@@6FWPCONTAINER@@@
+ 0002:8C34       ??_7WPDESKTOP@@6FWPWINDOW@@@
+ 0002:8C4C       ??_7DDEPROGMAN@@6F@
+ 0002:8C68       ?Open@WPMINWNDOBJ@@RECHH@Z
+ 0002:8CC2       ?Open@WPMINWNDOBJ@@VECHXZ
+ 0002:8CD4       ?GetDefaultIcon@WPMINWNDOBJ@@VECXPEDPEG@Z
+ 0002:8CF8       ?LoadIcon@WPMINWNDOBJ@@VECHXZ
+ 0002:8D62       ?InitializePopup@WPMINWNDOBJ@@VECXPBUHMENU__@@@Z
+ 0002:8D8C       ?GetMenuName@WPMINWNDOBJ@@VECPFDXZ
+ 0002:8D94       ?MenuSelection@WPMINWNDOBJ@@VECXG@Z
+ 0002:8E1A       ?TestDropSource@WPMINWNDOBJ@@VECHPEVWPOBJECT@@H@Z
+ 0002:8E4C       ?TestDropTarget@WPMINWNDOBJ@@VECHPEVWPOBJECT@@H@Z
+ 0002:8E52       ??0WPMINVIEWER@@REC@XZ
+ 0002:8EA4       ??0WPMINVIEWER@@REC@PEV0@@Z
+ 0002:8EEE       ?GetDefaultIcon@WPMINVIEWER@@VECXPEDPEG@Z
+ 0002:8F12       ?Close@WPMINVIEWER@@VECHXZ
+ 0002:8F5C       ?GetMenuName@WPMINVIEWER@@VECPFDXZ
+ 0002:8F64       ?MenuSelection@WPMINVIEWER@@VECXG@Z
+ 0002:8FA2       ?QueryCurrentMinWindows@WPMINVIEWER@@RECHPEPBUHWND__@@@Z
+ 0002:9010       ?UpdateMinViewerContents@WPMINVIEWER@@RECXHPEPBUHWND__@@@Z
+ 0002:9296       ?OnInitializeFolder@WPMINVIEWER@@VECXXZ
+ 0002:92E2       ?OnTimer@WPMINVIEWER@@VECXG@Z
+ 0002:933E       ?TestDropTarget@WPMINVIEWER@@VECHPEVWPOBJECT@@H@Z
+ 0002:93A4       ?WriteObjectProfile@WPMINVIEWER@@VECHHPEVWPCONTAINER@@@Z
+ 0002:9424       ??_C@_0BI@DLNP@Minimized?5Window?5Viewer?$AA@
+ 0002:943C       ??_7WPMINVIEWER@@6FWPCONTAINER@@@
+ 0002:9604       ??_7WPMINVIEWER@@6FWPWINDOW@@@
+ 0002:961C       ??_7WPMINWNDOBJ@@6F@
+ 0002:96FC       ?GetOwner@WPNOTEBOOK@@RECPEVWPOBJECT@@XZ
+ 0002:9710       ?GetIconHandle@WPNOTEBOOK@@RECPBUHICON__@@XZ
+ 0002:9720       ?GetPageOnTop@WPNOTEBOOK@@JECPBUHWND__@@XZ
+ 0002:9762       ?GetPageProc@WPNOTEBOOK@@JECP9WPOBJECT@@CXHPBUHWND__@@GK@Z0@Z
+ 0002:97D6       ?CallPageProc@WPNOTEBOOK@@RECXPBUHWND__@@GK@Z
+ 0002:9874       ??0WPNOTEBOOK@@REC@PEVWPOBJECT@@@Z
+ 0002:992E       ??1WPNOTEBOOK@@REC@XZ
+ 0002:9974       ?IsPageWindow@WPNOTEBOOK@@RECHPBUHWND__@@@Z
+ 0002:99A6       ?GetWindowFromPageIndex@WPNOTEBOOK@@RECPBUHWND__@@H@Z
+ 0002:99CC       ?GetWindowStyles@WPNOTEBOOK@@NECKXZ
+ 0002:99D4       ?GetCaptionTitle@WPNOTEBOOK@@NECPFDXZ
+ 0002:9A0C       ?CreateWindow@WPNOTEBOOK@@JECHPEDPEV1@@Z
+ 0002:9ADC       ?Create@WPNOTEBOOK@@VECHHHHH@Z
+ 0002:9C18       ?InsertPage@WPNOTEBOOK@@RECHPEDGP9WPOBJECT@@CXHPBUHWND__@@GK@Z0PFD@Z
+ 0002:9D52       ?ShowNotebook@WPNOTEBOOK@@RECXXZ
+ 0002:9D96       ?Close@WPNOTEBOOK@@VECHXZ
+ 0002:9E68       ?OnCreate@WPNOTEBOOK@@RECXXZ
+ 0002:A0F8       ?OnActivate@WPNOTEBOOK@@RECXH@Z
+ 0002:A154       ?OnMove@WPNOTEBOOK@@RECXUtagPOINT@@@Z
+ 0002:A19A       ?OnSize@WPNOTEBOOK@@RECXGHH@Z
+ 0002:A26A       ?OnCommand@WPNOTEBOOK@@RECXPBUHWND__@@G@Z
+ 0002:A36E       ?OnSysCommand@WPNOTEBOOK@@RECXGJ@Z
+ 0002:A40E       ?OnQueryDragIcon@WPNOTEBOOK@@RECJXZ
+ 0002:A420       ?OnEraseBackground@WPNOTEBOOK@@RECXPBUHDC__@@@Z
+ 0002:A46C       ?OnNCPaint@WPNOTEBOOK@@RECXXZ
+ 0002:A4E8       ?OnNCActivate@WPNOTEBOOK@@RECXH@Z
+ 0002:A518       ?OnNCMouseMove@WPNOTEBOOK@@RECXGUtagPOINT@@@Z
+ 0002:A5FE       ?OnNCLButton@WPNOTEBOOK@@RECXIGUtagPOINT@@@Z
+ 0002:A714       ?OnMouseMove@WPNOTEBOOK@@RECXXZ
+ 0002:A748       ?OnClose@WPNOTEBOOK@@RECXXZ
+ 0002:A766       ??_C@_0L@HPDO@WPNOTEBOOK?$AA@
+ 0002:A772       ??_C@_08GHHB@Notebook?$AA@
+ 0002:A77C       ??_C@_0N@MPAB@CCL?5Notebook?$AA@
+ 0002:A78A       ??_7WPNOTEBOOK@@6F@
+ 0002:A7AE       ?stristr@WPOBJECT@@JECPEDPFD0@Z
+ 0002:A82E       ?DrawIconResource@WPOBJECT@@JECXPBUHDC__@@@Z
+ 0002:A996       ?DrawIconText@WPOBJECT@@JECXPBUHDC__@@@Z
+ 0002:AA48       ?DrawDetailsIconResource@WPOBJECT@@JECXPBUHDC__@@@Z
+ 0002:ABAE       ?DrawDetailsIconText@WPOBJECT@@NECXPBUHDC__@@@Z
+ 0002:ACAA       ?CreateUniqueClassName@WPOBJECT@@JECPFDXZ
+ 0002:AD2C       ?DestroyUniqueClassName@WPOBJECT@@JECHPFD@Z
+ 0002:AD9E       ?isWorkplaceShellWindow@WPOBJECT@@JECHPBUHWND__@@@Z
+ 0002:ADEC       ?SetIconHandle@WPOBJECT@@JECXPBUHICON__@@@Z
+ 0002:ADFE       ?CalcTextRect@WPOBJECT@@RECXXZ
+ 0002:AF52       ?SetRectCXCY@WPOBJECT@@RECXPEUtagRECT@@HHHH@Z
+ 0002:AF7E       ??0WPOBJECT@@REC@XZ
+ 0002:AFDC       ??0WPOBJECT@@REC@PEV0@@Z
+ 0002:B0A2       ??1WPOBJECT@@REC@XZ
+ 0002:B0F2       ?Initialize@WPOBJECT@@VECXH@Z
+ 0002:B13E       ?GetType@WPOBJECT@@VECKXZ
+ 0002:B150       ?SetType@WPOBJECT@@VECXK@Z
+ 0002:B164       ?GetUniqueID@WPOBJECT@@RECGXZ
+ 0002:B172       ?SetUniqueID@WPOBJECT@@RECXG@Z
+ 0002:B184       ?SetTitle@WPOBJECT@@VECXPFD@Z
+ 0002:B1E4       ?GetTitle@WPOBJECT@@VECPFDXZ
+ 0002:B1F4       ?GetTitleNoCRLF@WPOBJECT@@VECPFDXZ
+ 0002:B27A       ?GetCaptionTitle@WPOBJECT@@VECPFDXZ
+ 0002:B294       ?SetIconPos@WPOBJECT@@RECXUtagPOINT@@@Z
+ 0002:B2B4       ?SetIconPos@WPOBJECT@@RECXHH@Z
+ 0002:B2D4       ?GetIconPos@WPOBJECT@@REC?EUtagPOINT@@XZ
+ 0002:B2F4       ?SetIcon@WPOBJECT@@VECXPEDG@Z
+ 0002:B326       ?GetIcon@WPOBJECT@@VECXPEDPEG@Z
+ 0002:B35C       ?GetIconHandle@WPOBJECT@@RECPBUHICON__@@XZ
+ 0002:B36A       ?GetDefaultIcon@WPOBJECT@@VECXPEDPEG@Z
+ 0002:B38E       ?ExtractIcon@WPOBJECT@@RECPBUHICON__@@XZ
+ 0002:B4A0       ?LoadIcon@WPOBJECT@@VECHXZ
+ 0002:B4C4       ?UpdateIcon@WPOBJECT@@VECXPEDG@Z
+ 0002:B672       ?DestroyIcon@WPOBJECT@@RECHXZ
+ 0002:B6A6       ?GetPopupFrameRect@WPOBJECT@@RECXPEUtagRECT@@@Z
+ 0002:B794       ?GetFrameRect@WPOBJECT@@RECXPEUtagRECT@@@Z
+ 0002:B888       ?GetObjectRect@WPOBJECT@@RECXPEUtagRECT@@@Z
+ 0002:B8FA       ?SetState@WPOBJECT@@VECXG@Z
+ 0002:B90C       ?GetState@WPOBJECT@@VECGXZ
+ 0002:B91C       ?SetStateOR@WPOBJECT@@VECXGG@Z
+ 0002:B93C       ?SetFlags@WPOBJECT@@VECXK@Z
+ 0002:B950       ?GetFlags@WPOBJECT@@VECKXZ
+ 0002:B964       ?SetFlagsOR@WPOBJECT@@VECXKK@Z
+ 0002:B98C       ?GetSortValue@WPOBJECT@@VECXGPETSORT_VALUE_STRUCT@@@Z
+ 0002:BA14       ?AddShadow@WPOBJECT@@RECHPEVWPSHADOW@@@Z
+ 0002:BA2E       ?DeleteShadow@WPOBJECT@@RECHPEVWPSHADOW@@@Z
+ 0002:BA4A       ?InvalidateShadows@WPOBJECT@@RECXH@Z
+ 0002:BA90       ?SetParent@WPOBJECT@@RECXPEVWPCONTAINER@@@Z
+ 0002:BAA4       ?GetParent@WPOBJECT@@RECPEVWPCONTAINER@@XZ
+ 0002:BAB8       ?isOpen@WPOBJECT@@VECHXZ
+ 0002:BADC       ?isAnyChildOpen@WPOBJECT@@VECHXZ
+ 0002:BAF6       ?Open@WPOBJECT@@VECHXZ
+ 0002:BB12       ?Close@WPOBJECT@@VECHXZ
+ 0002:BB18       ?isSelected@WPOBJECT@@RECHXZ
+ 0002:BB42       ?ConfirmOnDelete@WPOBJECT@@VECHXZ
+ 0002:BC00       ?Find@WPOBJECT@@VECPEV1@KPFDHHPEPEU_MATCH_RECORD@@@Z
+ 0002:BE52       ?Destroy@WPOBJECT@@VECHXZ
+ 0002:BF24       ?Draw@WPOBJECT@@VECXPBUHDC__@@@Z
+ 0002:BFD6       ?PopupFrame@WPOBJECT@@VECXXZ
+ 0002:C0E2       ?PopupUnFrame@WPOBJECT@@VECXXZ
+ 0002:C10E       ?Frame@WPOBJECT@@VECXH@Z
+ 0002:C1CA       ?UnFrame@WPOBJECT@@VECXH@Z
+ 0002:C202       ?InvalidateIcon@WPOBJECT@@VECXHH@Z
+ 0002:C288       ?InvalidateRect@WPOBJECT@@VECXPEUtagRECT@@HH@Z
+ 0002:C28C       ?Invalidate@WPOBJECT@@VECXHH@Z
+ 0002:C2A4       ?InitializePopup@WPOBJECT@@VECXPBUHMENU__@@@Z
+ 0002:C2A8       ?GetMenuName@WPOBJECT@@VECPFDXZ
+ 0002:C2B0       ?MenuSelection@WPOBJECT@@VECXG@Z
+ 0002:C3E6       ?HitTest@WPOBJECT@@VECHUtagPOINT@@@Z
+ 0002:C490       ?ContainedInRect@WPOBJECT@@VECHPEUtagRECT@@@Z
+ 0002:C530       ?DropDPtoLP@WPOBJECT@@VECXPEUtagPOINT@@@Z
+ 0002:C534       ?isContainer@WPOBJECT@@VECHXZ
+ 0002:C53A       ?isDirectoryContainer@WPOBJECT@@VECHXZ
+ 0002:C540       ?TestDropSource@WPOBJECT@@VECHPEV1@H@Z
+ 0002:C558       ?TestDropTarget@WPOBJECT@@VECHPEV1@H@Z
+ 0002:C570       ?DropSource@WPOBJECT@@VECHPEV1@HUtagPOINT@@@Z
+ 0002:C7E4       ?DropTarget@WPOBJECT@@VECHPEV1@H@Z
+ 0002:C7EA       ?isSettingsNotebookOpen@WPOBJECT@@VECHXZ
+ 0002:C804       ?OpenSettingsNotebook@WPOBJECT@@VECHXZ
+ 0002:C90E       ?GetSettingsNotebook@WPOBJECT@@RECPEVWPSETTINGSNB@@XZ
+ 0002:C922       ?InsertSettingsNotebookPages@WPOBJECT@@VECXXZ
+ 0002:C942       ?GeneralPageProc@WPOBJECT@@VECXHPBUHWND__@@GK@Z
+ 0002:CAFC       ?CloseSettingsNotebook@WPOBJECT@@VECHXZ
+ 0002:CB74       ?CopyObjectToFileSystem@WPOBJECT@@VECHPED@Z
+ 0002:CB7A       ?DeleteObjectFromFileSystem@WPOBJECT@@VECHXZ
+ 0002:CB80       ?ReadObjectProfile@WPOBJECT@@VECHHPEVWPCONTAINER@@@Z
+ 0002:CC34       ?WriteObjectProfile@WPOBJECT@@VECHHPEVWPCONTAINER@@@Z
+ 0002:CCE0       ??_9@$BMI@H
+ 0002:CCEE       ??_C@_07JOJC@WPS?$CF04u?$AA@
+ 0002:CCF6       ??_C@_05PPGN@WPS?$CFu?$AA@
+ 0002:CCFC       ??_C@_04EFNI@Name?$AA@
+ 0002:CD02       ??_7WPOBJECT@@6F@
+ 0002:CDE2       ?DrawDetailsIconText@WPPROGRAM@@NECXPBUHDC__@@@Z
+ 0002:D0B4       ??0WPPROGRAM@@REC@XZ
+ 0002:D16C       ??0WPPROGRAM@@REC@PEV0@@Z
+ 0002:D218       ?Initialize@WPPROGRAM@@VECXH@Z
+ 0002:D2A8       ?SetProgramPath@WPPROGRAM@@RECXPFD@Z
+ 0002:D2DC       ?GetProgramPath@WPPROGRAM@@RECPFDXZ
+ 0002:D2EC       ?SetParameters@WPPROGRAM@@RECXPFD@Z
+ 0002:D320       ?GetParameters@WPPROGRAM@@RECPFDXZ
+ 0002:D330       ?SetWorkingDir@WPPROGRAM@@RECXPFD@Z
+ 0002:D3D4       ?GetWorkingDir@WPPROGRAM@@RECPFDXZ
+ 0002:D3E4       ?GetDefaultIcon@WPPROGRAM@@VECXPEDPEG@Z
+ 0002:D408       ?LoadIcon@WPPROGRAM@@VECHXZ
+ 0002:D456       ?GetSortValue@WPPROGRAM@@VECXGPETSORT_VALUE_STRUCT@@@Z
+ 0002:D57E       ?Open@WPPROGRAM@@VECHXZ
+ 0002:D59A       ?Open@WPPROGRAM@@RECHPED@Z
+ 0002:D724       ?Close@WPPROGRAM@@VECHXZ
+ 0002:D782       ?GetMenuName@WPPROGRAM@@VECPFDXZ
+ 0002:D78A       ?MenuSelection@WPPROGRAM@@VECXG@Z
+ 0002:D7E2       ?TestDropSource@WPPROGRAM@@VECHPEVWPOBJECT@@H@Z
+ 0002:D82C       ?TestDropTarget@WPPROGRAM@@VECHPEVWPOBJECT@@H@Z
+ 0002:D872       ?DropTarget@WPPROGRAM@@VECHPEVWPOBJECT@@H@Z
+ 0002:D8D4       ?InsertSettingsNotebookPages@WPPROGRAM@@VECXXZ
+ 0002:D970       ?ProgramPageProc@WPPROGRAM@@RECXHPBUHWND__@@GK@Z
+ 0002:DBC8       ?AssociationPageProc@WPPROGRAM@@RECXHPBUHWND__@@GK@Z
+ 0002:DCDA       ?GetWindowPageFlags@WPPROGRAM@@RECKPBUHWND__@@@Z
+ 0002:DD6E       ?UpdateWindowPageControls@WPPROGRAM@@RECXPBUHWND__@@K@Z
+ 0002:DDE0       ?WindowPageProc@WPPROGRAM@@RECXHPBUHWND__@@GK@Z
+ 0002:DF7E       ?CopyObjectToFileSystem@WPPROGRAM@@VECHPED@Z
+ 0002:DFEA       ?DeleteObjectFromFileSystem@WPPROGRAM@@VECHXZ
+ 0002:E000       ?ReadObjectProfile@WPPROGRAM@@VECHHPEVWPCONTAINER@@@Z
+ 0002:E09C       ?WriteObjectProfile@WPPROGRAM@@VECHHPEVWPCONTAINER@@@Z
+ 0002:E12A       ??_C@_0DF@NJD@Out?5of?5memory?0?5file?5corrupt?0?5or?5@
+ 0002:E160       ??_C@_0P@HKEP@Internal?5error?$AA@
+ 0002:E170       ??_C@_0BA@HAJK@File?5not?5found?4?$AA@
+ 0002:E180       ??_C@_0BA@PPHA@Path?5not?5found?4?$AA@
+ 0002:E190       ??_C@_0CF@COND@Sharing?5or?5network?9protection?5er@
+ 0002:E1B6       ??_C@_0DH@FHEA@Library?5requires?5separate?5data?5s@
+ 0002:E1EE       ??_C@_0CK@CCF@Insufficient?5memory?5to?5start?5app@
+ 0002:E218       ??_C@_0BO@BGKC@Windows?5version?5is?5incorrect?4?$AA@
+ 0002:E236       ??_C@_0BM@OAHO@Executable?5file?5is?5invalid?4?$AA@
+ 0002:E252       ??_C@_0DE@KDMK@Application?5defined?5for?5differen@
+ 0002:E286       ??_C@_0CH@CBME@Application?5is?5defined?5for?5MS?9DO@
+ 0002:E2AE       ??_C@_0CE@GLKD@Type?5of?5executable?5file?5is?5unkno@
+ 0002:E2D2       ??_C@_0CO@FIDG@Attempt?5made?5to?5load?5a?5real?9mode@
+ 0002:E300       ??_C@_0DH@BEFN@Attempt?5made?5to?5load?5second?5inst@
+ 0002:E338       ??_C@_0DD@OALN@Attempt?5made?5to?5load?5a?5compresse@
+ 0002:E36C       ??_C@_0CM@CPAG@Dynamic?9link?5library?5?$CIDLL?$CJ?5file?5@
+ 0002:E398       ??_C@_0DD@MABL@Application?5requires?5MS?9Windows?5@
+ 0002:E3CC       ??_C@_0BC@IJLI@Cannot?5print?5file?$AA@
+ 0002:E3DE       ??_C@_0CM@FODK@No?5Application?5is?5associated?5wit@
+ 0002:E40A       ??_C@_07MGOL@?$CFs?2?$CFs?$CFs?$AA@
+ 0002:E412       ??_7WPPROGRAM@@6F@
+ 0002:E4F2       ?GetCaptionTitle@WPSETTINGSNB@@NECPFDXZ
+ 0002:E578       ??0WPSETTINGSNB@@REC@PEVWPOBJECT@@@Z
+ 0002:E5A8       ?Create@WPSETTINGSNB@@VECHHHHH@Z
+ 0002:E5C0       ?UpdateNotebookIconResource@WPSETTINGSNB@@RECXXZ
+ 0002:E64C       ?InsertGeneralPage@WPSETTINGSNB@@RECXP9WPOBJECT@@CXHPBUHWND__@@GK@ZPFD@Z
+ 0002:E676       ?InitializeIconPreviewListbox@@ZAHPBUHWND__@@PED@Z
+ 0002:E784       ?DrawIconPreviewListboxItem@@ZAXPEUtagDRAWITEMSTRUCT@@@Z
+ 0002:E816       ?FindIconDlgProc@@ZCHPBUHWND__@@IIJ@Z
+ 0002:EADC       ??_C@_0CO@OAAP@Icons?5?$HM?$CK?4ico?$DL?$CK?4dll?$DL?$CK?4exe?$HMAll?5Fil@
+ 0002:EB0A       ??_7WPSETTINGSNB@@6F@
+ 0002:EB2E       ??0WPSETUP@@REC@XZ
+ 0002:EB66       ??0WPSETUP@@REC@PEV0@@Z
+ 0002:EBA2       ?GetDefaultIcon@WPSETUP@@VECXPEDPEG@Z
+ 0002:EBC6       ??_7WPSETUP@@6F@
+ 0002:ECA6       ??0WPSHADOW@@REC@XZ
+ 0002:ECF0       ??0WPSHADOW@@REC@PEV0@@Z
+ 0002:ED4E       ?Initialize@WPSHADOW@@VECXH@Z
+ 0002:EDD4       ?GetOriginalUniqueID@WPSHADOW@@RECGXZ
+ 0002:EDE4       ?SetOriginalObject@WPSHADOW@@RECXPEVWPOBJECT@@@Z
+ 0002:EDF8       ?SetTitle@WPSHADOW@@VECXPFD@Z
+ 0002:EE36       ?GetTitle@WPSHADOW@@VECPFDXZ
+ 0002:EE6E       ?GetTitleNoCRLF@WPSHADOW@@VECPFDXZ
+ 0002:EEA6       ?GetCaptionTitle@WPSHADOW@@VECPFDXZ
+ 0002:EEDE       ?GetDefaultIcon@WPSHADOW@@VECXPEDPEG@Z
+ 0002:EF1C       ?SetIcon@WPSHADOW@@VECXPEDG@Z
+ 0002:EF4C       ?GetIcon@WPSHADOW@@VECXPEDPEG@Z
+ 0002:EF7C       ?SetState@WPSHADOW@@VECXG@Z
+ 0002:EFA0       ?GetState@WPSHADOW@@VECGXZ
+ 0002:EFC2       ?SetStateOR@WPSHADOW@@VECXGG@Z
+ 0003:0000       ?SetFlags@WPSHADOW@@VECXK@Z
+ 0003:0026       ?GetFlags@WPSHADOW@@VECKXZ
+ 0003:0048       ?SetFlagsOR@WPSHADOW@@VECXKK@Z
+ 0003:0072       ?isOpen@WPSHADOW@@VECHXZ
+ 0003:00A6       ?Open@WPSHADOW@@VECHXZ
+ 0003:00DA       ?Close@WPSHADOW@@VECHXZ
+ 0003:010E       ?Destroy@WPSHADOW@@VECHXZ
+ 0003:014E       ?InitializePopup@WPSHADOW@@VECXPBUHMENU__@@@Z
+ 0003:0206       ?GetMenuName@WPSHADOW@@VECPFDXZ
+ 0003:023C       ?MenuSelection@WPSHADOW@@VECXG@Z
+ 0003:0350       ?DropDPtoLP@WPSHADOW@@VECXPEUtagPOINT@@@Z
+ 0003:0382       ?isContainer@WPSHADOW@@VECHXZ
+ 0003:03B8       ?TestDropSource@WPSHADOW@@VECHPEVWPOBJECT@@H@Z
+ 0003:0408       ?TestDropTarget@WPSHADOW@@VECHPEVWPOBJECT@@H@Z
+ 0003:0434       ?DropSource@WPSHADOW@@VECHPEVWPOBJECT@@HUtagPOINT@@@Z
+ 0003:0476       ?DropTarget@WPSHADOW@@VECHPEVWPOBJECT@@H@Z
+ 0003:04A2       ?isSettingsNotebookOpen@WPSHADOW@@VECHXZ
+ 0003:04D6       ?OpenSettingsNotebook@WPSHADOW@@VECHXZ
+ 0003:050A       ?CloseSettingsNotebook@WPSHADOW@@VECHXZ
+ 0003:053E       ?ReadObjectProfile@WPSHADOW@@VECHHPEVWPCONTAINER@@@Z
+ 0003:0584       ?WriteObjectProfile@WPSHADOW@@VECHHPEVWPCONTAINER@@@Z
+ 0003:05D0       ??_7WPSHADOW@@6F@
+ 0003:06B0       ??0WPSHREDDER@@REC@XZ
+ 0003:06E8       ??0WPSHREDDER@@REC@PEV0@@Z
+ 0003:0724       ?GetDefaultIcon@WPSHREDDER@@VECXPEDPEG@Z
+ 0003:0748       ?TestDropSource@WPSHREDDER@@VECHPEVWPOBJECT@@H@Z
+ 0003:0792       ?TestDropTarget@WPSHREDDER@@VECHPEVWPOBJECT@@H@Z
+ 0003:07DA       ?DropTarget@WPSHREDDER@@VECHPEVWPOBJECT@@H@Z
+ 0003:086C       ??_C@_07KEFL@WPShred?$AA@
+ 0003:0874       ??_7WPSHREDDER@@6F@
+ 0003:0954       ??0WPSYSSETUP@@REC@XZ
+ 0003:099E       ??0WPSYSSETUP@@REC@PEV0@@Z
+ 0003:09DA       ?GetDefaultIcon@WPSYSSETUP@@VECXPEDPEG@Z
+ 0003:09FE       ?InsertSettingsNotebookPages@WPSYSSETUP@@VECXXZ
+ 0003:0ACE       ?UpdateWindowPageSYSTEMProfile@WPSYSSETUP@@RECXPBUHWND__@@@Z
+ 0003:0C5C       ?GetWindowPageSYSTEMProfile@WPSYSSETUP@@RECXXZ
+ 0003:0E18       ?UpdateWindowPageControls@WPSYSSETUP@@RECXPBUHWND__@@@Z
+ 0003:0F3A       ?WindowPageProc@WPSYSSETUP@@RECXHPBUHWND__@@GK@Z
+ 0003:1086       ?UpdateWindow2PageSYSTEMProfile@WPSYSSETUP@@RECXPBUHWND__@@@Z
+ 0003:1110       ?GetWindow2PageSYSTEMProfile@WPSYSSETUP@@RECXXZ
+ 0003:119E       ?Window2PageProc@WPSYSSETUP@@RECXHPBUHWND__@@GK@Z
+ 0003:135A       ?UpdateConfirmationsPageSYSTEMProfile@WPSYSSETUP@@RECXPBUHWND__@@@Z
+ 0003:1466       ?GetConfirmationsPageSYSTEMProfile@WPSYSSETUP@@RECXXZ
+ 0003:1588       ?UpdateConfirmationsPageControls@WPSYSSETUP@@RECXPBUHWND__@@@Z
+ 0003:15EE       ?ConfirmationsPageProc@WPSYSSETUP@@RECXHPBUHWND__@@GK@Z
+ 0003:16F6       ??_7WPSYSSETUP@@6F@
+ 0003:17D6       ??0WPTEMPLATE@@REC@XZ
+ 0003:1856       ??0WPTEMPLATE@@REC@PEV0@@Z
+ 0003:190C       ?GetDefaultIcon@WPTEMPLATE@@VECXPEDPEG@Z
+ 0003:1930       ?CreateNewInstance@WPTEMPLATE@@RECPEVWPOBJECT@@XZ
+ 0003:1A70       ?TestDropSource@WPTEMPLATE@@VECHPEVWPOBJECT@@H@Z
+ 0003:1AB4       ?TestDropTarget@WPTEMPLATE@@VECHPEVWPOBJECT@@H@Z
+ 0003:1ABA       ?DropSource@WPTEMPLATE@@VECHPEVWPOBJECT@@HUtagPOINT@@@Z
+ 0003:1B80       ?DropTarget@WPTEMPLATE@@VECHPEVWPOBJECT@@H@Z
+ 0003:1BA0       ?ReadObjectProfile@WPTEMPLATE@@VECHHPEVWPCONTAINER@@@Z
+ 0003:1C32       ?WriteObjectProfile@WPTEMPLATE@@VECHHPEVWPCONTAINER@@@Z
+ 0003:1CC4       ??_7WPTEMPLATE@@6F@
+ 0003:1DA4       ?ScrollbarHitTest@WPWINDOW@@BECGGUtagPOINT@@PEH@Z
+ 0003:2108       ?LoadScrollComponentBitmap@WPWINDOW@@BECPBUHBITMAP__@@GG@Z
+ 0003:21FA       ?GetScrollbarFrameRect@WPWINDOW@@BEC?EUtagRECT@@G@Z
+ 0003:2364       ?SetScrollComponentState@WPWINDOW@@BECGGG@Z
+ 0003:23DA       ?GetScrollComponentRect@WPWINDOW@@BEC?EUtagRECT@@GG@Z
+ 0003:2A80       ?ScrollWindowVert@WPWINDOW@@BECXH@Z
+ 0003:2B6C       ?ScrollWindowHoriz@WPWINDOW@@BECXH@Z
+ 0003:2C64       ?DrawBitmap@WPWINDOW@@BECXPBUHBITMAP__@@PBUHDC__@@HH@Z
+ 0003:2CBE       ?FillFrame@WPWINDOW@@BECXPBUHDC__@@HHH@Z
+ 0003:2D90       ?FillCaptionBar@WPWINDOW@@BECXPBUHDC__@@HHH@Z
+ 0003:2E3C       ?Outline3DFrame@WPWINDOW@@BECXPBUHDC__@@HH@Z
+ 0003:2FA2       ?DrawCaptionBarText@WPWINDOW@@BECXPBUHDC__@@HHH@Z
+ 0003:3068       ?DrawIconOnSystemMenu@WPWINDOW@@BECXPBUHDC__@@PBUHICON__@@@Z
+ 0003:317E       ?AnimateWindowFrame@WPWINDOW@@JECXPEUtagRECT@@0HH@Z
+ 0003:3346       ?DrawMinMaxButtonsHideStyle@WPWINDOW@@JECXPBUHDC__@@HHH@Z
+ 0003:348E       ?DrawMinMaxButtonsMinStyle@WPWINDOW@@JECXPBUHDC__@@HHH@Z
+ 0003:35D6       ?DrawMinMaxButtons@WPWINDOW@@NECXPBUHDC__@@HHH@Z
+ 0003:35EE       ?DrawScrollComponent@WPWINDOW@@JECXPBUHDC__@@GGG@Z
+ 0003:3658       ?DrawScrollArrows@WPWINDOW@@JECXPBUHDC__@@G@Z
+ 0003:36E2       ?DrawScrollThumb@WPWINDOW@@JECXPBUHDC__@@G@Z
+ 0003:3708       ?DrawScroll3DOutline@WPWINDOW@@JECXPBUHDC__@@G@Z
+ 0003:37DC       ?DrawScrollIntersectionRect@WPWINDOW@@JECXPBUHDC__@@@Z
+ 0003:38A0       ?DrawScrollbar@WPWINDOW@@JECXPBUHDC__@@G@Z
+ 0003:3950       ??0WPWINDOW@@REC@XZ
+ 0003:39CC       ??0WPWINDOW@@REC@PEV0@@Z
+ 0003:3A7E       ??1WPWINDOW@@REC@XZ
+ 0003:3A94       ?GetHandle@WPWINDOW@@RECPBUHWND__@@XZ
+ 0003:3AA2       ?SetHandle@WPWINDOW@@RECXPBUHWND__@@@Z
+ 0003:3AB4       ?SetWndPos@WPWINDOW@@RECXHH@Z
+ 0003:3AD0       ?GetWndPos@WPWINDOW@@REC?EUtagPOINT@@XZ
+ 0003:3AF0       ?SetWndSize@WPWINDOW@@RECXUtagSIZE@@@Z
+ 0003:3B04       ?SetWndSize@WPWINDOW@@RECXHH@Z
+ 0003:3B20       ?GetWndSize@WPWINDOW@@REC?EUtagSIZE@@XZ
+ 0003:3B40       ?SetLogicalDomain@WPWINDOW@@RECXPEUtagRECT@@@Z
+ 0003:3B62       ?SetVisibleArea@WPWINDOW@@RECXPEUtagRECT@@@Z
+ 0003:3B84       ?GetVisibleArea@WPWINDOW@@REC?EUtagRECT@@XZ
+ 0003:3BAA       ?isPointVisible@WPWINDOW@@RECHUtagPOINT@@@Z
+ 0003:3BDA       ?isScrollbarCapturingInput@WPWINDOW@@RECHXZ
+ 0003:3BF4       ?SetScrollbarInputCaptureFlag@WPWINDOW@@RECXH@Z
+ 0003:3C06       ?ShowScrollbar@WPWINDOW@@RECXGH@Z
+ 0003:3D44       ?ArrangeScrollbars@WPWINDOW@@RECXXZ
+ 0003:3E8C       ?AdjustScrollbars@WPWINDOW@@RECXUtagRECT@@0@Z
+ 0003:3F32       ?ScrollbarWindowProc@WPWINDOW@@RECJIIJ@Z
+ 0003:43CC       ?isScrollable@WPWINDOW@@RECHXZ
+ 0003:43DA       ?SetScrollProperty@WPWINDOW@@RECXH@Z
+ 0003:43EC       ?OnScrollbarMessage@WPWINDOW@@RECXIGHPBUHWND__@@@Z
+ 0003:4634       ?CreateWindow@WPWINDOW@@VECHPEDPEVWPOBJECT@@@Z
+ 0003:46CE       ?DestroyWindow@WPWINDOW@@VECHXZ
+ 0003:46D4       ?GetWindowExStyles@WPWINDOW@@VECKXZ
+ 0003:46DC       ?GetWindowStyles@WPWINDOW@@VECKXZ
+ 0003:46E4       ?UpdateWindowPos@WPWINDOW@@VECXXZ
+ 0003:4718       ?BeginPaint@WPWINDOW@@RECPBUHDC__@@XZ
+ 0003:4764       ?EndPaint@WPWINDOW@@RECXXZ
+ 0003:4792       ?GetDC@WPWINDOW@@RECPBUHDC__@@XZ
+ 0003:47DA       ?ReleaseDC@WPWINDOW@@RECXXZ
+ 0003:4804       ?LPtoWP@WPWINDOW@@RECXPEUtagPOINT@@H@Z
+ 0003:4878       ?WPtoDP@WPWINDOW@@RECXPEUtagPOINT@@H@Z
+ 0003:48A8       ?WPtoLP@WPWINDOW@@RECXPEUtagPOINT@@H@Z
+ 0003:491C       ?LPtoDP@WPWINDOW@@RECXPEUtagPOINT@@H@Z
+ 0003:495C       ?DPtoLP@WPWINDOW@@RECXPEUtagPOINT@@H@Z
+ 0003:499C       ?NCPaint@WPWINDOW@@RECXHPBUHICON__@@@Z
+ 0003:4AB0       ?ReadObjectProfile@WPWINDOW@@RECHHPEVWPCONTAINER@@@Z
+ 0003:4B04       ?WriteObjectProfile@WPWINDOW@@RECHHPEVWPCONTAINER@@@Z
+ 0003:4B9C       ??_7WPWINDOW@@6F@
+ 0003:4BB4       ?GetDIBNumberColors@@ZAKPIE@Z
+ 0003:4C0A       ?LoadImage@@ZAPIEPED@Z
+ 0003:4D2E       ?CreatePaletteFromDIB@@ZAPBUHPALETTE__@@PIE@Z
+ 0003:4E76       ?ConvertDIBToDDB@@ZAPBUHBITMAP__@@PIEPBUHPALETTE__@@@Z
+ 0003:4F4A       ?DestroyImage@@ZAXPIE@Z
+ 0003:4F76       ??_C@_02HGED@BM?$AA@
+ 0003:4F7A       ?CreateObjectFromFileStructure@WPDIRECTORY@@BECPEVWPOBJECT@@PEU_find_t@@@Z
+ 0003:5240       ?LoadDirectoryFiles@WPDIRECTORY@@JECXXZ
+ 0003:5448       ?FreeDirectoryFiles@WPDIRECTORY@@JECXXZ
+ 0003:5520       ?OnRightMouseButton@WPDIRECTORY@@NECXIGUtagPOINT@@@Z
+ 0003:5554       ??0WPDIRECTORY@@REC@XZ
+ 0003:55BC       ??0WPDIRECTORY@@REC@PEV0@@Z
+ 0003:5636       ?Open@WPDIRECTORY@@VECHXZ
+ 0003:566A       ?Close@WPDIRECTORY@@VECHXZ
+ 0003:56A0       ?InitializePopup@WPDIRECTORY@@VECXPBUHMENU__@@@Z
+ 0003:56D4       ?MenuSelection@WPDIRECTORY@@VECXG@Z
+ 0003:572A       ?isDirectoryContainer@WPDIRECTORY@@VECHXZ
+ 0003:5730       ?TestDropTarget@WPDIRECTORY@@VECHPEVWPOBJECT@@H@Z
+ 0003:5776       ?DropTarget@WPDIRECTORY@@VECHPEVWPOBJECT@@H@Z
+ 0003:5818       ?CopyObjectToFileSystem@WPDIRECTORY@@VECHPED@Z
+ 0003:5870       ?DeleteObjectFromFileSystem@WPDIRECTORY@@VECHXZ
+ 0003:5886       ?ReadObjectProfile@WPDIRECTORY@@VECHHPEVWPCONTAINER@@@Z
+ 0003:5964       ?WriteObjectProfile@WPDIRECTORY@@VECHHPEVWPCONTAINER@@@Z
+ 0003:5A1C       ?QueryDriveType@WPDRIVE@@BEC?EW4DRIVE_TYPE@@I@Z
+ 0003:5AB8       ??0WPDRIVE@@REC@XZ
+ 0003:5B52       ??0WPDRIVE@@REC@PEV0@@Z
+ 0003:5C0E       ?GetDefaultIcon@WPDRIVE@@VECXPEDPEG@Z
+ 0003:5C72       ?SetDriveIndex@WPDRIVE@@RECXI@Z
+ 0003:5D1A       ?InsertSettingsNotebookPages@WPDRIVE@@VECXXZ
+ 0003:5D60       ?InitializeDrivesList@WPDRIVE@@RECXPBUHWND__@@@Z
+ 0003:5E26       ?DrivePageProc@WPDRIVE@@RECXHPBUHWND__@@GK@Z
+ 0003:5F64       ?InitializePopup@WPDRIVE@@VECXPBUHMENU__@@@Z
+ 0003:5FD4       ?MenuSelection@WPDRIVE@@VECXG@Z
+ 0003:60C4       ?ReadObjectProfile@WPDRIVE@@VECHHPEVWPCONTAINER@@@Z
+ 0003:6168       ?WriteObjectProfile@WPDRIVE@@VECHHPEVWPCONTAINER@@@Z
+ 0003:6218       ??_C@_04BAIL@?4EXE?$AA@
+ 0003:621E       ??_C@_04KDLI@?4COM?$AA@
+ 0003:6224       ??_C@_04GEFK@?4BAT?$AA@
+ 0003:622A       ??_C@_04KIBH@?4PIF?$AA@
+ 0003:6230       ??_C@_02GLFM@C?3?$AA@
+ 0003:6234       ??_C@_02IPFO@X?3?$AA@
+ 0003:6238       ??_C@_08FPOM@?$CFc?3?5?$CI?$CFs?$CJ?$AA@
+ 0003:6242       ??_C@_06NEDF@?$CFs?5?$CFc?3?$AA@
+ 0003:624A       ??_C@_0N@CLNH@?$CFs?2setup?4exe?$AA@
+ 0003:6258       ??_C@_0P@OMMG@?$CFs?2install?4exe?$AA@
+ 0003:6268       ??_7WPDIRECTORY@@6FWPCONTAINER@@@
+ 0003:6430       ??_7WPDIRECTORY@@6FWPWINDOW@@@
+ 0003:6448       ??_7WPDRIVE@@6FWPCONTAINER@@@
+ 0003:6610       ??_7WPDRIVE@@6FWPWINDOW@@@
+ 0003:6628       ?SetUpDC@WPFOLDER@@BECXPBUHDC__@@PEPBUHFONT__@@PEH2@Z
+ 0003:66B0       ?CleanUpDC@WPFOLDER@@BECXPBUHDC__@@PBUHFONT__@@HH@Z
+ 0003:66DE       ?PaintFolderImage@WPFOLDER@@BECXPBUHDC__@@@Z
+ 0003:68CC       ?ReloadFolderImage@WPFOLDER@@BECXXZ
+ 0003:69AE       ?CalculateLogicalDomainRect@WPFOLDER@@BECXPEUtagRECT@@@Z
+ 0003:6A14       ?IconViewFindObject@WPFOLDER@@BECPEVWPOBJECT@@GPEV2@@Z
+ 0003:6B36       ?DetailsViewFindObject@WPFOLDER@@BECPEVWPOBJECT@@GPEV2@@Z
+ 0003:6C46       ?FindFunction@WPFOLDER@@BECHXZ
+ 0003:6C96       ?SetClassBackgroundBrush@WPFOLDER@@NECXPEPBUHBRUSH__@@@Z
+ 0003:6CB2       ?RegisterFolderClass@WPFOLDER@@NECPEDP7CJPBUHWND__@@IIJ@Z@Z
+ 0003:6D52       ?UnregisterFolderClass@WPFOLDER@@VECXXZ
+ 0003:6DA6       ?GetDropTarget@WPFOLDER@@NECPEVWPOBJECT@@UtagPOINT@@PEH@Z
+ 0003:6E2A       ?isTargetValid@WPFOLDER@@NECHPEVWPOBJECT@@@Z
+ 0003:6EB4       ?DrawShadowDragLine@WPFOLDER@@NECXUtagPOINT@@H@Z
+ 0003:6F7C       ?DrawRubberBandRect@WPFOLDER@@NECXUtagPOINT@@H@Z
+ 0003:706C       ?HandleDragModeInit@WPFOLDER@@JECHGUtagPOINT@@@Z
+ 0003:7272       ?HandleRubberBandSelection@WPFOLDER@@JECXUtagPOINT@@@Z
+ 0003:749A       ?HandleMoveCopyOrShadowOperation@WPFOLDER@@JECXUtagPOINT@@@Z
+ 0003:75EC       ?OnLeftMouseButton@WPFOLDER@@NECXIGUtagPOINT@@@Z
+ 0003:772C       ?OnRightMouseButton@WPFOLDER@@NECXIGUtagPOINT@@@Z
+ 0003:7854       ?OnMouseMove@WPFOLDER@@NECXGUtagPOINT@@@Z
+ 0003:7926       ?OnLeftMouseButtonDblClk@WPFOLDER@@NECXUtagPOINT@@@Z
+ 0003:79AC       ?CursorFromBitmap@WPFOLDER@@JECPBUHICON__@@PBUHBITMAP__@@@Z
+ 0003:7B90       ?CreateCursorBitmap@WPFOLDER@@JECPBUHBITMAP__@@XZ
+ 0003:7EB8       ?CreateMoveCursors@WPFOLDER@@NECXPEPBUHICON__@@0@Z
+ 0003:7F5E       ?CreateCopyCursors@WPFOLDER@@NECXPEPBUHICON__@@0@Z
+ 0003:806C       ?CreateShadowCursors@WPFOLDER@@NECXPEPBUHICON__@@0@Z
+ 0003:817A       ?SortCompareObjects@WPFOLDER@@JECHGPEVWPOBJECT@@0@Z
+ 0003:821E       ?SortIcons@WPFOLDER@@JECXG@Z
+ 0003:831C       ?ArrangeIconsInFlowedFormat@WPFOLDER@@JECXXZ
+ 0003:849C       ?ArrangeIconsInNonFlowedFormat@WPFOLDER@@JECXXZ
+ 0003:8656       ?ArrangeIcons@WPFOLDER@@JECXK@Z
+ 0003:8764       ?FormatIconView@WPFOLDER@@JECXXZ
+ 0003:8792       ?DrawMinMaxButtons@WPFOLDER@@NECXPBUHDC__@@HHH@Z
+ 0003:87DC       ?CreateAnotherFunc@WPFOLDER@@JECXXZ
+ 0003:8ABA       ?CreateShadowFunc@WPFOLDER@@JECXXZ
+ 0003:8E38       ?CopyFunc@WPFOLDER@@JECXXZ
+ 0003:90A6       ?MoveFunc@WPFOLDER@@JECXXZ
+ 0003:940C       ?DeleteSelectedObjects@WPFOLDER@@JECXXZ
+ 0003:9618       ?Win31DDQueryDropObject@WPFOLDER@@JECHHPEUDRAGINFO@@@Z
+ 0003:9726       ?Win31DDDragSelect@WPFOLDER@@JECHHPEUDRAGINFO@@@Z
+ 0003:976C       ?Win31DDDropFiles@WPFOLDER@@JECJPBUHDROP__@@@Z
+ 0003:98D8       ?Win31DDCreateWPSObjectFromFileDropped@WPFOLDER@@JECXGPEDUtagPOINT@@@Z
+ 0003:9B6E       ??0WPFOLDER@@REC@XZ
+ 0003:9C6A       ??0WPFOLDER@@REC@PEV0@@Z
+ 0003:9D86       ?GetCaptionTitle@WPFOLDER@@VECPFDXZ
+ 0003:9DE0       ?GetDefaultIcon@WPFOLDER@@VECXPEDPEG@Z
+ 0003:9E04       ?Open@WPFOLDER@@VECHXZ
+ 0003:9F3A       ?Close@WPFOLDER@@VECHXZ
+ 0003:A0A2       ?GetObjectPopup@WPFOLDER@@RECPEVWPOBJECT@@XZ
+ 0003:A0D2       ?SetObjectPopup@WPFOLDER@@RECXPEVWPOBJECT@@@Z
+ 0003:A0E6       ?GetOpenView@WPFOLDER@@VECGXZ
+ 0003:A0F6       ?SetOpenView@WPFOLDER@@RECXG@Z
+ 0003:A20A       ?OnInitializeFolder@WPFOLDER@@VECXXZ
+ 0003:A20E       ??_C@_0M@DMJD@WPBeginDrag?$AA@
+ 0003:A21A       ??_C@_0O@GCMP@WPFolderClose?$AA@
+ 0003:A228       ??_7WPFOLDER@@6FWPCONTAINER@@@
+ 0003:A3F0       ??_7WPFOLDER@@6FWPWINDOW@@@
+ 0003:A408       ?SetBackgroundColor@WPFOLDER@@VECXK@Z
+ 0003:A460       ?GetBackgroundColor@WPFOLDER@@VECKXZ
+ 0003:A474       ?GetIconTextLogFont@WPFOLDER@@RECXPEUtagLOGFONT@@@Z
+ 0003:A496       ?GetIconTextColor@WPFOLDER@@RECKXZ
+ 0003:A4AA       ?GetImageAttribute@WPFOLDER@@VECHK@Z
+ 0003:A4D8       ?SetImageAttribute@WPFOLDER@@VECXK@Z
+ 0003:A4FA       ?GetImagePath@WPFOLDER@@VECPEDXZ
+ 0003:A50A       ?SetImagePath@WPFOLDER@@VECXPED@Z
+ 0003:A524       ?GetImagePalette@WPFOLDER@@RECPBUHPALETTE__@@XZ
+ 0003:A534       ?SetImagePalette@WPFOLDER@@RECXPBUHPALETTE__@@@Z
+ 0003:A546       ?GetImageBitmapHandle@WPFOLDER@@RECPBUHBITMAP__@@XZ
+ 0003:A556       ?SetImageBitmapHandle@WPFOLDER@@RECXPBUHBITMAP__@@@Z
+ 0003:A568       ?SetDefaultColors@WPFOLDER@@VECXPBUHDC__@@PEVWPOBJECT@@@Z
+ 0003:A610       ?SetFrameColors@WPFOLDER@@VECXPBUHDC__@@PEVWPOBJECT@@@Z
+ 0003:A644       ?GetFirstAvailableIconPos@WPFOLDER@@REC?EUtagPOINT@@PEU2@@Z
+ 0003:A7C2       ?UpdateIcon@WPFOLDER@@VECXPEDG@Z
+ 0003:A828       ?LoadIcons@WPFOLDER@@VECHXZ
+ 0003:A8B8       ?DestroyIcons@WPFOLDER@@VECHXZ
+ 0003:A906       ?ChildHitTest@WPFOLDER@@VECPEVWPOBJECT@@UtagPOINT@@@Z
+ 0003:A9AC       ?GetChildrenContainedInRect@WPFOLDER@@VECHUtagRECT@@PEVLIST@@@Z
+ 0003:AA20       ?DropDPtoLP@WPFOLDER@@VECXPEUtagPOINT@@@Z
+ 0003:AB3A       ?CreateDragCursors@WPFOLDER@@VECXGPEPBUHICON__@@0@Z
+ 0003:ABBC       ?OnMouseMessage@WPFOLDER@@VECXIGUtagPOINT@@@Z
+ 0003:AC5A       ?ConfirmOnDelete@WPFOLDER@@VECHXZ
+ 0003:AD22       ?DrawChildren@WPFOLDER@@VECXPBUHDC__@@@Z
+ 0003:AD9C       ?DrawDetailsViewTable@WPFOLDER@@RECXPBUHDC__@@@Z
+ 0003:B090       ?PopupFrame@WPFOLDER@@VECXXZ
+ 0003:B212       ?PopupUnFrame@WPFOLDER@@VECXXZ
+ 0003:B222       ?Frame@WPFOLDER@@VECXH@Z
+ 0003:B31C       ?UnFrame@WPFOLDER@@VECXH@Z
+ 0003:B330       ?InvalidateRect@WPFOLDER@@VECXPEUtagRECT@@HH@Z
+ 0003:B39C       ?Invalidate@WPFOLDER@@VECXHH@Z
+ 0003:B3B8       ?UpdateWindow@WPFOLDER@@VECXXZ
+ 0003:B3D4       ?OnDrop@WPFOLDER@@VECXUtagPOINT@@@Z
+ 0003:B5CA       ?FindObjectAtRelativePosition@WPFOLDER@@RECPEVWPOBJECT@@GPEV2@@Z
+ 0003:B752       ?InitializePopup@WPFOLDER@@VECXPBUHMENU__@@@Z
+ 0003:B798       ?GetMenuName@WPFOLDER@@VECPFDXZ
+ 0003:B7A0       ?MenuSelection@WPFOLDER@@VECXG@Z
+ 0003:BA64       ?KeyboardEvent@WPFOLDER@@VECXG@Z
+ 0003:BBC8       ?OnCreate@WPFOLDER@@VECXXZ
+ 0003:BEB8       ?OnMove@WPFOLDER@@VECXUtagPOINT@@@Z
+ 0003:BF08       ?OnSize@WPFOLDER@@VECXGHH@Z
+ 0003:BFE4       ?OnTimer@WPFOLDER@@VECXG@Z
+ 0003:BFE8       ?OnSysCommand@WPFOLDER@@VECXGJ@Z
+ 0003:C116       ?OnCommand@WPFOLDER@@VECXG@Z
+ 0003:C252       ?OnPopupMenu@WPFOLDER@@VECXUtagPOINT@@@Z
+ 0003:C3CA       ?OnNCPaint@WPFOLDER@@VECXXZ
+ 0003:C438       ?OnNCActivate@WPFOLDER@@VECXH@Z
+ 0003:C482       ?OnNCMouseMove@WPFOLDER@@VECXGUtagPOINT@@@Z
+ 0003:C59E       ?OnNCLButton@WPFOLDER@@VECXIGUtagPOINT@@@Z
+ 0003:C6E6       ?OnWin31DragAndDropMsg@WPFOLDER@@VECJIIJ@Z
+ 0003:C764       ?OnPaletteMessage@WPFOLDER@@VECJIPBUHWND__@@@Z
+ 0003:C844       ?OnEraseBackground@WPFOLDER@@VECJPBUHDC__@@@Z
+ 0003:C8E8       ?OnPaint@WPFOLDER@@VECXXZ
+ 0003:C942       ?OnClose@WPFOLDER@@VECXXZ
+ 0003:C996       ?InsertSettingsNotebookPages@WPFOLDER@@VECXXZ
+ 0003:CA32       ?GeneralPageProc@WPFOLDER@@VECXHPBUHWND__@@GK@Z
+ 0003:CA90       ?GetWindowPageFlags@WPFOLDER@@RECKPBUHWND__@@@Z
+ 0003:CB24       ?UpdateWindowPageControls@WPFOLDER@@RECXPBUHWND__@@K@Z
+ 0003:CC1E       ?WindowPageProc@WPFOLDER@@RECXHPBUHWND__@@GK@Z
+ 0003:CD46       ?ChangeColor@WPFOLDER@@RECHPBUHWND__@@@Z
+ 0003:CDEA       ?ImageControls@WPFOLDER@@VECXPBUHWND__@@H@Z
+ 0003:CE56       ?UpdateBackgroundPageImageSettings@WPFOLDER@@RECXPBUHWND__@@G@Z
+ 0003:CF7E       ?ReloadPreviewAreaImage@WPFOLDER@@RECHPEPBUHBITMAP__@@PEPBUHPALETTE__@@H@Z
+ 0003:D03A       ?UpdatePreviewArea@WPFOLDER@@RECXPBUHDC__@@PBUHWND__@@@Z
+ 0003:D358       ?BackgroundPageProc@WPFOLDER@@RECXHPBUHWND__@@GK@Z
+ 0003:D77C       ?ChangeFont@WPFOLDER@@RECHPBUHWND__@@@Z
+ 0003:D8CE       ?ViewPageProc@WPFOLDER@@RECXHPBUHWND__@@GK@Z
+ 0003:DB58       ?GetProfileInfo@WPFOLDER@@RECXPEUFILE_FOLDER_STRUCT@@@Z
+ 0003:DBC0       ?SetProfileInfo@WPFOLDER@@RECXPEUFILE_FOLDER_STRUCT@@@Z
+ 0003:DC2A       ?ReadObjectProfile@WPFOLDER@@VECHHPEVWPCONTAINER@@@Z
+ 0003:DCD8       ?WriteObjectProfile@WPFOLDER@@VECHHPEVWPCONTAINER@@@Z
+ 0003:DD90       ??_C@_09IIFM@WPEndDrag?$AA@
+ 0003:DD9A       ??_C@_0N@HGG@WPFolderOpen?$AA@
+ 0003:DDA8       ??_C@_06KNLI@?2?$CK?4BMP?$AA@
+ 0003:DDB0       ??_C@_06OHDL@?2?$CK?4DIB?$AA@
+ 0003:DDB8       ??_C@_05EJDJ@?$CFd?4?$CFs?$AA@
+ 0003:DDBE       ?IsRegisteredTargetWindow@@ZAHPBUHWND__@@@Z
+ 0003:DDDE       WPSREGISTERWINDOW
+ 0003:DE36       WPSCOMMAND
+ 0003:DF9E       WPSUNREGISTERWINDOW
+ 0004:0000       ?g_wpEnvironment@@3UWPENVIRONMENT@@E
+ 0006:0004       rsrvptrs
+ 0006:0022       ?apszWinExecErrorString@@3QEPEDE
+ 0006:00A2       _STKHQQ
+ 0006:00A4       __hPrevInstance
+ 0006:00A6       __hInstance
+ 0006:00A8       __lpszCmdLine
+ 0006:00AC       __cmdShow
+ 0006:00AE       _aseglo
+ 0006:00B0       _aseghi
+ 0006:00B2       ___aDBswpflg
+ 0006:00B4       ___aDBrterr
+ 0006:00B6       __acfinfo
+ 0006:00C4       __aintdiv
+ 0006:00C8       __fac
+ 0006:00D2       _errno
+ 0006:00D4       __umaskval
+ 0006:00D6       __pspadr
+ 0006:00D8       __psp
+ 0006:00DA       __winminor
+ 0006:00DA       __winver
+ 0006:00DB       __winmajor
+ 0006:00DC       __osver
+ 0006:00DC       __osminor
+ 0006:00DD       __osmajor
+ 0006:00DE       __osversion
+ 0006:00E0       __osmode
+ 0006:00E1       __cpumode
+ 0006:00E2       __oserr
+ 0006:00E2       __doserrno
+ 0006:00E4       __nfile
+ 0006:00E6       __wfile
+ 0006:00E8       __wnfile
+ 0006:00EA       __osfile
+ 0006:00FE       __wsfile
+ 0006:0112       ___argc
+ 0006:0114       ___argv
+ 0006:0118       __environ
+ 0006:011C       __pgmptr
+ 0006:0121       __child
+ 0006:0123       __exitflag
+ 0006:0124       __adbgmsg
+ 0006:0128       __aaltstkovr
+ 0006:0148       __cflush
+ 0006:014A       __lastiob
+ 0006:01B6       __iomode
+ 0006:01B6       __fmode
+ 0006:01B8       __lseekchk
+ 0006:01BA       __pnhFarHeap
+ 0006:01BE       __fheap
+ 0006:01CC       __amblksiz
+ 0006:01CE       __cfltcvt_tab
+ 0006:01EA       __sigintseg
+ 0006:01EC       __sigintoff
+ 0006:01EE       __asizeC
+ 0006:01EF       __asizeD
+ 0006:01F0       __ctype
+ 0006:01F0       __ctype_
+ 0006:02F2       __lpdays
+ 0006:030C       __days
+ 0006:033C       __timezone
+ 0006:0340       __daylight
+ 0006:034A       __tzname
+ 0006:0352       __citime
+ 0006:0414       __qwinused
+ 0006:041E       __fpinit
+ 0006:0436       __iob
+ 0006:0526       __iob2
+ 0006:0A4E       _edata
+ 0006:0A4E       __edata
+ 0006:0CE0       ?sg_hbrGray@@3PBUHBRUSH__@@B
+ 0006:1260       __mbac
+ 0006:1268       _end
+ 0006:1268       __end
+ 0000:4000  Abs  FJARQQ
+ 0000:5C32  Abs  FIDRQQ
+ 0000:8000  Abs  FJSRQQ
+ 0000:A23D  Abs  FIWRQQ
+ 0000:C000  Abs  FJCRQQ
+ 0000:FE32  Abs  FIARQQ
+
+Program entry point at 0001:001a

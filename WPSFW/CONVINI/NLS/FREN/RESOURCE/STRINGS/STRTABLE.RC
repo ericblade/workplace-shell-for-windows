@@ -1,0 +1,26 @@
+//-------------------------------------------------------------------------
+// STRING TABLES
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+// FREN (French-Canadian)
+//-------------------------------------------------------------------------
+STRINGTABLE LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+   IDSTR_CONVERT_CAPTION,  "Convertir"
+   IDSTR_CONVERT_SUCCESS,  "Profil converti avec succès."
+   IDSTR_CONVERT_FAILURE,  "La conversion du profil a échoué."
+   IDSTR_ERROR_CAPTION,    "Utilitaire de conversion"
+   IDSTR_ERR_10,           "ERREUR 10: Aucun profil trouvé dans le répertoire de Windows."
+   IDSTR_ERR_11,           "ERREUR 11: Le profil existant est trop petit."
+   IDSTR_ERR_12,           "ERREUR 12: Ce fichier n'est pas un profil de Shell valide."
+   IDSTR_ERR_13,           "ERREUR 13: Le profil est déjà à la version 1.0 ou plus"
+   IDSTR_ERR_20,           "ERREUR 20: WPSHELL.INI n'a pu être renommé à WPSHELL.V5X."
+   IDSTR_ERR_21,           "ERREUR 21: Le nouveau fichier WPSHELL.INI n'a pu être crée."
+   IDSTR_ERR_22,           "ERREUR 22: Le fichier WPSHELL.V5X n'a pu être ouvert."
+   IDSTR_ERR_23,           "ERREUR 23: Le profil WPSHELL.V5X n'a pu être lu."
+   IDSTR_ERR_40,           "ERREUR 40: Type d'objet non-valide dans le profil."
+END
+
+// EOF STRTABLE.RC
+
+

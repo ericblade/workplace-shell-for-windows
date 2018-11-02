@@ -1,0 +1,131 @@
+//---------------------------------------------------------------------
+// OS21ICON.RC
+//    OS/2 2.1's Icon Library for Windows 3.1 resource file.
+//
+// Date Created :  10/21/94
+// Last Update  :  12/21/95
+// Written By   :  Mario E. De Armas
+// Compiler Used:  MS Visual C++ 1.52
+//
+// Copyright IBM Corporation, 1994-1995. All rights reserved.
+//
+//
+// FILE LOG:
+// DATE        | ACTION/CHANGE                           | PROGRAMMER
+// 10/21/94    | Creation.                               | MDA
+//=====================================================================
+
+
+//---------------------------------------------------------------------
+// HEADER FILES
+//---------------------------------------------------------------------
+// Windows library header files.
+#include <windows.h>
+#include <ver.h>
+
+
+//-----------------------------------------------------------------------------
+// PRODUCT VERSION CONSTANTS
+//-----------------------------------------------------------------------------
+#define VER_MAJOR                2                 // Integer representing major version number.
+#define VER_MINOR                0                 // Integer representing minor version number.
+#define VER_STR_PRODUCTVERSION   "Release v2.0\0"  // String representing current version.
+#define VER_STR_PRODUCTCOPYRIGHT "Copyright © IBM Corporation 1994-1996\0"
+
+
+//-----------------------------------------------------------------------------
+// VERSION INFORMATION
+//-----------------------------------------------------------------------------
+VS_VERSION_INFO VERSIONINFO
+   FILEVERSION     1,0,0,0
+   PRODUCTVERSION  VER_MAJOR,VER_MINOR,0,0
+   FILEFLAGSMASK   0
+   FILEFLAGS       0
+   FILEOS          VOS_DOS_WINDOWS16
+
+   FILETYPE        VFT_DLL
+   FILESUBTYPE     VFT_DLL
+
+   BEGIN
+      BLOCK "StringFileInfo"
+      BEGIN
+         BLOCK "040904E4"
+         BEGIN
+            VALUE "CompanyName"        , "IBM Corporation\0"
+            VALUE "FileDescription"    , "OS/2 2.1 Icon Library\0"
+            VALUE "FileVersion"        , "1.0.0\0"
+            VALUE "InternalName"       , "OS/2 2.1 Icon Library\0"
+            VALUE "LegalCopyright"     , VER_STR_PRODUCTCOPYRIGHT
+            VALUE "ProductName"        , "Workplace Shell for Windows 3.1\0"
+            VALUE "OriginalFileName"   , "OS21ICON.DLL\0"
+            VALUE "ProductVersion"     , VER_STR_PRODUCTVERSION
+         END
+      END
+
+      BLOCK "VarFileInfo"
+      BEGIN
+         VALUE "Translation", 0x0409, 1252
+      END
+   END
+
+
+//-----------------------------------------------------------------------------
+// ICONS
+//-----------------------------------------------------------------------------
+
+// Windows 3.1 system icon.
+100      ICON    DISCARDABLE     ICONS\SYSTEM\WIN31.ICO
+101      ICON    DISCARDABLE     ICONS\SYSTEM\DESKTOP.ICO
+102      ICON    DISCARDABLE     ICONS\SYSTEM\MINVIEW.ICO
+// Default object icons.
+103      ICON    DISCARDABLE     ICONS\DEFAULTS\OBJECT.ICO
+104      ICON    DISCARDABLE     ICONS\DEFAULTS\DATA.ICO
+105      ICON    DISCARDABLE     ICONS\DEFAULTS\PROGRAM.ICO
+106      ICON    DISCARDABLE     ICONS\DEFAULTS\FOLDER.ICO
+107      ICON    DISCARDABLE     ICONS\DEFAULTS\SHREDDER.ICO
+// Template folder and object icons.
+108      ICON    DISCARDABLE     ICONS\TEMPLATE\TEMPLATE.ICO
+109      ICON    DISCARDABLE     ICONS\TEMPLATE\TMPOBJ.ICO
+110      ICON    DISCARDABLE     ICONS\TEMPLATE\TMPPROG.ICO
+111      ICON    DISCARDABLE     ICONS\TEMPLATE\TMPFLDER.ICO
+112      ICON    DISCARDABLE     ICONS\TEMPLATE\TMPDATA.ICO
+113      ICON    DISCARDABLE     ICONS\TEMPLATE\TMPSHRDR.ICO
+// Drives icons.
+114      ICON    DISCARDABLE     ICONS\DRIVES\DRIVES.ICO
+115      ICON    DISCARDABLE     ICONS\DRIVES\FLOPPY.ICO
+116      ICON    DISCARDABLE     ICONS\DRIVES\HDRIVE.ICO
+
+// Setup folder objects.
+117      ICON    DISCARDABLE     ICONS\SETUP\SYSSETUP.ICO
+118      ICON    DISCARDABLE     ICONS\SETUP\SYSTEM.ICO
+119      ICON    DISCARDABLE     ICONS\SETUP\MOUSE.ICO
+120      ICON    DISCARDABLE     ICONS\SETUP\COUNTRY.ICO
+121      ICON    DISCARDABLE     ICONS\SETUP\KEYBOARD.ICO
+122      ICON    DISCARDABLE     ICONS\SETUP\SOUND.ICO
+123      ICON    DISCARDABLE     ICONS\SETUP\INSTALL.ICO
+124      ICON    DISCARDABLE     ICONS\SETUP\COLORPAL.ICO
+125      ICON    DISCARDABLE     ICONS\SETUP\FONTPAL.ICO
+
+// Miscellaneous icons:
+// Windows PROGMAN migration folder.
+126      ICON    DISCARDABLE     ICONS\MISC\MIGRATE\PMFOLDER.ICO
+// Misc. desktop objects (OS/2 2.x icons)
+127      ICON    DISCARDABLE     ICONS\MISC\OS2OBJ\OS2SYS.ICO
+128      ICON    DISCARDABLE     ICONS\MISC\OS2OBJ\GENERAL.ICO
+129      ICON    DISCARDABLE     ICONS\MISC\OS2OBJ\HELP.ICO
+130      ICON    DISCARDABLE     ICONS\MISC\OS2OBJ\INFO.ICO
+131      ICON    DISCARDABLE     ICONS\MISC\OS2OBJ\STARTUP.ICO
+132      ICON    DISCARDABLE     ICONS\MISC\OS2OBJ\TUTORIAL.ICO
+// Misc. multimedia.
+133      ICON    DISCARDABLE     ICONS\MISC\MMEDIA\MMPM2.ICO
+134      ICON    DISCARDABLE     ICONS\MISC\MMEDIA\CDPLAYER.ICO
+135      ICON    DISCARDABLE     ICONS\MISC\MMEDIA\DIGVIDEO.ICO
+// Misc. DOS sessions.
+136      ICON    DISCARDABLE     ICONS\MISC\DOS\DOSFULL.ICO
+137      ICON    DISCARDABLE     ICONS\MISC\DOS\DOSWIN.ICO
+
+
+// EOF OS21ICON.RC
+
+
+

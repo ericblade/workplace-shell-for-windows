@@ -1,0 +1,52 @@
+//-------------------------------------------------------------------------
+// STRING TABLES
+//-------------------------------------------------------------------------
+
+//-------------------------------------------------------------------------
+// SWED (Swedish)
+//-------------------------------------------------------------------------
+STRINGTABLE LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+   IDSTR_PMTOWP_CAPTION,    "Progman till Skrivbord"
+   IDSTR_PMTOWP_SUCCESS,    "Framgångsrikt migrerad(e) grupp(er)."
+   IDSTR_PMTOWP_FAILURE,    "Fel när gruppen(erna) migrerades."
+   IDSTR_ERROR_CAPTION,     "PM till WP Fel"
+   IDSTR_ERR_01,            "ERROR 01: Kunde inte initialisera DDEML."
+   IDSTR_ERR_02,            "ERROR 02: Kunde inte koppla mot 'PROGMAN' DDE server."
+   IDSTR_ERR_03,            "ERROR 03: Kunde inte läsa gruppinformation från DDE server."
+
+   IDSTR_PM_FOLDER,         "Programhanterar Mapp"
+   IDSTR_FILE_EXISTS_QUERY, "WPSHELL.INI finns redan.\nVill du SKRIVA ÖVER den nuvarande filen?\n\n   JA\t - Skriv över nuvarande fil\n   NEJ\t - Lägg till den nuvarande filen\n   Avbryt\t - Avbryt operationen"
+   IDSTR_NO_SELECTION,      "Ingen grupp är för närvarande vald för att migreras."
+
+   IDSTR_OBJTITLE_COMMANDPROMPTS,   "Kommandosessioner"
+   IDSTR_OBJTITLE_DOSPROMPT,        "DOS Prompt"
+   IDSTR_OBJTITLE_TEMPLATES,        "Mallar"
+   IDSTR_OBJTITLE_DATAFILE,         "Data Fil"
+   IDSTR_OBJTITLE_FOLDER,           "Mapp"
+   IDSTR_OBJTITLE_PROGRAM,          "Program"
+   IDSTR_OBJTITLE_SHREDDER,         "Tugg"
+   IDSTR_OBJTITLE_SYSTEMSETUP,      "Systemkonfiguration"
+   IDSTR_OBJTITLE_SYSTEM,           "System"
+   IDSTR_OBJTITLE_SCHEMEPALETTE,    "Fönsterinställningar"
+   IDSTR_OBJTITLE_FONTPALETTE,      "Fontpalett"
+   IDSTR_OBJTITLE_SOUND,            "Ljud"
+   IDSTR_OBJTITLE_COUNTRY,          "Land"
+   IDSTR_OBJTITLE_DDINSTALL,        "Installera drivrutiner"
+   IDSTR_OBJTITLE_MOUSE,            "Mus"
+   IDSTR_OBJTITLE_KEYBOARD,         "Tangentbord"
+   IDSTR_OBJTITLE_WINDOWSSYSTEM,    "Windows System"
+   IDSTR_OBJTITLE_DRIVES,           "Enheter"
+   IDSTR_OBJTITLE_DRIVE,            "Enhet"
+   IDSTR_OBJTITLE_STARTUP,          "Start"
+   IDSTR_OBJTITLE_MINVIEWER,        "Minimerade objekt"
+   
+   IDSTR_CONTROLPANEL_COLORS        "FÄRGER"
+   IDSTR_CONTROLPANEL_FONTS         "FONTPALETT"
+   IDSTR_CONTROLPANEL_INTERNATIONAL "LAND"
+   IDSTR_CONTROLPANEL_MOUSE         "MUS"
+   IDSTR_CONTROLPANEL_KEYBOARD      "TANGENTBORD"
+END
+
+// EOF STRTABLE.RC
+

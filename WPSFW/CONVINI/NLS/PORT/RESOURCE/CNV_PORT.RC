@@ -1,0 +1,80 @@
+//=====================================================================
+// CNV_PORT.RC
+//    CONVINI (Convert Initialization File) NLS Resource Library
+// Resource File.
+//
+// Date Created :  09/26/94
+// Last Update  :  01/16/95
+// Written By   :  Mario E. De Armas
+// Compiler Used:  MS Visual C++ 1.5
+//
+// Copyright IBM Corporation, 1994-1995. All rights reserved.
+//
+//
+// FILE LOG:
+// DATE        | ACTION/CHANGE                           | PROGRAMMER
+// 09/26/94    | Creation.                               | MDA
+//=====================================================================
+
+
+//---------------------------------------------------------------------
+// HEADER FILES
+//---------------------------------------------------------------------
+// Windows library header files.
+#include <windows.h>
+#include <ver.h>
+// CONVINI resource IDs header file.
+#include "resource.h"
+
+
+//-----------------------------------------------------------------------------
+// VERSION INFORMATION
+//-----------------------------------------------------------------------------
+VS_VERSION_INFO VERSIONINFO
+   FILEVERSION     1,0,0,0
+   PRODUCTVERSION  VER_MAJOR,VER_MINOR,0,0
+   FILEFLAGSMASK   0
+   FILEFLAGS       0
+   FILEOS          VOS_DOS_WINDOWS16
+
+   FILETYPE        VFT_DLL
+   FILESUBTYPE     VFT_DLL
+
+   BEGIN
+      BLOCK "StringFileInfo"
+      BEGIN
+         BLOCK "040904E4"
+         BEGIN
+            VALUE "CompanyName"        , "IBM Corporation\0"
+            VALUE "FileDescription"    , "Convert Initialization File NLS-Library\0"
+            VALUE "FileVersion"        , "1.0.0\0"
+            VALUE "InternalName"       , "Convert Initialization File\0"
+            VALUE "LegalCopyright"     , VER_STR_PRODUCTVERSION
+            VALUE "ProductName"        , "Workplace Shell for Windows\0"
+            VALUE "OriginalFileName"   , "CNV_PORT.DLL\0"
+            VALUE "ProductVersion"     , VER_STR_PRODUCTVERSION
+         END
+      END
+
+      BLOCK "VarFileInfo"
+      BEGIN
+         VALUE "Translation", 0x0409, 1252
+      END
+   END
+
+
+//-----------------------------------------------------------------------------
+// STRING TABLES
+//-----------------------------------------------------------------------------
+#include "STRINGS\\STRTABLE.RC"
+
+
+//-----------------------------------------------------------------------------
+// DIALOG BOXES
+//-----------------------------------------------------------------------------
+#include "DIALOGBX\\MAIN.DLG"
+
+
+// EOF CNV_PORT.RC
+
+

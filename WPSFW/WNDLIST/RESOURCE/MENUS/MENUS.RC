@@ -1,0 +1,225 @@
+//-----------------------------------------------------------------------------
+// POP-UP MENUS
+//-----------------------------------------------------------------------------
+
+//-----------------------------------------------------------------------------
+// ENUS (US-English)
+//-----------------------------------------------------------------------------
+IDM_WINDOWLIST_ENUS MENU
+{
+   POPUP ""
+   {
+      MENUITEM "&Show"                      , IDM_SHOW
+      POPUP    "&Help"
+      {
+         MENUITEM "Help &index"             , IDM_HELPINDEX
+         MENUITEM "&General help"           , IDM_HELPGENERAL   , CHECKED
+         MENUITEM "&Using help"             , IDM_HELPUSING
+         MENUITEM "&Keys help"              , IDM_HELPKEYS
+      }
+      MENUITEM "&Minimize"                  , IDM_MINIMIZE
+      MENUITEM SEPARATOR
+      MENUITEM "&Tile"                      , IDM_TILE
+      MENUITEM "C&ascade"                   , IDM_CASCADE
+      MENUITEM SEPARATOR
+      MENUITEM "&Close"                     , IDM_CLOSE
+   }
+}
+
+//-----------------------------------------------------------------------------
+// PORT (Brazilan-Portuguese).
+//-----------------------------------------------------------------------------
+IDM_WINDOWLIST_PORT MENU
+{
+   POPUP ""
+   {
+      MENUITEM "&Mostrar"                   , IDM_SHOW
+      POPUP    "&Auxílio"
+      {
+         MENUITEM "Índ&ice do auxílio"      , IDM_HELPINDEX
+         MENUITEM "Auxílio &geral"          , IDM_HELPGENERAL   , CHECKED
+         MENUITEM "&Utilizar o auxílio"     , IDM_HELPUSING
+         MENUITEM "Auxílio para &teclas"    , IDM_HELPKEYS
+      }
+      MENUITEM "&Minimizar"                 , IDM_MINIMIZE
+      MENUITEM SEPARATOR
+      MENUITEM "&Lado a lado"               , IDM_TILE
+      MENUITEM "Em c&ascata"                , IDM_CASCADE
+      MENUITEM SEPARATOR
+      MENUITEM "&Fechar"                    , IDM_CLOSE
+   }
+}
+
+//-----------------------------------------------------------------------------
+// DUTC (Dutch)
+//-----------------------------------------------------------------------------
+IDM_WINDOWLIST_DUTC MENU
+{
+   POPUP ""
+   {
+      MENUITEM "&Toon"                      , IDM_SHOW
+      POPUP    "&Help"
+      {
+         MENUITEM "Help &index"             , IDM_HELPINDEX
+         MENUITEM "Help &Algemeen"          , IDM_HELPGENERAL   , CHECKED
+         MENUITEM "Gebr&uik van help"       , IDM_HELPUSING
+         MENUITEM "&Toetsen help"           , IDM_HELPKEYS
+      }
+      MENUITEM "&Pictogram"                 , IDM_MINIMIZE
+      MENUITEM SEPARATOR
+      MENUITEM "Naas&t Elkaar"              , IDM_TILE
+      MENUITEM "Gest&apeld"                 , IDM_CASCADE
+      MENUITEM SEPARATOR
+      MENUITEM "&Sluiten"                   , IDM_CLOSE
+   }
+}
+
+
+//-----------------------------------------------------------------------------
+// GRMN (German)
+//-----------------------------------------------------------------------------
+IDM_WINDOWLIST_GRMN MENU
+{
+   POPUP ""
+   {
+      MENUITEM "&Anzeigen"                  , IDM_SHOW
+      POPUP    "&Hilfe"
+      {
+         MENUITEM "Hilfe&index"             , IDM_HELPINDEX
+         MENUITEM "&Erweiterte Hilfe"       , IDM_HELPGENERAL   , CHECKED
+         MENUITEM "Hilfe für &Hilfefunktion", IDM_HELPUSING
+         MENUITEM "Hilfe für &Tasten"       , IDM_HELPKEYS
+      }
+      MENUITEM "&Symbolgröße"               , IDM_MINIMIZE
+      MENUITEM SEPARATOR
+      MENUITEM "&Nebeneinander anzeigen"    , IDM_TILE
+      MENUITEM "&Überlappend anzeigen"      , IDM_CASCADE
+      MENUITEM SEPARATOR
+      MENUITEM "&Schließen"                 , IDM_CLOSE
+   }
+}
+
+
+//-----------------------------------------------------------------------------
+// SWED (Swedish)
+//-----------------------------------------------------------------------------
+IDM_WINDOWLIST_SWED MENU
+{
+   POPUP ""
+   {
+      MENUITEM "&Visa"                      , IDM_SHOW
+      POPUP    "&Hjälp"
+      {
+         MENUITEM "&Hjälpindex"             , IDM_HELPINDEX
+         MENUITEM "&Allmän hjälp"           , IDM_HELPGENERAL   , CHECKED
+         MENUITEM "&Om hjälpfunktionen"     , IDM_HELPUSING
+         MENUITEM "&Tangentfunktioner"      , IDM_HELPKEYS
+      }
+      MENUITEM "&Minimera"                  , IDM_MINIMIZE
+      MENUITEM SEPARATOR
+      MENUITEM "Si&da vid sida"             , IDM_TILE
+      MENUITEM "&Överlappande"              , IDM_CASCADE
+      MENUITEM SEPARATOR
+      MENUITEM "&Stäng"                     , IDM_CLOSE
+   }
+}
+
+
+//-----------------------------------------------------------------------------
+// FREN (Canadian-French)
+//-----------------------------------------------------------------------------
+IDM_WINDOWLIST_FREN MENU
+{
+   POPUP ""
+   {
+      MENUITEM "&Visualisation"             , IDM_SHOW
+      POPUP    "&Aide"
+      {
+         MENUITEM "&Index"                  , IDM_HELPINDEX
+         MENUITEM "Aide &génerale"          , IDM_HELPGENERAL   , CHECKED
+         MENUITEM "&Utiliser l'aide"        , IDM_HELPUSING
+         MENUITEM "Aide sur les &touches"   , IDM_HELPKEYS
+      }
+      MENUITEM "&Réduire"                   , IDM_MINIMIZE
+      MENUITEM SEPARATOR
+      MENUITEM "&Juxtaposition"             , IDM_TILE
+      MENUITEM "&Chevauchement"             , IDM_CASCADE
+      MENUITEM SEPARATOR
+      MENUITEM "&Fermeture"                 , IDM_CLOSE
+   }
+}
+
+//-----------------------------------------------------------------------------
+// FINN (Finnish)
+//-----------------------------------------------------------------------------
+IDM_WINDOWLIST_FINN MENU
+{
+   POPUP ""
+   {
+      MENUITEM "&Näytä"                     , IDM_SHOW
+      POPUP    "O&hje"
+      {
+         MENUITEM "Hakemisto"               , IDM_HELPINDEX
+         MENUITEM "yleistä"                 , IDM_HELPGENERAL   , CHECKED
+         MENUITEM "Ohjeen käyttö"           , IDM_HELPUSING
+         MENUITEM "Näppäimistö"             , IDM_HELPKEYS
+      }
+      MENUITEM "&Kuvakkeeksi"               , IDM_MINIMIZE
+      MENUITEM SEPARATOR
+      MENUITEM "&Vierekkäin"                , IDM_TILE
+      MENUITEM "&Limittäin"                 , IDM_CASCADE
+      MENUITEM SEPARATOR
+      MENUITEM "&Sulje"                     , IDM_CLOSE
+   }
+}
+
+//-----------------------------------------------------------------------------
+// SPAN (Spanish)
+//-----------------------------------------------------------------------------
+IDM_WINDOWLIST_SPAN MENU
+{
+   POPUP ""
+   {
+      MENUITEM "&Mostrar"                   , IDM_SHOW
+      POPUP    "A&yuda"
+      {
+         MENUITEM "&Indice de ayuda"        , IDM_HELPINDEX
+         MENUITEM "Ayuda &general"          , IDM_HELPGENERAL   , CHECKED
+         MENUITEM "&Utilización de ayuda"   , IDM_HELPUSING
+         MENUITEM "Ayuda para &teclas"      , IDM_HELPKEYS
+      }
+      MENUITEM "Minimi&zar"                 , IDM_MINIMIZE
+      MENUITEM SEPARATOR
+      MENUITEM "Mos&aico"                   , IDM_TILE
+      MENUITEM "Casca&da"                   , IDM_CASCADE
+      MENUITEM SEPARATOR
+      MENUITEM "&Cerrar"                    , IDM_CLOSE
+   }
+}
+
+//-----------------------------------------------------------------------------
+// ITAL (Italian)
+//-----------------------------------------------------------------------------
+IDM_WINDOWLIST_ITAL MENU
+{
+   POPUP ""
+   {
+      MENUITEM "&Mostra"                     , IDM_SHOW
+      POPUP    "&Aiuto"
+      {
+         MENUITEM "&Indice dell'aiuto"       , IDM_HELPINDEX
+         MENUITEM "Aiuto &general"           , IDM_HELPGENERAL   , CHECKED
+         MENUITEM "Per &usare l'aiuto"       , IDM_HELPUSING
+         MENUITEM "&Chiavi per l'aiuto"      , IDM_HELPKEYS
+      }
+      MENUITEM "&Minimizza"                  , IDM_MINIMIZE
+      MENUITEM SEPARATOR
+      MENUITEM "&Affianca"                   , IDM_TILE
+      MENUITEM "A &cascata"                  , IDM_CASCADE
+      MENUITEM SEPARATOR
+      MENUITEM "&Chiudi"                     , IDM_CLOSE
+   }
+}
+
+
+// EOF MENUS.RC

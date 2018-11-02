@@ -1,0 +1,27 @@
+//-----------------------------------------------------------------------------
+// DIALOG BOX TEMPLATES
+//-----------------------------------------------------------------------------
+
+//-------------------------------------------------------------------------
+// FINN
+//-------------------------------------------------------------------------
+// Finnish main dialog:
+IDD_MAIN DIALOG DISCARDABLE  0, 0, 250, 175
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "Muunna Workplace Shell Profiili"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "&Muunna",IDOK,62,149,55,20,WS_GROUP
+    PUSHBUTTON      "&Peruuta",IDCANCEL,133,149,55,20
+    EDITTEXT        IDE_SOURCEPROFILE,12,112,226,13,ES_UPPERCASE | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "CONVINI - Workplace Shell for Windows\nCopyright (C) IBM Corporation, 1994-1995.", IDC_STATIC,5,8,190,25
+    ICON            "IDI_CONVERT",IDC_STATIC,212,8,18,20
+    GROUPBOX        "O&hje",IDC_STATIC,5,42,240,43
+    LTEXT           "Muunna WPSHELL.INI 0.5.x WPSHELL.INI 1.x:si.", IDC_STATIC,11,56,228,8
+    LTEXT           "Nykyinen WPSHELL.INI tallennetaan nimellä WPSHELL.V5X. ", IDC_STATIC,11,69,228,8
+    GROUPBOX        "Lähdeprofiili",IDC_STATIC,5,95,240,40
+END
+
+// EOF MAIN.DLG
+
+

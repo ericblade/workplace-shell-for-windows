@@ -1,0 +1,97 @@
+//---------------------------------------------------------------------
+// WNDLIST.RC
+//    TASKMAN Replacement for Windows 3.1 resource file.
+//
+// Date Created :  04/09/94
+// Last Update  :  09/13/95
+// Written By   :  Mario E. De Armas
+// Compiler Used:  MS Visual C++ 1.52
+//
+// Copyright IBM Corporation, 1994-1995. All rights reserved.
+//
+//
+// FILE LOG:
+// DATE        | ACTION/CHANGE                           | PROGRAMMER
+// 04/09/94    | Creation.                               | MDA
+//=====================================================================
+
+
+//---------------------------------------------------------------------
+// HEADER FILES
+//---------------------------------------------------------------------
+// Windows library header files.
+#include <windows.h>
+#include <ver.h>
+// Window List resource ID's header file.
+#include "resource.h"
+
+//-----------------------------------------------------------------------------
+// PRODUCT VERSION CONSTANTS
+//-----------------------------------------------------------------------------
+#define VER_MAJOR                1                 // Integer representing major version number.
+#define VER_MINOR                51                // Integer representing minor version number.
+#define VER_STR_PRODUCTVERSION   "Release v1.51\0" // String representing current version.
+#define VER_STR_PRODUCTCOPYRIGHT "Copyright © IBM Corporation 1994-1995\0"
+
+//-----------------------------------------------------------------------------
+// LOCAL CONSTANTS
+//-----------------------------------------------------------------------------
+
+//-----------------------------------------------------------------------------
+// VERSION INFORMATION
+//-----------------------------------------------------------------------------
+VS_VERSION_INFO VERSIONINFO
+   FILEVERSION     1,0,0,0
+   PRODUCTVERSION  VER_MAJOR,VER_MINOR,0,0
+   FILEFLAGSMASK   0
+   FILEFLAGS       0
+   FILEOS          VOS_DOS_WINDOWS16
+
+   FILETYPE        VFT_APP
+   FILESUBTYPE     VFT_APP
+
+   BEGIN
+      BLOCK "StringFileInfo"
+      BEGIN
+         BLOCK "040904E4"
+         BEGIN
+            VALUE "CompanyName"        , "IBM Corporation\0"
+            VALUE "FileDescription"    , "Windows 3.1 Task Manager Replacement Program\0"
+            VALUE "FileVersion"        , "1.0.0\0"
+            VALUE "InternalName"       , "Window List\0"
+            VALUE "LegalCopyright"     , VER_STR_PRODUCTCOPYRIGHT
+            VALUE "ProductName"        , "Workplace Shell for Windows\0"
+            VALUE "OriginalFileName"   , "WNDLIST.EXE\0"
+            VALUE "ProductVersion"     , VER_STR_PRODUCTVERSION
+         END
+      END
+
+      BLOCK "VarFileInfo"
+      BEGIN
+         VALUE "Translation", 0x0409, 1252
+      END
+   END
+
+
+//-----------------------------------------------------------------------------
+// DIALOG BOX
+//-----------------------------------------------------------------------------
+IDD_WINDOWLIST DIALOG DISCARDABLE  0, 0, 184, 124
+STYLE WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION ""
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX IDC_LISTBOX,2,2,180,120,LBS_NOINTEGRALHEIGHT | LBS_MULTIPLESEL
+            LBS_EXTENDEDSEL | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP | NOT WS_BORDER
+END
+
+
+//-----------------------------------------------------------------------------
+// POPUP MENUS
+//-----------------------------------------------------------------------------
+#include "MENUS\\MENUS.RC"
+
+
+// EOF WNDLIST.RC
+
+

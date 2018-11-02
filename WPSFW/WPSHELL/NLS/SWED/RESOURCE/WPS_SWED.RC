@@ -1,0 +1,101 @@
+//=====================================================================
+// WPS_SWED.RC
+//    Workplace Shell for Windows "Swedish" NLS Resources.
+//
+// Date Created :  12/09/94
+// Last Update  :  03/21/95
+// Written By   :  Mario E. De Armas
+// Compiler Used:  MS Visual C++ 1.5
+//
+// Copyright IBM Corporation, 1994-1995. All rights reserved.
+//
+//
+// FILE LOG:
+// DATE        | ACTION/CHANGE                           | PROGRAMMER
+// 12/09/94    | Creation.                               | MDA
+//=====================================================================
+
+
+//---------------------------------------------------------------------
+// HEADER FILES
+//---------------------------------------------------------------------
+// Windows library header files.
+#include <windows.h>
+#include <ver.h>
+// Workplace Shell resource ID's header file.
+#include "resource.h"
+
+
+//-----------------------------------------------------------------------------
+// LOCAL CONSTANTS
+//-----------------------------------------------------------------------------
+// String constants used for version information and "Product Information" dialog.
+#define VER_STR_PRODUCTNAME      "Skrivbord för Windows 3.1\0"
+
+//-----------------------------------------------------------------------------
+// VERSION INFORMATION
+//-----------------------------------------------------------------------------
+VS_VERSION_INFO VERSIONINFO
+   FILEVERSION     1,0,0,0
+   PRODUCTVERSION  VER_MAJOR,VER_MINOR,0,0
+   FILEFLAGSMASK   0
+   FILEFLAGS       0
+   FILEOS          VOS_DOS_WINDOWS16
+
+   FILETYPE        VFT_DLL
+   FILESUBTYPE     VFT_DLL
+
+   BEGIN
+      BLOCK "StringFileInfo"
+      BEGIN
+         BLOCK "040904E4"
+         BEGIN
+            VALUE "CompanyName"        , "IBM Corporation\0"
+            VALUE "FileDescription"    , "Workplace Shell NLS Resources Library\0"
+            VALUE "FileVersion"        , "1.0.0\0"
+            VALUE "InternalName"       , "Workplace Shell NLS Resources Library\0"
+            VALUE "LegalCopyright"     , VER_STR_PRODUCTCOPYRIGHT
+            VALUE "ProductName"        , VER_STR_PRODUCTNAME
+            VALUE "OriginalFileName"   , "WPS_SWED.DLL\0"
+            VALUE "ProductVersion"     , VER_STR_PRODUCTVERSION
+         END
+      END
+
+      BLOCK "VarFileInfo"
+      BEGIN
+         VALUE "Translation", 0x0409, 1252
+      END
+   END
+
+
+//-----------------------------------------------------------------------------
+// ICONS
+//-----------------------------------------------------------------------------
+IDI_BASE_ID   ICON   DISCARDABLE   "..\\..\\..\\RESOURCE\\ICONS\\SYSTEM\\WPSFWIN.ICO"
+
+
+//-----------------------------------------------------------------------------
+// POPUP MENUS
+//-----------------------------------------------------------------------------
+#include "MENUS\\MENUS.RC"          // System popup menus for objects.
+
+
+//-----------------------------------------------------------------------------
+// DIALOG BOXES
+//-----------------------------------------------------------------------------
+#include "DIALOGBX\\PRODINFO.DLG"   // Desktop System Menu -> Help -> Product Information.
+#include "DIALOGBX\\FIND.DLG"       // Folder System Menu -> Find... dialog.
+#include "DIALOGBX\\COPYMOVE.DLG"   // Copy, Move, and Create shadow dialog.
+#include "DIALOGBX\\FINDICON.DLG"   // Settings Notebook -> General Page -> Find...
+#include "DIALOGBX\\DEFPAGE.DLG"    // Settings Notebook -> Default Page.
+#include "DIALOGBX\\SETTNB.DLG"     // Settings Notebook pages.
+#include "DIALOGBX\\RUN.DLG"        // Desktop System Menu -> Run... dialog.
+
+
+//-----------------------------------------------------------------------------
+// STRING TABLES
+//-----------------------------------------------------------------------------
+#include "STRINGS\\STRTABLE.RC"     // String Tables Resources.
+
+// EOF WPS_SWED.RC
+

@@ -1,0 +1,24 @@
+//-----------------------------------------------------------------------------
+// DIALOG BOX TEMPLATES
+//-----------------------------------------------------------------------------
+IDD_MAIN DIALOG DISCARDABLE  0, 0, 241, 210
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "Vom Program Manager zur Workplace Shell"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "&Alle Gruppen",IDC_ALL_GROUPS,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,12,26,60,10
+    CONTROL         "Ausgewählte &Gruppen",IDC_SELECTED_GROUP,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,12,62,68,10
+    EDITTEXT        IDC_FOLDER_NAME,87,38,140,12,ES_AUTOHSCROLL | WS_GROUP
+    LISTBOX         IDC_GROUP_LIST,87,62,141,46,LBS_SORT |LBS_NOINTEGRALHEIGHT | LBS_DISABLENOSCROLL | WS_VSCROLL |WS_GROUP | WS_TABSTOP
+    CONTROL         "S&ystemordner",IDC_SYSTEM_FOLDER,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,25,140,120,10
+    CONTROL         "'Fenster in Symbolgröße' &Ordner",IDC_MINVIEWER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,25,158,120,10
+    CONTROL         "Ordner für &Schablonen",IDC_TEMPLATES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,142,140,120,10
+    DEFPUSHBUTTON   "&Migrieren",IDOK,57,184,55,20,WS_GROUP
+    PUSHBUTTON      "&Fertig",IDCANCEL,128,184,55,20
+    LTEXT           "Name des zu erstellenden Ordners:",IDC_TEXT,87,26,106,10
+    GROUPBOX        "Weitere Ordner und Objekte",IDC_STATIC,6,125,230,51
+    GROUPBOX        "Wählen Sie die zu migrierende(n) Gruppe(n)",IDC_STATIC,6,9,230,108
+END
+
+// EOF MAIN.DLG
+

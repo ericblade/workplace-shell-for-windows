@@ -1,0 +1,96 @@
+# Microsoft Visual C++ generated build script - Do not modify
+
+PROJ = WNDLIST
+DEBUG = 0
+PROGTYPE = 0
+CALLER = 
+ARGS = 
+DLLS = 
+D_RCDEFINES = -d_DEBUG
+R_RCDEFINES = -dNDEBUG
+ORIGIN = MSVC
+ORIGIN_VER = 1.00
+PROJPATH = D:\WPSFW\WNDLIST\BUILD\
+USEMFC = 0
+CC = cl
+CPP = cl
+CXX = cl
+CCREATEPCHFLAG = 
+CPPCREATEPCHFLAG = 
+CUSEPCHFLAG = 
+CPPUSEPCHFLAG = 
+FIRSTC = WNDLIST.C   
+FIRSTCPP =             
+RC = rc
+CFLAGS_D_WEXE = /nologo /G2 /W3 /Zi /Od /D "_DEBUG" /GA /Fd"WNDLIST.PDB"
+CFLAGS_R_WEXE = /nologo /Gs /G3 /W3 /O2 /Ox /Ob2 /D "NDEBUG" /GA 
+LFLAGS_D_WEXE = /NOLOGO /NOD /PACKC:61440 /STACK:10240 /ALIGN:16 /ONERROR:NOEXE /CO  
+LFLAGS_R_WEXE = /NOLOGO /NOD /PACKC:61440 /STACK:8192 /ALIGN:16 /ONERROR:NOEXE 
+LIBS_D_WEXE = oldnames libw slibcew commdlg.lib olecli.lib olesvr.lib shell.lib 
+LIBS_R_WEXE = oldnames libw slibcew 
+RCFLAGS = /nologo
+RESFLAGS = /nologo
+RUNFLAGS = 
+DEFFILE = WNDLIST.DEF
+OBJS_EXT = 
+LIBS_EXT = 
+!if "$(DEBUG)" == "1"
+CFLAGS = $(CFLAGS_D_WEXE)
+LFLAGS = $(LFLAGS_D_WEXE)
+LIBS = $(LIBS_D_WEXE)
+MAPFILE = nul
+RCDEFINES = $(D_RCDEFINES)
+!else
+CFLAGS = $(CFLAGS_R_WEXE)
+LFLAGS = $(LFLAGS_R_WEXE)
+LIBS = $(LIBS_R_WEXE)
+MAPFILE = nul
+RCDEFINES = $(R_RCDEFINES)
+!endif
+!if [if exist MSVC.BND del MSVC.BND]
+!endif
+SBRS = WNDLIST.SBR
+
+
+WNDLIST_DEP = d:\wpsfw\wpshell\include\wphelpid.h
+
+
+WNDLIST_RCDEP = d:\wpsfw\wndlist\resource\menus\\menus.rc
+
+
+all:	$(PROJ).EXE
+
+WNDLIST.OBJ:	..\SOURCE\WNDLIST.C $(WNDLIST_DEP)
+	$(CC) $(CFLAGS) $(CCREATEPCHFLAG) /c ..\SOURCE\WNDLIST.C
+
+WNDLIST.RES:	..\RESOURCE\WNDLIST.RC $(WNDLIST_RCDEP)
+	$(RC) $(RCFLAGS) $(RCDEFINES) -r -FoD:\WPSFW\WNDLIST\BUILD\WNDLIST.RES ..\RESOURCE\WNDLIST.RC
+
+
+$(PROJ).EXE::	WNDLIST.RES
+
+$(PROJ).EXE::	WNDLIST.OBJ $(OBJS_EXT) $(DEFFILE)
+	echo >NUL @<<$(PROJ).CRF
+WNDLIST.OBJ +
+$(OBJS_EXT)
+$(PROJ).EXE
+$(MAPFILE)
+c:\msvc\lib\+
+$(LIBS)
+$(DEFFILE);
+<<
+	link $(LFLAGS) @$(PROJ).CRF
+	$(RC) $(RESFLAGS) WNDLIST.RES $@
+	@copy $(PROJ).CRF MSVC.BND
+
+$(PROJ).EXE::	WNDLIST.RES
+	if not exist MSVC.BND 	$(RC) $(RESFLAGS) WNDLIST.RES $@
+
+run: $(PROJ).EXE
+	$(PROJ) $(RUNFLAGS)
+
+
+$(PROJ).BSC: $(SBRS)
+	bscmake @<<
+/o$@ $(SBRS)
+<<

@@ -1,0 +1,27 @@
+//-------------------------------------------------------------------------
+// STRING TABLES
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+// DUTC (Dutch)
+//-------------------------------------------------------------------------
+STRINGTABLE LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+   IDSTR_CONVERT_CAPTION,  "Konverteer"
+   IDSTR_CONVERT_SUCCESS,  "Profiel succesvol gekonverteerd."
+   IDSTR_CONVERT_FAILURE,  "Fout bij konversie profiel"
+   IDSTR_ERROR_CAPTION,    "Konversie Hulpprogramma"
+   IDSTR_ERR_10,           "FOUT 10: Geen profiel bestand in Windows directory gevonden."
+   IDSTR_ERR_11,           "FOUT 11: Huidig profiel is te klein."
+   IDSTR_ERR_12,           "FOUT 12: Bestand is geen geldig Workplace Shell profiel."
+   IDSTR_ERR_13,           "FOUT 13: Profiel is reeds versie 1.0 of later."
+   IDSTR_ERR_20,           "FOUT 20: Kan WPSHELL.INI niet hernoemen naar WPSHELL.V5X."
+   IDSTR_ERR_21,           "FOUT 21: Kan geen nieuw WPSHELL.INI bestand aanmaken."
+   IDSTR_ERR_22,           "FOUT 22: Kan bestand WPSHELL.V5X niet openen."
+   IDSTR_ERR_23,           "FOUT 23: Kan profiel WPSHELL.V5X niet lezen."
+   IDSTR_ERR_40,           "FOUT 40: Ongeldig object type in profiel."
+END
+
+// EOF STRTABLE.RC
+
+
+

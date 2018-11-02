@@ -1,0 +1,52 @@
+//-------------------------------------------------------------------------
+// STRING TABLES
+//-------------------------------------------------------------------------
+
+//-------------------------------------------------------------------------
+// ENUS (US-English)
+//-------------------------------------------------------------------------
+STRINGTABLE LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+   IDSTR_PMTOWP_CAPTION,    "Windows työpöydästä Workplace:een"
+   IDSTR_PMTOWP_SUCCESS,    "Profiili(t) muunnettu virheettä."
+   IDSTR_PMTOWP_FAILURE,    "Virhe muunnettaessa profiilia."
+   IDSTR_ERROR_CAPTION,     "Virhe muunnoksessa"
+   IDSTR_ERR_01,            "VIRHE 01: DDEML:ää ei voitu alustaa."
+   IDSTR_ERR_02,            "VIRHE 02: 'PROGMAN' DDE palvelimeen ei saatu yhteyttä."
+   IDSTR_ERR_03,            "VIRHE 03: Ryhmän informaatiota ei voitu lukea DDE palvelimelta."
+
+   IDSTR_PM_FOLDER,         "Järjestelmänhallinta kansio"
+   IDSTR_FILE_EXISTS_QUERY, "WPSHELL.INI on jo olemassa.\nHaluatko korvata voimassa olevan tiedoston?\n\n   YES\t - Korvaa nykyinen tiedosto\n   NO\t - Lisää nykyiseen tiedostoon\n   CANCEL\t - Keskeytä toiminto"
+   IDSTR_NO_SELECTION,      "Yhtään ryhmää ei ole valittu muunnosta varten."
+
+   IDSTR_OBJTITLE_COMMANDPROMPTS,   "Kehotteet"
+   IDSTR_OBJTITLE_DOSPROMPT,        "DOS Kehote"
+   IDSTR_OBJTITLE_TEMPLATES,        "Mallipohjat"
+   IDSTR_OBJTITLE_DATAFILE,         "Datatiedosto"
+   IDSTR_OBJTITLE_FOLDER,           "Kansio"
+   IDSTR_OBJTITLE_PROGRAM,          "Ohjelma"
+   IDSTR_OBJTITLE_SHREDDER,         "Silppuri"
+   IDSTR_OBJTITLE_SYSTEMSETUP,      "Järjestelmäasetukset"
+   IDSTR_OBJTITLE_SYSTEM,           "Järjestelmä"
+   IDSTR_OBJTITLE_SCHEMEPALETTE,    "Värit"
+   IDSTR_OBJTITLE_FONTPALETTE,      "Fontit"
+   IDSTR_OBJTITLE_SOUND,            "Ääni"
+   IDSTR_OBJTITLE_COUNTRY,          "Maa-asetukset"
+   IDSTR_OBJTITLE_DDINSTALL,        "Laiteajurit"
+   IDSTR_OBJTITLE_MOUSE,            "Hiiri"
+   IDSTR_OBJTITLE_KEYBOARD,         "Näppäimistö"
+   IDSTR_OBJTITLE_WINDOWSSYSTEM,    "Windows Järjestelmä"
+   IDSTR_OBJTITLE_DRIVES,           "Levyasemat"
+   IDSTR_OBJTITLE_DRIVE,            "Asema"
+   IDSTR_OBJTITLE_STARTUP,          "Aloitus"
+   IDSTR_OBJTITLE_MINVIEWER,        "Pienennettyjen ikkunoiden näyttö"
+   
+   IDSTR_CONTROLPANEL_COLORS        "COLOURS"
+   IDSTR_CONTROLPANEL_FONTS         "FONTS"
+   IDSTR_CONTROLPANEL_INTERNATIONAL "INTERNATIONAL"
+   IDSTR_CONTROLPANEL_MOUSE         "MOUSE"
+   IDSTR_CONTROLPANEL_KEYBOARD      "KEYBOARD"
+END
+
+// EOF STRTABLE.RC
+

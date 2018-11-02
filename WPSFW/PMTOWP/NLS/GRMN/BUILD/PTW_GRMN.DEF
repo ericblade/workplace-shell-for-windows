@@ -1,0 +1,26 @@
+;=====================================================================
+; PTW_GRMN.DEF
+;
+; Date Created :  12/22/94
+; Last Update  :  01/13/95
+; Written By   :  Mario E. De Armas
+; Compiler Used:  MS Visual C++ 1.5
+;
+; Copyright IBM Corporation, 1994. All rights reserved.
+;
+;
+; FILE LOG:
+; DATE        | ACTION/CHANGE                           | PROGRAMMER
+; 12/22/94    | Creation.                               | MDA
+;=====================================================================
+
+LIBRARY        PTW_GRMN
+DESCRIPTION    "PM To WP NLS Resources Library"
+EXETYPE        WINDOWS
+STUB           'WINSTUB.EXE'
+CODE           PRELOAD MOVEABLE DISCARDABLE
+DATA           PRELOAD MOVEABLE SINGLE
+
+; EOF PTW_GRMN.DEF
+
+

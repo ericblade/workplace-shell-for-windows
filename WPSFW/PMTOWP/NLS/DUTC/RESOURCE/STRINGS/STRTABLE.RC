@@ -1,0 +1,52 @@
+//-------------------------------------------------------------------------
+// STRING TABLES
+//-------------------------------------------------------------------------
+
+//-------------------------------------------------------------------------
+// DUTC (Dutch)
+//-------------------------------------------------------------------------
+STRINGTABLE LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+   IDSTR_PMTOWP_CAPTION,    "Programmabeheer naar Workplace"
+   IDSTR_PMTOWP_SUCCESS,    "Groep(en) migratie succesvol."
+   IDSTR_PMTOWP_FAILURE,    "Groep(en) migratie niet gelukt."
+   IDSTR_ERROR_CAPTION,     "PM naar WP Fout"
+   IDSTR_ERR_01,            "FOUT 01: Kon DDEML niet initialiseren."
+   IDSTR_ERR_02,            "FOUT 02: Kon geen verbinding maken met 'PROGMAN' DDE server."
+   IDSTR_ERR_03,            "FOUT 03: Kon geen groep informatie van DDE server lezen."
+
+   IDSTR_PM_FOLDER,         "Programma Beheer Map"
+   IDSTR_FILE_EXISTS_QUERY, "WPSHELL.INI bestaat al.\nWilt U het huidige bestand OVERSCHRIJVEN?\n\n   JA\t - Overschrijf het huidige bestand\n   NEE\t - Toevoegen aan huidige bestand\n   CANCEL  - Afbreken handeling"
+   IDSTR_NO_SELECTION,      "No group currently selected to migrate."
+
+   IDSTR_OBJTITLE_COMMANDPROMPTS,   "Command Prompts"
+   IDSTR_OBJTITLE_DOSPROMPT,        "DOS Prompt"
+   IDSTR_OBJTITLE_TEMPLATES,        "Modellen"
+   IDSTR_OBJTITLE_DATAFILE,         "Gegevens Bestand"
+   IDSTR_OBJTITLE_FOLDER,           "Map"
+   IDSTR_OBJTITLE_PROGRAM,          "Programma"
+   IDSTR_OBJTITLE_SHREDDER,         "Slurper"
+   IDSTR_OBJTITLE_SYSTEMSETUP,      "Systeem Setup"
+   IDSTR_OBJTITLE_SYSTEM,           "Systeem"
+   IDSTR_OBJTITLE_SCHEMEPALETTE,    "Scheme Palette"
+   IDSTR_OBJTITLE_FONTPALETTE,      "Font Palette"
+   IDSTR_OBJTITLE_SOUND,            "Geluid"
+   IDSTR_OBJTITLE_COUNTRY,          "Land"
+   IDSTR_OBJTITLE_DDINSTALL,        "Device Driver Installatie"
+   IDSTR_OBJTITLE_MOUSE,            "Muis"
+   IDSTR_OBJTITLE_KEYBOARD,         "Toetsenbord"
+   IDSTR_OBJTITLE_WINDOWSSYSTEM,    "Windows Instellingen"
+   IDSTR_OBJTITLE_DRIVES,           "Drives"
+   IDSTR_OBJTITLE_DRIVE,            "Drive"
+   IDSTR_OBJTITLE_STARTUP,          "Opstarten"
+   IDSTR_OBJTITLE_MINVIEWER,        "Pictogram Venster Viewer"
+   
+   IDSTR_CONTROLPANEL_COLORS        "COLORS"
+   IDSTR_CONTROLPANEL_FONTS         "FONTS"
+   IDSTR_CONTROLPANEL_INTERNATIONAL "INTERNATIONAL"
+   IDSTR_CONTROLPANEL_MOUSE         "MOUSE"
+   IDSTR_CONTROLPANEL_KEYBOARD      "KEYBOARD"
+END
+
+// EOF STRTABLE.RC
+

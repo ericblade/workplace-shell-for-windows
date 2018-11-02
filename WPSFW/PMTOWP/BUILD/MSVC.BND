@@ -1,0 +1,9 @@
+PMTOWP.OBJ +
+PROGMAN.OBJ +
+
+PMTOWP.EXE
+nul
+c:\msvc\lib\+
+CTL3D.LIB+
+oldnames libw llibcew ddeml.lib shell.lib
+PMTOWP.DEF;

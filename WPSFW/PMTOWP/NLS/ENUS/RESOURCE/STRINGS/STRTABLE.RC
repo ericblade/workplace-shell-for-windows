@@ -1,0 +1,52 @@
+//-------------------------------------------------------------------------
+// STRING TABLES
+//-------------------------------------------------------------------------
+
+//-------------------------------------------------------------------------
+// ENUS (US-English)
+//-------------------------------------------------------------------------
+STRINGTABLE LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+   IDSTR_PMTOWP_CAPTION,    "Progman to Workplace"
+   IDSTR_PMTOWP_SUCCESS,    "Successfully migrated group(s)."
+   IDSTR_PMTOWP_FAILURE,    "Failure migrating group(s)."
+   IDSTR_ERROR_CAPTION,     "PM to WP Error"
+   IDSTR_ERR_01,            "ERROR 01: Could not initialize DDEML."
+   IDSTR_ERR_02,            "ERROR 02: Could not connect to 'PROGMAN' DDE server."
+   IDSTR_ERR_03,            "ERROR 03: Could not read group information from DDE server."
+
+   IDSTR_PM_FOLDER,         "Program Manager Folder"
+   IDSTR_FILE_EXISTS_QUERY, "WPSHELL.INI already exists.\nWould you like to OVERWRITE the current file?\n\n   YES\t - Overwrite the current file\n   NO\t - Append to the current file\n   CANCEL  - Abort operation"
+   IDSTR_NO_SELECTION,      "No group currently selected to migrate."
+
+   IDSTR_OBJTITLE_COMMANDPROMPTS,   "Command Prompts"
+   IDSTR_OBJTITLE_DOSPROMPT,        "DOS Prompt"
+   IDSTR_OBJTITLE_TEMPLATES,        "Templates"
+   IDSTR_OBJTITLE_DATAFILE,         "Data File"
+   IDSTR_OBJTITLE_FOLDER,           "Folder"
+   IDSTR_OBJTITLE_PROGRAM,          "Program"
+   IDSTR_OBJTITLE_SHREDDER,         "Shredder"
+   IDSTR_OBJTITLE_SYSTEMSETUP,      "System Setup"
+   IDSTR_OBJTITLE_SYSTEM,           "System"
+   IDSTR_OBJTITLE_SCHEMEPALETTE,    "Scheme Palette"
+   IDSTR_OBJTITLE_FONTPALETTE,      "Font Palette"
+   IDSTR_OBJTITLE_SOUND,            "Sound"
+   IDSTR_OBJTITLE_COUNTRY,          "Country"
+   IDSTR_OBJTITLE_DDINSTALL,        "Device Driver Install"
+   IDSTR_OBJTITLE_MOUSE,            "Mouse"
+   IDSTR_OBJTITLE_KEYBOARD,         "Keyboard"
+   IDSTR_OBJTITLE_WINDOWSSYSTEM,    "Windows System"
+   IDSTR_OBJTITLE_DRIVES,           "Drives"
+   IDSTR_OBJTITLE_DRIVE,            "Drive"
+   IDSTR_OBJTITLE_STARTUP,          "Startup"
+   IDSTR_OBJTITLE_MINVIEWER,        "Minimized Window Viewer"
+   
+   IDSTR_CONTROLPANEL_COLORS        "COLORS"
+   IDSTR_CONTROLPANEL_FONTS         "FONTS"
+   IDSTR_CONTROLPANEL_INTERNATIONAL "INTERNATIONAL"
+   IDSTR_CONTROLPANEL_MOUSE         "MOUSE"
+   IDSTR_CONTROLPANEL_KEYBOARD      "KEYBOARD"
+END
+
+// EOF STRTABLE.RC
+

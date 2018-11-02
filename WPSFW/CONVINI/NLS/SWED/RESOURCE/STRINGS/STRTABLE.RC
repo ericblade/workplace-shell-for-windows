@@ -1,0 +1,26 @@
+//-------------------------------------------------------------------------
+// STRING TABLES
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+// SWED (Swedish)
+//-------------------------------------------------------------------------
+STRINGTABLE LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+   IDSTR_CONVERT_CAPTION,  "Konvertera"
+   IDSTR_CONVERT_SUCCESS,  "Profilen blev framgångsrikt konverterad."
+   IDSTR_CONVERT_FAILURE,  "Ett fel uppstod vid konverteringen av profilen."
+   IDSTR_ERROR_CAPTION,    "Konverterings Program"
+   IDSTR_ERR_10,           "ERROR 10: Ingen profil hittades i Windows biblioteket."
+   IDSTR_ERR_11,           "ERROR 11: Nuvarande profil är för liten."
+   IDSTR_ERR_12,           "ERROR 12: Filen är inte en godkänd Skrivbords profil."
+   IDSTR_ERR_13,           "ERROR 13: Profilen är redan version 1.0 eller högre."
+   IDSTR_ERR_20,           "ERROR 20: Kunde inte döpa om WPSHELL.INI till WPSHELL.V5X."
+   IDSTR_ERR_21,           "ERROR 21: Kunde inte skapa ny WPSHELL.INI fil."
+   IDSTR_ERR_22,           "ERROR 22: Kunde inte öppna WPSHELL.V5X filen."
+   IDSTR_ERR_23,           "ERROR 23: Kunde inte läsa från WPSHELL.V5X profilen."
+   IDSTR_ERR_40,           "ERROR 40: Otillåten objekttyp i profilen."
+END
+
+// EOF STRTABLE.RC
+
+

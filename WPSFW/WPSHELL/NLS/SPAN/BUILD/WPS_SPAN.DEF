@@ -1,0 +1,27 @@
+;=====================================================================
+; WPS_SPAN.DEF
+;    Workplace Shell for Windows "Spanish" NLS-resources
+; library main source file.
+;
+; Date Created :  12/09/94
+; Last Update  :  09/13/95
+; Written By   :  Mario E. De Armas
+; Compiler Used:  MS Visual C++ 1.52
+;
+; Copyright IBM Corporation, 1994-1995. All rights reserved.
+;
+;
+; FILE LOG:
+; DATE        | ACTION/CHANGE                           | PROGRAMMER
+; 12/09/94    | Creation.                               | MDA
+;=====================================================================
+
+LIBRARY        WPS_SPAN
+DESCRIPTION    "Workplace Shell NLS Resources Library"
+EXETYPE        WINDOWS
+STUB           'WINSTUB.EXE'
+CODE           PRELOAD MOVEABLE DISCARDABLE
+DATA           PRELOAD MOVEABLE SINGLE
+
+; EOF WPS_SPAN.DEF
+

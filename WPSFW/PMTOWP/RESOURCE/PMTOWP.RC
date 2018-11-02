@@ -1,0 +1,73 @@
+//=====================================================================
+// PMTOWP.RC               
+//    Program Manager To Workplace Conversion Program Resource File.
+//                                                       
+// Date Created :  01/26/94       
+// Last Update  :  01/16/95
+// Written By   :  Mario E. De Armas
+// Compiler Used:  MS Visual C++ 1.5
+//
+// Copyright IBM Corporation, 1994. All rights reserved.
+//                       
+//               
+// FILE LOG:
+// DATE        | ACTION/CHANGE                           | PROGRAMMER
+// 01/26/94    | Creation.                               | MDA
+//=====================================================================
+            
+   
+//---------------------------------------------------------------------
+// HEADER FILES
+//---------------------------------------------------------------------
+// Windows library header files.
+#include <windows.h>
+#include <ver.h>
+// PMTOWP resource IDs header file.
+#include "resource.h"
+
+
+//-----------------------------------------------------------------------------
+// VERSION INFORMATION
+//-----------------------------------------------------------------------------
+VS_VERSION_INFO VERSIONINFO
+   FILEVERSION     1,0,0,0
+   PRODUCTVERSION  VER_MAJOR,VER_MINOR,0,0  
+   FILEFLAGSMASK   0
+   FILEFLAGS       0
+   FILEOS          VOS_DOS_WINDOWS16
+      
+   FILETYPE        VFT_APP
+   FILESUBTYPE     VFT_APP
+   
+   BEGIN
+      BLOCK "StringFileInfo"
+      BEGIN
+         BLOCK "040904E4"
+         BEGIN
+            VALUE "CompanyName"        , "IBM Corporation\0"
+            VALUE "FileDescription"    , "Program Manager To Workplace Shell Conversion Program\0"
+            VALUE "FileVersion"        , "1.0.0\0"
+            VALUE "InternalName"       , "PROGMAN To WPSHELL\0"
+            VALUE "LegalCopyright"     , VER_STR_PRODUCTCOPYRIGHT
+            VALUE "ProductName"        , "Workplace Shell for Windows 3.1\0"
+            VALUE "OriginalFileName"   , "PMTOWP.EXE\0"
+            VALUE "ProductVersion"     , VER_STR_PRODUCTVERSION
+         END
+      END
+
+      BLOCK "VarFileInfo"
+      BEGIN 
+         VALUE "Translation", 0x0409, 1252
+      END
+   END
+   
+//-----------------------------------------------------------------------------
+// ICONS
+//-----------------------------------------------------------------------------
+IDI_PMTOWP              ICON    DISCARDABLE     "ICONS\\PMTOWP.ICO"
+IDI_WINSYS              ICON    DISCARDABLE     "ICONS\\WIN31.ICO"
+IDI_OS2SYS              ICON    DISCARDABLE     "ICONS\\OS2SYS.ICO"
+
+
+// EOF PMTOWP.RC
+

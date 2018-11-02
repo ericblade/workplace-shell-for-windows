@@ -1,0 +1,1202 @@
+========================================================================
+==                                                                    ==
+==           L I S T   O F   W O R L D - W I D E   B B S 's           ==
+==                                                                    ==
+==                  (Taken from PS/2 Assistant)                       ==
+==                                                                    ==
+========================================================================
+
+The following is a list of BBS phone numbers which might contain the latest
+release of the Workplace Shell for Windows package.  The package might be
+archived under OS/2 freeware/shareware software, IBM Employee Written Software
+(EWS) libraries, or Windows shell replacement catalogs.  Either way, it is
+not meant to be a complete or accurate listing of current BBS's, and many
+of them might not have the package at all.
+
+The name of tha package might vary between BBS's, but should be something like
+the following:
+   WPSFWxxx.ZIP (where xxx is the current version number, i.e. 150 = 1.50)
+   WPSFWIN.ZIP
+   WPSFW.ZIP
+   WPSHELL.ZIP
+
+The settings to communicate with most BBS below are:
+   14.4Kbps,N,8,1 or 9600bps,N,8,1
+
+
+================================================================================
+                    T A B L E   O F   C O N T E N T S
+================================================================================
+
+Contents of file (in order of appearance):
+
+   1) IBM FTP sites and BBS Listings
+   2) United States BBS Listings
+   3) Australia BBS Listings
+   4) Canada BBS Listings
+   5) Germany BBS Listings
+   6) Netherlands BBS Listings
+   7) Other Countries BBS Listings
+
+
+
+================================================================================
+1)      I B M   F T P   S I T E S   A N D   B B S   L I S T I N G S
+================================================================================
+
+Location                                              Phone Number
+--------                                              ------------
+IBM Anonymous FTP Internet Sites:
+     IBM PC Company                                   pcco.ibm.com
+     IBM TJ Watson Research Center                    software.watson.ibm.com (129.34.139.5)
+IBM Driver Development Support Center BBS             407-982-3217
+IBM OS/2 Forum on CompuServe (type GO IBMOS2)         (your local CIS phone number)
+IBM OS/2 Support BBS (Montreal, Canada)               514-938-3022
+IBM OS/2 Support BBS (Toronto, Canada)                416-492-1823
+IBM OS/2 Support BBS (Toronto/Markham, Canada)        416-946-4255
+IBM OS/2 Support BBS (Vancouver, Canada)              604-664-6466
+IBM OS/2 Support BBS (Denmark)                        45-45887222
+IBM OS/2 Support BBS (Netherlands)                    31-20-6974757
+IBM OS/2 Support BBS (Switzerland)                    41-56-321800
+IBM OS/2 Support BBS (USA)                            (by subscription)
+IBM PC Company (PCC) BBS                              919-517-0001
+                                                      FTP: ftp.pcco.ibm.com (anonymous)
+                                                      WWW: http://www.pcco.ibm.com
+IBM Product Information (Internet)                    gopher.ibmlink.ibm.com
+IBM World Wide Web Sites:
+ IBM Home Page                                        http://www.ibm.com
+ IBM Kiosk for Education (IKE)                        http://ike.engr.washington.edu/ike.html
+ IBM News Releases                                    http://www.ibm.com
+ IBM OS/2 LAN Server Page                             http://www.austin.ibm.com/pspinfo/lansrvr.html
+ IBM PC Company BBS                                   http://www.pc.ibm.com
+ IBM Software Page                                    http://www.torolab.ibm.com
+
+
+================================================================================
+2)           U N I T E D   S T A T E S   B B S   L I S T I N G S
+================================================================================
+
+This list shows BBSes in 47 U.S. states, plus Guam, organized by state.
+Phone numbers are subject to change without notice, so some of the following
+may be out of date.
+
+
+Phone Numbers                     BBS Name
+-------------                     --------
+Alabama
+205-595-0183 (Birmingham)         The Computrion BBS
+
+334-883-1308 (Huntsville)         Occam's Razor BBS
+
+
+Alaska
+907-349-3421 (Anchorage)          Airtech BBS
+907-349-4646 (Anchorage)          Anchorage Select BBS
+907-372-1624 (Eielson AFB)        TSW Online Info Service BBS
+
+
+Arizona
+520-452-0587 (Sierra Vista)       Commo Shack BBS
+520-458-0451 (Sierra Vista)       The Analog Gate BBS, or
+520-525-3711 (Flagstaff)          Run-Time BBS
+520-639-1039                      Brass Cannon BBS
+520-749-8638 (Tucson)             The Emerald Isle BBS
+520-814-1491                      The EncounTer BBS
+
+602-222-5491 (Phoenix)            Phoenix PC User's Group BBS
+602-253-1946 (Phoenix)            Windows in Time BBS
+602-277-1334 (Phoenix)            ORAC/2 BBS
+
+
+California
+209-226-3476 (Fresno)             Walk on the Wild Side BBS
+209-738-1370 (Visalia)            Union Pacific BBS
+
+310-374-9994 (Manhattan Beach)    Manhattan Online BBS
+310-787-0266                      CircusMaximus OS/2 BBS
+
+408-259-2223 (San Jose)           AsmLang and OS/2
+408-259-3019                      Data Port BBS
+408-435-2886                      Automation Central BBS
+408-655-1096 (Monterey)           Nitelog BBS
+
+415-431-0473 (San Francisco)      SeaHunt BBS
+415-468-6715 (Daly City)          The Informer BBS
+415-494-7497                      The Pyramid/2 BBS
+415-494-7498                      The Pyramid/2 BBS, 2nd Line
+415-494-7499                      The Pyramid/2 BBS, 3rd Line
+
+510-657-7948 (Fremont)            Bay Area OS/2 BBS
+510-736-8343 (Danville)           Windows OnLine BBS
+
+619-291-9791 (San Diego)          PCAware OS/2 BBS
+619-464-0776 (La Mesa)            The Czar Chasm BBS
+619-549-4215 (La Jolla)           OS/2 Connection BBS
+619-558-9475 (San Diego)          OS/2 San Diego BBS
+619-579-0135 (El Cajon)           Zzyzx Road OS/2 BBS
+619-872-4767 (Bishop)             DayStorm BBS
+
+714-751-9307                      Spectre's OS/2 Technical BBS, or
+714-751-6534                      Spectre's OS/2 Technical BBS, 2nd Line
+714-963-8517                      Omega-Point BBS (2400bps)
+714-965-9963 (Huntington Beach)   Computer Educational Services BBS
+
+805-264-0200 (Palmdale)           LoraBBS-OS/2 BBS
+805-528-6829                      Beta Test BBS
+805-379-3450                      Magnum BBS (Gilmore Systems)
+805-724-1800 (Lake Hughes)        New Frontiers BBS
+805-942-0702 (Lancaster)          Mad Greek's BBS
+
+818-879-7405 (Agoura)             Impact Support BBS
+818-966-3305                      Data Field BBS
+
+909-369-6556 (Riverside)          Night Vision BBS
+909-597-7858 (Chino Hills)        T.E.L. Net Systems BBS
+
+916-929-3237 (Sacramento)         DeTail BBS (DeScribe, Inc.)
+
+
+Colorado
+303-670-9118 (Pine)               The Conifer Connection BBS
+303-744-0373 (Denver)             The OS/2 Source BBS
+303-755-6859 (Denver)             Denver OS/2 BBS
+
+719-282-1959                      The CS-DEPOT BBS
+719-545-8572                      Cuerna Verde BBS
+719-574-6963 (Paterson AFB)       The House of Pain! BBS
+719-599-4568                      The Canadian Connection BBS
+
+
+Connecticut
+203-234-0824                      The Storm Front OS/2 BBS
+203-239-5894                      The Excelsior BBS, or
+203-239-5916                      The Excelsior BBS, 2nd Line
+203-271-1579 (Cheshire)           Hole in the Woods OS/2 BBS
+203-329-2972                      Bullet BBS, or
+203-322-4135                      Bullet BBS, 2nd Line
+203-483-0348 (Branford)           Fernwood BBS
+203-622-4740                      Caladan BBS
+203-791-8532                      Treasure Island BBS
+203-878-2367 (Milford)            The Hour Glass BBS
+203-888-0182 (Seymour)            The Seven Seals BBS
+203-934-9852                      ASCII Neighborhood BBS, or
+203-932-6236                      ASCII Neighborhood BBS, 2nd Line
+203-966-5662 (New Canaan)         Urban Express BBS
+
+
+Delaware
+302-234-2792 (Hockessin)          The Small Blunder BBS
+302-477-0197 (Wilmington)         Delaware Valley OS/2 User's Group BBS
+302-653-1458                      Space Station Alpha BBS
+302-764-2829                      Eastern C Board BBS
+302-764-2839                      Eastern C Board BBS, 2nd Line
+302-984-2238                      Singer Bear BBS
+
+
+Florida
+305-292-8626 (Island Grove)       KludgeWerkes, the BBS
+305-370-0374 (Plantation)         Trek Land BBS
+
+407-254-3826 (Melbourne)          The SandDollar BBS
+407-451-1984 (Boca Raton)         The Adult Information Exchange BBS
+407-982-3217 (Boca Raton)         DUDE (IBM's OS/2 device driver developer's) BBS
+
+813-321-0734 (St. Petersburg)     Mercury Opus BBS
+813-562-2249                      Tampa Bay OS/2 Users' Group BBS
+
+904-479-8538                      The 19th Hole BBS
+904-492-2305 (Pensacola)          The Beachside BBS
+904-682-1620 (Longwood)           Wizard of OS/2 BBS
+904-739-2445 (Jacksonville)       OS/2 Exchange BBS
+904-893-2404 (Tallahassee)        The Other World BBS
+904-934-3146                      Apothecary's Archives BBS
+904-934-9796                      Disintegrated Circuit BBS
+
+941-425-1000 (Mulberry)           Hawks Nest BBS
+941-772-4785 (Cape Coral)         The Wave PC BBS
+941-786-4864 (Palm Harbor)        MBA BBS
+
+
+Georgia
+404-433-8213 (Atlanta)            Serious Fun BBS
+404-466-3994 (Loganville)         The Eagle Line BBS
+404-471-1549 (Atlanta)            Information Overload BBS
+404-516-0048 (Woodstock)          Atlanta Windows BBS
+404-973-6666 (Atlanta)            4YI (For Your Information)
+
+706-694-3295 (Cohutta)            Hi-Tech Gateway BBS
+
+912-439-4054 (Albany)             OS/2 Tower BBS
+
+
+Guam
+671-564-2975                      Operating System BBS
+671-565-6707                      The DogHouse BBS, or
+671-565-1013                      The DogHouse BBS, 2nd Line
+
+
+Hawaii
+808-254-8102 (Kailua)             ChitChat Line II BBS
+808-456-8510 (Pearl City)         Ghostcomm Image Gallery BBS
+808-521-2359 (Honolulu)           The "In-Touch" BBS
+
+
+Idaho
+208-887-4752 (Council)            The Cat's Lair BBS
+
+
+Illinois
+217-857-6370 (Teutopolis)         The Polish Hideout BBS
+
+309-664-0881 (Normal)             The Adventurer's Corner BBS
+
+312-274-8136 (Chicago)            National Islamic BBS
+312-736-7434                      I Can! BBS, or
+312-736-7388                      I Can! BBS, 2nd Line
+
+708-215-0109 (Chicago)            Xpress Data BBS
+708-395-2906 (Antioch)            Tropical Avenue BBS
+708-895-4042 (Chicago)            Greater Chicago Online!! BBS
+708-956-9565 (Arlington Heights)  Megadodo Publications OS/2 BBS
+
+815-868-2422                      The Boomtown BBS
+
+
+Indiana
+219-356-5478 (Huntington)         Bits, Bytes and Bull BBS
+219-471-3918 (Ft. Wayne)          The Fortress BBS
+219-489-8756 (Fort Wayne)         MegaCity One BBS
+219-744-4908 (Fort Wayne)         The Play Board BBS
+
+317-448-2842 (Lafayette)          Graffiti on the BBS Wall
+317-525-7164                      The Catacombs BBS
+317-583-0732 (Otterbein)          The Hanger BBS
+317-742-2680 (Lafayette)          Workplace Connection BBS
+317-884-9001 (Fowler)             Misery BBS
+317-889-6669 (Greenwood)          R.C.S. OS/2 BBS
+
+812-332-7227                      Indiana On-line BBS
+812-334-0442 (Bloomington)        The Tradin' Place BBS
+
+
+Iowa
+319-377-3084 (Marion)             Crawdad's World BBS
+
+
+Kansas
+316-683-1433 (Wichita)            The Byte Bus BBS
+
+913-321-3025 (Kansas City)        It's an OS/too BBS
+
+
+Kentucky
+502-375-2851 (Louisville)         The Dark Side of the Moon BBS
+502-942-0089 (Ft. Knox)           The Homefront BBS
+502-943-0023 (Ft. Knox)           The Scrap Yard BBS
+
+606-887-2277                      The OS/2 Zone BBS
+
+
+Louisiana
+318-537-7746 (Fort Polk)          The Cutting Edge BBS
+318-984-6136 (Lafayette)          The "BoB" BBS
+
+504-275-2605 (Baton Rouge)        DataCom BBS
+504-275-7389 (Baton Rouge)        HelpNet of Baton Rouge BBS
+504-340-7027                      The Padded Cell BBS
+504-664-2524                      The Simple Board BBS
+504-769-4575 (Baton Rouge)        The Black Rainbow BBS
+504-831-4706 (Metairie)           The Desert BBS
+
+
+Maine
+207-873-1937 (Winslow)            Bits 'n' Bytes BBS
+
+
+Maryland
+301-428-1970 (Dickerson)          The Attic BBS
+301-620-7138 (Frederick)          The OS/2 Mistress BBS
+301-779-9381                      Bifrost BBS
+410-287-6649 (North East)         The Concrete Garden BBS
+410-391-6291 (Rosedale)           Moon Base Tyco BBS
+410-451-0813 (Crofton)            The Last Relay BBS
+410-538-4810 (Edgewood)           The Bytehead BBS
+410-625-0109 (Baltimore)          Aries Knowledge Systems
+410-793-3829 (Crofton)            The Last Relay BBS
+
+
+Massachusetts
+413-536-9268 (Chicopee)           Dots Will Echo BBS
+508-372-2399                      New World BBS
+508-372-1985                      New World BBS, 2nd Line
+508-372-2884                      New World BBS, 3rd Line
+508-829-3475 (Holden)             Blue Box BBS
+617-332-9739 (Newton)             The Polish Home BBS
+617-964-1633 (Newton)             The Bus Stop BBS
+
+
+Michigan
+313-283-1151                      Inside Technologies BBS
+313-295-7279 (Taylor)             The Ballroom BBS
+313-397-9419 (Canton)             The Hangar BBS
+313-769-5859 (Ann Arbor)          Army of the Southern Cross BBS
+
+810-739-1193 (Utica)              OS/2 Express BBS
+
+616-373-1719 (Kalamazoo)          The Graphics Shop BBS
+616-465-4611 (Bridgman)           The Cornerstone BBS
+616-866-0858 (Rockford)           Rock 'n' Roll II BBS
+616-887-2732 (Comstock)           Fire 'n' Ice BBS
+
+906-428-3250 (Gladstone)          The Intensive Care Unit BBS
+
+
+Minnesota
+507-281-8292 (Rochester)          North Castle BBS
+507-388-1154 ( Mankato)           Oberon BBS
+612-378-2126 (Minneapolis)        Operating System BBS
+612-379-8272                      The Warehouse BBS
+612-654-8516 (Sauk Rapids)        Fort Weyr BBS
+612-739-8238 (St. Paul)           The DumpSite OS/2 BBS
+
+
+Mississippi
+601-323-2120 (Starkville)         Mississippi Singles BBS
+601-781-3100 (Southaven)          MedLink BBS
+
+
+Missouri
+314-346-1038 (Camdenton)          Graphics Warehouse BBS
+314-446-0016 (Columbia)           The OS/2 Woodmeister BBS
+314-554-9313 (St. Louis)          Gateway/2 OS/2 BBS
+314-845-6849 (St. Louis)          The Arena BBS
+816-587-5360 (Kansas City)        Multitasking Systems BBS
+
+
+Montana
+406-452-4210 (Great Falls)        The Flying Dutchman BBS
+
+
+Nebraska
+402-397-5088 (Omaha)              Pyramid Computing Solutions BBS
+
+
+Nevada
+702-253-6274 (Las Vegas)          The Polish Home BBS
+702-253-6527 (Las Vegas)          The Choice BBS, or
+702-253-6274                      The Choice BBS, 2nd Line
+702-399-0486 (Las Vegas)          Communitel OS/2 BBS
+702-433-5535 (Las Vegas)          Las Vegas PC User Group OS/2 SIG
+702-453-6981 (Las Vegas)          Caddis OS/2 BBS
+702-645-4377 (Las Vegas)          The Pool BBS
+
+
+New Hampshire
+603-899-3335 (Rindge)             The Cereal Port BBS
+
+
+New Jersey
+201-335-6132 (Boonton)            Blackstar! BBS
+201-361-6651 (Rockaway)           The Black Tower BBS
+201-935-1104 (Lyndhurst)          The BillBoard BBS
+
+609-261-0689 (Mount Holly)        Capital City BBS
+609-429-1510 (Cherry Hill)        Rhythm of Time BBS
+609-893-2874 (Brown Mills)        The Bitter End BBS
+609-926-3738 (Linwood)            The Next Step BBS
+
+908-234-0249 (Bedminster)         High Voltage BBS
+908-873-0001 (New Brunswick)      Dr One's Operations room BBS
+908-247-5787                      Dr One's Operations room BBS, 2nd Line
+908-290-2403 (Cliffwood Beach)    Penguin Feathers/2 BBS
+908-324-2617 (Perth Amboy)        The Nut House BBS
+908-355-3592                      Home Base BBS
+908-382-5671 (Rahway)             The Monster BBS
+908-396-9292 (Edison)             OS/2 Goldmine BBS
+908-469-4603 (Bound Brook)        MACnetics BBS
+908-506-0472 (Toms River)         The Dog's Breakfast BBS
+908-636-7245 (Woodbridge)         The Licking Factory BBS
+908-689-1754 (Washington)         The Midnight Run BBS
+908-722-2231                      Sorcery Board BBS, or
+908-704-1108                      Sorcery Board BBS, 2nd Line
+908-815-3146 (Colonia)            Licking Factory BBS
+
+
+New Mexico
+505-299-1732                      The Cerebral Hemorrhage BBS, or
+505-525-2110 (Las Cruces)         Kidd Asylum BBS
+505-888-2132                      The Cerebral Hemorrhage BBS, 2nd Line
+505-824-0049 (Chapparal)          Abacus OS/2 BBS
+
+
+New York
+212-582-3244 (New York)           Dutch Connection BBS
+212-594-4425 (New York)           BlueDog BBS BBS
+
+315-245-3815 (Camden)             Kadet PCboard BBS
+315-331-1556 (Newark)             T.O.I.L. BBS
+315-789-1061 (Geneva)             Dimensional Rift BBS
+
+516-283-9631 (Southampton)        North Sea Operations BBS
+516-342-0382 (Islandia)           Control Central BBS
+516-472-5584 (Holbrook)           Harbinger BBS
+516-736-3403 (Coram, Long Island) Kind Diamond's Realm BBS
+516-932-6949 (Bethpage)           Spectra Information Management BBS
+
+518-731-4932 (Clifton Park)       The Active Access BBS
+518-783-1205 (Albany)             The Desert BBS
+518-885-5962 (Ballston Spa)       Virtual Mode OS/2 BBS
+
+607-272-1371 (Ithaca)             The Forum BBS
+
+716-891-8969 ( Buffalo)           The Dungeon BBS
+
+718-265-2532 (Brooklyn)           The Boiler Room BBS
+718-426-5350 (Maspeth)            Riders on the Storm BBS
+718-699-1148 (Brooklyn)           New York City OS/2 BBS
+718-739-5845 (Briarwood)          Tree Branch BBS
+718-777-2558 (Astoria)            Night Lite BBS
+718-921-9267 (Brooklyn)           Programmer's Mark BBS
+718-934-1843 (Brooklyn)           Shadowdale BBS
+718-972-6099 (Brooklyn)           Star-Link Network BBS
+
+914-234-1284                      Stromi's Place BBS, or
+914-234-1282                      Stromi's Place BBS, 2nd Line
+914-268-6902 (Valley Cottage)     NewTerra Enterprises BBS
+914-279-2514 (Brewster)           The Brewster BBS
+914-368-2819 (Suffern)            New York Telephone I BBS
+914-734-7045 (Cortlandt Manor)    The Laser BBS
+
+
+North Carolina
+704-241-9234 (Newton)             Magic Castle 5 BBS
+704-254-0345 (Asheville)          Digital Dreams/2 BBS
+704-324-6164 (Hickory)            G-2 BBS
+704-553-7673 (Charlotte)          The Christian Star BBS
+
+910-226-6984 (Graham)             Programmer's Oasis BBS
+910-226-7136                      Programmer's Oasis BBS, 2nd Line
+910-424-0956 (Fayetteville)       Thor's Retreat/2 BBS
+910-799-0923 (Wilmington)         Backdoor BBS
+910-891-1111 (Dunn)               Mac's Place BBS
+
+919-286-7738 (Durham)             Psychotronic BBS
+919-387-1152 (Cary)               The Soapbox BBS
+919-460-7903                      The Backdoor BBS
+919-517-0001 (Research Triangle)  IBM PC Company BBS
+919-518-2459 (Raleigh)            Global TaleLink BBS
+919-779-6674 (Raleigh)            Micro Message Service BBS
+919-787-6198 (Raleigh)            The Black Forest BBS
+919-846-8565 (Raleigh)            The Average Purple Zebra BBS
+919-933-8545 (Chapel Hill)        Viking Computer Services BBS
+
+
+North Dakota
+701-594-6955 (Grand Forks AFB)    Online.Sys BBS
+701-839-2664 (Minot)              CyberStar BBS
+
+
+Ohio
+216-356-1772 (Cleveland)          Nerd's Nook BBS
+216-381-3320 (Cleveland)          PC Ohio BBS
+216-433-8807 (Sandusky)           NightFall BBS
+216-492-5620                      Entropy BBS
+216-523-7887 (Oxford)             Mome Raths BBS
+216-733-0979 (Akron)              The New Frontier II BBS
+216-864-0313                      Wind-Aided BBS
+216-864-1445 (Akron)              SoftLink BBS
+
+513-866-9615 (West Carrollton)    Dayton OS/2 Forum BBS
+
+614-337-0203 (Gahanna)            Data Connection
+
+
+Oklahoma
+405-482-9146 (Altus AFB)          Online.Sys BBS
+405-794-9092 (Moore)              Crazy Horse BBS
+
+918-459-0597 (Tulsa)              Distortion BBS
+918-481-5715 (Tulsa)              LiveNet BBS
+918-494-5624 (Tulsa)              The SNAKE PIT! BBS
+918-583-9456                      IKE-2000 BBS
+918-682-7337 (Muskogee)           H*A*L BBS
+918-743-1562 (Tulsa)              BBS/2
+918-747-2273 (Tulsa)              The Northern Exchange BBS
+918-832-1462 (Tulsa)              The Asylum BBS
+
+
+Oregon
+503-233-0087 (Portland)           100% OS/2 BBS
+503-254-2817                      Integrated Media Service BBS
+503-335-9600                      New Life Fellowship BBS
+503-883-8197 (Klamath Falls)      Multi-Net BBS (Multi-Net Communications)
+
+
+Pennsylvania
+215-326-0925                      The Lyceum BBS
+215-493-5242 (Yardley)            U.S. Telematics BBS
+215-535-6579 (Philadelphia)       Direct Connect BBS
+215-536-8823                      Quantum Leap BBS
+215-584-5820 (Norristown)         Micro Shelf OS/2 BBS
+215-631-0685                      System-2 RBBS, or
+215-584-1413                      System-2 RBBS, 2nd Line
+215-879-3310                      Optical Illusion BBS
+215-948-4089 (West Chester)       The OS/2 Source BBS
+
+412-364-8706 (Pittsburgh)         Wonderful World of OS/2 BBS
+412-635-0934 (Pittsburgh)         MicroTech BBS
+412-766-1086 (Pittsburgh)         Milliways BBS
+412-794-1023 (Slippery Rock)      Tech-Break BBS
+412-798-9241 (Pittsburgh)         Steve's Coffee Shop BBS
+412-821-0552 (Pittsburgh)         Wayfarer's Inn BBS
+412-836-7326 (Greensburg)         The Hufftown BBS
+412-937-0118 (Pittsburgh)         The ROCK BBS
+
+610-265-5947 (King of Prussia)    Musician's Galore BBS
+610-337-9119 (King of Prussia)    The OS/2 Source BBS
+610-935-3834 (Phoenixville)       Star Fleet Academy (SFA) Programming BBS
+
+717-249-5845 (Carlisle)           L&T's Spitfire BBS
+717-757-4141 (York)               Bits 'N Bytes BBS
+
+814-355-1494 (Bellefonte)         Synchronicity II BBS
+
+
+South Carolina
+803-223-3802 (Greenwood)          True Blue BBS
+803-735-6101 (Columbia)           PMSC OnLine Resource BBS
+803-768-7713 (Taylors)            Farther Along BBS
+803-846-5200 (Holbrook)           The Zone BBS
+
+
+Tennessee
+615-229-6103 (Kingsport)          Eastman Computer Club BBS
+615-385-2316 (Nashville)          The Talkin' Ring Network BBS
+615-449-3579 (Lebanon)            Strictly OS/2 BBS
+615-569-5842 (Helenwood)          Data-Link BBS
+615-744-0024 (Athens)             The Tutorboard BBS
+615-952-5638 (Nashville)          Anomalous BBS
+
+901-324-2525 (Memphis)            Crystal Clear Ideas BBS
+901-386-4712 (Memphis)            WSI BBS (Wilkes Database software)
+901-753-3738 (Germantown)         Operand BBS, or
+901-753-7858                      Operand BBS, 2nd Line
+901-763-3742                      Bluff City BBS
+901-872-4386 (Millington)         The Looking Glass BBS
+
+
+Texas
+210-654-9792 (San Antonio)        The Rock BBS
+
+214-221-7139 (Lewisville)         Code 3 BBS
+214-231-3841                      Nibbles & Bytes BBS
+214-235-5764 (Richardson)         Lunatic Fringe BBS
+214-239-5630 (Dallas)             The Pipeline BBS
+214-250-4479 (Dallas)             MacSavvy BBS
+214-250-4479 (Dallas)             OS2NET DFW BBS
+214-252-0284 (Irving)             Fool's Gold BBS
+214-306-0788                      Jumbo's Joint/2 BBS
+214-307-8119                      Live-Wire BBS
+214-329-0690 (Dallas)             Shady Trails BBS
+214-414-3470 (Garland)            The Edge BBS
+214-414-4838 (Garland)            Spare Room BBS
+214-416-4822 (Carrollton)         The Infinite MACHINE! BBS
+214-436-8753 (Lewisville)         Code 3 BBS
+214-221-7139                      Code 3 BBS, 2nd Line
+214-487-1034 (Garland)            Virtual Reality BBS
+214-554-0243 (Irving)             The Message Board BBS
+214-578-8774 (Dallas)             MegaSys BBS
+214-596-3720 (Plano)              Zeitgeist BBS
+214-660-5818 (Grand Prairie)      Phoenix BBS
+214-994-9402 (Garland)            Night Owl's Roost BBS
+
+409-291-3322 (Huntsville)         Pawn to King's Four BBS
+409-441-6879 (Conroe)             Texas OS/2 Online BBS
+409-744-1240 (Galveston)          Beacon Terra One BBS
+409-853-5877 (Lufkin)             The Next Generation BBS
+
+512-219-7828 (Austin)             Turning Point BBS
+512-219-9446 (Austin)             Hair of the Dog BBS
+512-292-1863 (Austin)             Electronic Horizons BBS
+512-346-1852 (San Antonio)        Hub/2 BBS
+512-396-4304 (Marcos)             The CeLLaR BBS
+512-416-7826 (Austin)             Bermuda Triangle BBS
+512-452-2135 (Austin)             Balcones Fault Line BBS
+512-918-2653 (Austin)             Lone Star Host BBS
+512-918-2653 (Austin)             Team OS2 Central BBS
+512-993-5732 (Corpus Christi)     Mirage BBS
+512-994-9643 (Corpus Christi)     The SeaHorse BBS
+
+713-251-9757                      Digital Works and OS/2
+713-334-2055 (League City)        Standard Automation BBS
+713-338-2570 (League City)        Lough na Dobharchu BBS
+713-343-0942 (Richmond)           The Roach Coach BBS
+713-343-0942 (Richmond)           Texas/Oklahoma OS2NET BBS
+713-437-2859 (Missouri City)      Soldier's Bored BBS
+713-458-0237 (Houston)            Dayze of Future Past BBS
+713-458-2037                      The Stadium Club OS/2 BBS
+713-466-1525 (Houston)            The Cutting Edge BBS
+713-469-3689 (Houston)            Dooger's Place OS/2 BBS
+713-529-1802 (Houston)            Blondie's Bane BBS
+713-879-6073 (Houston)            Sherwood Forest BBS
+713-932-7573 (Houston)            The G Spot BBS, or
+713-932-6805                      The G Spot BBS, 2nd Line
+713-963-4100 (Houston)            HAL-PC Telecom 1 BBS
+713-980-9671 (Houston)            COMM Port One BBS
+
+806-358-0342 (Amarillo)           Philosopher's Stone BBS
+806-763-4975 (Lubbock)            Sherwood Forest BBS
+
+817-246-8657 (Ft Worth)           The ShadowCat BBS
+817-292-4193 (Ft Worth)           Afterburner BBS
+817-329-0534 (Grapevine)          Outer Limits BBS
+817-355-1994 (Euless)             Genesys I BBS
+817-477-3282 (Mansfield)          The Elite Circle BBS
+817-483-2283 (Arlington)          Cache Flow BBS
+817-491-1184 (Flower Mound)       Silicone Valley BBS
+817-498-7578 (Ft Worth)           HighLander BBS
+817-542-2594 (Copperas Cove)      Chief's OS/2 NOID ZONE BBS
+817-581-7966 (Keller)             The Final Outpost BBS
+817-773-9138                      The Dugout BBS, or
+817-773-9140                      The Dugout BBS, 2nd Line
+817-784-8993 (Arlington)          Why? Telecommunications BBS
+
+903-883-4441 (Greenville)         Alternate Escape BBS
+
+915-587-6321 (El Paso)            Randy's Basement BBS
+
+
+Utah
+801-299-8692 (Bountiful)          OS2-4U BBS
+801-399-4515 (Ogden)              Nova's Nebula BBS
+801-486-0929 (Salt Lake City)     The Iron Grid BBS
+801-572-6353                      Advanced Idea Machines BBS
+
+
+Vermont
+802-295-6302 (Sharon)             File Pool BBS
+802-626-4103                      Socialism OnLine! BBS
+802-862-5058                      The Ozone Layer BBS
+802-899-2371 (Burlington)         Judge's Corner BBS
+
+
+Virginia
+703-207-3072 (Merrifield)         Micro Computer Systems Design, Inc. BBS
+703-264-0255 (Reston)             Back of the Rack BBS
+703-323-7654 (Fairfax)            System's Exchange BBS
+703-349-8912 (Vint Hill Farms St) SkunkWorks OS/2 Support BBS
+703-369-0672 (Manassas)           OS/2@Manassas BBS
+703-385-4325                      OS/2 Shareware BBS (Free, open access line)
+703-548-7849 (Alexandria)         Max's Doghouse BBS
+703-560-5616                      Life's Like That BBS
+703-631-0041 (Centreville)        Red Dwarf BBS
+703-730-0127 (Woodbridge)         The ESCape Zone BBS
+
+804-249-0723 (Newport News)       Synergy BBS
+804-330-0526 (Richmond)           The Computer Connection BBS
+804-422-8462 (Virginia Beach)     Mid-Atlantic OS/2 User Group BBS
+804-796-1454 (Chester)            Vetrix BBS
+804-877-3539 (Newport News)       Virginia Data Exchange BBS
+
+
+Washington
+206-405-0367 (Bremerton)          The Operating System BBS
+206-451-1905 ( Seattle)           The Bin BBS
+206-557-9258 (Issaquah)           Alternate Reality BBS
+206-698-8404                      The Gold Pegasus BBS
+206-880-6575 (North Bend)         Sno-Valley Software Exchange BBS
+206-957-4513 (Seattle)            OS/2 Northwest BBS
+206-562-7212                      OS/2 Northwest BBS, 2nd Line
+
+509-662-8239 (Wenatchee)          Hunter/Killer BBS
+509-736-0976 (Kennewick)          The Ice Castle BBS
+509-891-0250 (Spokane)            Moonflower BBS, or
+509-891-6148                      Moonflower BBS, 2nd Line
+
+
+West Virginia
+304-363-2252 (Fairmont)           Gaming 101 BBS
+304-636-9592 (Elkins)             Seneca Station BBS
+304-768-3682 (Dunbar)             Deadly Sins BBS
+
+
+Wisconsin
+414-233-5926 (Oshkosh)            InterLink Data Services BBS
+414-335-2799                      Live Wire BBS
+414-425-1139 (Hales Corner)       The Better Image BBS
+414-459-9052 (Sheboygan)          Spatula City Telecommunications BBS
+414-728-8956 (Delavan)            Digital Domain II BBS
+414-923-9292 (Fond du Lac)        The Source BBS
+
+608-847-6775 (Mauston)            Mauston Exchange BBS
+
+
+Wyoming
+307-721-2989 (Laramie)            Micro Exchange BBS
+
+
+Miscellaneous
+(your local CIS phone number)     IBM OS/2 Forums on CompuServe:
+                                  GO IBMOS2
+                                  GO OS2AVEN or GO OS2BVEN [Vendors]
+                                  GO OS2DEV1 or GO OS2DEV2 [Developers]
+                                  GO OS2SUP [Support]
+                                  GO OS2USER [Users]
+(your local Prodigy phone number) OS/2 Area on Prodigy:
+                                  JUMP OS/2 Club
+
+
+================================================================================
+3)             A U S T R A L I A   B B S   L I S T I N G S
+================================================================================
+
+International Phone Numbers              BBS Name
+---------------------------              --------
+Australia
+61-2-234-2466 (Sydney)                   OS/2 Sydney BBS
+61-2-241-2466                            OS/2 BBS
+61-2-449-2618                            Software Tools Mail Exchange BBS
+61-2-449-9477                            Software Tools Mail Exchange BBS, 2nd Line
+61-2-498-9184 (Sydney)                   3M Australia BBS
+61-2-804-6412 (Sydney)                   The Poet's Dilemma BBS
+61-2-875-1296 (Sydney)                   Programmer's BBS
+
+61-3-379-8522                            Prompt/2
+61-3-739-5238 (Chirnside Park, Victoria) Mbug Australia BBS
+61-3-848-3331 (Melbourne)                Custom Programming BBS
+61-3-848-3635                            Custom Programming BBS, 2nd Line
+61-3-852-0404 (Melbourne)                Spare Parts BBS
+61-3-870-4623                            Eastwood Systems
+
+61-6-259-1244 (Canberra)                 PC User's Group BBS
+
+61-7-344-6012 (Sunnybank, Queensland)    Proteus/2 BBS
+61-7-398-3759 (Brisbane)                 OZ-Share OS/2 BBS
+61-7-808-8998 (Brisbane)                 OS/2 Cellar BBS
+
+61-8-269-7685 (Adelaide)                 Biz-Nice! BBS
+61-8-269-7029                            Biz-Nice! BBS, 2nd Line
+61-8-269-7809                            Biz-Nice! BBS, 3rd Line
+
+61-49-562-853 (Newcastle, NSW)           Lake Macquarie BBS
+61-49-521-762                            Lake Macquarie BBS, 2nd Line
+
+61-63-411859                             Serendipity, Inc. BBS
+
+
+================================================================================
+4)                C A N A D A   B B S   L I S T I N G S
+================================================================================
+
+Phone Numbers                     BBS Name
+-------------                     --------
+Alberta
+403-226-1157 (Calgary)            Telekon/2 BBS
+403-253-5996 (Calgary)            ECS Net BBS
+403-468-1741 (Edmonton)           Calanost HST BBS
+403-489-4250 (Edmonton)           Mach/2 Vulcan BBS
+
+
+British Columbia
+604-261-2347 (Vancouver)          The Cage BBS
+604-273-1864                      The Grey Havens
+604-275-0835 (Richmond)           The Idle Task BBS
+604-275-6883 (Richmond)           BBS Council BBS
+604-380-5441                      IBM OS/2 BBS
+604-433-4446                      The Sentinel
+604-474-7299 (Victoria)           The Bird's Nest BBS
+604-477-7542 (Victoria)           Borealis Weyr BBS
+604-526-7686 (Richmond)           The Nibble's Roost BBS
+604-534-2954 (Langley)            Graphicly Speaking BBS
+604-554-3574 (Kamloops)           Smooth Noodle Boot BBS
+604-574-0906 (Langley)            Bear Garden BBS
+604-590-3774 (Surrey)             The Rhombohedral BBS
+604-597-4990 (Vancouver)          BackTalk!
+604-664-6464 (Vancouver)          IBM OS/2 BBS
+604-888-0255 (Langley)            Morning Star BBS
+604-664-6466 (Vancouver)          IBM OS/2 Support BBS
+604-944-6476 (Vancouver)          Sound Stage BBS
+604-984-9868 (North Vancouver)    The NorthShore BBS
+
+
+Manitoba
+204-934-2735 (Winnipeg)           IBM OS/2 Support BBS
+
+
+Nova Scotia
+902-569-5437 (Charlottetown)      Cosmic Room Service BBS
+902-567-6248 (Sydney)             BlueNose II BBS
+
+
+Ontario
+416-283-0114 (Toronto)            Baudeville BBS
+416-299-1164 (Scarborough)        Next Level BBS
+416-480-0360 (Toronto)            TorontOS/2 User Group BBS
+416-635-1400 (Toronto)            iKon View BBS
+416-754-7310 (Scarborough)        CyberSpace/2 BBS
+416-956-7877 (Toronto)            IBM OS/2 Support BBS, or
+416-492-1823                      IBM OS/2 Support BBS, 2nd Line
+416-946-4244                      IBM OS/2 Support BBS, 3rd Line
+416-867-9663 (Toronto)            RT Labs BBS
+
+519-679-8861 (London)             Board to DEATH BBS
+519-680-3383 (London)             System Four BBS
+
+613-389-8315 (Kingston)           Maximus/2 BBS
+613-658-3050 (Spencerville)       TOTSE/2 BBS
+613-722-0489 (Ottawa)             The Locutory BBS
+613-829-8215 (Nepean)             Get a Grip BBS
+613-837-0413 (Ottawa)             Programmer's Source BBS
+
+807-343-6033                      Interrupt ReQuest
+
+905-316-4255 (Toronto)            IBM OS/2 Support BBS
+
+
+Quebec
+514-374-9422 (Montreal)           Logistique BBS ( Logicomm)
+514-375-2070 (Granby)             After the Sun BBS
+514-438-3234 (Bellefeuille)       INFODATA Service d'Information BBS
+514-723-3218 (Montreal)           Blue Moon BBS
+514-769-5174 (Montreal)           Home Front BBS
+514-938-3022 (Montreal)           IBM OS/2 Support BBS
+
+819-682-5400                      DomTech OS/2
+
+
+Saskatchewan
+306-432-512-550 (Udine)           Personal Computer Club Udine BBS
+306-783-2680 (Yorkton)            Pretzel Logic BBS
+306-789-7652 (Regina)             The Green Zone BBS
+306-789-9217                      The Green Zone BBS, 2nd Line
+306-966-4857 (Sasketoon)          University of Saskatchewan BBS
+
+
+================================================================================
+5)                G E R M A N Y   B B S   L I S T I N G S
+================================================================================
+
+Phone Numbers                     BS Name
+-------------                     -------
+Germany
+49-30-8336124 (Berlin)            Mudges Box BBS
+
+49-89-6019677 (Munich)            BOX/2 BBS
+49-89-6062239                     BOX/2 BBS, 2nd Line
+49-89-6011344                     BOX/2 BBS, 3rd Line
+49-89-660011-52                   BOX/2 BBS, 4th Line
+
+49-201-200381 (Essen)             APOLONIA BBS
+49-201-200382                     APOLONIA BBS, 2nd Line
+49-201-237509                     APOLONIA BBS, 3rd Line
+49-201-210744 (Essen)             IBM Mailbox BBS, or
+49-201-295181                     IBM Mailbox BBS, 2nd Line
+
+49-211-752734 (Duesseldorf)       Highspeed BBS
+
+49-228-262894 (Bonn)              Zaphod BBS
+49-228-229147                     Zaphod BBS, 2nd Line
+49-228-257271 (Bonn)              ProBit BBS
+49-228-317752 (Bonn)              Terrania City BBS
+49-228-331214 (Bonn)              LRZ-System BBS
+49-228-334372                     LRZ-System BBS, 2nd Line
+
+49-231-806235                     Golf Dortmund BBS
+
+49-234-283902 (Bochum)            ShutDown BBS, or
+49-234-289019                     ShutDown BBS, 2nd Line
+49-234-294864                     ShutDown BBS, 3rd Line
+49-234-93883-26 (Bochum)          OS/2 Point BBS
+
+49-241-514646                     Maus Achen 3 BBS
+
+49-261-17133                      Charisma The Christian BBS
+
+49-2166-51638 (Baer Wanlo)        Hacker Baer Wanlo BBS
+
+49-2303-238106 (Unna)             Blacky's Home BBS
+
+49-4141-82638                     WCI Stade BBS, or
+49-4141-82648                     WCI Stade BBS, 2nd Line
+
+49-5137-92366 (Seelze)            MoonFlower BBS
+
+49-5323-3515                      MM's Spielebox BBS, or
+49-5323-3516                      MM's Spielebox BBS, 2nd Line
+49-5323-3517                      MM's Spielebox BBS, 3rd Line
+
+49-5352-58200 (Schoeningen)       IRD-BBS
+
+49-6081-961052                    Stonys Corner BBS
+
+49-6106-22266 (Rodgau)            The_File_Store BBS
+
+49-6134-26563 (Mainz-Kostheim)    Jerry's Multiline OS/2 BBS
+
+49-6157-87660                     The Pub BBS
+
+49-6183-74270 (Erlensee)          OS/2 Express BBS
+
+49-6192-992011 (Hofheim)          FarLight BBS
+49-6192-998811                    C.A.T. Kommunikations-System BBS
+
+49-6196-27799                     PC Softbox OS/2 BBS
+
+49-7032-34594 (Herrenberg)        OS/2 Box BBS
+
+49-7033-35596                     Camelot OS/2 Support BBS
+
+49-7034-15-2160                   IBM OS/2 BBS
+49-7034-63250 (Ehningen)          IBM PSP Germany BBS
+
+49-7151-68434 (Weinstadt)         CCWN-BOX BBS
+49-7151-68233                     CCWN-BOX BBS, 2nd Line
+
+49-7191-56267 (WeiBach im Tal)    Second Source BBS
+
+49-7331-68221 (Geilsingen-Stg)    CheckPoint OS/2 BBS
+
+49-7971-72446 (Backnang)          The CAT BBS
+
+49-911-4097776                    Portals of Brunswick
+
+49-9544-2214                      Sailor's Inn BBS
+
+49-9852-4654                      OSHalbe-Box BBS
+
+
+================================================================================
+6)          N E T H E R L A N D S   B B S   L I S T I N G S
+================================================================================
+
+Phone Numbers                     BBS Name
+-------------                     --------
+
+Netherlands
+31-10-4709577 (Rotterdam)         Bommel's BBS
+31-13-638709                      UltiHouse/2 BBS
+31-20-6974757 (Amsterdam)         IBM OS/2 Support BBS
+31-30-334711                      IBM OS/2 Support BBS
+31-38-541358                      Multiserver BBS, or
+31-38-540882                      Multiserver BBS, 2nd Line
+31-40-122083                      The Mailbox (SDN)
+31-50-712756 (Groningen)          HIO-BBS
+31-50-735035                      Datalink BBS
+31-73-221251                      Buggy Place BBS
+31-73-429321                      Crystal Palace BBS
+31-73-430261                      Magic Land BBS, or
+31-73-420529                      Magic Land BBS, 2nd Line
+31-73-569797                      The Gauntlet BBS, or
+31-73-571511                      The Gauntlet BBS, 2nd Line
+31-75-175560                      PC-Square BBS (Fernwood Distribution Europe)
+31-75-704045                      Chat BBS, or
+31-75-314321                      Chat BBS, 2nd Line
+31-78-196010                      Develsteyn Castle BBS
+31-215-937-010 (Bussum)           SkyLane BBS
+31-1150-15245 (Terneuzen)         The Experiment BBS, or
+31-1150-14498                     The Experiment BBS, 2nd Line
+31-1150-30279                     The Experiment BBS, 3rd Line
+31-1650-46107                     Medusa BBS
+31-1720-38558 (Alpen a/d Rijn)    The TJD Support BBS
+31-1834-2427                      Lighthouse BBS
+31-2155-10921                     The Owl's Nest BBS
+31-2998-3602                      Bamestra RBBS, or
+31-2998-2603                      Bamestra RBBS, 2nd Line
+31-3404-71529                     Superior By Design BBS
+31-4752-6300                      Infoboard BBS
+31-499-897-759                    Def Board Multi-Line Palace BBS
+31-5130-10482                     MasterBrains BBS
+31-5131-807                       MasterBrains BBS, 2nd Line
+31-5904-2135                      Ensing BBS, or
+31-5904-1913                      Ensing BBS, 2nd Line
+31-5904-1388                      Ensing BBS, 3rd Line
+31-5970-12235                     Target BBS, or
+31-5970-12142                     Target BBS, 2nd Line
+31-5978-14897                     Power System BBS, or
+31-5978-12307                     Power System, 2nd Line
+31-8857-1865                      HCC IBM BBS
+
+
+================================================================================
+7)        O T H E R   C O U N T R I E S   B B S   L I S T I N G S
+================================================================================
+
+International Phone Numbers       BBS Name
+---------------------------       --------
+Argentina
+54-1-742-3674 (Buenos Aires)      OS/2 & Sound BBS
+
+
+Austria
+43-1-815-48-71 (Vienna)           His Master's Voice BBS (3 lines)
+
+43-222-5864639 (Vienna)           OS/NT User Group Austria BBS
+43-222-688971 (Vienna)            La Bamba-1st Austrian OS/2 BBS
+43-316-388566 (Graz)              The OS/2 Jumbo BBS
+
+
+Belgium
+32-2-3752539 (Brussels)           Morbitron/2 BBS
+32-2-3872021 (Brussels)           OS/2 Mania Belgium BBS
+32-2-5366818 (Huizingen)          The New York Soft Exchange
+32-2-5826650 (Brussels)           In Limbo BBS
+
+32-3-3660159 (Antwerp)            C.I.S. BBS
+32-3-3850748 (Antwerp)            Moving Sound OS/2 BBS
+32-3-3851934 (Antwerp)            The OS/2 BBS
+
+32-15-520279 (Hever)              The Cormoran BBS
+
+
+Denmark
+45-42-88-72-22 (Lyngby)           IBM OS/2 BBS
+
+45-47-380120 (Slangerup)          Josti BBS, or
+45-47-380501                      Josti BBS, 2nd Line
+45-47-380524                      Josti BBS, 3rd Line
+
+45-48-244580                      OS/2 UG Danmark BBS
+
+45-98-451070                      OS/2 Task and Front Door BBS
+
+45-3142-0291                      The JAM BBS
+
+45-3325-7322 (Copenhagen)         Rainbow BBS
+
+
+Finland
+358-0-2011154 (Helsinki)          BLEVE BBS
+358-0-259656 (Helsinki)           Hacker's Cave BBS
+358-0-259336                      Hacker's Cave BBS, 2nd Line
+358-0-2732476                     Hacker's Cave BBS, 3rd Line
+358-0-579449 (Helsinki)           OS/2 Base
+358-0-4583349                     OS/2 Base, 2nd Line
+358-0-872-0007 (Helsinki)         Altair BBS
+
+358-697-43515                     Uko BBS
+358-697-43525                     Uko BBS, 2nd Line
+
+
+France
+33-1-6066-0587 (Orgenoy)          The Lofty Cave BBS
+33-1-49817100                     OS/2 Mania
+
+
+Greece
+30-31-300-170                     Russians Online Underground BBS
+
+
+Hong Kong
+852-415-1418                      Abyss/2 BBS
+852-568-5593                      Simon and Pat BBS
+852-871-0272                      Ashley BBS
+
+
+Italy
+39-0-2-7534402                    IBM SEMEA DAP PSP BBS (4 lines)
+39-0-2-7534412                    IBM SEMEA PSP BBS (4 lines)
+
+39-11-3174440 (Torino)            Italy Network #5 BBS
+39-11-8180069 (Torino)            Italy Network BBS
+
+39-432-512550 (Udine)             Personal Computer Club Udine  BBS
+
+39-363-302798                     Runnin' With The Devil BBS
+
+39-823-812099                     FastForward BBS
+
+
+New Zealand
+64-3-379-8522 (Christchurch)      Christchurch OS/2 User Group BBS, or
+64-3-379-0983                     Christchurch OS/2 User Group BBS, 2nd Line
+
+64-4-233-9126 (Wellington)        Wellington OS/2 User Group BBS, or
+64-4-233-9887                     Wellington OS/2 User Group BBS, 2nd Line
+
+64-9-480-0951 (Auckland)          Auckland OS/2 User Group BBS
+
+
+Norway
+47-22-38-09-49                    IBM OS/2 BBS
+
+47-83-33003                       PerlePorten BBS, or
+47-83-33004                       PerlePorten BBS, 2nd Line
+
+
+Russia
+7-095-201-5387 (Moscow)           Thrash Zone BBS
+
+
+Singapore
+65-274-0577                       OS/2 Centre BBS
+65-481-1345                       Open Connection BBS
+65-755-6463                       Miqas/2 BBS
+65-776-8003                       NyperLink BBS
+
+
+Slovenia
+386-61-261985                     Radio Student BBS
+
+
+Spain
+34-1-519-4645 (Madrid)            Icaro BBS
+34-1-5477210 (Madrid)             Enchufe BBS
+
+34-3-589-38-88 (Barcelona)        Abaforum BBS
+
+
+Sweden
+46-8-6676206 (Stockholm)          Quebab Corner BBS
+46-8-7043276 (Stockholm)          Tanken FAMS BBS
+
+46-31-196406 (Goteborg)           OS2YOU Support BBS
+
+46-44-521-07 (Kristianstad)       Mumbo Jumbo BBS
+
+46-291-10158                      SoftSpeed BBS
+
+46-480-32393                      Lanthendeln BBS
+
+
+Switzerland
+41-0-56-321800 (Hausen)           Hitline Communications BBS
+
+41-1-2019650 (Zurich)             Swiss OS/2 BBS
+41-1-2803054 (Zurich)             IBM OS/2 BBS
+41-1-3637037 (Zurich)             Gepard's Oracle Zuerich BBS
+
+41-41-538627 (Lucerne)            MICS OS/2 Forum
+
+41-56-321800 (Hausen b/Brugg)     IBM OS/2 BBS
+
+41-61-9412204 (Titterten)         PC-Info BBS
+
+
+U.K.
+44-61-483-4105                    UK File Echo Coord. BBS
+
+44-81-300-5971 (Foot's Cray,Kent) The Cray BBS
+
+44-202-873911                     The Abbey BBS, or
+44-202-873916                     The Abbey BBS BBS, 2nd Line
+
+44-256-336655                     IBM OS/2 BBS
+
+44-279-792300                     Air Applewood BBS
+
+41-420-543542                     Mildew Hall BBS
+
+44-454-633197 (Bristol)           MonuSci Opus BBS (OS/2 User Group BBS)
+
+44-483-725167                     DoNoR/2 BBS
+
+44-535-665345                     The TJD Support BBS
+
+44-708-670068                     Barnabas The Caring BBS
+
+44-772-828975 (Preston)           Ursus Fremens Rexx BBS
+
+
+// EOF IBMBBS.TXT
+
+

@@ -1,0 +1,27 @@
+;---------------------------------------------------------------------
+; PMTOWP.DEF
+;    Progman Manager To Workplace Shell program definition file.
+;
+; Date Created :  01/26/94
+; Last Update  :  09/08/94
+; Written By   :  Mario E. De Armas
+; Compiler Used:  MS Visual C++ 1.5
+;
+; Copyright IBM Corporation, 1994. All rights reserved.
+;
+;
+; FILE LOG:
+; DATE        | ACTION/CHANGE                           | PROGRAMMER
+; 01/26/94    | Creation.                               | MDA
+;=====================================================================
+
+NAME           PMTOWP
+DESCRIPTION    "Program Manager To Workplace Shell - Copyright (c) IBM Corp. 1994"
+EXETYPE        WINDOWS
+STUB           'WINSTUB.EXE'
+CODE           PRELOAD MOVEABLE DISCARDABLE
+DATA           PRELOAD MOVEABLE SINGLE
+HEAPSIZE       1024
+
+; EOF PMTOWP.DEF
+

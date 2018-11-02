@@ -1,0 +1,28 @@
+;---------------------------------------------------------------------
+; CONVINI.DEF
+;    Convert Initialization File program definition file.
+;
+; Date Created :  09/08/94
+; Last Update  :  12/23/94
+; Written By   :  Mario E. De Armas
+; Compiler Used:  MS Visual C++ 1.5
+;
+; Copyright IBM Corporation, 1994. All rights reserved.
+;
+;
+; FILE LOG:
+; DATE        | ACTION/CHANGE                           | PROGRAMMER
+; 09/08/94    | Creation.                               | MDA
+;=====================================================================
+
+NAME           CONVINI
+DESCRIPTION    "Convert Initialization File Program"
+EXETYPE        WINDOWS
+STUB           'WINSTUB.EXE'
+CODE           PRELOAD MOVEABLE DISCARDABLE
+DATA           PRELOAD MOVEABLE SINGLE
+HEAPSIZE       1024
+
+
+; EOF CONVINI.DEF
+

@@ -1,0 +1,292 @@
+//=====================================================================
+// MENUS.RC
+//    WPSHELL's Windows 3.1 system popup menus resource script file.
+//
+// Date Created :  01/26/94
+// Last Update  :  04/11/95
+// Written By   :  Mario E. De Armas
+// Compiler Used:  MS Visual C++ 1.5
+//
+// Copyright IBM Corporation, 1994-1995. All rights reserved.
+//
+//
+// FILE LOG:
+// DATE        | ACTION/CHANGE                           | PROGRAMMER
+// 01/26/94    | Creation.                               | MDA
+//=====================================================================
+
+//-----------------------------------------------------------------------------
+// POP-UP MENUS
+//-----------------------------------------------------------------------------
+
+// WORKPLACE SHELL DESKTOP SYSTEM MENU
+DesktopPopUpMenu MENU
+{
+   POPUP ""
+   {
+      POPUP "&Avaa"
+      {
+         MENUITEM "Asetukset"               , IDM_OPENSETTINGS
+         MENUITEM "Kuvakenäyttö"            , IDM_OPENICON
+         MENUITEM "Laajennettu"       , IDM_OPENDETAILS
+      }
+      MENUITEM "A&setukset"                 , IDM_OPENSETTINGS
+      MENUITEM "&Virkistä"                  , IDM_REFRESHNOW
+      POPUP "O&hje"
+      {
+         MENUITEM "Hakemisto"               , IDM_HELPINDEX
+         MENUITEM "Yleistä"                 , IDM_HELPGENERAL   , CHECKED
+         MENUITEM "Ohjeen käyttö"                  , IDM_HELPUSING
+         MENUITEM "Näppäimistö"             , IDM_HELPKEYS
+         MENUITEM SEPARATOR
+         MENUITEM "Tietoja"                 , IDM_HELPPRODINFO
+      }
+      MENUITEM SEPARATOR
+      MENUITEM "L&ukitse nyt"               , IDM_LOCKUPNOW
+      MENUITEM "&Lopeta Windows..."         , IDM_SHUTDOWN
+      MENUITEM "&Järjestelmäasetukset"      , IDM_SYSTEMSETUP
+
+      MENUITEM SEPARATOR
+      MENUITEM "&Etsi..."                   , IDM_FIND
+
+      POPUP "Valitse"
+      {
+         MENUITEM "Valitse kaikki\tCtrl+S"  , IDM_SELECTALL
+         MENUITEM "Poista valinnat\tCtrl+D" , IDM_DESELECTALL
+      }
+
+      POPUP "Järjestys:"
+
+      {
+         MENUITEM "Nimen mukaan"            , IDM_SORTBYNAME
+         MENUITEM "Tyypin mukaan"           , IDM_SORTBYTYPE
+         MENUITEM "Tied. nimen mukaan"      , IDM_SORTBYREALNAME
+         MENUITEM "Tied. koon mukaan"       , IDM_SORTBYSIZE
+         MENUITEM "Päiväyksen mukaan"       , IDM_SORTBYLASTACCESSDATE
+         MENUITEM "Kelloajan mukaan"        , IDM_SORTBYLASTACCESSTIME
+      }
+
+      MENUITEM "Järjestä"                   , IDM_ARRANGE
+      MENUITEM SEPARATOR
+      MENUITEM "&Tallenna työpöytä"         , IDM_SAVEDESKTOP
+      MENUITEM SEPARATOR
+      MENUITEM "&Käynnistä..."              , IDM_RUN
+   }
+}
+
+
+// WORKPLACE SHELL FOLDER SYSTEM MENU
+FolderPopUpMenu MENU
+{
+   POPUP ""
+   {
+      POPUP "&Avaa"
+      {
+         MENUITEM "Asetukset"               , IDM_OPENSETTINGS
+         MENUITEM "Kuvakenäyttö"            , IDM_OPENICON
+         MENUITEM "Laajennettu"   	    , IDM_OPENDETAILS
+      }
+      MENUITEM "A&setukset"                 , IDM_OPENSETTINGS
+      MENUITEM "E&dellinen kansio"          , IDM_OPENPARENT
+      MENUITEM "&Virkistä"                  , IDM_REFRESHNOW
+      POPUP "O&hje"
+      {
+         MENUITEM "Hakemisto"               , IDM_HELPINDEX
+         MENUITEM "Yleistä"                 , IDM_HELPGENERAL     , CHECKED
+         MENUITEM "Ohjeen käyttö"           , IDM_HELPUSING
+         MENUITEM "Näppäimistö"             , IDM_HELPKEYS
+      }
+      MENUITEM SEPARATOR
+      MENUITEM "Luo toinen..."              , IDM_CREATEANOTHER
+      MENUITEM "Kopioi..."                  , IDM_COPY
+      MENUITEM "Siirrä..."                  , IDM_MOVE
+      MENUITEM "Luo varjo..."               , IDM_CREATESHADOW
+      MENUITEM "Poista..."                  , IDM_DELETE
+      MENUITEM SEPARATOR
+      POPUP "Ikkuna"
+      {
+         MENUITEM "Palauta"                 , IDM_WINDOWRESTORE
+         MENUITEM "Siirrä"                  , IDM_WINDOWMOVE
+         MENUITEM "Muuta kokoa"             , IDM_WINDOWSIZE
+         MENUITEM "Pienennä"    	    , IDM_WINDOWMINIMIZE
+         MENUITEM "Suurenna"                , IDM_WINDOWMAXIMIZE
+         MENUITEM "Piilota"                 , IDM_WINDOWHIDE
+      }
+      MENUITEM "&Etsi..."                   , IDM_FIND
+      POPUP "Valitse"
+      {
+         MENUITEM "Valitse kaikki\tCtrl+S"  , IDM_SELECTALL
+         MENUITEM "Poista valinnat\tCtrl+D" , IDM_DESELECTALL
+      }
+      POPUP "Järjestys:"
+      {
+         MENUITEM "Nimen mukaan"            , IDM_SORTBYNAME
+         MENUITEM "Tyypin mukaan"           , IDM_SORTBYTYPE
+         MENUITEM "Tied. nimen mukaan"      , IDM_SORTBYREALNAME
+         MENUITEM "Tied. koon mukaan"       , IDM_SORTBYSIZE
+         MENUITEM "Päiväyksen mukaan"       , IDM_SORTBYLASTACCESSDATE
+         MENUITEM "Kelloajan mukaan"        , IDM_SORTBYLASTACCESSTIME
+      }
+      MENUITEM "&Järjestä"                  , IDM_ARRANGE
+      MENUITEM SEPARATOR
+      MENUITEM "Sulje"                      , IDM_CLOSE
+   }
+}
+
+// WORKPLACE SHELL OBJECT SYSTEM MENU
+ObjectPopUpMenu MENU
+{
+   POPUP ""
+   {
+      POPUP "&Avaa"
+      {
+         MENUITEM "Asetukset"               , IDM_OPENSETTINGS  , CHECKED
+      }
+      MENUITEM "A&setukset"                 , IDM_OPENSETTINGS
+      MENUITEM "Edellinen kansio"           , IDM_OPENPARENT
+      POPUP "O&hje"
+      {
+         MENUITEM "Hakemisto"               , IDM_HELPINDEX
+         MENUITEM "Yleistä"                 , IDM_HELPGENERAL   , CHECKED
+         MENUITEM "Ohjeen käyttö"                  , IDM_HELPUSING
+         MENUITEM "Näppäimistö"             , IDM_HELPKEYS
+      }
+      MENUITEM SEPARATOR
+      MENUITEM "Luo toinen..."              , IDM_CREATEANOTHER
+      MENUITEM "Kopioi..."                  , IDM_COPY
+      MENUITEM "Siirrä..."                  , IDM_MOVE
+      MENUITEM "Luo varjo..."               , IDM_CREATESHADOW
+      MENUITEM "Poista..."                  , IDM_DELETE
+   }
+}
+
+
+// WORKPLACE SHELL PROGRAM SYSTEM MENU
+ProgramPopUpMenu MENU
+{
+   POPUP ""
+   {
+      POPUP "&Avaa"
+      {
+         MENUITEM "Asetukset"               , IDM_OPENSETTINGS
+         MENUITEM "Ohjelma"                 , IDM_OPENPROGRAM     , CHECKED
+      }
+      MENUITEM "A&setukset"                 , IDM_OPENSETTINGS
+      MENUITEM "&Edellinen kansio"          , IDM_OPENPARENT
+      POPUP "O&hje"
+      {
+         MENUITEM "Hakemisto"               , IDM_HELPINDEX
+         MENUITEM "Yleistä"                 , IDM_HELPGENERAL     , CHECKED
+         MENUITEM "Ohjeen käyttö"                  , IDM_HELPUSING
+         MENUITEM "Näppäimistö"             , IDM_HELPKEYS
+      }
+      MENUITEM SEPARATOR
+      MENUITEM "Luo toinen..."              , IDM_CREATEANOTHER
+      MENUITEM "Kopioi..."                  , IDM_COPY
+      MENUITEM "Siirrä..."                  , IDM_MOVE
+      MENUITEM "Luo varjo..."               , IDM_CREATESHADOW
+      MENUITEM "Poista..."                  , IDM_DELETE
+   }
+}
+
+
+// WORKPLACE SHELL DATA FILE SYSTEM MENU
+DataFilePopUpMenu MENU
+{
+   POPUP ""
+   {
+      POPUP "&Open"
+      {
+         MENUITEM "Asetukset"               , IDM_OPENSETTINGS
+         MENUITEM "DataTiedosto"            , IDM_OPENDATAFILE    , CHECKED
+      }
+      MENUITEM "A&setukset"                 , IDM_OPENSETTINGS
+      MENUITEM "&Edellinen kansio"          , IDM_OPENPARENT
+      POPUP "O&hje"
+      {
+         MENUITEM "Hakemisto"               , IDM_HELPINDEX
+         MENUITEM "Yleistä"                 , IDM_HELPGENERAL     , CHECKED
+         MENUITEM "Ohjeen käyttö"                  , IDM_HELPUSING
+         MENUITEM "Näppäimistö"             , IDM_HELPKEYS
+      }
+      MENUITEM SEPARATOR
+      MENUITEM "Luo toinen..."              , IDM_CREATEANOTHER
+      MENUITEM "Kopioi..."                  , IDM_COPY
+      MENUITEM "Siirrä..."                  , IDM_MOVE
+      MENUITEM "Luo varjo..."               , IDM_CREATESHADOW
+      MENUITEM "Poista..."                  , IDM_DELETE
+      MENUITEM SEPARATOR
+      MENUITEM "Tulosta"                    , IDM_PRINT
+   }
+}
+
+
+// WORKPLACE SHELL TEMPLATE SYSTEM MENU
+MinimizedWindowViewerPopUpMenu MENU
+{
+   POPUP ""
+   {
+      POPUP "&Avaa"
+      {
+         MENUITEM "Asetukset"               , IDM_OPENSETTINGS
+         MENUITEM "Kuvakenäyttö"            , IDM_OPENICON        , CHECKED
+      }
+      MENUITEM "A&setukset"                 , IDM_OPENSETTINGS
+      MENUITEM "&Edellinen kansio"          , IDM_OPENPARENT
+      MENUITEM "Virkistä"                   , IDM_REFRESHNOW
+      POPUP "O&hje"
+      {
+         MENUITEM "Hakemisto"               , IDM_HELPINDEX
+         MENUITEM "Yleistä"                 , IDM_HELPGENERAL     , CHECKED
+         MENUITEM "Ohjeen käyttö"                  , IDM_HELPUSING
+         MENUITEM "Näppäimistö"             , IDM_HELPKEYS
+      }
+      MENUITEM SEPARATOR
+      MENUITEM "Siirrä..."                  , IDM_MOVE
+      MENUITEM "Luo varjo..."               , IDM_CREATESHADOW
+      MENUITEM SEPARATOR
+      POPUP "Ikkuna"
+      {
+         MENUITEM "Palauta"                 , IDM_WINDOWRESTORE
+         MENUITEM "Siirrä"                  , IDM_WINDOWMOVE
+         MENUITEM "Muuta kokoa"                    , IDM_WINDOWSIZE
+         MENUITEM "Pienennä"             , IDM_WINDOWMINIMIZE
+         MENUITEM "Suurenna"               , IDM_WINDOWMAXIMIZE
+         MENUITEM "Piilota"                 , IDM_WINDOWHIDE
+      }
+      POPUP "Valitse"
+      {
+         MENUITEM "Valitse kaikki\tCtrl+S"  , IDM_SELECTALL
+         MENUITEM "Poista valinnat\tCtrl+D" , IDM_DESELECTALL
+      }
+      MENUITEM "Järjestä"                   , IDM_ARRANGE
+      MENUITEM SEPARATOR
+      MENUITEM "Sulje"                      , IDM_CLOSE
+   }
+}
+
+
+// WORKPLACE SHELL MINIMIZED WINDOW OBJECT SYSTEM MENU
+MinimizedWindowObjectPopUpMenu MENU
+{
+   POPUP ""
+   {
+      POPUP "O&hje"
+      {
+         MENUITEM "Hakemisto"               , IDM_HELPINDEX
+         MENUITEM "Yleistä"                 , IDM_HELPGENERAL     , CHECKED
+         MENUITEM "Ohjeen käyttö"                  , IDM_HELPUSING
+         MENUITEM "Näppäimistö"             , IDM_HELPKEYS
+      }
+      MENUITEM "Asetukset"                  , IDM_OPENSETTINGS
+      MENUITEM SEPARATOR
+      MENUITEM "Palauta"                    , IDM_WINDOWRESTORE
+      MENUITEM "Kokoruutu"                  , IDM_WINDOWMAXIMIZE
+      MENUITEM "Sulje"                      , IDM_CLOSE
+      MENUITEM "Ikkunaluettelo"             , IDM_WINDOWLIST
+   }
+}
+
+// EOF MENUS.RC
+
+

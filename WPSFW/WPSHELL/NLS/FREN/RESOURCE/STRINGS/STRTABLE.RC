@@ -1,0 +1,206 @@
+//=====================================================================
+// STRTABLE.RC
+//    String Table Resource File.
+//
+// Date Created :  07/18/94
+// Last Update  :  12/21/95
+// Written By   :  Mario E. De Armas
+// Compiler Used:  MS Visual C++ 1.52
+//
+// Copyright IBM Corporation, 1994-1995. All rights reserved.
+//
+//
+// FILE LOG:
+// DATE        | ACTION/CHANGE                           | DATAFILEMER
+// 07/18/94    | Creation.                               | MDA
+//=====================================================================
+
+//-------------------------------------------------------------------------
+// STRING TABLES
+//-------------------------------------------------------------------------
+// NOTE: Each string can have a maximum of 255 characters and must be in one
+//       line of the file.
+
+// Basic strings:
+STRINGTABLE LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+   IDSTR_WPSFWIN,                      "Bureau du shell éléctronique pour Windows"
+   IDSTR_COPYRIGHT,                    "Copyright IBM Corporation 1994-1996"
+END
+
+// Error/Warning strings
+STRINGTABLE LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+   IDSTR_ERR_CAPTION,                  "Erreur du shell du bureau électronique"
+   IDSTR_ERR_WARN_CAPTION,             "Avertissement du shell du bureau éléctronique"
+   IDSTR_ERR_CREATE_MSG_QUEUE,         "La nouvelle queue de messages n'a pu être crée."
+   IDSTR_ERR_WPSHELL_INI_FILE,         "Le profil WPSHELL.INI est manquant ou corrompu\nVérifiez si ce fichier est dans le r^pertoire \\WINDOWS."
+   IDSTR_ERR_RUN,                      "Erreur %u:\n%s\n%s"
+   IDSTR_ERR_OBJEXEC,                  "Erreur %u:\n\x22%s\x22\n%s\n%s"
+   IDSTR_ERR_SAVE_DSKTOP_CAPTION,      "Enregistrer le bureau"
+   IDSTR_ERR_SAVE_DSKTOP,              "Erreur durant l'enregistrement du shell du bureau éléctronique."
+   IDSTR_ERR_FIND_FOLDER_CAPTION,      "Recherche du dossier"
+   IDSTR_ERR_SYSSETUP_NOT_FOUND,       "Le dossier de configuration du système n'a pas été trouvé."
+   IDSTR_ERR_TOO_MANY_OBJECTS,         "Erreur: trop d'objets dans le dossier."
+   IDSTR_ERR_NO_MORE_SHADOWS,          "Erreur: le double n'a pu être crée."
+   IDSTR_ERR_CANNOT_RUN_INSTALL        "Erreur: le programme 'setup.exe' ou 'install.exe' n'a pu être éxécuté."
+END
+
+// Message boxes strings
+STRINGTABLE LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+   IDSTR_SHUTDOWN_CAPTION,             "Fermer Windows"
+   IDSTR_SAVE_DESKTOP_QUESTION,        "Enregistrer la configuration actuelle du bureau?"
+END
+
+// Confirmation strings
+STRINGTABLE LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+   // default object
+   IDSTR_OBJ_CONFIRM_ON_DELETE_CAPTION,"Confirmation de la suppression"
+   IDSTR_OBJ_CONFIRM_ON_DELETE,        "Etes vous sûr de vouloir supprimer le dossier %s?"
+   IDSTR_OBJ_CONFIRM_ON_FILESYS_DELETE,"Le fichier %s va être effacé. Etes vous sûr de vouloir l'effacer?"
+   // folder
+   IDSTR_FOL_CONFIRM_ON_DELETE_CAPTION,"Confirmation de la suppression du dossier"
+   IDSTR_FOL_CONFIRM_ON_DELETE,        "%s est un dossier.  Etes vous sûr de vouloir le supprimer ainsi que tout son contenu?  Séléctez Oui pour continuer, Non pour interrompre cette tâche."
+   IDSTR_FOL_CONFIRM_ON_FILESYS_DELETE,"%s est un répertoire. Etes vous sûr de vouloir l'effacer ainsi que son contenu?  Sélectez Oui pour continuer, Non pour interrompre cette tâche."
+END
+
+// Folder object view strings.
+STRINGTABLE LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+   // View caption title strings:
+   IDSTR_VIEW_ICON,                    "Icônes"
+   IDSTR_VIEW_TREE,                    "Arborescence"
+   IDSTR_VIEW_DETAILS,                 "Détails"
+   IDSTR_VIEW_CAPTION_TITLE,           "%s - %s View"
+   // Details view column names:
+   IDSTR_DETAILS_ICON_COLUMN,          "Icône"
+   IDSTR_DETAILS_TITLE_COLUMN,         "Titre"
+   IDSTR_DETAILS_NAME_COLUMN,          "Nom"
+   IDSTR_DETAILS_SIZE_COLUMN,          "Taille"
+   IDSTR_DETAILS_DATE_COLUMN,          "Date de dernière écriture"
+   IDSTR_DETAILS_TIME_COLUMN,          "Heure de dernière écriture"
+END
+
+// Menu Item Strings
+STRINGTABLE LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+   IDSTR_SHADOWMENU_ORIGINAL,           "Original"
+   IDSTR_SHADOWMENU_ORIGINAL_LOCATE,    "&Localisation"
+   IDSTR_SHADOWMENU_ORIGINAL_COPY,      "&Copie"
+   IDSTR_SHADOWMENU_ORIGINAL_DELETE,    "&Suppression"
+   IDSTR_DRIVEMENU_INSTALL,             "&Installation"
+END
+
+// Windows "SYSTEM.INI" profile value and section/entry strings names.
+STRINGTABLE LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+   //  NOTE: DO NOT TRANSLATE THE STRINGS IN THIS TABLE!
+   // Values.
+   IDSTR_YES,                          "Yes"
+   IDSTR_NO,                           "No"
+   IDSTR_HIDE,                         "Hide"
+   IDSTR_MINIMIZE,                     "Minimize"
+   IDSTR_ENABLED,                      "Enabled"
+   IDSTR_DISABLED,                     "Disabled"
+   IDSTR_MINTOVIEWER,                  "MinToViewer"
+   IDSTR_MINTODESKTOP,                 "MinToDesktop"
+   IDSTR_CREATENEW,                    "CreateNew"
+   IDSTR_DISPLAYEXISTING,              "DisplayExisting"
+   IDSTR_SYSTEMSETUP,                  "System Setup"
+   IDSTR_NEVER,                        "Never"
+   IDSTR_SUBFOLDERS_ONLY,              "SubfoldersOnly"
+   IDSTR_ALL_OBJECTS,                  "AllObjects"
+   // Names.
+   IDSTR_WIN_SYSTEM_PROFILE,           "SYSTEM.INI"
+   IDSTR_WPSFWIN_SECTION_NAME,         "Workplace_Shell_for_Windows"
+   IDSTR_DESKTOP_HORZICONINDENT,       "DESKTOP_HorzIconIndent"
+   IDSTR_DESKTOP_VERTICONINDENT,       "DESKTOP_VertIconIndent"
+   IDSTR_SYSTEM_CONFIRMFOLDERDELETE,   "SYSTEM_ConfirmOnFolderDelete"
+   IDSTR_SYSTEM_CONFIRMDELETE,         "SYSTEM_ConfirmOnDelete"
+   IDSTR_SYSTEM_CONFIRMFILEDELETE,     "SYSTEM_ConfirmOnFileSystemDelete"
+   IDSTR_SYSTEM_BUTTONAPPEARANCE,      "SYSTEM_ButtonAppearance"
+   IDSTR_SYSTEM_ANIMATION,             "SYSTEM_Animation"
+   IDSTR_SYSTEM_MINBEHAVIOR,           "SYSTEM_MinBehavior"
+   IDSTR_SYSTEM_OPENBEHAVIOR,          "SYSTEM_OpenBehavior"
+   IDSTR_SYSTEM_SYSTEMSETUPFOLDERNAME, "SYSTEM_SystemSetupFolderName"
+   IDSTR_SYSTEM_NOSAVE,                "SYSTEM_NoSave"
+   IDSTR_SYSTEM_FOLDERAUTOMATICCLOSE,  "SYSTEM_FolderAutomaticClose"
+   IDSTR_COLOR_SHADOWTEXT,             "COLOR_ShadowText"
+END
+
+// Miscellaneous
+STRINGTABLE LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+   IDSTR_SHELL_FILENAME,               "WPSHELL.EXE"    // DO NOT TRANSLATE!
+   IDSTR_DESKTOP_FILENAME,             "WPSHELL.INI"    // DO NOT TRANSLATE!
+   IDSTR_HELP_FILENAME,                "WPSHELL.HLP"    // DO NOT TRANSLATE!
+   IDSTR_WIN_VERSION_MESSAGE,          "Cette version de Windows n'est pas supportée.\nVous utilisez Windows %u.%u,\nmais il vous faut Windows 3.1 or ou une version ultérieure."
+   IDSTR_NONE_PARENTHESIS,             "(Aucun(e))"
+   IDSTR_IMAGE_NONE,                   "(Aucun(e))"
+   IDSTR_FILEDLG_TITLE_RUN,            "Exécuter"
+   IDSTR_FILEDLG_TITLE_BROWSE,         "Parcourir"
+   IDSTR_FILEDLG_TITLE_FIND_PROGRAM,   "Recherche de programmes"
+   IDSTR_FILEDLG_TITLE_FIND_DATAFILE,  "Recherche de fichier de données"
+   // "Copy", "Move", and "Create another" dialog strings.
+   IDSTR_CMCDLG_TITLE_COPY,            "Copie"
+   IDSTR_CMCDLG_TITLE_MOVE,            "Déplacement"
+   IDSTR_CMCDLG_TITLE_CREATEANOTHER,   "Création"
+   IDSTR_CMCDLG_TITLE_CREATESHADOW,    "Création de double"
+   IDSTR_CMCDLG_PUSHBUTTON_COPY,       "&Copie"
+   IDSTR_CMCDLG_PUSHBUTTON_MOVE,       "&Déplacement"
+   IDSTR_CMCDLG_PUSHBUTTON_CREATE,     "&Création"
+   IDSTR_CMCDLG_PUSHBUTTON_SHADOW,     "Cr&éation de double"
+   // "Find Results" dialog caption title.
+   IDSTR_FINDRESULTS_CAPTION           "%s - %d Objet(s) ont été trouvé(s)"
+END
+
+// Settings notebook page tab titles.
+STRINGTABLE LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+   IDSTR_SETTNB_DEFAULT_TITLE,         "Paramètres"
+   IDSTR_SETTNB_TITLE,                 "%s - Paramètres"
+   IDSTR_SETTNB_STATUSTEXT,            "Page %d of %d"
+   IDSTR_SETTNB_PAGE_GENERAL,          "&Général"
+   IDSTR_SETTNB_PAGE_VIEW,             "Vis&ualisation"
+   IDSTR_SETTNB_PAGE_BACKGROUND,       "&Arrière-plan"
+   IDSTR_SETTNB_PAGE_WINDOW,           "Fenêtre"
+   IDSTR_SETTNB_PAGE_PROGRAM,          "&Programme"
+   IDSTR_SETTNB_PAGE_ASSOCIATION,      "&Association"
+   IDSTR_SETTNB_PAGE_TYPE,             "&Type"
+   IDSTR_SETTNB_PAGE_FILE,             "&Fichier"
+   IDSTR_SETTNB_PAGE_LOCKUP,           "&Verrouillage"
+   IDSTR_SETTNB_PAGE_DESKTOP,          "&Bureau"
+   IDSTR_SETTNB_PAGE_CONFIRMATION,     "&Confirmation"
+   IDSTR_SETTNB_PAGE_DRIVE,            "&Unité"
+   IDSTR_SETTNB_PAGE_CREDITS,          "&Crédits"
+END
+
+// Default object titles.
+STRINGTABLE LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+   IDSTR_OBJTITLE_GENERIC,             "Objet"
+   IDSTR_OBJTITLE_FOLDER,              "Dossier"
+   IDSTR_OBJTITLE_PROGRAM,             "Programme"
+   IDSTR_OBJTITLE_DATAFILE,            "Fichier de données"
+   IDSTR_OBJTITLE_SHREDDER,            "Broyeur"
+   IDSTR_OBJTITLE_SYSTEM,              "Système"
+   IDSTR_OBJTITLE_DESKTOP,             "Bureau"
+   IDSTR_OBJTITLE_DRIVE,               "Unité"
+END
+
+// Drive types.
+STRINGTABLE LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+   IDSTR_DRIVETYPE_UNKNOWN,            "Inconnu(e)"
+   IDSTR_DRIVETYPE_FLOPPY,             "Disquette"
+   IDSTR_DRIVETYPE_HARD,               "Disque dur"
+   IDSTR_DRIVETYPE_NETWORK,            "Disque de réseau"
+   IDSTR_DRIVETYPE_CDROM,              "Lecteur CD-ROM"
+   IDSTR_DRIVETYPE_RAMDISK,            "Disque RAM"
+END
+
+// EOF STRTABLE.RC
+
+

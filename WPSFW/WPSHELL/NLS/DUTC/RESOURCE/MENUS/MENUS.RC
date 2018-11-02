@@ -1,0 +1,292 @@
+//=====================================================================
+// MENUS.RC
+//    WPSHELL's Windows 3.1 system popup menus resource script file.
+//
+// Date Created :  01/26/94
+// Last Update  :  12/14/94
+// Written By   :  Mario E. De Armas
+// Compiler Used:  MS Visual C++ 1.5
+//
+// Copyright IBM Corporation, 1994. All rights reserved.
+//
+//
+// FILE LOG:
+// DATE        | ACTION/CHANGE                           | PROGRAMMER
+// 01/26/94    | Creation.                               | MDA
+//=====================================================================
+
+//-----------------------------------------------------------------------------
+// POP-UP MENUS
+//-----------------------------------------------------------------------------
+
+// WORKPLACE SHELL DESKTOP SYSTEM MENU
+DesktopPopUpMenu MENU
+{
+   POPUP ""
+   {
+      POPUP "&Openen"
+      {
+         MENUITEM "&Instellingen"           , IDM_OPENSETTINGS
+         MENUITEM "&Pictogram overzicht"    , IDM_OPENICON
+         MENUITEM "&Detail overzicht"       , IDM_OPENDETAILS
+      }
+      MENUITEM "Instellingen"               , IDM_OPENSETTINGS
+      MENUITEM "&Nu verversen"              , IDM_REFRESHNOW
+      POPUP "&?"
+      {
+         MENUITEM "&Inhoud"                 , IDM_HELPINDEX
+         MENUITEM "&Algemeen"               , IDM_HELPGENERAL   , CHECKED
+         MENUITEM "&Gebruik"                , IDM_HELPUSING
+         MENUITEM "&Toetsen"                , IDM_HELPKEYS
+         MENUITEM SEPARATOR
+         MENUITEM "&Produkt Informatie"     , IDM_HELPPRODINFO
+      }
+      MENUITEM SEPARATOR
+      MENUITEM "&Nu vergrendelen"           , IDM_LOCKUPNOW
+      MENUITEM "&Afsluiten..."               , IDM_SHUTDOWN
+      MENUITEM "&Systeem instellingen"      , IDM_SYSTEMSETUP
+
+      MENUITEM SEPARATOR
+      MENUITEM "&Zoek..."                   , IDM_FIND
+
+      POPUP "&Selecteer"
+      {
+         MENUITEM "Selecteer &Alles\tCtrl+S" , IDM_SELECTALL
+         MENUITEM "Selecteer &Niets\tCtrl+D" , IDM_DESELECTALL
+      }
+
+      POPUP "Sor&teren"
+
+      {
+         MENUITEM "&Naam"                   , IDM_SORTBYNAME
+         MENUITEM "&Soort"                  , IDM_SORTBYTYPE
+         MENUITEM "Echte naam"              , IDM_SORTBYREALNAME
+         MENUITEM "Grootte"                 , IDM_SORTBYSIZE
+         MENUITEM "Laatste toegangs datum"  , IDM_SORTBYLASTACCESSDATE
+         MENUITEM "Laatste toegangs tijd"   , IDM_SORTBYLASTACCESSTIME
+      }
+
+      MENUITEM "&Schikken"                  , IDM_ARRANGE
+      MENUITEM SEPARATOR
+      MENUITEM "&Opslaan bureaublad"        , IDM_SAVEDESKTOP
+      MENUITEM SEPARATOR
+      MENUITEM "S&tarten..."                , IDM_RUN
+   }
+}
+
+
+// WORKPLACE SHELL FOLDER SYSTEM MENU
+FolderPopUpMenu MENU
+{
+   POPUP ""
+   {
+      POPUP "&Openen"
+      {
+         MENUITEM "&Instellingen"         , IDM_OPENSETTINGS
+         MENUITEM "&Pictogram overzicht"  , IDM_OPENICON
+         MENUITEM "&Detail overzicht"     , IDM_OPENDETAILS
+      }
+      MENUITEM "Instellingen"             , IDM_OPENSETTINGS
+      MENUITEM "Openen ouder"             , IDM_OPENPARENT
+      MENUITEM "&Nu verversen"            , IDM_REFRESHNOW
+      POPUP "&?"
+      {
+         MENUITEM "&Inhoud"               , IDM_HELPINDEX
+         MENUITEM "&Algemeen"             , IDM_HELPGENERAL     , CHECKED
+         MENUITEM "&Gebruik"              , IDM_HELPUSING
+         MENUITEM "&Toetsen"              , IDM_HELPKEYS
+      }
+      MENUITEM SEPARATOR
+      MENUITEM "Maak er &nog een..."        , IDM_CREATEANOTHER
+      MENUITEM "&Kopiëren..."               , IDM_COPY
+      MENUITEM "&Verplaatsen..."            , IDM_MOVE
+      MENUITEM "Maken &schaduwkopie..."     , IDM_CREATESHADOW
+      MENUITEM "Ver&wijderen..."            , IDM_DELETE
+      MENUITEM SEPARATOR
+      POPUP "&Venster"
+      {
+         MENUITEM "&Vorig formaat"          , IDM_WINDOWRESTORE
+         MENUITEM "V&erplaatsen"            , IDM_WINDOWMOVE
+         MENUITEM "&Formaat wijzigen"       , IDM_WINDOWSIZE
+         MENUITEM "&Pictogram"              , IDM_WINDOWMINIMIZE
+         MENUITEM "Ma&ximum venster"        , IDM_WINDOWMAXIMIZE
+         MENUITEM "&Verberg"                , IDM_WINDOWHIDE
+      }
+      MENUITEM "&Zoek..."                   , IDM_FIND
+      POPUP "&Selecteer"
+      {
+         MENUITEM "Selecteer &Alles\tCtrl+S" , IDM_SELECTALL
+         MENUITEM "Selecteer &Niets\tCtrl+D" , IDM_DESELECTALL
+      }
+      POPUP "Sor&teer"
+      {
+         MENUITEM "&Naam"                   , IDM_SORTBYNAME
+         MENUITEM "&Soort"                  , IDM_SORTBYTYPE
+         MENUITEM "Echte naam"              , IDM_SORTBYREALNAME
+         MENUITEM "Grootte"                 , IDM_SORTBYSIZE
+         MENUITEM "Laatste toegangs datum"  , IDM_SORTBYLASTACCESSDATE
+         MENUITEM "Laatste toegangs tijd"   , IDM_SORTBYLASTACCESSTIME
+      }
+      MENUITEM "&Schikken"                  , IDM_ARRANGE
+      MENUITEM SEPARATOR
+      MENUITEM "Sluiten"                    , IDM_CLOSE
+   }
+}
+
+// WORKPLACE SHELL OBJECT SYSTEM MENU
+ObjectPopUpMenu MENU
+{
+   POPUP ""
+   {
+      POPUP "&Openen"
+      {
+         MENUITEM "&Instellingen"           , IDM_OPENSETTINGS  , CHECKED
+      }
+      MENUITEM "Instellingen"               , IDM_OPENSETTINGS
+      MENUITEM "Openen ouder"               , IDM_OPENPARENT
+      POPUP "&?"
+      {
+         MENUITEM "&Inhoud"                 , IDM_HELPINDEX
+         MENUITEM "&Algemeen"               , IDM_HELPGENERAL   , CHECKED
+         MENUITEM "&Gebruik"                , IDM_HELPUSING
+         MENUITEM "&Toetsen"                , IDM_HELPKEYS
+      }
+      MENUITEM SEPARATOR
+      MENUITEM "Maak er &nog een..."        , IDM_CREATEANOTHER
+      MENUITEM "&Kopiëren..."               , IDM_COPY
+      MENUITEM "&Verplaatsen..."            , IDM_MOVE
+      MENUITEM "Maken &schaduwkopie..."     , IDM_CREATESHADOW
+      MENUITEM "Ver&wijderen..."            , IDM_DELETE
+   }
+}
+
+
+// WORKPLACE SHELL PROGRAM SYSTEM MENU
+ProgramPopUpMenu MENU
+{
+   POPUP ""
+   {
+      POPUP "&Openen"
+      {
+         MENUITEM "&Instellingen"           , IDM_OPENSETTINGS
+         MENUITEM "&Programma"              , IDM_OPENPROGRAM     , CHECKED
+      }
+      MENUITEM "Instellingen"               , IDM_OPENSETTINGS
+      MENUITEM "Openen ouder"               , IDM_OPENPARENT
+      POPUP "&?"
+      {
+         MENUITEM "&Inhoud"                 , IDM_HELPINDEX
+         MENUITEM "&Algemeen"               , IDM_HELPGENERAL     , CHECKED
+         MENUITEM "&Gebruik"                , IDM_HELPUSING
+         MENUITEM "&Toetsen"                , IDM_HELPKEYS
+      }
+      MENUITEM SEPARATOR
+      MENUITEM "Maak er &nog een..."        , IDM_CREATEANOTHER
+      MENUITEM "&Kopiëren..."               , IDM_COPY
+      MENUITEM "&Verplaatsen..."            , IDM_MOVE
+      MENUITEM "Maken &schaduwkopie..."     , IDM_CREATESHADOW
+      MENUITEM "Ver&wijderen..."            , IDM_DELETE
+   }
+}
+
+
+// WORKPLACE SHELL DATA FILE SYSTEM MENU
+DataFilePopUpMenu MENU
+{
+   POPUP ""
+   {
+      POPUP "&Openen"
+      {
+         MENUITEM "&Instellingen"           , IDM_OPENSETTINGS
+         MENUITEM "&Gegevens Bestand"       , IDM_OPENDATAFILE    , CHECKED
+      }
+      MENUITEM "Instellingen"               , IDM_OPENSETTINGS
+      MENUITEM "Openen ouder"               , IDM_OPENPARENT
+      POPUP "&?"
+      {
+         MENUITEM "&Inhoud"                 , IDM_HELPINDEX
+         MENUITEM "&Algemeen"               , IDM_HELPGENERAL     , CHECKED
+         MENUITEM "&Gebruik"                , IDM_HELPUSING
+         MENUITEM "&Toetsen"                , IDM_HELPKEYS
+      }
+      MENUITEM SEPARATOR
+      MENUITEM "Maak er &nog een..."        , IDM_CREATEANOTHER
+      MENUITEM "&Kopiëren..."               , IDM_COPY
+      MENUITEM "&Verplaatsen..."            , IDM_MOVE
+      MENUITEM "Maken &Schadowkopie..."     , IDM_CREATESHADOW
+      MENUITEM "Ver&wijderen..."            , IDM_DELETE
+      MENUITEM SEPARATOR
+      MENUITEM "&Afdrukken"                 , IDM_PRINT
+   }
+}
+
+
+// WORKPLACE SHELL TEMPLATE SYSTEM MENU
+MinimizedWindowViewerPopUpMenu MENU
+{
+   POPUP ""
+   {
+      POPUP "&Openen"
+      {
+         MENUITEM "&Instellingen"           , IDM_OPENSETTINGS
+         MENUITEM "&Pictogram overzicht"    , IDM_OPENICON        , CHECKED
+      }
+      MENUITEM "Instellingen"               , IDM_OPENSETTINGS
+      MENUITEM "Openen ouder"               , IDM_OPENPARENT
+      MENUITEM "&Nu verversen"              , IDM_REFRESHNOW
+      POPUP "&?"
+      {
+         MENUITEM "&Inhoud"                 , IDM_HELPINDEX
+         MENUITEM "&Algemeen"               , IDM_HELPGENERAL     , CHECKED
+         MENUITEM "&Gebruik"                , IDM_HELPUSING
+         MENUITEM "&Toetsen"                , IDM_HELPKEYS
+      }
+      MENUITEM SEPARATOR
+      MENUITEM "&Verplaatsen..."            , IDM_MOVE
+      MENUITEM "Maken &schaduwkopie..."     , IDM_CREATESHADOW
+      MENUITEM SEPARATOR
+      POPUP "&Venster"
+      {
+         MENUITEM "&Vorig formaat"          , IDM_WINDOWRESTORE
+         MENUITEM "V&erplaatsen"            , IDM_WINDOWMOVE
+         MENUITEM "&Formaat wijzigen"       , IDM_WINDOWSIZE
+         MENUITEM "&Pictogram"              , IDM_WINDOWMINIMIZE
+         MENUITEM "Ma&ximumvenster"         , IDM_WINDOWMAXIMIZE
+         MENUITEM "&Verberg"                , IDM_WINDOWHIDE
+      }
+      POPUP "&Selecteer"
+      {
+         MENUITEM "Selecteer &Alles\tCtrl+S" , IDM_SELECTALL
+         MENUITEM "Selecteer &Niets\tCtrl+D" , IDM_DESELECTALL
+      }
+      MENUITEM "&Arrange"                   , IDM_ARRANGE
+      MENUITEM SEPARATOR
+      MENUITEM "Close"                      , IDM_CLOSE
+   }
+}
+
+
+// WORKPLACE SHELL MINIMIZED WINDOW OBJECT SYSTEM MENU
+MinimizedWindowObjectPopUpMenu MENU
+{
+   POPUP ""
+   {
+      POPUP "&?"
+      {
+         MENUITEM "&Inhoud"                 , IDM_HELPINDEX
+         MENUITEM "&Algemeen"               , IDM_HELPGENERAL     , CHECKED
+         MENUITEM "&Gebruik"                , IDM_HELPUSING
+         MENUITEM "&Toetsen"                , IDM_HELPKEYS
+      }
+      MENUITEM "&Instellingen"              , IDM_OPENSETTINGS
+      MENUITEM SEPARATOR
+      MENUITEM "&Vorigformaat"              , IDM_WINDOWRESTORE
+      MENUITEM "Ma&ximumvenster"            , IDM_WINDOWMAXIMIZE
+      MENUITEM "&Afsluiten"                 , IDM_CLOSE
+      MENUITEM "Venster lijs&t"             , IDM_WINDOWLIST
+   }
+}
+
+// EOF MENUS.RC
+
+

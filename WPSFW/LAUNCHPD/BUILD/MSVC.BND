@@ -1,0 +1,9 @@
+LAUNCHPD.OBJ +
+
+LAUNCHPD.EXE
+nul
+c:\msvc\lib\+
+..\..\WPSHELL\BUILD\WPSHELL.LIB+
+CTL3D.LIB+
+oldnames libw llibcew commdlg.lib shell.lib
+LAUNCHPD.DEF;

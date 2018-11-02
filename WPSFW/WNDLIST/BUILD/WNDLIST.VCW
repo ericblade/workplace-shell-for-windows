@@ -1,0 +1,12 @@
+[MSVC Status File]
+Version=1.00
+ProjectType=10
+External=0
+BrkptCount=0
+WatchCount=6
+WatchExpr1=lpszCmdLine
+WatchExpr2=lpszCmdLine[0]
+WatchExpr3=nLeft
+WatchExpr4=nTop
+WatchExpr5=index
+WatchExpr6=lpszCmdLine[index]

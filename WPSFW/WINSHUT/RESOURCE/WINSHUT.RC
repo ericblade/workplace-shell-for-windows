@@ -1,0 +1,77 @@
+//=====================================================================
+// WINSHUT.RC
+//    Windows shutdown utility's resource file.
+//
+// Date Created :  05/09/95
+// Last Update  :  12/21/95
+// Written By   :  Mario E. De Armas
+// Compiler Used:  MS Visual C++ 1.52
+//
+// Copyright IBM Corporation, 1994-1995. All rights reserved.
+//
+//
+// FILE LOG:
+// DATE        | ACTION/CHANGE                           | PROGRAMMER
+// 05/29/95    | Creation.                               | MDA
+//=====================================================================
+
+
+//---------------------------------------------------------------------
+// HEADER FILES
+//---------------------------------------------------------------------
+// Windows library header files.
+#include <windows.h>
+#include <ver.h>
+
+//-----------------------------------------------------------------------------
+// PRODUCT VERSION CONSTANTS
+//-----------------------------------------------------------------------------
+#define VER_MAJOR                2                 // Integer representing major version number.
+#define VER_MINOR                0                 // Integer representing minor version number.
+#define VER_STR_PRODUCTVERSION   "Release v2.0\0"  // String representing current version.
+#define VER_STR_PRODUCTCOPYRIGHT "Copyright © IBM Corporation 1994-1996\0"
+
+//-----------------------------------------------------------------------------
+// VERSION INFORMATION
+//-----------------------------------------------------------------------------
+VS_VERSION_INFO VERSIONINFO
+   FILEVERSION     1,0,0,0
+   PRODUCTVERSION  VER_MAJOR,VER_MINOR,0,0
+   FILEFLAGSMASK   0
+   FILEFLAGS       0
+   FILEOS          VOS_DOS_WINDOWS16
+
+   FILETYPE        VFT_APP
+   FILESUBTYPE     VFT_APP
+
+   BEGIN
+      BLOCK "StringFileInfo"
+      BEGIN
+         BLOCK "040904E4"
+         BEGIN
+            VALUE "CompanyName"        , "IBM Corporation\0"
+            VALUE "FileDescription"    , "Windows Shudown Program\0"
+            VALUE "FileVersion"        , "1.0.0\0"
+            VALUE "InternalName"       , "Shutdown Utility File\0"
+            VALUE "LegalCopyright"     , VER_STR_PRODUCTCOPYRIGHT
+            VALUE "ProductName"        , "Workplace Shell for Windows 3.1\0"
+            VALUE "OriginalFileName"   , "WINSHUT.EXE\0"
+            VALUE "ProductVersion"     , VER_STR_PRODUCTVERSION
+         END
+      END
+
+      BLOCK "VarFileInfo"
+      BEGIN
+         VALUE "Translation", 0x0409, 1252
+      END
+   END
+
+
+//-----------------------------------------------------------------------------
+// ICONS
+//-----------------------------------------------------------------------------
+100   ICON    DISCARDABLE     "ICONS\\LPSHUTDN.ICO"
+
+// EOF WINSHUT.RC
+
+

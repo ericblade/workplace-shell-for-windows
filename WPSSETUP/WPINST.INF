@@ -1,0 +1,98 @@
+[Source Media Descriptions]
+	"1", "Install Disk 1", "wpshell.ex_", "..\disk1"
+
+[Default File Settings]
+"STF_BACKUP"     = ""
+"STF_COPY"       = "YES"
+"STF_DECOMPRESS" = "YES"
+"STF_OVERWRITE"  = "ALWAYS"
+"STF_READONLY"   = "YES"
+"STF_ROOT"       = ""
+"STF_SETTIME"    = "YES"
+"STF_TIME"       = "0"
+"STF_VITAL"      = "YES"
+
+[store]
+	1, license.txt,,,, 1995-04-19, !DECOMPRESS,,, !READONLY,,,,,, 3741,,,,,
+	1, winshut.exe,,,, 1995-12-21,,,, !READONLY,,,,,, 5552,,,,,
+	1, install.txt,,,, 1995-12-21, !DECOMPRESS,,, !READONLY,,,,,, 7547,,,,,
+	1, os21icon.dll,,,, 1995-12-21,,,, !READONLY,,,,,, 35328,,,,,
+	1, convini.exe,,,, 1995-12-21,,,, !READONLY,,,,,, 17344,,,,,
+	1, wndlist.exe,,,, 1995-12-21,,,, !READONLY,,,,,, 16240,,,,,
+	1, readme.1st,,,, 1995-12-21, !DECOMPRESS,,, !READONLY,,,,,, 20855,,,,,
+	1, ibmbbs.txt,,,, 1995-06-19,,,, !READONLY,,,,,, 46845,,,,,
+	1, pmtowp.exe,,,, 1995-12-21,,,, !READONLY,,,,,, 35136,,,,,
+	1, warpicon.dll,,,, 1995-12-21,,,, !READONLY,,,,,, 73792,,,,,
+	1, wpshell.exe,,,, 1995-12-21,,,, !READONLY,,,,,, 215488,,,,,
+
+[systm]
+	1, fclspbw.dll,,,, 1995-03-02,,,, !READONLY,,,,,, 15568,,,,,
+	1, ctl3d.dll,,,, 1994-01-21,,, OLDER, !READONLY,,,,,, 21008,,,,,
+	1, fclnbw.dll,,,, 1994-03-25,,,, !READONLY,,,,,, 53616,,,,,
+
+[windows]
+	1, wpshell.hlp,,,, 1995-06-09,,,, !READONLY,,,,,, 77680,,,,,
+
+[nls_dutc]
+	1, cnv_dutc.dll,,,, 1995-12-21,,,, !READONLY,,,,,, 5424,,,,,
+	1, ptw_dutc.dll,,,, 1995-12-21,,,, !READONLY,,,,,, 5648,,,,,
+	1, wps_dutc.dll,,,, 1995-12-21,,,, !READONLY,,,,,, 17200,,,,,
+
+[nls_fren]
+	1, cnv_fren.dll,,,, 1995-12-21,,,, !READONLY,,,,,, 5472,,,,,
+	1, ptw_fren.dll,,,, 1995-12-21,,,, !READONLY,,,,,, 5840,,,,,
+	1, wps_fren.dll,,,, 1995-12-21,,,, !READONLY,,,,,, 17856,,,,,
+
+[nls_grmn]
+	1, cnv_grmn.dll,,,, 1995-12-21,,,, !READONLY,,,,,, 5696,,,,,
+	1, ptw_grmn.dll,,,, 1995-12-21,,,, !READONLY,,,,,, 5760,,,,,
+	1, wps_grmn.dll,,,, 1995-12-21,,,, !READONLY,,,,,, 17712,,,,,
+
+[nls_ital]
+	1, cnv_ital.dll,,,, 1995-12-21,,,, !READONLY,,,,,, 5440,,,,,
+	1, ptw_ital.dll,,,, 1995-12-21,,,, !READONLY,,,,,, 5776,,,,,
+	1, wps_ital.dll,,,, 1995-12-21,,,, !READONLY,,,,,, 17536,,,,,
+
+[nls_port]
+	1, cnv_port.dll,,,, 1995-12-21,,,, !READONLY,,,,,, 5408,,,,,
+	1, ptw_port.dll,,,, 1995-12-21,,,, !READONLY,,,,,, 5664,,,,,
+	1, wps_port.dll,,,, 1995-12-21,,,, !READONLY,,,,,, 17456,,,,,
+
+[nls_span]
+	1, cnv_span.dll,,,, 1995-12-21,,,, !READONLY,,,,,, 5424,,,,,
+	1, ptw_span.dll,,,, 1995-12-21,,,, !READONLY,,,,,, 5680,,,,,
+	1, wps_span.dll,,,, 1995-12-21,,,, !READONLY,,,,,, 17504,,,,,
+
+[nls_enus]
+	1, cnv_enus.dll,,,, 1995-12-21,,,, !READONLY,,,,,, 5344,,,,,
+	1, ptw_enus.dll,,,, 1995-12-21,,,, !READONLY,,,,,, 5616,,,,,
+	1, wps_enus.dll,,,, 1995-12-21,,,, !READONLY,,,,,, 16400,,,,,
+
+[nls_finn]
+	1, cnv_finn.dll,,,, 1995-12-21,,,, !READONLY,,,,,, 5328,,,,,
+	1, ptw_finn.dll,,,, 1995-12-21,,,, !READONLY,,,,,, 5664,,,,,
+	1, wps_finn.dll,,,, 1995-12-21,,,, !READONLY,,,,,, 16496,,,,,
+
+[nls_swed]
+	1, cnv_swed.dll,,,, 1995-12-21,,,, !READONLY,,,,,, 5424,,,,,
+	1, ptw_swed.dll,,,, 1995-12-21,,,, !READONLY,,,,,, 5616,,,,,
+	1, wps_swed.dll,,,, 1995-12-21,,,, !READONLY,,,,,, 16496,,,,,
+
+[bmp]
+	1, ibmwall.bmp,,,, 1994-09-14,,,, !READONLY,,,,,, 2854,,,,,
+
+[Files]
+	1, setup.lst,,,, 1994-06-22,,,, !READONLY,,,,,, 653,,,,,
+	1, wpinst.inf,,,, 1995-12-21,,,, !READONLY,,,,,, 4151,,,,,
+	1, msuilstf.dll,,,, 1992-03-23,,,, !READONLY,,,,,, 6144,,,,,
+	1, msdetect.inc,,,, 1992-03-23,,,, !READONLY,,,,,, 22097,,,,,
+	1, _mssetup.exe,,,, 1992-03-23,,,, !READONLY,,,,,, 9813,,,,,
+	1, msshlstf.dll,,,, 1992-03-23,,,, !READONLY,,,,,, 14928,,,,,
+	1, wpsinst.mst,,,, 1995-12-21,,,, !READONLY,,,,,, 33894,,,,,
+	1, mscuistf.dll,,,, 1995-12-21,,,, !READONLY,,,,,, 26736,,,,,
+	1, setupapi.inc,,,, 1992-03-23,,,, !READONLY,,,,,, 55620,,,,,
+	1, msdetstf.dll,,,, 1992-03-23,,,, !READONLY,,,,,, 24544,,,,,
+	1, setup.exe,,,, 1992-03-23,,,, !READONLY,,,,,, 24624,,,,,
+	1, msinsstf.dll,,,, 1992-03-23,,,, !READONLY,,,,,, 65440,,,,,
+	1, mscomstf.dll,,,, 1992-03-23,,,, !READONLY,,,,,, 74528,,,,,
+	1, _mstest.exe,,,, 1992-03-23,,,, !READONLY,,,,,, 89504,,,,,

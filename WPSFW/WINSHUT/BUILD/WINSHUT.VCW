@@ -1,0 +1,16 @@
+[MSVC Status File]
+Version=1.00
+ProjectType=0
+External=0
+BrkptCount=2
+BrkptType1=0
+BrkptActive1=1
+BrkptAmbig1=0
+BrkptIndex1=-1
+BrkptLoc1={,d:\wpsfw\shutdown\source\shutdown.c,} .64
+BrkptType2=0
+BrkptActive2=1
+BrkptAmbig2=0
+BrkptIndex2=-1
+BrkptLoc2={,d:\wpsfw\shutdown\source\shutdown.c,} .53
+WatchCount=0

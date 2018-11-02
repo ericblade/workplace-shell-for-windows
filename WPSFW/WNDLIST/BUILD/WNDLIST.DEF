@@ -1,0 +1,30 @@
+;---------------------------------------------------------------------
+; WNDLIST.DEF
+;    Window List program definition file.
+;
+; Date Created :  01/26/94
+; Last Update  :  03/17/94
+; Written By   :  Mario E. De Armas
+; Compiler Used:  MS Visual C++ 1.5
+;
+; Copyright IBM Corporation, 1994. All rights reserved.
+;
+;
+; FILE LOG:
+; DATE        | ACTION/CHANGE                           | PROGRAMMER
+; 01/26/94    | Creation.                               | MDA
+;=====================================================================
+
+NAME           WNDLIST
+DESCRIPTION    "Window List - Copyright (c) IBM Corp. 1994"
+EXETYPE        WINDOWS
+CODE           PRELOAD MOVEABLE DISCARDABLE
+DATA           PRELOAD MOVEABLE MULTIPLE
+HEAPSIZE       1024
+
+IMPORTS
+        SWITCHTOTHISWINDOW      = USER.172
+        ISWINOLDAPTASK          = KERNEL.158
+
+; EOF WNDLIST.DEF
+

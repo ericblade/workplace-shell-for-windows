@@ -1,0 +1,52 @@
+//-------------------------------------------------------------------------
+// STRING TABLES
+//-------------------------------------------------------------------------
+
+//-------------------------------------------------------------------------
+// GRMN (German)
+//-------------------------------------------------------------------------
+STRINGTABLE LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+   IDSTR_PMTOWP_CAPTION,    "Progman zu Workplace"
+   IDSTR_PMTOWP_SUCCESS,    "Erfolgreich migrierte Gruppe(n)."
+   IDSTR_PMTOWP_FAILURE,    "Fehler während dem Migrieren der Gruppe(n)."
+   IDSTR_ERROR_CAPTION,     "PM zu WP Fehler"
+   IDSTR_ERR_01,            "ERROR 01: DDEML konnte nicht initialisiert werden."
+   IDSTR_ERR_02,            "ERROR 02: Verbindung zum 'PROGMAN' DDE Server konnte nicht hergestellt werden."
+   IDSTR_ERR_03,            "ERROR 03: Die Gruppeninformation konnte nicht vom DDE Server gelesen werden."
+
+   IDSTR_PM_FOLDER,         "Program Manager Ordner"
+   IDSTR_FILE_EXISTS_QUERY, "WPSHELL.INI existiert bereits.\nSoll die aktuelle Datei überschrieben werden?\n\n   JA\t - Überschreiben der aktuellen Datei\n  NEIN\t - Zu der aktuellen Datei hinzufügen\n   ABBRUCH - Vorgang abbrechen"
+   IDSTR_NO_SELECTION,      "Keine zu migrierende Gruppe ausgewählt."
+
+   IDSTR_OBJTITLE_COMMANDPROMPTS,   "Befehlszeilen"
+   IDSTR_OBJTITLE_DOSPROMPT,        "DOS Fenster"
+   IDSTR_OBJTITLE_TEMPLATES,        "Schablonen"
+   IDSTR_OBJTITLE_DATAFILE,         "Datendatei"
+   IDSTR_OBJTITLE_FOLDER,           "Ordner"
+   IDSTR_OBJTITLE_PROGRAM,          "Programm"
+   IDSTR_OBJTITLE_SHREDDER,         "Reißwolf"
+   IDSTR_OBJTITLE_SYSTEMSETUP,      "Systemkonfiguration"
+   IDSTR_OBJTITLE_SYSTEM,           "System"
+   IDSTR_OBJTITLE_SCHEMEPALETTE,    "Layoutpalette"
+   IDSTR_OBJTITLE_FONTPALETTE,      "Schriftartpalette"
+   IDSTR_OBJTITLE_SOUND,            "Warnton"
+   IDSTR_OBJTITLE_COUNTRY,          "Land"
+   IDSTR_OBJTITLE_DDINSTALL,        "Einheitentreiber installieren"
+   IDSTR_OBJTITLE_MOUSE,            "Maus"
+   IDSTR_OBJTITLE_KEYBOARD,         "Tastatur"
+   IDSTR_OBJTITLE_WINDOWSSYSTEM,    "Windows System"
+   IDSTR_OBJTITLE_DRIVES,           "Laufwerke"
+   IDSTR_OBJTITLE_DRIVE,            "Drive"
+   IDSTR_OBJTITLE_STARTUP,          "Systemstart"
+   IDSTR_OBJTITLE_MINVIEWER,        "Fenster in Symbolgröße"
+   
+   IDSTR_CONTROLPANEL_COLORS        "COLORS"
+   IDSTR_CONTROLPANEL_FONTS         "FONTS"
+   IDSTR_CONTROLPANEL_INTERNATIONAL "INTERNATIONAL"
+   IDSTR_CONTROLPANEL_MOUSE         "MOUSE"
+   IDSTR_CONTROLPANEL_KEYBOARD      "KEYBOARD"
+END
+
+// EOF STRTABLE.RC
+

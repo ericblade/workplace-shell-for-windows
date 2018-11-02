@@ -1,0 +1,102 @@
+//=====================================================================
+// LAUNCHPD.RC
+//    Workplace Shell's Launch Pad resource file.
+//
+// Date Created :  09/02/95
+// Last Update  :  09/05/95
+// Written By   :  Mario E. De Armas
+// Compiler Used:  MS Visual C++ 1.52
+//
+// Copyright IBM Corporation, 1994-1995. All rights reserved.
+//
+//
+// FILE LOG:
+// DATE        | ACTION/CHANGE                           | PROGRAMMER
+// 09/02/95    | Creation.                               | MDA
+//=====================================================================
+
+
+//---------------------------------------------------------------------
+// HEADER FILES
+//---------------------------------------------------------------------
+// Windows library header files.
+#include <windows.h>
+#include <ver.h>
+// Workplace Shell resource ID's header file.
+#include "resource.h"
+
+
+//-----------------------------------------------------------------------------
+// LOCAL CONSTANTS
+//-----------------------------------------------------------------------------
+// String constants used for version information and "Product Information" dialog.
+#define VER_STR_PRODUCTNAME      "Launch Pad\0"
+
+//-----------------------------------------------------------------------------
+// VERSION INFORMATION
+//-----------------------------------------------------------------------------
+VS_VERSION_INFO VERSIONINFO
+   FILEVERSION     1,0,0,0
+   PRODUCTVERSION  VER_MAJOR,VER_MINOR,0,0
+   FILEFLAGSMASK   0
+   FILEFLAGS       0
+   FILEOS          VOS_DOS_WINDOWS16
+
+   FILETYPE        VFT_APP
+   FILESUBTYPE     VFT_APP
+
+   BEGIN
+      BLOCK "StringFileInfo"
+      BEGIN
+         BLOCK "040904E4"
+         BEGIN
+            VALUE "CompanyName"        , "IBM Corporation\0"
+            VALUE "FileDescription"    , "Workplace Shell Launch Pad Program\0"
+            VALUE "FileVersion"        , "1.0.0\0"
+            VALUE "InternalName"       , "Launch Pad\0"
+            VALUE "LegalCopyright"     , VER_STR_PRODUCTCOPYRIGHT
+            VALUE "ProductName"        , VER_STR_PRODUCTNAME
+            VALUE "OriginalFileName"   , "LAUNCHPD.EXE\0"
+            VALUE "ProductVersion"     , VER_STR_PRODUCTVERSION
+         END
+      END
+
+      BLOCK "VarFileInfo"
+      BEGIN
+         VALUE "Translation", 0x0409, 1252
+      END
+   END
+
+
+//-----------------------------------------------------------------------------
+// ACCELERATOR TABLES
+//-----------------------------------------------------------------------------
+
+
+//-----------------------------------------------------------------------------
+// ICONS
+//-----------------------------------------------------------------------------
+// Main application icon(s).
+IDI_LAUNCHPAD           ICON    DISCARDABLE     ICONS\MAIN\FNTPNL.ICO
+// Built-in system functionality icons.
+IDI_SHUTDOWN            ICON    DISCARDABLE     ICONS\SYSFUNC\LPSHUTDN.ICO
+IDI_LOCKUP              ICON    DISCARDABLE     ICONS\SYSFUNC\LOCKUP.ICO
+IDI_MINVIEWER           ICON    DISCARDABLE     ICONS\SYSFUNC\STATEVW.ICO
+// Icons used in cursor creation.
+IDI_NOSIGN              ICON    DISCARDABLE     ICONS\CURSOR\NOSIGN.ICO
+IDI_COPYGRID            ICON    DISCARDABLE     ICONS\CURSOR\COPYGRID.ICO
+IDI_SHADOWCIRCLE        ICON    DISCARDABLE     ICONS\CURSOR\SHADOW.ICO
+
+
+//-----------------------------------------------------------------------------
+// CURSORS
+//-----------------------------------------------------------------------------
+IDC_WAITCURSOR            CURSOR   DISCARDABLE    CURSORS\WAIT.CUR
+
+
+//-----------------------------------------------------------------------------
+// BITMAPS
+//-----------------------------------------------------------------------------
+
+// EOF LAUNCHPD.RC
+

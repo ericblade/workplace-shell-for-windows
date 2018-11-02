@@ -1,0 +1,100 @@
+# Microsoft Visual C++ generated build script - Do not modify
+
+PROJ = CONVINI
+DEBUG = 0
+PROGTYPE = 0
+CALLER = 
+ARGS = 
+DLLS = 
+D_RCDEFINES = /d_DEBUG
+R_RCDEFINES = /dNDEBUG
+ORIGIN = MSVC
+ORIGIN_VER = 1.00
+PROJPATH = D:\WPSFW\CONVINI\BUILD\
+USEMFC = 0
+CC = cl
+CPP = cl
+CXX = cl
+CCREATEPCHFLAG = 
+CPPCREATEPCHFLAG = 
+CUSEPCHFLAG = 
+CPPUSEPCHFLAG = 
+FIRSTC =             
+FIRSTCPP = CONVINI.CPP 
+RC = rc
+CFLAGS_D_WEXE = /nologo /f- /G3 /W3 /Zi /AL /Od /D "_DEBUG" /GA /Fd"CONVINI.PDB"
+CFLAGS_R_WEXE = /nologo /f- /Gs /G3 /W3 /AL /O1 /Ob2 /D "NDEBUG" /GA
+LFLAGS_D_WEXE = /NOLOGO /NOD /PACKC:61440 /STACK:10240 /ALIGN:16 /ONERROR:NOEXE /CO
+LFLAGS_R_WEXE = /NOLOGO /NOD /PACKC:61440 /STACK:10240 /ALIGN:16 /ONERROR:NOEXE
+LIBS_D_WEXE = oldnames libw llibcew commdlg.lib olecli.lib olesvr.lib shell.lib
+LIBS_R_WEXE = oldnames libw llibcew
+RCFLAGS = /nologo /i"..\resource"
+RESFLAGS = /nologo
+RUNFLAGS = 
+DEFFILE = CONVINI.DEF
+OBJS_EXT = 
+LIBS_EXT = CTL3D.LIB 
+!if "$(DEBUG)" == "1"
+CFLAGS = $(CFLAGS_D_WEXE)
+LFLAGS = $(LFLAGS_D_WEXE)
+LIBS = $(LIBS_D_WEXE)
+MAPFILE = nul
+RCDEFINES = $(D_RCDEFINES)
+!else
+CFLAGS = $(CFLAGS_R_WEXE)
+LFLAGS = $(LFLAGS_R_WEXE)
+LIBS = $(LIBS_R_WEXE)
+MAPFILE = nul
+RCDEFINES = $(R_RCDEFINES)
+!endif
+!if [if exist MSVC.BND del MSVC.BND]
+!endif
+SBRS = CONVINI.SBR
+
+
+CTL3D_DEP = 
+
+CONVINI_RCDEP = d:\wpsfw\convini\resource\icons\convini.ico
+
+
+CONVINI_RCDEP = d:\wpsfw\convini\resource\icons\win31.ico \
+	d:\wpsfw\convini\resource\icons\os2sys.ico
+
+
+all:	$(PROJ).EXE
+
+CONVINI.OBJ:	..\SOURCE\CONVINI.CPP $(CONVINI_DEP)
+	$(CPP) $(CFLAGS) $(CPPCREATEPCHFLAG) /c ..\SOURCE\CONVINI.CPP
+
+CONVINI.RES:	..\RESOURCE\CONVINI.RC $(CONVINI_RCDEP)
+	$(RC) $(RCFLAGS) $(RCDEFINES) -r -FoD:\WPSFW\CONVINI\BUILD\CONVINI.RES ..\RESOURCE\CONVINI.RC
+
+
+$(PROJ).EXE::	CONVINI.RES
+
+$(PROJ).EXE::	CONVINI.OBJ $(OBJS_EXT) $(DEFFILE)
+	echo >NUL @<<$(PROJ).CRF
+CONVINI.OBJ +
+$(OBJS_EXT)
+$(PROJ).EXE
+$(MAPFILE)
+c:\msvc\lib\+
+CTL3D.LIB+
+$(LIBS)
+$(DEFFILE);
+<<
+	link $(LFLAGS) @$(PROJ).CRF
+	$(RC) $(RESFLAGS) CONVINI.RES $@
+	@copy $(PROJ).CRF MSVC.BND
+
+$(PROJ).EXE::	CONVINI.RES
+	if not exist MSVC.BND 	$(RC) $(RESFLAGS) CONVINI.RES $@
+
+run: $(PROJ).EXE
+	$(PROJ) $(RUNFLAGS)
+
+
+$(PROJ).BSC: $(SBRS)
+	bscmake @<<
+/o$@ $(SBRS)
+<<
